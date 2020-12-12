@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DiplomaProject</name>
+    </assembly>
+    <members>
+        <member name="T:DiplomaProject.Controllers.WeatherForecastController">
+            <summary>
+            Weather Controller respponsible for GET/POST for managing weather 
+            </summary>
+        </member>
+        <member name="M:DiplomaProject.Controllers.WeatherForecastController.Get">
+            <summary>
+            This GET method returns fake weather
+            </summary>
+            <returns>An array of weather forecast</returns>
+        </member>
+        <member name="P:DiplomaProject.WeatherForecast.Date">
+            <summary>
+            Date for the weather
+            </summary>
+        </member>
+        <member name="P:DiplomaProject.WeatherForecast.TemperatureC">
+            <summary>
+            Temperature in C
+            </summary>
+        </member>
+        <member name="P:DiplomaProject.WeatherForecast.TemperatureF">
+            <summary>
+            Temperature in F
+            </summary>
+        </member>
+        <member name="P:DiplomaProject.WeatherForecast.Summary">
+            <summary>
+            Summary
+            </summary>
+        </member>
+    </members>
+</doc>
