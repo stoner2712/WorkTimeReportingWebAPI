@@ -11,7 +11,7 @@
         </member>
         <member name="M:DiplomaProject.Controllers.WeatherForecastController.Get">
             <summary>
-            This GET method returns fake weather
+            This GET method returns fake weather 
             </summary>
             <returns>An array of weather forecast</returns>
         </member>

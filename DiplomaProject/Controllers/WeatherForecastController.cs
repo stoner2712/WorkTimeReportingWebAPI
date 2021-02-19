@@ -11,7 +11,9 @@ namespace DiplomaProject.Controllers
     /// Weather Controller respponsible for GET/POST for managing weather 
     /// </summary>
     [ApiController]
-    [Route("[controller]")]
+    //[Route("[controller]")]       // oryginalny route
+    [Route("api/weatherforecast")]  // tak też działa, ale poprawnie jest z controller, jak poniżej
+    [Route("api/[controller]")]     // konwencja, że weatherforecast odpali się po ścieżce api
 
     public class WeatherForecastController : ControllerBase
     {
@@ -27,8 +29,9 @@ namespace DiplomaProject.Controllers
             _logger = logger;
         }
 
+        // ten opis poniżej pojawi się w Swaggerze xD
         /// <summary>
-        /// This GET method returns fake weather
+        /// This GET method returns fake weather 
         /// </summary>
         /// <returns>An array of weather forecast</returns>
         [HttpGet]
@@ -42,6 +45,13 @@ namespace DiplomaProject.Controllers
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
             .ToArray();
+        }
+
+        [HttpGet]
+        [Route("employee")]
+        public string GetEmployee()
+        {
+            return "Edek";
         }
     }
 }
