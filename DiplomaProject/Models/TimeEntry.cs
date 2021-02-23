@@ -16,7 +16,7 @@ namespace DiplomaProject.Models
         public DateTime Date { get; set; }
         public decimal AmountOfHours { get; set; }
 
-        public string? Comment { get; set; } //czy mogę tak zrobić? // ozn że moze byc nullable
+        public string Comment { get; set; } //czy mogę tak zrobić? // ozn że moze byc nullable
 
         public long EmployeeId { get; set; } //FK
         public long ProjectId { get; set; } //FK

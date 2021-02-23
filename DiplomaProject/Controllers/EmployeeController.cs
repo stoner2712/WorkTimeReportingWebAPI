@@ -25,37 +25,19 @@ namespace DiplomaProject.Controllers
         [HttpGet]
         public ActionResult<IEnumerable> Get()
         {
-            var faker = new Faker("en");
-
-            //sprawdzenie jak działa Bogus Faker -> wstaw breakpoint przed "for" żeby nie leciało 1000 razy
-            for (int i = 0; i < 100; i++)
-            {
-                var employee = new Employee()
-                {
-                    FirstName = faker.Name.FirstName(),
-                    LastName = faker.Name.LastName(),
-                    DateOfBirth = faker.Date.Between(new DateTime(1950,01,01),new DateTime(1999,12,31)),
-                    BuildingNumber = faker.Address.BuildingNumber(),
-                    StreetName = faker.Address.StreetName(),
-                    PostCode = faker.Address.ZipCode(),
-                    City = faker.Address.City(),
-                    Country = faker.Address.Country(),
-                    JobTitle = faker.Name.JobTitle(),
-                };
-                diplomaProjectDbContext.Employees.Add(employee);
-            }
-            diplomaProjectDbContext.SaveChanges();
-
-            IEnumerable<Employee> employees = diplomaProjectDbContext.Employees.ToList();
-            return BadRequest(employees);
+            var employees = diplomaProjectDbContext.Employees;           // await wraca w to miejsce w kodzie i zawsze musi być połączony z async
+                                                                         // odczyt z bazy danych to blokująca operacja i async pozwala na dzalsze działanie aplikacji
+            return Ok(employees);
         }
 
         // GET api/<EmployeeController>/5
         [HttpGet("{id}")]
-        public string Get(int id)   // pobieranie danych, tu można wrzucic pracowników lub array stringów
-                                    // i w ten sposób mam endpoint żeby pobierać tych pracowników
+        public Employee Get(int id)   // pobieranie danych, tu można wrzucic pracowników lub array stringów
+                                                  // i w ten sposób mam endpoint żeby pobierać tych pracowników
         {
-            return "bla bla";
+            
+            var employee = diplomaProjectDbContext.Employees.FirstOrDefault(e=>e.EmployeeId==id);  // e, to predykat kt zwraca true or false, '=>' ozn lambda
+            return employee;
         }
 
         // POST api/<EmployeeController>

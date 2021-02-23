@@ -23,27 +23,10 @@ namespace DiplomaProject.Controllers
 
         // GET: api/<ClientController>
         [HttpGet]
-        public IEnumerable Get()
+        public ActionResult<IEnumerable> Get()
         {
-            var faker = new Faker("en");
-
-            for (int i = 0; i < 100; i++)
-            {
-                var client = new Client()
-                {
-                    ClientName = faker.Company.CompanyName(),
-                    BuildingNumber = faker.Address.BuildingNumber(),
-                    StreetName = faker.Address.StreetName(),
-                    PostCode = faker.Address.ZipCode(),
-                    City = faker.Address.City(),
-                    Country = faker.Address.Country(),
-                };
-                diplomaProjectDbContext.Clients.Add(client);
-            }
-            diplomaProjectDbContext.SaveChanges();
-
-            IEnumerable<Client> clients = diplomaProjectDbContext.Clients.ToList();
-            return clients;
+            var clients = diplomaProjectDbContext.Clients;           
+            return Ok(clients);
         }
 
         // GET api/<ClientController>/5

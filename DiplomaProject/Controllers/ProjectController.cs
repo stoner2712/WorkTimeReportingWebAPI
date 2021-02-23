@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DiplomaProject.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,11 +14,18 @@ namespace DiplomaProject.Controllers
     [ApiController]
     public class ProjectController : ControllerBase
     {
-        // GET: api/<ProjectController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private readonly DiplomaProjectDbContext diplomaProjectDbContext;
+        public ProjectController(DiplomaProjectDbContext context)
         {
-            return new string[] { "value1", "value2" };
+            diplomaProjectDbContext = context;
+        }
+
+        // GET: api/<InvoicesController>
+        [HttpGet]
+        public ActionResult<IEnumerable> Get()
+        {
+            var projects = diplomaProjectDbContext.Projects;
+            return Ok(projects);
         }
 
         // GET api/<ProjectController>/5
