@@ -12,43 +12,44 @@ namespace DiplomaProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class InvoiceController : ControllerBase
+    public class EmployeeProjectController : ControllerBase
     {
+
         private readonly DiplomaProjectDbContext diplomaProjectDbContext;
-        public InvoiceController(DiplomaProjectDbContext context)
+        public EmployeeProjectController(DiplomaProjectDbContext context)
         {
             diplomaProjectDbContext = context;
         }
 
-        // GET: api/<InvoicesController>
+        // GET: api/<EmployeeProjectController>
         [HttpGet]
         public ActionResult<IEnumerable> Get()
         {
-            var invoices = diplomaProjectDbContext.Invoices;
-            return Ok(invoices);
+            var employeesProjectsList = diplomaProjectDbContext.EmployeeProjects;
+            return Ok(employeesProjectsList);
         }
 
-        // GET api/<InvoiceController>/5
+        // GET api/<EmployeeProjectController>/5
         [HttpGet("{id}")]
-        public Invoice Get(int id)
+        public EmployeeProject Get(int id)
         {
-            var invoice = diplomaProjectDbContext.Invoices.FirstOrDefault(e => e.InvoiceId == id);
-            return invoice;
+            var ep = diplomaProjectDbContext.EmployeeProjects.FirstOrDefault(e => e.EmployeeId == id);
+            return ep;
         }
 
-        // POST api/<InvoiceController>
+        // POST api/<EmployeeProjectController>
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/<InvoiceController>/5
+        // PUT api/<EmployeeProjectController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<InvoiceController>/5
+        // DELETE api/<EmployeeProjectController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

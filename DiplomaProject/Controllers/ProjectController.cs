@@ -30,9 +30,10 @@ namespace DiplomaProject.Controllers
 
         // GET api/<ProjectController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Project Get(int id)
         {
-            return "value";
+            var project = diplomaProjectDbContext.Projects.FirstOrDefault(e => e.ProjectId == id);
+            return project;
         }
 
         // POST api/<ProjectController>
