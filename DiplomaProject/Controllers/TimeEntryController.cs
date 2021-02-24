@@ -30,9 +30,10 @@ namespace DiplomaProject.Controllers
 
         // GET api/<TimeEntryController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public TimeEntry Get(int id)
         {
-            return "value";
+            var timeentry = diplomaProjectDbContext.TimeEntries.FirstOrDefault(e => e.TimeEntryId == id);
+            return timeentry;
         }
 
         // POST api/<TimeEntryController>

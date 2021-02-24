@@ -33,10 +33,9 @@ namespace DiplomaProject.Controllers
         // GET api/<EmployeeController>/5
         [HttpGet("{id}")]
         public Employee Get(int id)   // pobieranie danych, tu można wrzucic pracowników lub array stringów
-                                                  // i w ten sposób mam endpoint żeby pobierać tych pracowników
+                                      // i w ten sposób mam endpoint żeby pobierać tych pracowników
         {
-            
-            var employee = diplomaProjectDbContext.Employees.FirstOrDefault(e=>e.EmployeeId==id);  // e, to predykat kt zwraca true or false, '=>' ozn lambda
+            var employee = diplomaProjectDbContext.Employees.FirstOrDefault(e=>e.EmployeeId==id); // e, to predykat kt zwraca true or false, '=>' ozn lambda
             return employee;
         }
 

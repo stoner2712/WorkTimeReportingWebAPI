@@ -25,15 +25,16 @@ namespace DiplomaProject.Controllers
         [HttpGet]
         public ActionResult<IEnumerable> Get()
         {
-            var clients = diplomaProjectDbContext.Clients;           
+            var clients = diplomaProjectDbContext.Clients;
             return Ok(clients);
         }
 
         // GET api/<ClientController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public Client Get(int id)
         {
-            return "value";
+            var client = diplomaProjectDbContext.Clients.FirstOrDefault(e => e.ClientId == id);
+            return client;
         }
 
         // POST api/<ClientController>
