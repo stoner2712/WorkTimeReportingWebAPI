@@ -4,5 +4,20 @@
         <name>DiplomaProject</name>
     </assembly>
     <members>
+        <member name="M:DiplomaProject.Controllers.EmployeeController.Put(System.Int32,DiplomaProject.DataTransferObjects.EmployeeDtoUpdate)">
+            <summary>
+            Update an Employee by {id}
+            </summary>
+            <param name="id"></param>
+            <param name="employeeDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.EmployeeController.Delete(System.Int32)">
+            <summary>
+            DELETE an Employee by {id}
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
     </members>
 </doc>
