@@ -15,8 +15,7 @@ namespace DiplomaProject.Models
         public long TimeEntryId { get; set; }
         public DateTime Date { get; set; }
         public decimal AmountOfHours { get; set; }
-
-        public string Comment { get; set; } //czy mogę tak zrobić? // ozn że moze byc nullable
+        public string Comment { get; set; } //czy mogę tak dodać '?' co ozn, że moze byc nullable
 
         public long EmployeeId { get; set; } //FK
         public long ProjectId { get; set; } //FK
