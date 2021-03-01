@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
-using Bogus;
 using DiplomaProject.DataTransferObjects;
 using DiplomaProject.Models;
+using DiplomaProject.Services.EmployeeService;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
@@ -9,30 +9,36 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace DiplomaProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class EmployeeController : ControllerBase
     {
+        private IEmployeeService employeeService;
         private IMapper _mapper;
-
         private readonly DiplomaProjectDbContext diplomaProjectDbContext;
-        public EmployeeController(DiplomaProjectDbContext context, IMapper mapper)
+
+        public EmployeeController(IEmployeeService employeeService, IMapper mapper, DiplomaProjectDbContext diplomaProjectDbContext)
         {
-            diplomaProjectDbContext = context;
+            this.employeeService = employeeService;
+            this.diplomaProjectDbContext = diplomaProjectDbContext;
             _mapper = mapper;
         }
 
         // GET: api/<EmployeeController>
         [HttpGet]
-        public ActionResult<IEnumerable> Get()
+        public async Task<ActionResult<IEnumerable>> Get()
         {
-            var employees = diplomaProjectDbContext.Employees;           // await wraca w to miejsce w kodzie i zawsze musi być połączony z async
-                                                                         // odczyt z bazy danych to blokująca operacja i async pozwala na dzalsze działanie aplikacji
-            return Ok(employees);
+            try
+            {
+                var allEmployees = await this.employeeService.Get();
+                return Ok(allEmployees);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
         // GET api/<EmployeeController>/5
@@ -51,7 +57,7 @@ namespace DiplomaProject.Controllers
         // POST api/<EmployeeController>
         [HttpPost]
         // metoda POST zwracająca typ EmployeeDto
-        public EmployeeDto Post([FromBody] EmployeeDtoCreate employeeDto)
+        public EmployeeDto Post([FromBody] EmployeeCreateDto employeeDto)
         {
             // mapujemy teraz employeeDto na Employee, i z employeeDto tworzymy Employee
             // wyciągamy też employee z employeeDto, stad var employee 
@@ -74,7 +80,7 @@ namespace DiplomaProject.Controllers
         /// <returns></returns>
         // PUT api/<EmployeeController>/5
         [HttpPut("{id}")]
-        public EmployeeDto Put(int id, [FromBody] EmployeeDtoUpdate employeeDto)
+        public EmployeeDto Put(int id, [FromBody] EmployeeUpdateDto employeeDto)
         {
             var employee = diplomaProjectDbContext.Employees.FirstOrDefault(e => e.EmployeeId == id); // wyszukujemy employee po id
             employee.FirstName = employeeDto.FirstName;

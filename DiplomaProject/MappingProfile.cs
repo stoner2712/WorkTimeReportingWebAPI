@@ -13,7 +13,7 @@ namespace DiplomaProject
         public MappingProfile()
         {
             CreateMap<Employee, EmployeeDto>();
-            CreateMap<EmployeeDtoCreate, Employee>();
+            CreateMap<EmployeeCreateDto, Employee>();
             
         }
     }
