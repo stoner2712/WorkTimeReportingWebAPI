@@ -48,7 +48,7 @@ namespace DiplomaProject.Models
                 };
                 employees.Add(employee);
             }
-            modelBuilder.Entity<Employee>().HasData(employees);   // Hasdata sprawdza czy jakies dane sa w tabeli, 
+            modelBuilder.Entity<Employee>().HasData(employees);   // HasData sprawdza czy jakies dane sa w tabeli, 
                                                                   // jezeli tak, to nic nie bedzie generowane, jezeli nie, to wygeneruje 
 
             var clients = new List<Client>();

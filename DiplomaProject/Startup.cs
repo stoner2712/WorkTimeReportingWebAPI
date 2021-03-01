@@ -33,6 +33,8 @@ namespace DiplomaProject
 
             services.AddControllers();
 
+            services.AddAutoMapper(typeof(Startup));
+
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1",
