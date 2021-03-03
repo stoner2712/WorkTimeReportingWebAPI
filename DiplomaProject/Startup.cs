@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using DiplomaProject.Models;
+using DiplomaProject.Services.TimeEntryServiceNS;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,6 +33,8 @@ namespace DiplomaProject
             services.AddDbContext<DiplomaProjectDbContext>(opts => opts.UseNpgsql(Configuration["ConnectionString:postgreConnectionString"]));
 
             services.AddControllers();
+
+            this.ConfigureDiplomaServices(services);
 
             services.AddAutoMapper(typeof(Startup));
 
@@ -78,6 +81,12 @@ namespace DiplomaProject
                 // empty string -> we get swagger just by calling localhost, without any flash
                 options.RoutePrefix = "";
             });
+        }
+
+        public void ConfigureDiplomaServices(IServiceCollection services)
+        {
+            // here are registered the services, so they can be INJECTED where needed
+            services.AddScoped<ITimeEntryService, TimeEntryService>();
         }
     }
 }
