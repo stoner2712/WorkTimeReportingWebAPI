@@ -4,9 +4,29 @@
         <name>DiplomaProject</name>
     </assembly>
     <members>
+        <member name="M:DiplomaProject.Controllers.EmployeeController.Get">
+            <summary>
+            Find all the employees
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.EmployeeController.Get(System.Int32)">
+            <summary>
+            Find an employee - search by {id}
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.EmployeeController.Post(DiplomaProject.DataTransferObjects.EmployeeDtoCreate)">
+            <summary>
+            Create an employee
+            </summary>
+            <param name="employeeDto"></param>
+            <returns></returns>
+        </member>
         <member name="M:DiplomaProject.Controllers.EmployeeController.Put(System.Int32,DiplomaProject.DataTransferObjects.EmployeeDtoUpdate)">
             <summary>
-            Update an Employee by {id}
+            Update an employee - search by {id}
             </summary>
             <param name="id"></param>
             <param name="employeeDto"></param>
@@ -14,7 +34,41 @@
         </member>
         <member name="M:DiplomaProject.Controllers.EmployeeController.Delete(System.Int32)">
             <summary>
-            DELETE an Employee by {id}
+            Delete an employee - search by {id}
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.TimeEntryController.Get">
+            <summary>
+            Find all the time entries
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.TimeEntryController.Get(System.Int32)">
+            <summary>
+            Find a time entry - search by [id]
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.TimeEntryController.Post(DiplomaProject.DataTransferObjects.TimeEntryCreateDto)">
+            <summary>
+            Create a time entry
+            </summary>
+            <param name="timeEntryDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.TimeEntryController.Put(System.Int32,DiplomaProject.DataTransferObjects.TimeEntryUpdateDto)">
+            <summary>
+            Update a time entry - search by [id]
+            </summary>
+            <param name="id"></param>
+            <param name="timeEntryDto"></param>
+        </member>
+        <member name="M:DiplomaProject.Controllers.TimeEntryController.Delete(System.Int32)">
+            <summary>
+            Delete a time entry - search by [id]
             </summary>
             <param name="id"></param>
             <returns></returns>

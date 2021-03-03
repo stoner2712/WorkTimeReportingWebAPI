@@ -14,7 +14,9 @@ namespace DiplomaProject
         {
             CreateMap<Employee, EmployeeDto>();
             CreateMap<EmployeeCreateDto, Employee>();
-            
+
+            CreateMap<TimeEntry, TimeEntryDto>();
+            CreateMap<TimeEntryCreateDto, TimeEntry>();
         }
     }
 }
