@@ -46,7 +46,7 @@ namespace DiplomaProject.Controllers
         /// <returns></returns>
         // GET api/<EmployeeController>/5
         [HttpGet("{id}")]
-        public EmployeeDto Get(int id)   // pobieranie danych, tu można wrzucic pracowników lub array stringów
+        public ActionResult<EmployeeDto> Get(int id)   // pobieranie danych, tu można wrzucic pracowników lub array stringów
                                          // i w ten sposób mam endpoint żeby pobierać tych pracowników
 
         {
@@ -54,7 +54,7 @@ namespace DiplomaProject.Controllers
             // 2 breakpointy na: linia wyżej oraz return
             // tworzymy zmienna employeDto, żeby do nie zapisać to co po znaku = 
             var employeeDto = _mapper.Map<EmployeeDto>(employee); // EmployeeDto = destination, nawiasy okrągłe, to wywołanie tej metody, i wew jest source
-            return employeeDto;
+            return Ok(employeeDto);
         }
 
         /// <summary>
@@ -65,7 +65,7 @@ namespace DiplomaProject.Controllers
         // POST api/<EmployeeController>
         [HttpPost]
         // metoda POST zwracająca typ EmployeeDto
-        public EmployeeDto Post([FromBody] EmployeeDtoCreate employeeDto)
+        public ActionResult<EmployeeDto> Post([FromBody] EmployeeDtoCreate employeeDto)
         {
             // mapujemy teraz employeeDto na Employee, i z employeeDto tworzymy obiekt employee
             // wyciągamy też employee z employeeDto, stad var employee 
@@ -77,7 +77,7 @@ namespace DiplomaProject.Controllers
             // teraz zwracamy w przeglądarce stworzony obiekt employee:
             // deklarujemy typ zwracany: EmployeeDto
             // mapujemy employee na DataTransferObject, czyli -> EmployeeDto
-            return _mapper.Map<EmployeeDto>(employee); //zwracamy nowego employee na EmployeeDto (to co widzi Klient)
+            return Ok(_mapper.Map<EmployeeDto>(employee)); //zwracamy nowego employee na EmployeeDto (to co widzi Klient)
         }
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace DiplomaProject.Controllers
         /// <returns></returns>
         // PUT api/<EmployeeController>/5
         [HttpPut("{id}")]
-        public EmployeeDto Put(int id, [FromBody] EmployeeDtoUpdate employeeDto)
+        public ActionResult<EmployeeDto> Put(int id, [FromBody] EmployeeDtoUpdate employeeDto)
         {
             var employee = diplomaProjectDbContext.Employees.FirstOrDefault(e => e.EmployeeId == id); // wyszukujemy employee po id
             employee.FirstName = employeeDto.FirstName;
@@ -98,7 +98,7 @@ namespace DiplomaProject.Controllers
             //employee.StreetName = "Mickiewicza";   // mozna na sztywno ustawić i będzie wpisywac się dla kazdego updatowanego
             diplomaProjectDbContext.Update(employee);
             diplomaProjectDbContext.SaveChanges();  // zachowujemy zmiany w bazie
-            return _mapper.Map<EmployeeDto>(employee); //wyświetlamy tego pracownika po zmianach zmapowane na EmployeeDto
+            return Ok(_mapper.Map<EmployeeDto>(employee)); //wyświetlamy tego pracownika po zmianach zmapowane na EmployeeDto
         }
 
         /// <summary>

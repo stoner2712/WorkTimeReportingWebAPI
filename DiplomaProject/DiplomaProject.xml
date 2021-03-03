@@ -52,14 +52,14 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:DiplomaProject.Controllers.TimeEntryController.Post(DiplomaProject.DataTransferObjects.TimeEntryDtoCreate)">
+        <member name="M:DiplomaProject.Controllers.TimeEntryController.Post(DiplomaProject.DataTransferObjects.TimeEntryCreateDto)">
             <summary>
             Create a time entry
             </summary>
             <param name="timeEntryDto"></param>
             <returns></returns>
         </member>
-        <member name="M:DiplomaProject.Controllers.TimeEntryController.Put(System.Int32,DiplomaProject.DataTransferObjects.TimeEntryDtoUpdate)">
+        <member name="M:DiplomaProject.Controllers.TimeEntryController.Put(System.Int32,DiplomaProject.DataTransferObjects.TimeEntryUpdateDto)">
             <summary>
             Update a time entry - search by [id]
             </summary>

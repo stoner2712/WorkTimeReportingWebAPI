@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DiplomaProject.DataTransferObjects;
 using DiplomaProject.Models;
+using DiplomaProject.Services.TimeEntryServiceNS;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
@@ -17,14 +18,14 @@ namespace DiplomaProject.Controllers
     [ApiController]
     public class TimeEntryController : ControllerBase
     {
+        private ITimeEntryService  timeEntryService;
         private IMapper _mapper;
-
-        //private HttpStatusCode _httpStatusCode;
-
         private readonly DiplomaProjectDbContext diplomaProjectDbContext;
-        public TimeEntryController(DiplomaProjectDbContext context, IMapper mapper) //HttpStatusCode httpStatusCode
+        //private HttpStatusCode _httpStatusCode;
+        public TimeEntryController(ITimeEntryService timeEntryService, IMapper mapper, DiplomaProjectDbContext diplomaProjectDbContext) //HttpStatusCode httpStatusCode
         {
-            diplomaProjectDbContext = context;
+            this.timeEntryService = timeEntryService;
+            this.diplomaProjectDbContext = diplomaProjectDbContext;
             _mapper = mapper;
             //_httpStatusCode = httpStatusCode;
         }
@@ -33,12 +34,19 @@ namespace DiplomaProject.Controllers
         /// Find all the time entries
         /// </summary>
         /// <returns></returns>
-        // GET: api/<InvoicesController>
+        // GET: api/<TimeEntryController>
         [HttpGet]
-        public ActionResult<IEnumerable> Get()
+        public async Task<ActionResult<IEnumerable>> Get()
         {
-            var timeentries = diplomaProjectDbContext.TimeEntries;
-            return Ok(timeentries);
+            try
+            {
+                var allTimeEntries = await this.timeEntryService.Get();
+                return Ok(allTimeEntries);
+            }
+            catch (Exception te)
+            {
+                return BadRequest(te);
+            }
         }
 
         /// <summary>
@@ -48,17 +56,16 @@ namespace DiplomaProject.Controllers
         /// <returns></returns>
         // GET api/<TimeEntryController>/5
         [HttpGet("{id}")]
-        public ActionResult Get(int id)
+        public async Task<ActionResult<IEnumerable>> Get(int id)
         {
-            var timeentry = diplomaProjectDbContext.TimeEntries.FirstOrDefault(te => te.TimeEntryId == id);
-            if (timeentry == null)
+            try
             {
-                return NotFound("Time entry with id " + id + " does not exist, please type in different id.");
+                var timeEntryResult = await this.timeEntryService.Get(id);
+                return Ok(timeEntryResult);
             }
-            else
+            catch (Exception)
             {
-                var timeentryDto = _mapper.Map<TimeEntryDto>(timeentry);
-                return Ok(timeentryDto);
+                return StatusCode(500, "Internal server error");
             }
         }
 
@@ -69,12 +76,12 @@ namespace DiplomaProject.Controllers
         /// <returns></returns>
         // POST api/<TimeEntryController>
         [HttpPost]
-        public TimeEntryDto Post([FromBody] TimeEntryDtoCreate timeEntryDto)
+        public ActionResult<TimeEntryDto> Post([FromBody] TimeEntryCreateDto timeEntryDto)
         {
             var timeentry = _mapper.Map<TimeEntry>(timeEntryDto);
             diplomaProjectDbContext.Add(timeentry);
             diplomaProjectDbContext.SaveChanges();
-            return _mapper.Map<TimeEntryDto>(timeentry);
+            return Ok(_mapper.Map<TimeEntryDto>(timeentry));
         }
 
         /// <summary>
@@ -84,17 +91,17 @@ namespace DiplomaProject.Controllers
         /// <param name="timeEntryDto"></param>
         // PUT api/<TimeEntryController>/5
         [HttpPut("{id}")]
-        public ActionResult<TimeEntryDto> Put(int id, [FromBody] TimeEntryDtoUpdate timeEntryDto)
+        public ActionResult<TimeEntryDto> Put(int id, [FromBody] TimeEntryUpdateDto timeEntryDto)
         {
             var timeentry = diplomaProjectDbContext.TimeEntries.FirstOrDefault(te => te.TimeEntryId == id);
-            
+
             //if (id == null)
             //{
             //    //return NotFound("[id] number does not exist, please type in different [id].");
             //    return new HttpStatusCode(HttpStatusCode.BadRequest);
             //}
             //TimeEntry timeEntry = diplomaProjectDbContext.TimeEntries.Find(id);
-            
+
             if (timeentry == null)
             {
                 return NotFound("Time entry with id " + id + " does not exist, please type in different id.");
@@ -126,7 +133,7 @@ namespace DiplomaProject.Controllers
                 return NotFound("Time entry with id " + id + " does not exist, please type in different id.");
             }
             else
-            { 
+            {
                 diplomaProjectDbContext.Remove(timeentry);
                 diplomaProjectDbContext.SaveChanges();
                 return Ok("Time entry with id " + timeentry.TimeEntryId + " has been successfully deleted.");

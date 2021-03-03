@@ -13,7 +13,7 @@ namespace DiplomaProject.DataTransferObjects
         public string Comment { get; set; }
        
     }
-    public class TimeEntryDtoCreate
+    public class TimeEntryCreateDto
     {
         public DateTime Date { get; set; }
         public decimal AmountOfHours { get; set; }
@@ -21,7 +21,7 @@ namespace DiplomaProject.DataTransferObjects
         public long EmployeeId { get; set; }
         public long ProjectId { get; set; }
     }
-    public class TimeEntryDtoUpdate
+    public class TimeEntryUpdateDto
     {
         public DateTime Date { get; set; }
         public decimal AmountOfHours { get; set; }
