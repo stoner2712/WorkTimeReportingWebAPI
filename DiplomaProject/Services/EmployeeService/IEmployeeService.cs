@@ -1,8 +1,8 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using DiplomaProject.DataTransferObjects;
 
-namespace DiplomaProject.Services.EmployeeService
+namespace DiplomaProject.Services.EmployeeServiceNS
 {
     public interface IEmployeeService
     {
@@ -10,6 +10,6 @@ namespace DiplomaProject.Services.EmployeeService
         Task<IEnumerable<EmployeeDto>> Get();
         Task<EmployeeDto> Update(int id, EmployeeUpdateDto employeeUpdateDto);
         Task<EmployeeDto> Create(EmployeeCreateDto employeeCreateDto);
-        Task Delete(int id);
+        Task<EmployeeDto> Delete(int id);    // tu dodałem EmployeeDto, bo nie działało bez tego
     }
 }

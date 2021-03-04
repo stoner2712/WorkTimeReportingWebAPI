@@ -1,4 +1,4 @@
-using AutoMapper;
+﻿using AutoMapper;
 using System.Threading.Tasks;
 using DiplomaProject.DataTransferObjects;
 using DiplomaProject.Models;
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
-namespace DiplomaProject.Services.EmployeeService
+namespace DiplomaProject.Services.EmployeeServiceNS
 {
     public class EmployeeService : IEmployeeService
     {
@@ -19,24 +19,46 @@ namespace DiplomaProject.Services.EmployeeService
             this.diplomaProjectDbContext = diplomaProjectDbContext;
         }
 
-        public Task<EmployeeDto> Create(EmployeeCreateDto employeeCreateDto)
+        public async Task<EmployeeDto> Create(EmployeeCreateDto employeeDto)
         {
-            throw new System.NotImplementedException();
+            // mapujemy employeeDto na Employee, i z employeeDto tworzymy obiekt employee
+            var employee = this.mapper.Map<Employee>(employeeDto); // w IEmployeeService jest Create(EmployeeCreateDto employeeCreateDto) czy tu tez ma byc employeeCreateDto
+            //wołam teraz baza danych czyli diplomaProjectDbContext i chcemy do niej dodac (Add) nowego employee
+            // dodajemy parametr employee, który nazywa sie entity wg metody Add, która ma parametr (Employee entity)
+            await this.diplomaProjectDbContext.AddAsync(employee);
+            await this.diplomaProjectDbContext.SaveChangesAsync();
+            // teraz zwracamy w przeglądarce stworzony obiekt employee:          ???
+            // deklarujemy typ zwracany: EmployeeDto                             ????
+            // mapujemy employee na DataTransferObject, czyli -> EmployeeDto      ???
+            return this.mapper.Map<EmployeeDto>(employee);
         }
 
-        public Task Delete(int id)
+        public async Task<EmployeeDto> Delete(int id)
         {
-            throw new System.NotImplementedException();
+            var employee = await this.diplomaProjectDbContext.Employees.FirstOrDefaultAsync(e => e.EmployeeId == id);
+            this.diplomaProjectDbContext.Remove(employee);
+            await this.diplomaProjectDbContext.SaveChangesAsync();
+            //return this.mapper.Map<EmployeeDto>(employee);          // to też działa, ale co lepsze. Po drugie gdy nie było id to wywala błąd...zamisat catch BadRequest
+            return null;
         }
 
-        public Task<EmployeeDto> Update(int id, EmployeeUpdateDto employeeUpdateDto)
+        public async Task<EmployeeDto> Update(int id, EmployeeUpdateDto employeeUpdateDto)
         {
-            throw new System.NotImplementedException();
+            var employee = await this.diplomaProjectDbContext.Employees.FirstOrDefaultAsync(e => e.EmployeeId == id);
+            employee.FirstName = employeeUpdateDto.FirstName;
+            employee.LastName = employeeUpdateDto.LastName;
+            employee.DateOfBirth = employeeUpdateDto.DateOfBirth;
+            employee.JobTitle = employeeUpdateDto.JobTitle;
+            //employee.StreetName = "Mickiewicza";   // mozna na sztywno ustawić i będzie wpisywac się dla kazdego updatowanego
+            this.diplomaProjectDbContext.Update(employee);
+            await this.diplomaProjectDbContext.SaveChangesAsync();
+            return this.mapper.Map<EmployeeDto>(employee); //wyświetlamy tego pracownika po zmianach zmapowane na EmployeeDto
         }
 
-        public Task<EmployeeDto> Get(int id)
+        public async Task<EmployeeDto> Get(int id)
         {
-            throw new System.NotImplementedException();
+            var employee = await this.diplomaProjectDbContext.Employees.FirstOrDefaultAsync(e => e.EmployeeId == id);
+            return this.mapper.Map<EmployeeDto>(employee);
         }
 
         public async Task<IEnumerable<EmployeeDto>> Get()

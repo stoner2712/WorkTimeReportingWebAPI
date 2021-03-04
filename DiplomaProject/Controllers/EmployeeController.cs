@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using DiplomaProject.DataTransferObjects;
 using DiplomaProject.Models;
-using DiplomaProject.Services.EmployeeService;
+using DiplomaProject.Services.EmployeeServiceNS;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
@@ -52,15 +52,18 @@ namespace DiplomaProject.Controllers
         /// <returns></returns>
         // GET api/<EmployeeController>/5
         [HttpGet("{id}")]
-        public ActionResult<EmployeeDto> Get(int id)   // pobieranie danych, tu można wrzucic pracowników lub array stringów
-                                         // i w ten sposób mam endpoint żeby pobierać tych pracowników
-
+        public async Task<ActionResult> Get(int id)
         {
-            var employee = diplomaProjectDbContext.Employees.FirstOrDefault(e => e.EmployeeId == id); // e, to predykat kt zwraca true or false, '=>' ozn lambda
-            // 2 breakpointy na: linia wyżej oraz return
-            // tworzymy zmienna employeDto, żeby do nie zapisać to co po znaku = 
-            var employeeDto = _mapper.Map<EmployeeDto>(employee); // EmployeeDto = destination, nawiasy okrągłe, to wywołanie tej metody, i wew jest source
-            return Ok(employeeDto);
+            try
+            {
+                var employee = await this.employeeService.Get(id); // jezeli tu nie podam id, to zwróci wszystkich employee
+                // 2 breakpointy na: linia wyżej oraz return
+                return Ok(employee);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
         /// <summary>
@@ -71,41 +74,43 @@ namespace DiplomaProject.Controllers
         // POST api/<EmployeeController>
         [HttpPost]
         // metoda POST zwracająca typ EmployeeDto
-        public ActionResult<EmployeeDto> Post([FromBody] EmployeeDtoCreate employeeDto)
+        public async Task<ActionResult> Post([FromBody] EmployeeCreateDto employeeDto)
         {
-            // mapujemy teraz employeeDto na Employee, i z employeeDto tworzymy obiekt employee
-            // wyciągamy też employee z employeeDto, stad var employee 
-            var employee = _mapper.Map<Employee>(employeeDto);
-            //wołam teraz baza danych czyli diplomaProjectDbContext i chcemy do niej dodac (Add) nowego employee
-            // dodajemy parametr employee, który nazywa sie entity wg metody Add, która ma parametr (Employee entity)
-            diplomaProjectDbContext.Add(employee); // dodajemy employee do bazy danych -> diplomaProjectDbContext
-            diplomaProjectDbContext.SaveChanges(); // zachowujemy zmiany w bazie danych
+            try
+            {
+               var employee = await this.employeeService.Create(employeeDto);
             // teraz zwracamy w przeglądarce stworzony obiekt employee:
             // deklarujemy typ zwracany: EmployeeDto
             // mapujemy employee na DataTransferObject, czyli -> EmployeeDto
-            return Ok(_mapper.Map<EmployeeDto>(employee)); //zwracamy nowego employee na EmployeeDto (to co widzi Klient)
+                return Ok(employee); //zwracamy nowego employee na EmployeeDto (to co widzi Klient)
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
         /// <summary>
         /// Update an employee - search by {id}
         /// </summary>
         /// <param name="id"></param>
-        /// <param name="employeeDto"></param>
+        /// <param name="employeeUpdateDto"></param>
         /// <returns></returns>
         // PUT api/<EmployeeController>/5
         [HttpPut("{id}")]
-        public ActionResult<EmployeeDto> Put(int id, [FromBody] EmployeeDtoUpdate employeeDto)
+        public async Task<ActionResult> Put(int id, [FromBody] EmployeeUpdateDto employeeUpdateDto)
         {
-            var employee = diplomaProjectDbContext.Employees.FirstOrDefault(e => e.EmployeeId == id); // wyszukujemy employee po id
-            employee.FirstName = employeeDto.FirstName;
-            employee.LastName = employeeDto.LastName;
-            employee.DateOfBirth = employeeDto.DateOfBirth;
-            employee.JobTitle = employeeDto.JobTitle;
-            //employee.StreetName = "Mickiewicza";   // mozna na sztywno ustawić i będzie wpisywac się dla kazdego updatowanego
-            diplomaProjectDbContext.Update(employee);
-            diplomaProjectDbContext.SaveChanges();  // zachowujemy zmiany w bazie
-            return Ok(_mapper.Map<EmployeeDto>(employee)); //wyświetlamy tego pracownika po zmianach zmapowane na EmployeeDto
+            try
+            {
+                var employee = await this.employeeService.Update(id, employeeUpdateDto);
+                return Ok(employee); //wyświetlamy tego pracownika po zmianach zmapowane na EmployeeDto
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
+
 
         /// <summary>
         /// Delete an employee - search by {id}
@@ -114,12 +119,23 @@ namespace DiplomaProject.Controllers
         /// <returns></returns>
         //DELETE api/<EmployeeController>/5
         [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            var employee = diplomaProjectDbContext.Employees.FirstOrDefault(e => e.EmployeeId == id);
-            diplomaProjectDbContext.Remove(employee);
-            diplomaProjectDbContext.SaveChanges();
-            return Ok();
+            try
+            {
+                //await this.employeeService.Delete(id);
+                var employee = await this.employeeService.Delete(id);   //nie działa 
+                return Ok();
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+
+            //var employee = diplomaProjectDbContext.Employees.FirstOrDefault(e => e.EmployeeId == id);
+            //diplomaProjectDbContext.Remove(employee);
+            //diplomaProjectDbContext.SaveChanges();
+            //return Ok();
         }
     }
 }

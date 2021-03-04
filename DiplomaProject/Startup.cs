@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using DiplomaProject.Models;
 using DiplomaProject.Services.TimeEntryServiceNS;
-using DiplomaProject.Services.EmployeeService;
+using DiplomaProject.Services.EmployeeServiceNS;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
