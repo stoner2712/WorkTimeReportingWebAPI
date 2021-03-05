@@ -48,7 +48,7 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
 
         public async Task<TimeEntryDto> Get(int id)
         {
-            var timeentry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
+            var timeEntry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
             return this.mapper.Map<TimeEntryDto>(timeentry);
         }
 
