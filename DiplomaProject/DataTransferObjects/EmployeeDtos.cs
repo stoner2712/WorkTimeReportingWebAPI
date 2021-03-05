@@ -21,7 +21,7 @@ namespace DiplomaProject.DataTransferObjects
         public string Country { get; set; }
         public string JobTitle { get; set; }
     }
-    public class EmployeeDtoCreate
+    public class EmployeeCreateDto
     {
         [Required(ErrorMessage = "First name is required")]
         [StringLength(60, ErrorMessage = "First name can't be longer than 60 characters")]
@@ -35,7 +35,7 @@ namespace DiplomaProject.DataTransferObjects
         public string Country { get; set; }
         public string JobTitle { get; set; }
     }
-    public class EmployeeDtoUpdate
+    public class EmployeeUpdateDto
     {
         [Required(ErrorMessage = "First name is required")]
         [StringLength(60, ErrorMessage = "First name can't be longer than 60 characters")]

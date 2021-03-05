@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Threading.Tasks;
 using DiplomaProject.Models;
 using DiplomaProject.Services.TimeEntryServiceNS;
+using DiplomaProject.Services.EmployeeServiceNS;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -87,6 +88,7 @@ namespace DiplomaProject
         {
             // here are registered the services, so they can be INJECTED where needed
             services.AddScoped<ITimeEntryService, TimeEntryService>();
+            services.AddScoped<IEmployeeService, EmployeeService>();
         }
     }
 }

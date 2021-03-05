@@ -12,6 +12,6 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
         Task<IEnumerable<TimeEntryDto>> Get();
         Task<TimeEntryDto> Update(int id, TimeEntryUpdateDto timeEntryUpdateDto);
         Task<TimeEntryDto> Create(TimeEntryCreateDto timeEntryCreateDto);
-        Task Delete(int id);
+        Task<TimeEntryDto> Delete(int id);
     }
 }

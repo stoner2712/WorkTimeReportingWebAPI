@@ -19,24 +19,45 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
             this.mapper = mapper;
             this.diplomaProjectDbContext = diplomaProjectDbContext;
         }
-        public Task<TimeEntryDto> Create(TimeEntryCreateDto timeEntryCreateDto)
+        public async Task<TimeEntryDto> Create(TimeEntryCreateDto timeEntryDto)
         {
-            throw new NotImplementedException();
+            var timeEntry = this.mapper.Map<TimeEntry>(timeEntryDto);
+            await this.diplomaProjectDbContext.AddAsync(timeEntry);
+            await this.diplomaProjectDbContext.SaveChangesAsync();
+            return this.mapper.Map<TimeEntryDto>(timeEntry);
         }
 
-        public Task<TimeEntryDto> Update(int id, TimeEntryUpdateDto timeEntryUpdateDto)
+        public async Task<TimeEntryDto> Update(int id, TimeEntryUpdateDto timeEntryUpdateDto)
         {
-            throw new NotImplementedException();
+            var timeEntry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
+            if(timeEntry == null)
+            {
+                throw new ArgumentException("Id not existing");
+            }
+            timeEntry.Date = timeEntryUpdateDto.Date;
+            timeEntry.AmountOfHours = timeEntryUpdateDto.AmountOfHours;
+            timeEntry.Comment = timeEntryUpdateDto.Comment;
+            this.diplomaProjectDbContext.Update(timeEntry);
+            await this.diplomaProjectDbContext.SaveChangesAsync();
+            return this.mapper.Map<TimeEntryDto>(timeEntry);
         }
 
-        public Task Delete(int id)
+        public async Task<TimeEntryDto> Delete(int id)
         {
-            throw new NotImplementedException();
+            var timeEntry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
+            if (timeEntry == null)
+            {
+                throw new ArgumentException("Id not existing");
+            }
+            this.diplomaProjectDbContext.Remove(timeEntry);
+            await this.diplomaProjectDbContext.SaveChangesAsync();
+            return null;
         }
 
-        public Task<TimeEntryDto> Get(int id)
+        public async Task<TimeEntryDto> Get(int id)
         {
-            throw new NotImplementedException();
+            var timeEntry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
+            return this.mapper.Map<TimeEntryDto>(timeEntry);
         }
 
         public async Task<IEnumerable<TimeEntryDto>> Get()
