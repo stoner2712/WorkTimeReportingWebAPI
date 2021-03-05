@@ -19,15 +19,9 @@ namespace DiplomaProject.Controllers
     public class TimeEntryController : ControllerBase
     {
         private ITimeEntryService timeEntryService;
-        private IMapper _mapper;
-        private readonly DiplomaProjectDbContext diplomaProjectDbContext;
-        //private HttpStatusCode _httpStatusCode;
-        public TimeEntryController(ITimeEntryService timeEntryService, IMapper mapper, DiplomaProjectDbContext diplomaProjectDbContext) //HttpStatusCode httpStatusCode
+        public TimeEntryController(ITimeEntryService timeEntryService)
         {
             this.timeEntryService = timeEntryService;
-            this.diplomaProjectDbContext = diplomaProjectDbContext;
-            _mapper = mapper;
-            //_httpStatusCode = httpStatusCode;
         }
 
         /// <summary>
@@ -103,6 +97,10 @@ namespace DiplomaProject.Controllers
                 var timeentry = await this.timeEntryService.Update(id, timeEntryUpdateDto);
                 return Ok(timeentry);
             }
+            catch (ArgumentException e)  //wyjątki zaczynamy od bardziej szczegółowych do ogólnych, bo gdyby na odwrót, to ogólny złapałby all i szczegółowy nigdy by sie nie wywołał
+            {
+                return BadRequest(e.Message);
+            }
             catch (Exception e)
             {
                 return BadRequest(e);
@@ -122,6 +120,10 @@ namespace DiplomaProject.Controllers
             {
                 var timeentry = await this.timeEntryService.Delete(id);
                 return Ok();
+            }
+            catch (ArgumentException e)
+            {
+                return BadRequest(e.Message);
             }
             catch (Exception e)
             {

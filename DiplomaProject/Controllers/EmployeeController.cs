@@ -16,14 +16,11 @@ namespace DiplomaProject.Controllers
     public class EmployeeController : ControllerBase
     {
         private IEmployeeService employeeService;
-        private IMapper _mapper;
-        private readonly DiplomaProjectDbContext diplomaProjectDbContext;
 
-        public EmployeeController(IEmployeeService employeeService, IMapper mapper, DiplomaProjectDbContext diplomaProjectDbContext)
+
+        public EmployeeController(IEmployeeService employeeService)
         {
             this.employeeService = employeeService;
-            this.diplomaProjectDbContext = diplomaProjectDbContext;
-            _mapper = mapper;
         }
 
         /// <summary>
@@ -78,10 +75,10 @@ namespace DiplomaProject.Controllers
         {
             try
             {
-               var employee = await this.employeeService.Create(employeeDto);
-            // teraz zwracamy w przeglądarce stworzony obiekt employee:
-            // deklarujemy typ zwracany: EmployeeDto
-            // mapujemy employee na DataTransferObject, czyli -> EmployeeDto
+                var employee = await this.employeeService.Create(employeeDto);
+                // teraz zwracamy w przeglądarce stworzony obiekt employee:
+                // deklarujemy typ zwracany: EmployeeDto
+                // mapujemy employee na DataTransferObject, czyli -> EmployeeDto
                 return Ok(employee); //zwracamy nowego employee na EmployeeDto (to co widzi Klient)
             }
             catch (Exception e)
@@ -105,6 +102,10 @@ namespace DiplomaProject.Controllers
                 var employee = await this.employeeService.Update(id, employeeUpdateDto);
                 return Ok(employee); //wyświetlamy tego pracownika po zmianach zmapowane na EmployeeDto
             }
+            catch (ArgumentException e)  //wyjątki zaczynamy od bardziej szczegółowych do ogólnych, bo gdyby na odwrót, to ogólny złapałby all i szczegółowy nigdy by sie nie wywołał
+            {
+                return BadRequest(e.Message);
+            }
             catch (Exception e)
             {
                 return BadRequest(e);
@@ -127,9 +128,13 @@ namespace DiplomaProject.Controllers
                 var employee = await this.employeeService.Delete(id);   //nie działa 
                 return Ok();
             }
+            catch (ArgumentException e)  //wyjątki zaczynamy od bardziej szczegółowych do ogólnych, bo gdyby na odwrót, to ogólny złapałby all i szczegółowy nigdy by sie nie wywołał
+            {
+                return BadRequest(e.Message);
+            }
             catch (Exception e)
             {
-                return BadRequest(e);
+                return BadRequest(e); //tu pokaże się wszystko co jest w Exception
             }
 
             //var employee = diplomaProjectDbContext.Employees.FirstOrDefault(e => e.EmployeeId == id);

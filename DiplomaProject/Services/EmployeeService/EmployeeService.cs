@@ -5,6 +5,7 @@ using DiplomaProject.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace DiplomaProject.Services.EmployeeServiceNS
 {
@@ -36,6 +37,10 @@ namespace DiplomaProject.Services.EmployeeServiceNS
         public async Task<EmployeeDto> Delete(int id)
         {
             var employee = await this.diplomaProjectDbContext.Employees.FirstOrDefaultAsync(e => e.EmployeeId == id);
+            if (employee == null)
+            {
+                throw new ArgumentException("Id not existing");
+            }
             this.diplomaProjectDbContext.Remove(employee);
             await this.diplomaProjectDbContext.SaveChangesAsync();
             //return this.mapper.Map<EmployeeDto>(employee);          // to też działa, ale co lepsze. Po drugie gdy nie było id to wywala błąd...zamisat catch BadRequest
@@ -45,6 +50,10 @@ namespace DiplomaProject.Services.EmployeeServiceNS
         public async Task<EmployeeDto> Update(int id, EmployeeUpdateDto employeeUpdateDto)
         {
             var employee = await this.diplomaProjectDbContext.Employees.FirstOrDefaultAsync(e => e.EmployeeId == id);
+            if(employee == null)
+            {
+                throw new ArgumentException("Id not existing");
+            }
             employee.FirstName = employeeUpdateDto.FirstName;
             employee.LastName = employeeUpdateDto.LastName;
             employee.DateOfBirth = employeeUpdateDto.DateOfBirth;

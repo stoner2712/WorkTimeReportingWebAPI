@@ -21,35 +21,43 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
         }
         public async Task<TimeEntryDto> Create(TimeEntryCreateDto timeEntryDto)
         {
-            var timeentry = this.mapper.Map<TimeEntry>(timeEntryDto);
-            await this.diplomaProjectDbContext.AddAsync(timeentry);
+            var timeEntry = this.mapper.Map<TimeEntry>(timeEntryDto);
+            await this.diplomaProjectDbContext.AddAsync(timeEntry);
             await this.diplomaProjectDbContext.SaveChangesAsync();
-            return this.mapper.Map<TimeEntryDto>(timeentry);
+            return this.mapper.Map<TimeEntryDto>(timeEntry);
         }
 
         public async Task<TimeEntryDto> Update(int id, TimeEntryUpdateDto timeEntryUpdateDto)
         {
-            var timeentry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
-            timeentry.Date = timeEntryUpdateDto.Date;
-            timeentry.AmountOfHours = timeEntryUpdateDto.AmountOfHours;
-            timeentry.Comment = timeEntryUpdateDto.Comment;
-            this.diplomaProjectDbContext.Update(timeentry);
+            var timeEntry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
+            if(timeEntry == null)
+            {
+                throw new ArgumentException("Id not existing");
+            }
+            timeEntry.Date = timeEntryUpdateDto.Date;
+            timeEntry.AmountOfHours = timeEntryUpdateDto.AmountOfHours;
+            timeEntry.Comment = timeEntryUpdateDto.Comment;
+            this.diplomaProjectDbContext.Update(timeEntry);
             await this.diplomaProjectDbContext.SaveChangesAsync();
-            return this.mapper.Map<TimeEntryDto>(timeentry);
+            return this.mapper.Map<TimeEntryDto>(timeEntry);
         }
 
         public async Task<TimeEntryDto> Delete(int id)
         {
-            var timeentry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
-            this.diplomaProjectDbContext.Remove(timeentry);
+            var timeEntry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
+            if (timeEntry == null)
+            {
+                throw new ArgumentException("Id not existing");
+            }
+            this.diplomaProjectDbContext.Remove(timeEntry);
             await this.diplomaProjectDbContext.SaveChangesAsync();
             return null;
         }
 
         public async Task<TimeEntryDto> Get(int id)
         {
-            var timeentry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
-            return this.mapper.Map<TimeEntryDto>(timeentry);
+            var timeEntry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
+            return this.mapper.Map<TimeEntryDto>(timeEntry);
         }
 
         public async Task<IEnumerable<TimeEntryDto>> Get()
