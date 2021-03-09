@@ -4,6 +4,40 @@
         <name>DiplomaProject</name>
     </assembly>
     <members>
+        <member name="M:DiplomaProject.Controllers.ClientController.Get">
+            <summary>
+            Find all the clients
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.ClientController.Get(System.Int32)">
+            <summary>
+            Find a client - search by {id}
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.ClientController.Post(DiplomaProject.DataTransferObjects.ClientCreateDto)">
+            <summary>
+            Create a client
+            </summary>
+            <param name="clientDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.ClientController.Put(System.Int32,DiplomaProject.DataTransferObjects.ClientUpdateDto)">
+            <summary>
+            Update a client - search by {id}
+            </summary>
+            <param name="id"></param>
+            <param name="clientUpdateDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.ClientController.Delete(System.Int32)">
+            <summary>
+            Delete a client - search by{id}
+            </summary>
+            <param name="id"></param>
+        </member>
         <member name="M:DiplomaProject.Controllers.EmployeeController.Get">
             <summary>
             Find all the employees
