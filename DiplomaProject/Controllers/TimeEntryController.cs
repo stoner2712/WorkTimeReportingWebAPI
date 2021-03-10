@@ -57,6 +57,10 @@ namespace DiplomaProject.Controllers
                 var timeentry = await this.timeEntryService.Get(id);
                 return Ok(timeentry);
             }
+            catch (ArgumentException e)  //wyjątki zaczynamy od bardziej szczegółowych do ogólnych, bo gdyby na odwrót, to ogólny złapałby all i szczegółowy nigdy by sie nie wywołał
+            {
+                return BadRequest(e.Message);
+            }
             catch (Exception e)
             {
                 return BadRequest(e);

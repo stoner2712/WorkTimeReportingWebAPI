@@ -57,6 +57,10 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
         public async Task<TimeEntryDto> Get(int id)
         {
             var timeEntry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
+            if (timeEntry == null)
+            {
+                throw new ArgumentException("Id not existing");
+            }
             return this.mapper.Map<TimeEntryDto>(timeEntry);
         }
 

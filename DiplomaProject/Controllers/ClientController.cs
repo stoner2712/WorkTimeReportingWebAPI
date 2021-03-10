@@ -1,11 +1,13 @@
 ﻿using Bogus;
 using DiplomaProject.Models;
+using DiplomaProject.Services.ClientServiceNS;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DiplomaProject.DataTransferObjects;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -15,44 +17,121 @@ namespace DiplomaProject.Controllers
     [ApiController]
     public class ClientController : ControllerBase
     {
-        private readonly DiplomaProjectDbContext diplomaProjectDbContext;
-        public ClientController(DiplomaProjectDbContext context)
+        private IClientService clientService;
+        public ClientController(IClientService clientService)
         {
-            diplomaProjectDbContext = context;
+            this.clientService = clientService;
         }
 
+        /// <summary>
+        /// Find all the clients
+        /// </summary>
+        /// <returns></returns>
         // GET: api/<ClientController>
         [HttpGet]
-        public ActionResult<IEnumerable> Get()
+        public async Task<ActionResult<IEnumerable>> Get()
         {
-            var clients = diplomaProjectDbContext.Clients;
-            return Ok(clients);
+            try
+            {
+                var allClients = await this.clientService.Get();
+                return Ok(allClients);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
+        /// <summary>
+        /// Find a client - search by {id}
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // GET api/<ClientController>/5
         [HttpGet("{id}")]
-        public Client Get(int id)
+        public async Task<ActionResult> Get(int id)
         {
-            var client = diplomaProjectDbContext.Clients.FirstOrDefault(e => e.ClientId == id);
-            return client;
+            try
+            {
+                var client = await this.clientService.Get(id);
+                return Ok(client);
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
+        /// <summary>
+        /// Create a client
+        /// </summary>
+        /// <param name="clientDto"></param>
+        /// <returns></returns>
         // POST api/<ClientController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult> Post([FromBody] ClientCreateDto clientDto)
         {
+            try
+            {
+                var client = await this.clientService.Create(clientDto);
+                return Ok(client);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
+        /// <summary>
+        /// Update a client - search by {id}
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="clientUpdateDto"></param>
+        /// <returns></returns>
         // PUT api/<ClientController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<ActionResult> Put(int id, [FromBody] ClientUpdateDto clientUpdateDto)
         {
+            try
+            {
+                var client = await this.clientService.Update(id, clientUpdateDto);
+                return Ok(client);
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
+        /// <summary>
+        /// Delete a client - search by{id}
+        /// </summary>
+        /// <param name="id"></param>
         // DELETE api/<ClientController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
+            try
+            {
+                var client = await this.clientService.Delete(id);
+                return Ok();
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
     }
 }

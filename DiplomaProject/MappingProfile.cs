@@ -17,6 +17,9 @@ namespace DiplomaProject
 
             CreateMap<TimeEntry, TimeEntryDto>();
             CreateMap<TimeEntryCreateDto, TimeEntry>();
+
+            CreateMap<Client, ClientDto>();
+            CreateMap<ClientCreateDto, Client>();
         }
     }
 }

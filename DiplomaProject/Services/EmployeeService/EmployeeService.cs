@@ -67,6 +67,10 @@ namespace DiplomaProject.Services.EmployeeServiceNS
         public async Task<EmployeeDto> Get(int id)
         {
             var employee = await this.diplomaProjectDbContext.Employees.FirstOrDefaultAsync(e => e.EmployeeId == id);
+            if(employee == null)
+            {
+                throw new ArgumentException("Id not existing");
+            }
             return this.mapper.Map<EmployeeDto>(employee);
         }
 
