@@ -19,7 +19,7 @@
         </member>
         <member name="M:DiplomaProject.Controllers.ClientController.Post(DiplomaProject.DataTransferObjects.ClientCreateDto)">
             <summary>
-            Create a client
+            Create a new client
             </summary>
             <param name="clientDto"></param>
             <returns></returns>
@@ -53,7 +53,7 @@
         </member>
         <member name="M:DiplomaProject.Controllers.EmployeeController.Post(DiplomaProject.DataTransferObjects.EmployeeCreateDto)">
             <summary>
-            Create an employee
+            Create a new employee
             </summary>
             <param name="employeeDto"></param>
             <returns></returns>
@@ -73,6 +73,40 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:DiplomaProject.Controllers.ProjectController.Get">
+            <summary>
+            Find all the projects
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.ProjectController.Get(System.Int32)">
+            <summary>
+            Find a project - search by {id}
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.ProjectController.Post(DiplomaProject.DataTransferObjects.ProjectCreateDto)">
+            <summary>
+            Create a new project
+            </summary>
+            <param name="projectDto"></param>
+        </member>
+        <member name="M:DiplomaProject.Controllers.ProjectController.Put(System.Int32,DiplomaProject.DataTransferObjects.ProjectUpdateDto)">
+            <summary>
+            Update a project - search by {id}
+            </summary>
+            <param name="id"></param>
+            <param name="projectUpdateDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.ProjectController.Delete(System.Int32)">
+            <summary>
+            Delete a project - search by {id}
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:DiplomaProject.Controllers.TimeEntryController.Get">
             <summary>
             Find all the time entries
@@ -88,7 +122,7 @@
         </member>
         <member name="M:DiplomaProject.Controllers.TimeEntryController.Post(DiplomaProject.DataTransferObjects.TimeEntryCreateDto)">
             <summary>
-            Create a time entry
+            Create a new time entry
             </summary>
             <param name="timeEntryDto"></param>
             <returns></returns>

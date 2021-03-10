@@ -59,7 +59,7 @@ namespace DiplomaProject.Services.ClientServiceNS
             client.Country = clientUpdateDto.Country;
             this.diplomaProjectDbContext.Update(client);
             await this.diplomaProjectDbContext.SaveChangesAsync();
-            return null;
+            return this.mapper.Map<ClientDto>(client);
         }
 
         public async Task<ClientDto> Delete(int id)
@@ -71,7 +71,7 @@ namespace DiplomaProject.Services.ClientServiceNS
             }
             this.diplomaProjectDbContext.Remove(client);
             await this.diplomaProjectDbContext.SaveChangesAsync();
-            return this.mapper.Map<ClientDto>(client);
+            return null;
         }
     }
 }

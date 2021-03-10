@@ -68,7 +68,7 @@ namespace DiplomaProject.Controllers
         }
 
         /// <summary>
-        /// Create a time entry
+        /// Create a new time entry
         /// </summary>
         /// <param name="timeEntryDto"></param>
         /// <returns></returns>

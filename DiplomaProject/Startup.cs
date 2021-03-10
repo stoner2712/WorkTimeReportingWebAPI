@@ -8,6 +8,7 @@ using DiplomaProject.Models;
 using DiplomaProject.Services.TimeEntryServiceNS;
 using DiplomaProject.Services.EmployeeServiceNS;
 using DiplomaProject.Services.ClientServiceNS;
+using DiplomaProject.Services.ProjectServiceNS;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -92,6 +93,7 @@ namespace DiplomaProject
             services.AddScoped<ITimeEntryService, TimeEntryService>();
             services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddScoped<IClientService, ClientService>();
+            services.AddScoped<IProjectService, ProjectService>();
         }
     }
 }
