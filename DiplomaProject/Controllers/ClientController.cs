@@ -58,7 +58,7 @@ namespace DiplomaProject.Controllers
             }
             catch (ArgumentException e)
             {
-                return BadRequest(e.Message);
+                return NotFound(e.Message);
             }
             catch (Exception e)
             {
@@ -103,7 +103,7 @@ namespace DiplomaProject.Controllers
             }
             catch (ArgumentException e)
             {
-                return BadRequest(e.Message);
+                return NotFound(e.Message);
             }
             catch (Exception e)
             {
@@ -126,7 +126,7 @@ namespace DiplomaProject.Controllers
             }
             catch (ArgumentException e)
             {
-                return BadRequest(e.Message);
+                return NotFound(e.Message);
             }
             catch (Exception e)
             {
