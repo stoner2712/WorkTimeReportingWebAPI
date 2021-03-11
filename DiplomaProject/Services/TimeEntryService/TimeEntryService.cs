@@ -69,5 +69,13 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
             var allTimeEntries = await this.diplomaProjectDbContext.TimeEntries.ToListAsync();
             return this.mapper.Map<List<TimeEntry>, List<TimeEntryDto>>(allTimeEntries);
         }
+
+        public async Task<IEnumerable<TimeEntryDto>> GetTimeEntriesForEmployee(int employeeId, int monthNumber) // lub zamiast List można wpisać IEnumerable
+        {
+            //var allTimeEntriesForEmployee = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.EmployeeId == employeeId).ToListAsync();
+            //var timeEntriesFillteredInMemory = allTimeEntriesForEmployee.Where(te => te.Date.Month == monthNumber); // filtrowanie w pamięci
+            var allTimeEntriesForEmployeePerMonth = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.EmployeeId == employeeId && te.Date.Month == monthNumber).ToListAsync();
+            return this.mapper.Map<IEnumerable<TimeEntry>, List<TimeEntryDto>>(allTimeEntriesForEmployeePerMonth); 
+        }
     }
 }

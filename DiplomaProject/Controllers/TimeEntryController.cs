@@ -134,6 +134,21 @@ namespace DiplomaProject.Controllers
                 return BadRequest(e);
             }
         }
+
+        [HttpGet("Employee/{id}/Month/{monthNumber}")]
+        public async Task<ActionResult> GetTimeEntriesForEmployee(int id, int monthNumber, int test)
+        {
+            try
+            {
+                var timeEntriesForEmployee = await this.timeEntryService.GetTimeEntriesForEmployee(id, monthNumber);
+                return Ok(timeEntriesForEmployee);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+
+        }
     }
 }
 
