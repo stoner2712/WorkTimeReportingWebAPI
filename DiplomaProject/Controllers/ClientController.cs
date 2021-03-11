@@ -67,7 +67,7 @@ namespace DiplomaProject.Controllers
         }
 
         /// <summary>
-        /// Create a client
+        /// Create a new client
         /// </summary>
         /// <param name="clientDto"></param>
         /// <returns></returns>

@@ -1,4 +1,6 @@
-﻿using DiplomaProject.Models;
+﻿using DiplomaProject.DataTransferObjects;
+using DiplomaProject.Models;
+using DiplomaProject.Services.ProjectServiceNS;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
@@ -14,44 +16,121 @@ namespace DiplomaProject.Controllers
     [ApiController]
     public class ProjectController : ControllerBase
     {
-        private readonly DiplomaProjectDbContext diplomaProjectDbContext;
-        public ProjectController(DiplomaProjectDbContext context)
+        private IProjectService projectService;
+        public ProjectController(IProjectService projectService)
         {
-            diplomaProjectDbContext = context;
+            this.projectService = projectService;
         }
 
+        /// <summary>
+        /// Find all the projects
+        /// </summary>
+        /// <returns></returns>
         // GET: api/<InvoicesController>
         [HttpGet]
-        public ActionResult<IEnumerable> Get()
+        public async Task<ActionResult<IEnumerable>> Get()
         {
-            var projects = diplomaProjectDbContext.Projects;
-            return Ok(projects);
+            try
+            {
+                var allProjects = await this.projectService.Get();
+                return Ok(allProjects);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
+        /// <summary>
+        /// Find a project - search by {id}
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // GET api/<ProjectController>/5
         [HttpGet("{id}")]
-        public Project Get(int id)
+        public async Task<ActionResult> Get(int id)
         {
-            var project = diplomaProjectDbContext.Projects.FirstOrDefault(e => e.ProjectId == id);
-            return project;
+            try
+            {
+                var project = await this.projectService.Get(id);
+                return Ok(project);
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
+        /// <summary>
+        /// Create a new project
+        /// </summary>
+        /// <param name="projectDto"></param>
         // POST api/<ProjectController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult> Post([FromBody] ProjectCreateDto projectDto)
         {
+            try
+            {
+                var project = await this.projectService.Create(projectDto);
+                return Ok(project);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
+        /// <summary>
+        /// Update a project - search by {id}
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="projectUpdateDto"></param>
+        /// <returns></returns>
         // PUT api/<ProjectController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<ActionResult> Put(int id, [FromBody] ProjectUpdateDto projectUpdateDto)
         {
+            try
+            {
+                var project = await this.projectService.Update(id, projectUpdateDto);
+                return Ok(project);
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
+        /// <summary>
+        /// Delete a project - search by {id}
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // DELETE api/<ProjectController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
+            try
+            {
+                var client = await this.projectService.Delete(id);
+                return Ok();
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
     }
 }

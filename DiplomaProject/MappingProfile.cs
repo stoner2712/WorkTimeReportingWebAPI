@@ -20,6 +20,9 @@ namespace DiplomaProject
 
             CreateMap<Client, ClientDto>();
             CreateMap<ClientCreateDto, Client>();
+
+            CreateMap<Project, ProjectDto>();
+            CreateMap<ProjectCreateDto, Project>();
         }
     }
 }

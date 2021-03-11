@@ -68,7 +68,7 @@ namespace DiplomaProject.Controllers
         }
 
         /// <summary>
-        /// Create an employee
+        /// Create a new employee
         /// </summary>
         /// <param name="employeeDto"></param>
         /// <returns></returns>
