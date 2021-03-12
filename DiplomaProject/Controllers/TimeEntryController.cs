@@ -135,6 +135,13 @@ namespace DiplomaProject.Controllers
             }
         }
 
+        /// <summary>
+        /// Find all the time entries for an employee in a given month - search by employee {id} and month number
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="monthNumber"></param>
+        /// <param name="test"></param>
+        /// <returns></returns>
         [HttpGet("Employee/{id}/Month/{monthNumber}")]
         public async Task<ActionResult> GetTimeEntriesForEmployee(int id, int monthNumber, int test)
         {
@@ -147,8 +154,64 @@ namespace DiplomaProject.Controllers
             {
                 return BadRequest(e);
             }
+        }
 
+        /// <summary>
+        /// Find all the time entries for all the employees in a given month - search by month number
+        /// </summary>
+        /// <param name="monthNumber"></param>
+        /// <returns></returns>
+        [HttpGet("Employee/Month/{monthNumber}")]
+        public async Task<ActionResult> GetAllTimeEntriesForAllEmployees(int monthNumber)
+        {
+            try
+            {
+                var allTimeEntriesForAllEmployees = await this.timeEntryService.GetAllTimeEntriesForAllEmployees(monthNumber);
+                return Ok(allTimeEntriesForAllEmployees);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        /// <summary>
+        /// Find all the time entries for a project in a given month - search by project {id} and month number
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="monthNumber"></param>
+        /// <returns></returns>
+        [HttpGet("Project/{id}/Month{monthNumber}")]
+        public async Task<ActionResult> GetTimeEntriesForProject(int id, int monthNumber)
+        {
+            try
+            {
+                var getAllTimeEntriesForProject = await this.timeEntryService.GetTimeEntriesForProject(id, monthNumber);
+                return Ok(getAllTimeEntriesForProject);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        /// <summary>
+        /// Find all the time entries for a project from the begining - search by project {id} 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("Project/{id}")]
+        public async Task<ActionResult> GetAllTimeEntriesForProjectFromBegining(int id)
+        {
+            try
+            {
+                var allTimeEntriesForProjectFromBegining = await this.timeEntryService.GetAllTimeEntriesForProjectFromBegining(id);
+                return Ok(allTimeEntriesForProjectFromBegining);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
     }
 }
-

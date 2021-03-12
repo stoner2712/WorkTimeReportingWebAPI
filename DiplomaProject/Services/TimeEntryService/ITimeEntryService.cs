@@ -14,5 +14,8 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
         Task<TimeEntryDto> Create(TimeEntryCreateDto timeEntryCreateDto);
         Task<TimeEntryDto> Delete(int id);
         Task<IEnumerable<TimeEntryDto>> GetTimeEntriesForEmployee(int employeeId, int monthNumber);
+        Task<IEnumerable<TimeEntryDto>> GetAllTimeEntriesForAllEmployees(int monthNumber);
+        Task<IEnumerable<TimeEntryDto>> GetTimeEntriesForProject(int projectId, int monthNumber);
+        Task<IEnumerable<TimeEntryDto>> GetAllTimeEntriesForProjectFromBegining(int projectId);
     }
 }
