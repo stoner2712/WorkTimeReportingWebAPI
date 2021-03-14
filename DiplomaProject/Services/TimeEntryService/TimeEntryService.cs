@@ -78,13 +78,13 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
             return this.mapper.Map<IEnumerable<TimeEntry>, List<TimeEntryDto>>(allTimeEntriesForEmployeePerMonth).OrderBy(te => te.TimeEntryId);
         }
 
-        public async Task<IEnumerable<TimeEntryDto>> GetAllTimeEntriesForAllEmployees(int monthNumber)
+        public async Task<IEnumerable<TimeEntryDto>> GetAllTimeEntriesForGivenMonth(int monthNumber)
         {
-            var allTimeEntriesForAllEmployeesPerMonth = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.Date.Month == monthNumber).ToListAsync();
-            return this.mapper.Map<IEnumerable<TimeEntry>, List<TimeEntryDto>>(allTimeEntriesForAllEmployeesPerMonth).OrderBy(te => te.TimeEntryId);
+            var allTimeEntriesForGivenMonth = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.Date.Month == monthNumber).ToListAsync();
+            return this.mapper.Map<IEnumerable<TimeEntry>, List<TimeEntryDto>>(allTimeEntriesForGivenMonth).OrderBy(te => te.TimeEntryId);
         }
 
-        public async Task<IEnumerable<TimeEntryDto>> GetTimeEntriesForProject(int projectId, int monthNumber)
+        public async Task<IEnumerable<TimeEntryDto>> GetTimeEntriesForProjectPerMonth(int projectId, int monthNumber)
         {
             var allTimeEntriesForProjectPerMonth = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.ProjectId == projectId && te.Date.Month == monthNumber).ToListAsync();
             return this.mapper.Map<List<TimeEntry>, List<TimeEntryDto>>(allTimeEntriesForProjectPerMonth).OrderBy(te => te.TimeEntryId);

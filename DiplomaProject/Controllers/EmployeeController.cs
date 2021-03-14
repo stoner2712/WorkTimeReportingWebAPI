@@ -149,14 +149,14 @@ namespace DiplomaProject.Controllers
         /// <summary>
         /// Find all the employees working on a given project - search by project {id}
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="projectId"></param>
         /// <returns></returns>
-        [HttpGet("Project/{id}")]
-        public async Task<ActionResult> GetAllEmployeesWorkingOnProject(int id)
+        [HttpGet("Project/{projectId}")]
+        public async Task<ActionResult> GetAllEmployeesWorkingOnProject(int projectId)
         {
             try
             {
-                var allEmployeesWorkingOnProject = await this.employeeService.GetAllEmployeesWorkingOnProject(id);
+                var allEmployeesWorkingOnProject = await this.employeeService.GetAllEmployeesWorkingOnProject(projectId);
                 return Ok(allEmployeesWorkingOnProject);
             }
             catch (Exception e)

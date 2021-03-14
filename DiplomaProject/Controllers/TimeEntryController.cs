@@ -138,16 +138,16 @@ namespace DiplomaProject.Controllers
         /// <summary>
         /// Find all the time entries for an employee in a given month - search by employee {id} and month number
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="employeeId"></param>
         /// <param name="monthNumber"></param>
         /// <param name="test"></param>
         /// <returns></returns>
-        [HttpGet("Employee/{id}/Month/{monthNumber}")]
-        public async Task<ActionResult> GetTimeEntriesForEmployee(int id, int monthNumber, int test)
+        [HttpGet("Employee/{employeeId}/Month/{monthNumber}")]
+        public async Task<ActionResult> GetTimeEntriesForEmployee(int employeeId, int monthNumber, int test)
         {
             try
             {
-                var timeEntriesForEmployee = await this.timeEntryService.GetTimeEntriesForEmployee(id, monthNumber);
+                var timeEntriesForEmployee = await this.timeEntryService.GetTimeEntriesForEmployee(employeeId, monthNumber);
                 return Ok(timeEntriesForEmployee);
             }
             catch (Exception e)
@@ -161,13 +161,13 @@ namespace DiplomaProject.Controllers
         /// </summary>
         /// <param name="monthNumber"></param>
         /// <returns></returns>
-        [HttpGet("Employee/Month/{monthNumber}")]
-        public async Task<ActionResult> GetAllTimeEntriesForAllEmployees(int monthNumber)
+        [HttpGet("Month/{monthNumber}")]
+        public async Task<ActionResult> GetAllTimeEntriesForGivenMonth(int monthNumber)
         {
             try
             {
-                var allTimeEntriesForAllEmployees = await this.timeEntryService.GetAllTimeEntriesForAllEmployees(monthNumber);
-                return Ok(allTimeEntriesForAllEmployees);
+                var allTimeEntriesForGivenMonth = await this.timeEntryService.GetAllTimeEntriesForGivenMonth(monthNumber);
+                return Ok(allTimeEntriesForGivenMonth);
             }
             catch (Exception e)
             {
@@ -178,16 +178,16 @@ namespace DiplomaProject.Controllers
         /// <summary>
         /// Find all the time entries for a project in a given month - search by project {id} and month number
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="projectId"></param>
         /// <param name="monthNumber"></param>
         /// <returns></returns>
-        [HttpGet("Project/{id}/Month{monthNumber}")]
-        public async Task<ActionResult> GetTimeEntriesForProject(int id, int monthNumber)
+        [HttpGet("Project/{projectId}/Month{monthNumber}")]
+        public async Task<ActionResult> GetTimeEntriesForProjectPerMonth(int projectId, int monthNumber)
         {
             try
             {
-                var getAllTimeEntriesForProject = await this.timeEntryService.GetTimeEntriesForProject(id, monthNumber);
-                return Ok(getAllTimeEntriesForProject);
+                var getAllTimeEntriesForProjectPerMonth = await this.timeEntryService.GetTimeEntriesForProjectPerMonth(projectId, monthNumber);
+                return Ok(getAllTimeEntriesForProjectPerMonth);
             }
             catch (Exception e)
             {
@@ -198,14 +198,14 @@ namespace DiplomaProject.Controllers
         /// <summary>
         /// Find all the time entries for a project from the begining - search by project {id} 
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="projectId"></param>
         /// <returns></returns>
-        [HttpGet("Project/{id}")]
-        public async Task<ActionResult> GetAllTimeEntriesForProjectFromBegining(int id)
+        [HttpGet("Project/{projectId}")]
+        public async Task<ActionResult> GetAllTimeEntriesForProjectFromBegining(int projectId)
         {
             try
             {
-                var allTimeEntriesForProjectFromBegining = await this.timeEntryService.GetAllTimeEntriesForProjectFromBegining(id);
+                var allTimeEntriesForProjectFromBegining = await this.timeEntryService.GetAllTimeEntriesForProjectFromBegining(projectId);
                 return Ok(allTimeEntriesForProjectFromBegining);
             }
             catch (Exception e)

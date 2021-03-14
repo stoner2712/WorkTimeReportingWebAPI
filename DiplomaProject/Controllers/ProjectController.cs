@@ -136,14 +136,14 @@ namespace DiplomaProject.Controllers
         /// <summary>
         /// Find all the projects for an employee - search by employee {id}
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="employeeId"></param>
         /// <returns></returns>
-        [HttpGet("Employee/{id}")]
-        public async Task<ActionResult> GetAllProjectsForAnEmployee(int id)
+        [HttpGet("Employee/{employeeId}")]
+        public async Task<ActionResult> GetAllProjectsForAnEmployee(int employeeId)
         {
             try
             {
-                var getAllProjectsForAnEmployee = await this.projectService.GetAllProjectsForAnEmployee(id);
+                var getAllProjectsForAnEmployee = await this.projectService.GetAllProjectsForAnEmployee(employeeId);
                 return Ok(getAllProjectsForAnEmployee);
             }
             catch (Exception e)
@@ -155,14 +155,14 @@ namespace DiplomaProject.Controllers
         /// <summary>
         /// Find all the projects from a client - search by client {id}
         /// </summary>
-        /// <param name="id"></param>
+        /// <param name="clientId"></param>
         /// <returns></returns>
-        [HttpGet("Client/{id}")]
-        public async Task<ActionResult> GetAllProjectsFromAClient(int id)
+        [HttpGet("Client/{clientId}")]
+        public async Task<ActionResult> GetAllProjectsFromAClient(int clientId)
         {
             try
             {
-                var getAllProjectsFromAClient = await this.projectService.GetAllProjectsFromAClient(id);
+                var getAllProjectsFromAClient = await this.projectService.GetAllProjectsFromAClient(clientId);
                 return Ok(getAllProjectsFromAClient);
             }
             catch (Exception e)
