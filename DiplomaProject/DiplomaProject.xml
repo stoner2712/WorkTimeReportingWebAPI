@@ -73,6 +73,13 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:DiplomaProject.Controllers.EmployeeController.GetAllEmployeesWorkingOnProject(System.Int32)">
+            <summary>
+            Find all the employees working on a given project - search by project {id}
+            </summary>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
         <member name="M:DiplomaProject.Controllers.ProjectController.Get">
             <summary>
             Find all the projects
@@ -107,6 +114,20 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:DiplomaProject.Controllers.ProjectController.GetAllProjectsForAnEmployee(System.Int32)">
+            <summary>
+            Find all the projects for an employee - search by employee {id}
+            </summary>
+            <param name="employeeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.ProjectController.GetAllProjectsFromAClient(System.Int32)">
+            <summary>
+            Find all the projects from a client - search by client {id}
+            </summary>
+            <param name="clientId"></param>
+            <returns></returns>
+        </member>
         <member name="M:DiplomaProject.Controllers.TimeEntryController.Get">
             <summary>
             Find all the time entries
@@ -139,6 +160,37 @@
             Delete a time entry - search by [id]
             </summary>
             <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.TimeEntryController.GetTimeEntriesForEmployee(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Find all the time entries for an employee in a given month - search by employee {id} and month number
+            </summary>
+            <param name="employeeId"></param>
+            <param name="monthNumber"></param>
+            <param name="test"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.TimeEntryController.GetAllTimeEntriesForGivenMonth(System.Int32)">
+            <summary>
+            Find all the time entries for all the employees in a given month - search by month number
+            </summary>
+            <param name="monthNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.TimeEntryController.GetTimeEntriesForProjectPerMonth(System.Int32,System.Int32)">
+            <summary>
+            Find all the time entries for a project in a given month - search by project {id} and month number
+            </summary>
+            <param name="projectId"></param>
+            <param name="monthNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.TimeEntryController.GetAllTimeEntriesForProjectFromBegining(System.Int32)">
+            <summary>
+            Find all the time entries for a project from the begining - search by project {id} 
+            </summary>
+            <param name="projectId"></param>
             <returns></returns>
         </member>
     </members>

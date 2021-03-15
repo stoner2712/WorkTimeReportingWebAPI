@@ -68,5 +68,17 @@ namespace DiplomaProject.Services.ProjectServiceNS
             await this.diplomaProjectDbContext.SaveChangesAsync();
             return null;
         }
+
+        public async Task<IEnumerable<ProjectDto>> GetAllProjectsForAnEmployee(int employeeId)
+        {
+            var allProjectsForAnEmployee = await this.diplomaProjectDbContext.Projects.Where(p => p.EmployeesProject.Any(ep => ep.EmployeeId == employeeId)).ToListAsync();
+            return this.mapper.Map<List<Project>, List<ProjectDto>>(allProjectsForAnEmployee).OrderBy(p => p.ProjectId);
+        }
+
+        public async Task<IEnumerable<ProjectDto>> GetAllProjectsFromAClient(int clientId)
+        {
+            var allProjectsFromAClient = await this.diplomaProjectDbContext.Projects.Where(p => p.ClientId == clientId).ToListAsync();
+            return this.mapper.Map<List<Project>, List<ProjectDto>>(allProjectsFromAClient).OrderBy(p => p.ProjectId);
+        }
     }
 }

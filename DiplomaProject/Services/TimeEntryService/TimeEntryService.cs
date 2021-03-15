@@ -30,7 +30,7 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
         public async Task<TimeEntryDto> Update(int id, TimeEntryUpdateDto timeEntryUpdateDto)
         {
             var timeEntry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
-            if(timeEntry == null)
+            if (timeEntry == null)
             {
                 throw new ArgumentException("Id not existing");
             }
@@ -75,7 +75,25 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
             //var allTimeEntriesForEmployee = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.EmployeeId == employeeId).ToListAsync();
             //var timeEntriesFillteredInMemory = allTimeEntriesForEmployee.Where(te => te.Date.Month == monthNumber); // filtrowanie w pamięci
             var allTimeEntriesForEmployeePerMonth = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.EmployeeId == employeeId && te.Date.Month == monthNumber).ToListAsync();
-            return this.mapper.Map<IEnumerable<TimeEntry>, List<TimeEntryDto>>(allTimeEntriesForEmployeePerMonth); 
+            return this.mapper.Map<IEnumerable<TimeEntry>, List<TimeEntryDto>>(allTimeEntriesForEmployeePerMonth).OrderBy(te => te.TimeEntryId);
+        }
+
+        public async Task<IEnumerable<TimeEntryDto>> GetAllTimeEntriesForGivenMonth(int monthNumber)
+        {
+            var allTimeEntriesForGivenMonth = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.Date.Month == monthNumber).ToListAsync();
+            return this.mapper.Map<IEnumerable<TimeEntry>, List<TimeEntryDto>>(allTimeEntriesForGivenMonth).OrderBy(te => te.TimeEntryId);
+        }
+
+        public async Task<IEnumerable<TimeEntryDto>> GetTimeEntriesForProjectPerMonth(int projectId, int monthNumber)
+        {
+            var allTimeEntriesForProjectPerMonth = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.ProjectId == projectId && te.Date.Month == monthNumber).ToListAsync();
+            return this.mapper.Map<List<TimeEntry>, List<TimeEntryDto>>(allTimeEntriesForProjectPerMonth).OrderBy(te => te.TimeEntryId);
+        }
+
+        public async Task<IEnumerable<TimeEntryDto>> GetAllTimeEntriesForProjectFromBegining(int projectId)
+        {
+            var allTimeEntriesForProjectFromBegining = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.ProjectId == projectId).ToListAsync();
+            return this.mapper.Map<List<TimeEntry>, List<TimeEntryDto>>(allTimeEntriesForProjectFromBegining).OrderBy(te => te.TimeEntryId);
         }
     }
 }

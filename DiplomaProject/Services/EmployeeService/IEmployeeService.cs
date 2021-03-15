@@ -11,5 +11,6 @@ namespace DiplomaProject.Services.EmployeeServiceNS
         Task<EmployeeDto> Create(EmployeeCreateDto employeeCreateDto);
         Task<EmployeeDto> Update(int id, EmployeeUpdateDto employeeUpdateDto);
         Task<EmployeeDto> Delete(int id);    // tu dodałem EmployeeDto, bo nie działało bez tego
+        Task<IEnumerable<EmployeeDto>> GetAllEmployeesWorkingOnProject(int projectId);
     }
 }

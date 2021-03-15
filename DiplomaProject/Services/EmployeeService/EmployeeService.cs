@@ -79,5 +79,11 @@ namespace DiplomaProject.Services.EmployeeServiceNS
             var allEmployees = await this.diplomaProjectDbContext.Employees.ToListAsync();
             return this.mapper.Map<List<Employee>, List<EmployeeDto>>(allEmployees);
         }
+
+        public async Task<IEnumerable<EmployeeDto>> GetAllEmployeesWorkingOnProject(int projectId)
+        {
+            var allEmployeesWorkingOnProject = await this.diplomaProjectDbContext.Employees.Where(e => e.EmployeeProjects.Any(ep => ep.ProjectId == projectId)).ToListAsync();
+            return this.mapper.Map<List<Employee>, List<EmployeeDto>>(allEmployeesWorkingOnProject).OrderBy(e => e.EmployeeId);
+        }
     }
 }

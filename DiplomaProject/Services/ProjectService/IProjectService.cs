@@ -13,5 +13,8 @@ namespace DiplomaProject.Services.ProjectServiceNS
         Task<ProjectDto> Create(ProjectCreateDto projectCreateDto);
         Task<ProjectDto> Update(int id, ProjectUpdateDto projectUpdateDto);
         Task<ProjectDto> Delete(int id);
+        Task<IEnumerable<ProjectDto>> GetAllProjectsForAnEmployee(int employeeId);
+        Task<IEnumerable<ProjectDto>> GetAllProjectsFromAClient(int clientId);
     }
 }
+

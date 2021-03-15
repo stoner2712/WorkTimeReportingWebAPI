@@ -132,5 +132,43 @@ namespace DiplomaProject.Controllers
                 return BadRequest(e);
             }
         }
+
+        /// <summary>
+        /// Find all the projects for an employee - search by employee {id}
+        /// </summary>
+        /// <param name="employeeId"></param>
+        /// <returns></returns>
+        [HttpGet("Employee/{employeeId}")]
+        public async Task<ActionResult> GetAllProjectsForAnEmployee(int employeeId)
+        {
+            try
+            {
+                var getAllProjectsForAnEmployee = await this.projectService.GetAllProjectsForAnEmployee(employeeId);
+                return Ok(getAllProjectsForAnEmployee);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        /// <summary>
+        /// Find all the projects from a client - search by client {id}
+        /// </summary>
+        /// <param name="clientId"></param>
+        /// <returns></returns>
+        [HttpGet("Client/{clientId}")]
+        public async Task<ActionResult> GetAllProjectsFromAClient(int clientId)
+        {
+            try
+            {
+                var getAllProjectsFromAClient = await this.projectService.GetAllProjectsFromAClient(clientId);
+                return Ok(getAllProjectsFromAClient);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
     }
 }

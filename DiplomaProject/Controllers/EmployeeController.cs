@@ -116,7 +116,6 @@ namespace DiplomaProject.Controllers
             }
         }
 
-
         /// <summary>
         /// Delete an employee - search by {id}
         /// </summary>
@@ -140,11 +139,30 @@ namespace DiplomaProject.Controllers
             {
                 return BadRequest(e); //tu pokaże się wszystko co jest w Exception
             }
+        }
 
-            //var employee = diplomaProjectDbContext.Employees.FirstOrDefault(e => e.EmployeeId == id);
-            //diplomaProjectDbContext.Remove(employee);
-            //diplomaProjectDbContext.SaveChanges();
-            //return Ok();
+        //var employee = diplomaProjectDbContext.Employees.FirstOrDefault(e => e.EmployeeId == id);
+        //diplomaProjectDbContext.Remove(employee);
+        //diplomaProjectDbContext.SaveChanges();
+        //return Ok();
+
+        /// <summary>
+        /// Find all the employees working on a given project - search by project {id}
+        /// </summary>
+        /// <param name="projectId"></param>
+        /// <returns></returns>
+        [HttpGet("Project/{projectId}")]
+        public async Task<ActionResult> GetAllEmployeesWorkingOnProject(int projectId)
+        {
+            try
+            {
+                var allEmployeesWorkingOnProject = await this.employeeService.GetAllEmployeesWorkingOnProject(projectId);
+                return Ok(allEmployeesWorkingOnProject);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
     }
 }
