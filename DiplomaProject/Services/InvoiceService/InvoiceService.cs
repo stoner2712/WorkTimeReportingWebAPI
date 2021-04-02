@@ -53,10 +53,10 @@ namespace DiplomaProject.Services.InvoiceServiceNS
             foreach (var timeEntry in timeEntries)
             {
                 timeEntry.InvoiceId = invoice.InvoiceId;   //przy\pisanie id danego invoice do time entries - krotek, czyli przypisuję FK w tabeli TimeEntry
-                invoice.Amount = invoice.Amount + timeEntry.AmountOfHours;
+                invoice.AmountOfHours = invoice.AmountOfHours + timeEntry.AmountOfHours;
             }
-            // invoice.TotalToPay = invoice.Amount * invoice.HourlyRate;
-            invoice.TotalToPay = invoice.Amount * invoice.Project.PricePerHour;
+            // invoice.TotalToPay = invoice.AmountOfHours * invoice.HourlyRate;
+            invoice.TotalToPay = invoice.AmountOfHours * invoice.Project.PricePerHour;
             await this.diplomaProjectDbContext.SaveChangesAsync();
             return this.mapper.Map<InvoiceDto>(invoice);
         }
@@ -74,7 +74,7 @@ namespace DiplomaProject.Services.InvoiceServiceNS
             invoice.Discount = invoiceUpdateDto.Discount;
             invoice.Tax = invoiceUpdateDto.Tax;
             invoice.TotalToPay = RecalculateInvoice(invoice);
-            invoice.Status = invoice.Status;
+            invoice.IsInvoicePaid = invoice.IsInvoicePaid;
             this.diplomaProjectDbContext.Update(invoice);
             await this.diplomaProjectDbContext.SaveChangesAsync();
             return this.mapper.Map<InvoiceDto>(invoice);
@@ -140,7 +140,7 @@ namespace DiplomaProject.Services.InvoiceServiceNS
             //        Discount = invoice.Discount,
             //        Tax = invoice.Tax,
             //        TotalToPay = invoice.TotalToPay,
-            //        Status = invoice.Status,
+            //        IsInvoicePaid = invoice.IsInvoicePaid,
             //    };
             //    result.Add(dto);
             //} 
@@ -175,7 +175,7 @@ namespace DiplomaProject.Services.InvoiceServiceNS
                     Discount = invoice.Discount,
                     Tax = invoice.Tax,
                     TotalToPay = invoice.TotalToPay,
-                    Status = invoice.Status,
+                    IsInvoicePaid = invoice.IsInvoicePaid,
                     TimeEntries = new List<TimeEntryDto>(),
                 };
 

@@ -9,7 +9,7 @@ namespace DiplomaProject.DataTransferObjects
     public class InvoiceDto : InvoiceUpdateDto
     {
         public long InvoiceId { get; set; }
-        public decimal Amount { get; set; }
+        public decimal AmountOfHours { get; set; }
     }
     public class InvoiceCreateDto : InvoiceUpdateDto
     {
@@ -23,7 +23,7 @@ namespace DiplomaProject.DataTransferObjects
         public decimal Discount { get; set; }
         public decimal Tax { get; set; }
         public decimal TotalToPay { get; set; }
-        public bool Status { get; set; }
+        public bool IsInvoicePaid { get; set; }
     }
     public class InvoiceForClientDto : InvoiceForProjectDto
     {
@@ -41,7 +41,7 @@ namespace DiplomaProject.DataTransferObjects
         public decimal Discount { get; set; }
         public decimal Tax { get; set; }
         public decimal TotalToPay { get; set; }
-        public bool Status { get; set; }
+        public bool IsInvoicePaid { get; set; }
 
     }
 
