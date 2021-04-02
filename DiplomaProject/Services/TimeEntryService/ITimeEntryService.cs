@@ -17,5 +17,7 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
         Task<IEnumerable<TimeEntryDto>> GetAllTimeEntriesForGivenMonth(int monthNumber);
         Task<IEnumerable<TimeEntryDto>> GetTimeEntriesForProjectPerMonth(int projectId, int monthNumber);
         Task<IEnumerable<TimeEntryDto>> GetAllTimeEntriesForProjectFromBegining(int projectId);
+        
+      
     }
 }

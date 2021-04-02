@@ -1,4 +1,6 @@
-﻿using DiplomaProject.Models;
+﻿using DiplomaProject.DataTransferObjects;
+using DiplomaProject.Models;
+using DiplomaProject.Services.InvoiceServiceNS;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
@@ -14,44 +16,189 @@ namespace DiplomaProject.Controllers
     [ApiController]
     public class InvoiceController : ControllerBase
     {
-        private readonly DiplomaProjectDbContext diplomaProjectDbContext;
-        public InvoiceController(DiplomaProjectDbContext context)
+
+        private IInvoiceService invoiceService;
+
+        public InvoiceController(IInvoiceService invoiceService)
         {
-            diplomaProjectDbContext = context;
+            this.invoiceService = invoiceService;
         }
 
+        /// <summary>
+        /// Find all the invoices
+        /// </summary>
+        /// <returns></returns>
         // GET: api/<InvoicesController>
         [HttpGet]
-        public ActionResult<IEnumerable> Get()
+        public async Task<ActionResult<IEnumerable>> Get()
         {
-            var invoices = diplomaProjectDbContext.Invoices;
-            return Ok(invoices);
+            try
+            {
+                var allInvoices = await this.invoiceService.Get();
+                return Ok(allInvoices);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
-
+        /// <summary>
+        /// Find an invoice - search by {id}
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // GET api/<InvoiceController>/5
         [HttpGet("{id}")]
-        public Invoice Get(int id)
+        public async Task<ActionResult> Get(int id)
         {
-            var invoice = diplomaProjectDbContext.Invoices.FirstOrDefault(e => e.InvoiceId == id);
-            return invoice;
+            try
+            {
+                var invoice = await this.invoiceService.Get(id);
+                return Ok(invoice);
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
+        /// <summary>
+        /// Create a new invoice
+        /// </summary>
+        /// <param name="invoiceCreateDto"></param>
+        /// <returns></returns>
         // POST api/<InvoiceController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult> Post([FromBody] InvoiceCreateDto invoiceCreateDto)
         {
+            try
+            {
+                var invoice = await this.invoiceService.Create(invoiceCreateDto);
+                return Ok(invoice);
+            }
+            catch (ArgumentException e)
+            {
+                return BadRequest(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
+        /// <summary>
+        /// Update an invoice - search by {id}
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="invoiceUpdateDto"></param>
+        /// <returns></returns>
         // PUT api/<InvoiceController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<ActionResult> Put(int id, [FromBody] InvoiceUpdateDto invoiceUpdateDto)
         {
+            try
+            {
+                var invoice = await this.invoiceService.Update(id, invoiceUpdateDto);
+                return Ok(invoice);
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
+        /// <summary>
+        /// Delete an invoice - search by {id}
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         // DELETE api/<InvoiceController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
+            try
+            {
+                var invoice = await this.invoiceService.Delete(id);
+                return Ok();
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        /// <summary>
+        /// Find all the invoices for a project - search by project {id}
+        /// </summary>
+        /// <param name="projectId"></param>
+        /// <returns></returns>
+        [HttpGet("Project/{projectId}")]
+        public async Task<ActionResult> GetAllInvoicesForProject(int projectId)
+        {
+            try
+            {
+                var allIvoicesForProject = await this.invoiceService.GetAllInvoicesForGivenProject(projectId);
+                return Ok(allIvoicesForProject);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        /// <summary>
+        /// Find all invoices and all projects for a client - search by client {id}
+        /// </summary>
+        /// <param name="clientId"></param>
+        /// <returns></returns>
+        [HttpGet("WithProjectsPerClient/{clientId}")]
+        public async Task<ActionResult> GetAllInvoicesForProjectsForGivenClient(int clientId)
+        {
+            try
+            {
+                var allIvoicesAndAllProjectsForGivenClient = await this.invoiceService.GetInvoicesForProjectsPerClient(clientId);
+                return Ok(allIvoicesAndAllProjectsForGivenClient);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        /// <summary>
+        /// Find all time entries for an invoice for a given project - search by project {id}
+        /// </summary>
+        /// <param name="projectId"></param>
+        /// <returns></returns>
+        [HttpGet("WithTimeEntriesPerProject/{projectId}")]
+        public async Task<ActionResult> GetInvoiceWithAllTimeEntriesForGivenProject(int projectId)
+        {
+            try
+            {
+                var invoiceWithAllTimeEntriesForGivenProject = await this.invoiceService.GetInvoiceWithTimeEntriesPerProject(projectId);
+                return Ok(invoiceWithAllTimeEntriesForGivenProject);
+
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
     }
 }

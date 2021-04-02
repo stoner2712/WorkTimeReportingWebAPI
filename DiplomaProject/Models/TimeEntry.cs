@@ -19,8 +19,10 @@ namespace DiplomaProject.Models
 
         public long EmployeeId { get; set; } //FK
         public long ProjectId { get; set; } //FK
+        public long? InvoiceId { get; set; } //FK
 
         public Employee Employee { get; set; } // Navigation Property to one Employee
         public Project Project { get; set; } // Navigation Property to one Project
+        public Invoice Invoice { get; set; } //Navigation Property to one Invoice
     }
 }

@@ -112,7 +112,7 @@ namespace DiplomaProject.Controllers
         }
 
         /// <summary>
-        /// Delete a client - search by{id}
+        /// Delete a client - search by {id}
         /// </summary>
         /// <param name="id"></param>
         // DELETE api/<ClientController>/5

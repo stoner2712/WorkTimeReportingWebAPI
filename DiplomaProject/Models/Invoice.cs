@@ -13,11 +13,19 @@ namespace DiplomaProject.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long InvoiceId { get; set; }
-        public DateTime DateFrom { get; set; }
-        public DateTime DateTo { get; set; }
-        public decimal TotalPrice { get; set; }
+        public DateTime Date { get; set; }
+        public DateTime DueDate { get; set; }
+        public  int Month { get; set; }
+        public decimal Amount { get; set; } // zmienić na AmountOfHours
+        //public decimal HourlyRate { get; set; } // to dodać - nie trzeba jest w Project.cs
+        public decimal Discount { get; set; }
+        public decimal Tax { get; set; }
+        public decimal TotalToPay { get; set; }
+        public bool Status { get; set; } // IsInvoicePaid
 
         public long ProjectId { get; set; } // FK
         public Project Project{ get; set; } // Navigation Property to one Project
+
+        public List<TimeEntry> TimeEntries { get; set; } // określa relację wiele TimeEntry do danej Invoice
     }
 }

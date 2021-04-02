@@ -15,6 +15,7 @@ namespace DiplomaProject.Services.ProjectServiceNS
         Task<ProjectDto> Delete(int id);
         Task<IEnumerable<ProjectDto>> GetAllProjectsForAnEmployee(int employeeId);
         Task<IEnumerable<ProjectDto>> GetAllProjectsFromAClient(int clientId);
+       
     }
 }
 

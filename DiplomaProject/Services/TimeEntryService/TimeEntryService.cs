@@ -95,5 +95,6 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
             var allTimeEntriesForProjectFromBegining = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.ProjectId == projectId).ToListAsync();
             return this.mapper.Map<List<TimeEntry>, List<TimeEntryDto>>(allTimeEntriesForProjectFromBegining).OrderBy(te => te.TimeEntryId);
         }
+       
     }
 }

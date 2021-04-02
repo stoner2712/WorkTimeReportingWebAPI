@@ -27,4 +27,6 @@ namespace DiplomaProject.DataTransferObjects
         public decimal AmountOfHours { get; set; }
         public string Comment { get; set; }
     }
+
 }
+

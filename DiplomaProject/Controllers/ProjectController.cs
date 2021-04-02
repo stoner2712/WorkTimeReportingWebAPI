@@ -170,5 +170,7 @@ namespace DiplomaProject.Controllers
                 return BadRequest(e);
             }
         }
+
+        
     }
 }
