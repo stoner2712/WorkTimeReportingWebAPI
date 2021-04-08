@@ -118,22 +118,6 @@ namespace DiplomaProject.Models
                 timeentries.Add(timeentry);
             }
             modelBuilder.Entity<TimeEntry>().HasData(timeentries);
-
-            //var invoices = new List<Invoice>();
-            //for (int i = 0; i < totalInvoices; i++)
-            //{
-            //    var invoice = new Invoice()
-            //    {
-            //        InvoiceId = i + 1,
-            //        DateFrom = faker.Date.Past(2, new DateTime(2020, 1, 1)), // data z zakresu 3 lat do tyłu począwszy od 1.1.2020
-            //        DateTo = faker.Date.Past(1, new DateTime(2021, 1, 1)),
-            //        TotalPrice = faker.Finance.Amount(6500, 99876, 2),
-            //        ProjectId = faker.Random.Number(1, totalProjects),
-            //    };
-            //    invoices.Add(invoice);
-            //}
-            //modelBuilder.Entity<Invoice>().HasData(invoices);
-
         }
 
         public DbSet<Client> Clients { get; set; }

@@ -80,6 +80,5 @@ namespace DiplomaProject.Services.ProjectServiceNS
             var allProjectsFromAClient = await this.diplomaProjectDbContext.Projects.Where(p => p.ClientId == clientId).ToListAsync();
             return this.mapper.Map<List<Project>, List<ProjectDto>>(allProjectsFromAClient).OrderBy(p => p.ProjectId);
         }
-        
     }
 }

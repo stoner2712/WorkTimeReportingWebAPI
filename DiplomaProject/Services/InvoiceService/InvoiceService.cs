@@ -35,28 +35,39 @@ namespace DiplomaProject.Services.InvoiceServiceNS
             {
                 throw new ArgumentException("Id not existing");
             }
+
             return this.mapper.Map<InvoiceDto>(invoice);
         }
 
         public async Task<InvoiceDto> Create(InvoiceCreateDto invoiceCreateDto)
         {
             var invoice = this.mapper.Map<Invoice>(invoiceCreateDto);
-            var invoiceId = await this.diplomaProjectDbContext.Invoices.FirstOrDefaultAsync(i => i.ProjectId == invoiceCreateDto.ProjectId && i.Month == invoiceCreateDto.Month);
+            var existingInvoice = await this.diplomaProjectDbContext.Invoices.Where(i => i.ProjectId == invoiceCreateDto.ProjectId && i.Month == invoiceCreateDto.Month)
+                .FirstOrDefaultAsync();
             // check if invoice already exist, if yes, return a relevant message 
-            if (invoice.ProjectId == invoiceCreateDto.ProjectId && invoice.Month == invoiceCreateDto.Month)
+            if (existingInvoice != null)
             {
-                throw new ArgumentException("An invoice with id number " + invoiceId.InvoiceId + " already exists for project id " + invoiceId.ProjectId + " and month " + invoiceId.Month);
+                throw new ArgumentException("An invoice with id number " + existingInvoice.InvoiceId + " already exists for project id " + existingInvoice.ProjectId
+                    + " and month " + existingInvoice.Month);
             }
+
             await this.diplomaProjectDbContext.AddAsync(invoice);
             await this.diplomaProjectDbContext.SaveChangesAsync();
             var timeEntries = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.ProjectId == invoiceCreateDto.ProjectId && te.Date.Month == invoiceCreateDto.Month).ToListAsync();
+            decimal totalAmountOfHours = 0;
             foreach (var timeEntry in timeEntries)
             {
-                timeEntry.InvoiceId = invoice.InvoiceId;   //przy\pisanie id danego invoice do time entries - krotek, czyli przypisuję FK w tabeli TimeEntry
-                invoice.AmountOfHours = invoice.AmountOfHours + timeEntry.AmountOfHours;
+                timeEntry.InvoiceId = invoice.InvoiceId;   //przypisanie id danego invoice do time entries - krotek, czyli przypisuję FK w tabeli TimeEntry
+                //invoice.AmountOfHours = invoice.AmountOfHours + timeEntry.AmountOfHours;
+                //invoice.AmountOfHours += timeEntry.AmountOfHours;  // to samo co powyżej, ale zastosowano DRY
+                totalAmountOfHours = totalAmountOfHours + timeEntry.AmountOfHours;
             }
-            // invoice.TotalToPay = invoice.AmountOfHours * invoice.HourlyRate;
-            invoice.TotalToPay = invoice.AmountOfHours * invoice.Project.PricePerHour;
+
+            //invoice.TotalToPay = invoice.AmountOfHours * invoice.HourlyRate;   // 1st v
+            //invoice.TotalToPay = invoice.AmountOfHours * invoice.Project.PricePerHour;  // 2nd v
+            Project project = await this.diplomaProjectDbContext.Projects.Where(p => p.ProjectId == invoice.ProjectId).FirstOrDefaultAsync();
+            invoice.TotalToPay = totalAmountOfHours * project.PricePerHour;
+            invoice.AmountOfHours = totalAmountOfHours;
             await this.diplomaProjectDbContext.SaveChangesAsync();
             return this.mapper.Map<InvoiceDto>(invoice);
         }
@@ -68,6 +79,7 @@ namespace DiplomaProject.Services.InvoiceServiceNS
             {
                 throw new ArgumentException("Id not existing");
             }
+
             invoice.Date = invoiceUpdateDto.Date;
             invoice.DueDate = invoiceUpdateDto.DueDate;
             invoice.Month = invoiceUpdateDto.Month;
@@ -83,11 +95,18 @@ namespace DiplomaProject.Services.InvoiceServiceNS
         public async Task<InvoiceDto> Delete(int id)
         {
             var invoice = await this.diplomaProjectDbContext.Invoices.FirstOrDefaultAsync(i => i.InvoiceId == id);
-            // poprawić -> znależć timeentries kt należa do tego invoice i ustawić na null w kolejnosci: 1st ustawic na null, 2nd save 3rd delete
             if (invoice == null)
             {
                 throw new ArgumentException("Id not existing");
             }
+
+            // wyszukanie wszystkich timeEntries dla danego invoice i ustawienie ich na null 
+            var timeEntries = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.InvoiceId == id).ToListAsync();
+            foreach (var element in timeEntries)
+            {
+                element.InvoiceId = null;
+            }
+
             this.diplomaProjectDbContext.Remove(invoice);
             await this.diplomaProjectDbContext.SaveChangesAsync();
             return null;
@@ -111,23 +130,13 @@ namespace DiplomaProject.Services.InvoiceServiceNS
             }
             return this.mapper.Map<List<Invoice>, List<InvoiceForClientDto>>(invoicesForProjectsPerClient).OrderBy(i => i.InvoiceId);
 
-            // OPCJA 2 - Wzór:
-            //public List<Person> GetCommonFriends(List<Person> people)
-            //{
-            //    List<Person> common = new List<Person>();
-            //    foreach (Person friend in people[0].Friends)
-            //        if (people[1].Friends.Contains(friend))
-            //            common.Add(friend);
-            //    return common;
-            //}
-
-            // kod
+            // OPCJA 2
 
             //var result = new List<InvoiceForClientDto>();
 
             //foreach (var invoice in invoicesForProjectsPerClient)
             //{
-            //    var dto = new InvoiceForClientDto()
+            //    var invoiceForTimeEntries = new InvoiceForClientDto()
             //    {
             //        InvoiceId = invoice.InvoiceId,
             //        ProjectId = invoice.ProjectId,
@@ -142,7 +151,7 @@ namespace DiplomaProject.Services.InvoiceServiceNS
             //        TotalToPay = invoice.TotalToPay,
             //        IsInvoicePaid = invoice.IsInvoicePaid,
             //    };
-            //    result.Add(dto);
+            //    result.Add(invoiceForTimeEntries);
             //} 
             //return result;
         }
@@ -151,7 +160,7 @@ namespace DiplomaProject.Services.InvoiceServiceNS
         {
             var invoiceWithAllTimeEntriesPerProject = await this.diplomaProjectDbContext.Invoices.Where(i => i.ProjectId == projectId)
                 .Include(i => i.TimeEntries).Include(i => i.Project).ToListAsync();
-            if (invoiceWithAllTimeEntriesPerProject == null) // dlaczego to nie działa?
+            if (invoiceWithAllTimeEntriesPerProject.Count == 0)  // dlaczego z null nie działa? 🤔
             {
                 throw new ArgumentException("Invoice for a given project is not existing");
             }
@@ -164,7 +173,7 @@ namespace DiplomaProject.Services.InvoiceServiceNS
             foreach (var invoice in invoiceWithAllTimeEntriesPerProject)
             {
 
-                var dto = new InvoiceForTimeEntryDto()
+                var invoiceForTimeEntriesDto = new InvoiceForTimeEntryDto()
                 {
                     ProjectId = invoice.ProjectId,
                     ProjectName = invoice.Project.ProjectName,
@@ -181,16 +190,16 @@ namespace DiplomaProject.Services.InvoiceServiceNS
 
                 foreach (var timeEntry in invoice.TimeEntries)
                 {
-                    var dto2 = new TimeEntryDto()
+                    var timeEntriesDto = new TimeEntryDto()
                     {
                         TimeEntryId = timeEntry.TimeEntryId,
                         Date = timeEntry.Date,
                         AmountOfHours = timeEntry.AmountOfHours,
                         Comment = timeEntry.Comment,
                     };
-                    dto.TimeEntries.Add(dto2);
+                    invoiceForTimeEntriesDto.TimeEntries.Add(timeEntriesDto);
                 };
-                result.Add(dto);
+                result.Add(invoiceForTimeEntriesDto);
             }
             return result;
         }
@@ -208,7 +217,6 @@ namespace DiplomaProject.Services.InvoiceServiceNS
             var pricePerHour = invoice.Project.PricePerHour;
             var recalculateInvoice = totalAmountOfHours * pricePerHour;
             return recalculateInvoice;
-
         }
     }
 }

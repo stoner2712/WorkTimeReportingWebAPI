@@ -189,7 +189,6 @@ namespace DiplomaProject.Controllers
             {
                 var invoiceWithAllTimeEntriesForGivenProject = await this.invoiceService.GetInvoiceWithTimeEntriesPerProject(projectId);
                 return Ok(invoiceWithAllTimeEntriesForGivenProject);
-
             }
             catch (ArgumentException e)
             {

@@ -16,12 +16,11 @@ namespace DiplomaProject.Models
         public DateTime Date { get; set; }
         public DateTime DueDate { get; set; }
         public  int Month { get; set; }
-        public decimal AmountOfHours { get; set; } // before Amount
-        //public decimal HourlyRate { get; set; } // to dodać - nie trzeba jest w Project.cs
+        public decimal AmountOfHours { get; set; }
         public decimal Discount { get; set; }
         public decimal Tax { get; set; }
         public decimal TotalToPay { get; set; }
-        public bool IsInvoicePaid { get; set; } // before Status
+        public bool IsInvoicePaid { get; set; }
 
         public long ProjectId { get; set; } // FK
         public Project Project{ get; set; } // Navigation Property to one Project
