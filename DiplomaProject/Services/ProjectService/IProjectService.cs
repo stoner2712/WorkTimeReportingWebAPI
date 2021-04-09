@@ -17,4 +17,3 @@ namespace DiplomaProject.Services.ProjectServiceNS
         Task<IEnumerable<ProjectDto>> GetAllProjectsFromAClient(int clientId);
     }
 }
-

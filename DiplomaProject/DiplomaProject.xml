@@ -34,7 +34,7 @@
         </member>
         <member name="M:DiplomaProject.Controllers.ClientController.Delete(System.Int32)">
             <summary>
-            Delete a client - search by{id}
+            Delete a client - search by {id}
             </summary>
             <param name="id"></param>
         </member>
@@ -76,6 +76,62 @@
         <member name="M:DiplomaProject.Controllers.EmployeeController.GetAllEmployeesWorkingOnProject(System.Int32)">
             <summary>
             Find all the employees working on a given project - search by project {id}
+            </summary>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.InvoiceController.Get">
+            <summary>
+            Find all the invoices
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.InvoiceController.Get(System.Int32)">
+            <summary>
+            Find an invoice - search by {id}
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.InvoiceController.Post(DiplomaProject.DataTransferObjects.InvoiceCreateDto)">
+            <summary>
+            Create a new invoice
+            </summary>
+            <param name="invoiceCreateDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.InvoiceController.Put(System.Int32,DiplomaProject.DataTransferObjects.InvoiceUpdateDto)">
+            <summary>
+            Update an invoice - search by {id}
+            </summary>
+            <param name="id"></param>
+            <param name="invoiceUpdateDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.InvoiceController.Delete(System.Int32)">
+            <summary>
+            Delete an invoice - search by {id}
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.InvoiceController.GetAllInvoicesForProject(System.Int32)">
+            <summary>
+            Find all the invoices for a project - search by project {id}
+            </summary>
+            <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.InvoiceController.GetAllInvoicesForProjectsForGivenClient(System.Int32)">
+            <summary>
+            Find all invoices and all projects for a client - search by client {id}
+            </summary>
+            <param name="clientId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.InvoiceController.GetInvoiceWithAllTimeEntriesForGivenProject(System.Int32)">
+            <summary>
+            Find all time entries for an invoice for a given project - search by project {id}
             </summary>
             <param name="projectId"></param>
             <returns></returns>
