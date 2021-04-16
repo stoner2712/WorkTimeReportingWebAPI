@@ -1,4 +1,5 @@
 ﻿using DiplomaProject.DataTransferObjects;
+using DiplomaProject.Services.PdfService;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,5 +18,6 @@ namespace DiplomaProject.Services.InvoiceServiceNS
         Task<IEnumerable<InvoiceDto>> GetAllInvoicesForGivenProject(int projectId);
         Task<IEnumerable<InvoiceForClientDto>> GetInvoicesForProjectsPerClient(int clientId);
         Task<IEnumerable<InvoiceForTimeEntryDto>> GetInvoiceWithTimeEntriesPerProject(int projectId);
+        byte[] GenerateInvoicePdf(int invoiceId);
     }
 }

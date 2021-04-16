@@ -19,7 +19,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-
+using DinkToPdf.Contracts;
+using DinkToPdf;
+using DiplomaProject.Services.PdfService;
 
 namespace DiplomaProject
 {
@@ -32,10 +34,13 @@ namespace DiplomaProject
 
         public IConfiguration Configuration { get; }
 
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DiplomaProjectDbContext>(opts => opts.UseNpgsql(Configuration["ConnectionString:postgreConnectionString"]));
+
+            services.AddSingleton(typeof(IConverter), new SynchronizedConverter(new PdfTools()));
 
             services.AddControllers();
 
@@ -96,6 +101,7 @@ namespace DiplomaProject
             services.AddScoped<IClientService, ClientService>();
             services.AddScoped<IProjectService, ProjectService>();
             services.AddScoped<IInvoiceService, InvoiceService>();
+            services.AddScoped<IReportService, ReportService>();
         }
     }
 }
