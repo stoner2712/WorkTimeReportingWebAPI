@@ -1,4 +1,5 @@
 ﻿using DiplomaProject.DataTransferObjects;
+using DiplomaProject.Models;
 using DiplomaProject.Services.PdfService;
 using System;
 using System.Collections;
@@ -19,5 +20,7 @@ namespace DiplomaProject.Services.InvoiceServiceNS
         Task<IEnumerable<InvoiceForClientDto>> GetInvoicesForProjectsPerClient(int clientId);
         Task<IEnumerable<InvoiceForTimeEntryDto>> GetInvoiceWithTimeEntriesPerProject(int projectId);
         byte[] GenerateInvoicePdf(int invoiceId);
+        Task<InvoicePeriodClosureDto> CloseInvoicePeriod(int invoiceId);
+        bool CheckIfInvoicePeriodIsOpen(TimeEntry timeEntry);
     }
 }

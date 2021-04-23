@@ -26,7 +26,7 @@ namespace DiplomaProject.Controllers
         //private IConverter _converter;
 
         private readonly IReportService _reportService;
-        
+
         public InvoiceController(IInvoiceService invoiceService, IReportService reportService) // (..., IConverter converter)
         {
             this.invoiceService = invoiceService;
@@ -217,7 +217,7 @@ namespace DiplomaProject.Controllers
         // /// <param name="id"></param>
         // /// <returns></returns>
         [HttpGet("GeneratePdfDEMO/{id}")]
-               
+
         public IActionResult GetInvoiceToPdfDEMO(int invoiceId)
         {
             try
@@ -260,5 +260,30 @@ namespace DiplomaProject.Controllers
                 return BadRequest(e);
             }
         }
+
+        /// <summary>
+        /// Close invoice period - seatch by invoice {id}
+        /// </summary>
+        /// <param name="invoiceId"></param>
+        /// <returns></returns>
+        [HttpGet("ClosePeriod/{invoiceId}")]
+
+        public async Task<ActionResult> ClosePeriod(int invoiceId)
+        {
+            try
+            {
+                var invoicePeriod = await this.invoiceService.CloseInvoicePeriod(invoiceId);
+                return Ok(invoicePeriod);
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
     }
 }
+

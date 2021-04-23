@@ -146,6 +146,13 @@
             Generate pdf for a given invoice - search by invoice {id}
             </summary>
         </member>
+        <member name="M:DiplomaProject.Controllers.InvoiceController.ClosePeriod(System.Int32)">
+            <summary>
+            Close invoice period - seatch by invoice {id}
+            </summary>
+            <param name="invoiceId"></param>
+            <returns></returns>
+        </member>
         <member name="M:DiplomaProject.Controllers.ProjectController.Get">
             <summary>
             Find all the projects

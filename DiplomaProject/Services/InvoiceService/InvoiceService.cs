@@ -213,7 +213,7 @@ namespace DiplomaProject.Services.InvoiceServiceNS
 
         public byte[] GenerateInvoicePdf(int id)
         {
-            var invoice = this.diplomaProjectDbContext.Invoices.Include(i=>i.Project.Client).Include(i=>i.Project.TimeEntries).FirstOrDefault(i => i.InvoiceId == id);
+            var invoice = this.diplomaProjectDbContext.Invoices.Include(i => i.Project.Client).Include(i => i.Project.TimeEntries).FirstOrDefault(i => i.InvoiceId == id);
             if (invoice == null)
             {
                 throw new ArgumentException("Invoice with a given id = " + id + " is not existing");
@@ -223,20 +223,20 @@ namespace DiplomaProject.Services.InvoiceServiceNS
             {
                 //ClientName = "IMB",       // dane wpisane na sztywno
                 //ProjectName = "Secret",
-                
-               ClientName = invoice.Project.Client.ClientName,
-               BuildingNumber = invoice.Project.Client.BuildingNumber,
-               StreetName = invoice.Project.Client.StreetName,
-               City = invoice.Project.Client.City,
-               PostCode = invoice.Project.Client.PostCode,
-               Country = invoice.Project.Client.Country,
-               ProjectName = invoice.Project.ProjectName,
-               Month = invoice.Month,
-               AmountOdHours = invoice.AmountOfHours,
-               PricePerHour = invoice.Project.PricePerHour,
-               TotalToPay = invoice.TotalToPay,
-               Date = invoice.Date,
-               TimeEntries = new List<TimeEntryDto>(),
+
+                ClientName = invoice.Project.Client.ClientName,
+                BuildingNumber = invoice.Project.Client.BuildingNumber,
+                StreetName = invoice.Project.Client.StreetName,
+                City = invoice.Project.Client.City,
+                PostCode = invoice.Project.Client.PostCode,
+                Country = invoice.Project.Client.Country,
+                ProjectName = invoice.Project.ProjectName,
+                Month = invoice.Month,
+                AmountOdHours = invoice.AmountOfHours,
+                PricePerHour = invoice.Project.PricePerHour,
+                TotalToPay = invoice.TotalToPay,
+                Date = invoice.Date,
+                TimeEntries = new List<TimeEntryDto>(),
             };
 
             foreach (var timeEntry in invoice.TimeEntries)
@@ -251,8 +251,39 @@ namespace DiplomaProject.Services.InvoiceServiceNS
                 invoiceData.TimeEntries.Add(timeEntriesDto);
             };
 
-            var pdfFile =  _reportService.GenerateInvoicePdf(invoiceData, id);
+            var pdfFile = _reportService.GenerateInvoicePdf(invoiceData, id);
             return pdfFile;
+        }
+        public async Task<InvoicePeriodClosureDto> CloseInvoicePeriod(int invoiceId)
+        {
+            var invoice = await this.diplomaProjectDbContext.Invoices.FirstOrDefaultAsync(i => i.InvoiceId == invoiceId);
+            if (invoice == null)
+            {
+                throw new ArgumentException("Id not existing");
+            }
+            if (invoice.IsInvoicePeriodClosed == true)
+            {
+                throw new ArgumentException("Invoice period already closed");
+            }
+
+            invoice.IsInvoicePeriodClosed = true;
+            await this.diplomaProjectDbContext.SaveChangesAsync();
+            return this.mapper.Map<InvoicePeriodClosureDto>(invoice);
+        }
+
+        public bool CheckIfInvoicePeriodIsOpen(TimeEntry timeEntry)
+        {
+            var invoices = this.diplomaProjectDbContext.Invoices.Include(i => i.TimeEntries).Where(i => i.ProjectId == timeEntry.ProjectId
+                            && i.Month == timeEntry.Date.Month || i.InvoiceId == timeEntry.InvoiceId).ToList();
+
+            foreach (var invoice in invoices)
+            {
+                if (invoice.IsInvoicePeriodClosed == true)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
 
         // DRY - do not repeat yourself
@@ -265,6 +296,7 @@ namespace DiplomaProject.Services.InvoiceServiceNS
                 Debug.WriteLine("to jest iteracja");
                 totalAmountOfHours = totalAmountOfHours + timeEntry.AmountOfHours;
             }
+
             var pricePerHour = invoice.Project.PricePerHour;
             var recalculateInvoice = totalAmountOfHours * pricePerHour;
             return recalculateInvoice;
