@@ -23,14 +23,11 @@ namespace DiplomaProject.Controllers
 
         private IInvoiceService invoiceService;
 
-        //private IConverter _converter;
-
         private readonly IReportService _reportService;
 
-        public InvoiceController(IInvoiceService invoiceService, IReportService reportService) // (..., IConverter converter)
+        public InvoiceController(IInvoiceService invoiceService, IReportService reportService)
         {
             this.invoiceService = invoiceService;
-            // _converter = converter;
             _reportService = reportService;
 
         }
