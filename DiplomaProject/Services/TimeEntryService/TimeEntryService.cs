@@ -27,8 +27,8 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
         {
 
             var timeEntry = this.mapper.Map<TimeEntry>(timeEntryDto);
-            var isPeriodOpenCheck = invoiceService.CheckIfInvoicePeriodIsClosed(timeEntry.Date.Month, timeEntry.ProjectId);
-            if (isPeriodOpenCheck == true)
+            var isPeriodClosedCheck = invoiceService.CheckIfInvoicePeriodIsClosed(timeEntry.Date.Month, timeEntry.ProjectId);
+            if (isPeriodClosedCheck)
             {
                 throw new ArgumentException("This action stopped due to invoice period already closed");
             }
@@ -46,8 +46,8 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
                 throw new ArgumentException("Id not existing");
             }
 
-            var isPeriodOpenCheck = invoiceService.CheckIfInvoicePeriodIsClosed(timeEntry.Date.Month, timeEntry.ProjectId);
-            if (isPeriodOpenCheck == true)
+            var isPeriodClosedCheck = invoiceService.CheckIfInvoicePeriodIsClosed(timeEntry.Date.Month, timeEntry.ProjectId);
+            if (isPeriodClosedCheck)
             {
                 throw new ArgumentException("This action stopped due to invoice period already closed");
             }
@@ -93,7 +93,7 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
             }
 
             var isPeriodClosedCheck = invoiceService.CheckIfInvoicePeriodIsClosed(timeEntry.Date.Month, timeEntry.ProjectId);
-            if (isPeriodClosedCheck == true)
+            if (isPeriodClosedCheck)
             {
                 throw new ArgumentException("This action stopped due to invoice period already closed");
             }
