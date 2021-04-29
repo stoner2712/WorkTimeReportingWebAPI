@@ -1,10 +1,14 @@
-﻿using DiplomaProject.DataTransferObjects;
+﻿using DinkToPdf;
+using DinkToPdf.Contracts;
+using DiplomaProject.DataTransferObjects;
 using DiplomaProject.Models;
 using DiplomaProject.Services.InvoiceServiceNS;
+using DiplomaProject.Services.PdfService;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,9 +23,13 @@ namespace DiplomaProject.Controllers
 
         private IInvoiceService invoiceService;
 
-        public InvoiceController(IInvoiceService invoiceService)
+        private readonly IReportService _reportService;
+
+        public InvoiceController(IInvoiceService invoiceService, IReportService reportService)
         {
             this.invoiceService = invoiceService;
+            _reportService = reportService;
+
         }
 
         /// <summary>
@@ -199,5 +207,80 @@ namespace DiplomaProject.Controllers
                 return BadRequest(e);
             }
         }
+
+        /// <summary>
+        /// Generate pdf for a given invoice - search by invoice {id}
+        /// </summary>
+        // /// <param name="id"></param>
+        // /// <returns></returns>
+        [HttpGet("GeneratePdfDEMO/{id}")]
+
+        public IActionResult GetInvoiceToPdfDEMO(int invoiceId)
+        {
+            try
+            {
+                var pdfFile = _reportService.GeneratePdfReportExample(invoiceId);
+                return File(pdfFile,
+                "application/octet-stream", "Invoice_Id_" + invoiceId + ".pdf");
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        /// <summary>
+        /// Generate pdf for a given invoice - search by invoice {id}
+        /// </summary>
+        // /// <param name="id"></param>
+        // /// <returns></returns>
+        [HttpGet("GeneratePdf/{invoiceId}")]
+
+        public IActionResult GetInvoiceToPdf(int invoiceId)
+        {
+            try
+            {
+                var pdfFile = invoiceService.GenerateInvoicePdf(invoiceId);
+                return File(pdfFile,
+                "application/octet-stream", "Invoice_Id_" + invoiceId + ".pdf");
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        /// <summary>
+        /// Close invoice period - seatch by invoice {id}
+        /// </summary>
+        /// <param name="invoiceId"></param>
+        /// <returns></returns>
+        [HttpGet("ClosePeriod/{invoiceId}")]
+
+        public async Task<ActionResult> ClosePeriod(int invoiceId)
+        {
+            try
+            {
+                var invoicePeriod = await this.invoiceService.CloseInvoicePeriod(invoiceId);
+                return Ok(invoicePeriod);
+            }
+            catch (ArgumentException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
     }
 }
+

@@ -2,6 +2,10 @@
 using DiplomaProject.DataTransferObjects;
 using DiplomaProject.Models;
 using DiplomaProject.Services.InvoiceServiceNS;
+using DinkToPdf;
+using DinkToPdf.Contracts;
+using DiplomaProject.Services.PdfService;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -16,10 +20,13 @@ namespace DiplomaProject.Services.InvoiceServiceNS
         private IMapper mapper;
         private readonly DiplomaProjectDbContext diplomaProjectDbContext;
 
-        public InvoiceService(IMapper mapper, DiplomaProjectDbContext diplomaProjectDbContext)
+        private readonly IReportService _reportService;
+
+        public InvoiceService(IMapper mapper, DiplomaProjectDbContext diplomaProjectDbContext, IReportService reportService)
         {
             this.mapper = mapper;
             this.diplomaProjectDbContext = diplomaProjectDbContext;
+            _reportService = reportService;
         }
 
         public async Task<IEnumerable<InvoiceDto>> Get()
@@ -124,7 +131,7 @@ namespace DiplomaProject.Services.InvoiceServiceNS
 
             var invoicesForProjectsPerClient = await this.diplomaProjectDbContext.Invoices.Where(i => i.Project.ClientId == clientId)
                 .Include(i => i.Project.Client).ToListAsync();
-            if (invoicesForProjectsPerClient == null)
+            if (invoicesForProjectsPerClient.Count == 0)
             {
                 throw new ArgumentException("Id not existing");
             }
@@ -160,7 +167,7 @@ namespace DiplomaProject.Services.InvoiceServiceNS
         {
             var invoiceWithAllTimeEntriesPerProject = await this.diplomaProjectDbContext.Invoices.Where(i => i.ProjectId == projectId)
                 .Include(i => i.TimeEntries).Include(i => i.Project).ToListAsync();
-            if (invoiceWithAllTimeEntriesPerProject.Count == 0)  // dlaczego z null nie działa? 🤔
+            if (invoiceWithAllTimeEntriesPerProject.Count == 0)  // dlaczego z null nie działa? Bo Lista nawet jeżeli jest pusta, to nie jest null 🤔
             {
                 throw new ArgumentException("Invoice for a given project is not existing");
             }
@@ -204,6 +211,79 @@ namespace DiplomaProject.Services.InvoiceServiceNS
             return result;
         }
 
+        public byte[] GenerateInvoicePdf(int id)
+        {
+            var invoice = this.diplomaProjectDbContext.Invoices.Include(i => i.Project.Client).Include(i => i.Project.TimeEntries).FirstOrDefault(i => i.InvoiceId == id);
+            if (invoice == null)
+            {
+                throw new ArgumentException("Invoice with a given id = " + id + " is not existing");
+            }
+
+            var invoiceData = new TemplateForInvoicePdf()
+            {
+                //ClientName = "IMB",       // dane wpisane na sztywno
+                //ProjectName = "Secret",
+
+                ClientName = invoice.Project.Client.ClientName,
+                BuildingNumber = invoice.Project.Client.BuildingNumber,
+                StreetName = invoice.Project.Client.StreetName,
+                City = invoice.Project.Client.City,
+                PostCode = invoice.Project.Client.PostCode,
+                Country = invoice.Project.Client.Country,
+                ProjectName = invoice.Project.ProjectName,
+                Month = invoice.Month,
+                AmountOdHours = invoice.AmountOfHours,
+                PricePerHour = invoice.Project.PricePerHour,
+                TotalToPay = invoice.TotalToPay,
+                Date = invoice.Date,
+                TimeEntries = new List<TimeEntryDto>(),
+            };
+
+            foreach (var timeEntry in invoice.TimeEntries)
+            {
+                var timeEntriesDto = new TimeEntryDto()
+                {
+                    TimeEntryId = timeEntry.TimeEntryId,
+                    Date = timeEntry.Date,
+                    AmountOfHours = timeEntry.AmountOfHours,
+                    Comment = timeEntry.Comment,
+                };
+                invoiceData.TimeEntries.Add(timeEntriesDto);
+            };
+
+            var pdfFile = _reportService.GenerateInvoicePdf(invoiceData, id);
+            return pdfFile;
+        }
+        public async Task<InvoicePeriodClosureDto> CloseInvoicePeriod(int invoiceId)
+        {
+            var invoice = await this.diplomaProjectDbContext.Invoices.FirstOrDefaultAsync(i => i.InvoiceId == invoiceId);
+            if (invoice == null)
+            {
+                throw new ArgumentException("Id not existing");
+            }
+            if (invoice.IsInvoicePeriodClosed == true)
+            {
+                throw new ArgumentException("Invoice period already closed");
+            }
+
+            invoice.IsInvoicePeriodClosed = true;
+            await this.diplomaProjectDbContext.SaveChangesAsync();
+            return this.mapper.Map<InvoicePeriodClosureDto>(invoice);
+        }
+
+        //public bool CheckIfInvoicePeriodIsClosed(TimeEntry timeEntry) //... before
+        public bool CheckIfInvoicePeriodIsClosed(int month, long projectId)
+        {
+            var invoice = this.diplomaProjectDbContext.Invoices.Include(i => i.TimeEntries).Where(i => i.ProjectId == projectId
+                            && i.Month == month).FirstOrDefault();
+
+            if (invoice != null)
+            {
+                return invoice.IsInvoicePeriodClosed;
+            }
+            return false;
+        }
+
         // DRY - do not repeat yourself
         private decimal RecalculateInvoice(Invoice invoice)
         {
@@ -214,6 +294,7 @@ namespace DiplomaProject.Services.InvoiceServiceNS
                 Debug.WriteLine("to jest iteracja");
                 totalAmountOfHours = totalAmountOfHours + timeEntry.AmountOfHours;
             }
+
             var pricePerHour = invoice.Project.PricePerHour;
             var recalculateInvoice = totalAmountOfHours * pricePerHour;
             return recalculateInvoice;

@@ -21,6 +21,7 @@ namespace DiplomaProject.Models
         public decimal Tax { get; set; }
         public decimal TotalToPay { get; set; }
         public bool IsInvoicePaid { get; set; }
+        public bool IsInvoicePeriodClosed { get; set; }
 
         public long ProjectId { get; set; } // FK
         public Project Project{ get; set; } // Navigation Property to one Project

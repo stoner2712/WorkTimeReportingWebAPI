@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using DiplomaProject.DataTransferObjects;
 using DiplomaProject.Models;
+using DiplomaProject.Services.InvoiceServiceNS;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,26 +15,67 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
         private IMapper mapper;
         private readonly DiplomaProjectDbContext diplomaProjectDbContext;
 
-        public TimeEntryService(IMapper mapper, DiplomaProjectDbContext diplomaProjectDbContext)
+        private readonly IInvoiceService invoiceService;
+
+        public TimeEntryService(IMapper mapper, DiplomaProjectDbContext diplomaProjectDbContext, IInvoiceService invoiceService)
         {
             this.mapper = mapper;
             this.diplomaProjectDbContext = diplomaProjectDbContext;
+            this.invoiceService = invoiceService;
         }
         public async Task<TimeEntryDto> Create(TimeEntryCreateDto timeEntryDto)
         {
+
             var timeEntry = this.mapper.Map<TimeEntry>(timeEntryDto);
+            var isPeriodClosedCheck = invoiceService.CheckIfInvoicePeriodIsClosed(timeEntry.Date.Month, timeEntry.ProjectId);
+            if (isPeriodClosedCheck)
+            {
+                throw new ArgumentException("This action stopped due to invoice period already closed");
+            }
+
             await this.diplomaProjectDbContext.AddAsync(timeEntry);
             await this.diplomaProjectDbContext.SaveChangesAsync();
             return this.mapper.Map<TimeEntryDto>(timeEntry);
         }
 
-        public async Task<TimeEntryDto> Update(int id, TimeEntryUpdateDto timeEntryUpdateDto)
+        public async Task<TimeEntryDto> Update(int timeEntryId, TimeEntryUpdateDto timeEntryUpdateDto)
         {
-            var timeEntry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == id);
+            var timeEntry = await this.diplomaProjectDbContext.TimeEntries.FirstOrDefaultAsync(te => te.TimeEntryId == timeEntryId);
             if (timeEntry == null)
             {
                 throw new ArgumentException("Id not existing");
             }
+
+            var isPeriodClosedCheck = invoiceService.CheckIfInvoicePeriodIsClosed(timeEntry.Date.Month, timeEntry.ProjectId);
+            if (isPeriodClosedCheck)
+            {
+                throw new ArgumentException("This action stopped due to invoice period already closed");
+            }
+
+            // logic to prevent from setting(update) the date for a timeEntry which is not invoiced yet to the period which is already closed 
+            // pierwszy sposób
+            var invoicePeriodClosed = await this.diplomaProjectDbContext.Invoices.Where(i => i.IsInvoicePeriodClosed == true).ToListAsync(); // return List of invoices with closed periods
+
+            foreach (var invoice in invoicePeriodClosed)
+            {
+                if (timeEntryUpdateDto.Date.Month == invoice.Month)
+                {
+                    throw new ArgumentException("This period for this project is closed. Please check the date.");
+                }
+            }
+
+            //drugi sposób
+            //var invoicePeriodClosed = await this.diplomaProjectDbContext.Invoices.Where(i =>
+            //    i.IsInvoicePeriodClosed == true && i.Month == timeEntryUpdateDto.Date.Month).FirstOrDefaultAsync();
+
+            //// && i.ProjectId == timeEntry.ProjectId).FirstOrDefaultAsync(); // return List of invoices with closed periods
+            //// w TimeEntryUpdate nie ma opcji update projectId dlatego to nie musi być, bo i tak nie działa
+
+            //if (invoicePeriodClosed != null)
+            //{
+            //    throw new ArgumentException("This period for this project is closed. Please check the date.");
+            //}
+
             timeEntry.Date = timeEntryUpdateDto.Date;
             timeEntry.AmountOfHours = timeEntryUpdateDto.AmountOfHours;
             timeEntry.Comment = timeEntryUpdateDto.Comment;
@@ -49,6 +91,13 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
             {
                 throw new ArgumentException("Id not existing");
             }
+
+            var isPeriodClosedCheck = invoiceService.CheckIfInvoicePeriodIsClosed(timeEntry.Date.Month, timeEntry.ProjectId);
+            if (isPeriodClosedCheck)
+            {
+                throw new ArgumentException("This action stopped due to invoice period already closed");
+            }
+
             this.diplomaProjectDbContext.Remove(timeEntry);
             await this.diplomaProjectDbContext.SaveChangesAsync();
             return null;

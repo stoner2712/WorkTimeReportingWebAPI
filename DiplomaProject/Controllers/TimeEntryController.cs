@@ -71,7 +71,7 @@ namespace DiplomaProject.Controllers
         /// Create a new time entry
         /// </summary>
         /// <param name="timeEntryDto"></param>
-        /// <returns></returns>
+       /// <returns></returns>
         // POST api/<TimeEntryController>
         [HttpPost]
         public async Task<ActionResult> Post([FromBody] TimeEntryCreateDto timeEntryDto)
@@ -80,6 +80,10 @@ namespace DiplomaProject.Controllers
             {
                 var timeentry = await this.timeEntryService.Create(timeEntryDto);
                 return Ok(timeentry); //zwracamy nowe timeentry na TimeEntryDto (to co widzi Klient)   ????
+            }
+            catch (ArgumentException e)
+            {
+                return Ok(e.Message);
             }
             catch (Exception e)
             {

@@ -110,8 +110,8 @@ namespace DiplomaProject.Models
                 {
                     TimeEntryId = i + 1,
                     Date = faker.Date.Between(new DateTime(2020, 01, 01), new DateTime(2021, 01, 02)),
-                    AmountOfHours = faker.Random.Number(0, 60),
-                    Comment = faker.Lorem.Sentence(10),
+                    AmountOfHours = faker.Random.Number(1, 8),
+                    Comment = faker.Company.CatchPhrase(),
                     EmployeeId = faker.Random.Number(1, totalEmployees),
                     ProjectId = faker.Random.Number(1, totalProjects),
                 };

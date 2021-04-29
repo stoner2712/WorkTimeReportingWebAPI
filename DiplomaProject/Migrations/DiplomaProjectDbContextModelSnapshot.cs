@@ -52,82 +52,82 @@ namespace DiplomaProject.Migrations
                         new
                         {
                             ClientId = 1L,
-                            BuildingNumber = "23479",
-                            City = "Lake Marisol",
-                            ClientName = "McClure Inc",
-                            Country = "Argentina",
-                            PostCode = "98828-8877",
-                            StreetName = "Muller Lakes"
+                            BuildingNumber = "8167",
+                            City = "West Alexandria",
+                            ClientName = "Kulas, Stiedemann and Dach",
+                            Country = "Anguilla",
+                            PostCode = "99712",
+                            StreetName = "Lance Rapid"
                         },
                         new
                         {
                             ClientId = 2L,
-                            BuildingNumber = "6464",
-                            City = "Lake Idella",
-                            ClientName = "Morissette - Nienow",
-                            Country = "Reunion",
-                            PostCode = "04363-7948",
-                            StreetName = "Bonnie Camp"
+                            BuildingNumber = "66010",
+                            City = "New Guiseppehaven",
+                            ClientName = "Kessler, Rau and Hamill",
+                            Country = "Saint Kitts and Nevis",
+                            PostCode = "12070",
+                            StreetName = "Perry Island"
                         },
                         new
                         {
                             ClientId = 3L,
-                            BuildingNumber = "221",
-                            City = "Lake Gerardo",
-                            ClientName = "Dicki Inc",
-                            Country = "Macedonia",
-                            PostCode = "05127-1478",
-                            StreetName = "Concepcion Way"
+                            BuildingNumber = "028",
+                            City = "New Lessie",
+                            ClientName = "Kub - Thompson",
+                            Country = "Poland",
+                            PostCode = "44364-0715",
+                            StreetName = "Gerhold Via"
                         },
                         new
                         {
                             ClientId = 4L,
-                            BuildingNumber = "218",
-                            City = "Kevenmouth",
-                            ClientName = "Kemmer LLC",
-                            Country = "Namibia",
-                            PostCode = "26428-8484",
-                            StreetName = "Donnelly Plains"
+                            BuildingNumber = "3733",
+                            City = "Patiencemouth",
+                            ClientName = "Volkman - Dietrich",
+                            Country = "Bouvet Island (Bouvetoya)",
+                            PostCode = "77992-6544",
+                            StreetName = "Windler Ridges"
                         },
                         new
                         {
                             ClientId = 5L,
-                            BuildingNumber = "622",
-                            City = "Champlinmouth",
-                            ClientName = "O'Conner, Price and Wintheiser",
-                            Country = "Equatorial Guinea",
-                            PostCode = "73000-9894",
-                            StreetName = "Kuphal Village"
+                            BuildingNumber = "24081",
+                            City = "New Torey",
+                            ClientName = "Fahey - Wiza",
+                            Country = "Paraguay",
+                            PostCode = "34548",
+                            StreetName = "Carolyn Canyon"
                         },
                         new
                         {
                             ClientId = 6L,
-                            BuildingNumber = "946",
-                            City = "North Jedediah",
-                            ClientName = "Wintheiser, Bechtelar and Turner",
-                            Country = "Isle of Man",
-                            PostCode = "99533",
-                            StreetName = "Bernhard Plains"
+                            BuildingNumber = "5012",
+                            City = "New Rosanna",
+                            ClientName = "Rogahn Inc",
+                            Country = "Morocco",
+                            PostCode = "75303",
+                            StreetName = "Casper Lights"
                         },
                         new
                         {
                             ClientId = 7L,
-                            BuildingNumber = "366",
-                            City = "Lake Devenview",
-                            ClientName = "Ledner and Sons",
-                            Country = "Nauru",
-                            PostCode = "97061-3854",
-                            StreetName = "Casper Stravenue"
+                            BuildingNumber = "30808",
+                            City = "New Matildafurt",
+                            ClientName = "Schimmel - Upton",
+                            Country = "Tokelau",
+                            PostCode = "92189-9693",
+                            StreetName = "Bradford Estates"
                         },
                         new
                         {
                             ClientId = 8L,
-                            BuildingNumber = "0592",
-                            City = "Port Thadville",
-                            ClientName = "Armstrong and Sons",
-                            Country = "Aruba",
-                            PostCode = "06288-7205",
-                            StreetName = "Toy Loaf"
+                            BuildingNumber = "90089",
+                            City = "Kemmermouth",
+                            ClientName = "Koelpin LLC",
+                            Country = "Oman",
+                            PostCode = "32083-3861",
+                            StreetName = "Fritz Forks"
                         });
                 });
 
@@ -175,158 +175,158 @@ namespace DiplomaProject.Migrations
                         new
                         {
                             EmployeeId = 1L,
-                            BuildingNumber = "51702",
-                            City = "New Wilfred",
-                            Country = "Algeria",
-                            DateOfBirth = new DateTime(1983, 1, 10, 14, 22, 2, 900, DateTimeKind.Unspecified).AddTicks(8080),
-                            FirstName = "Nikolas",
-                            JobTitle = "Regional Implementation Orchestrator",
-                            LastName = "Barton",
-                            PostCode = "44345",
-                            StreetName = "Monique Throughway"
+                            BuildingNumber = "486",
+                            City = "South Madalinefort",
+                            Country = "Croatia",
+                            DateOfBirth = new DateTime(1990, 10, 25, 4, 7, 45, 814, DateTimeKind.Unspecified).AddTicks(3648),
+                            FirstName = "Chris",
+                            JobTitle = "Human Intranet Facilitator",
+                            LastName = "Haley",
+                            PostCode = "58767",
+                            StreetName = "Donato Forks"
                         },
                         new
                         {
                             EmployeeId = 2L,
-                            BuildingNumber = "39228",
-                            City = "Luisberg",
-                            Country = "Angola",
-                            DateOfBirth = new DateTime(1998, 11, 29, 9, 30, 6, 490, DateTimeKind.Unspecified).AddTicks(5594),
-                            FirstName = "Lauryn",
-                            JobTitle = "Lead Metrics Director",
-                            LastName = "Donnelly",
-                            PostCode = "95613-4381",
-                            StreetName = "Katrina Glen"
+                            BuildingNumber = "17713",
+                            City = "Jakubowskiport",
+                            Country = "Gambia",
+                            DateOfBirth = new DateTime(1986, 7, 10, 8, 55, 41, 27, DateTimeKind.Unspecified).AddTicks(2092),
+                            FirstName = "Retta",
+                            JobTitle = "Future Accountability Consultant",
+                            LastName = "Stoltenberg",
+                            PostCode = "92410-1396",
+                            StreetName = "Bradtke Pass"
                         },
                         new
                         {
                             EmployeeId = 3L,
-                            BuildingNumber = "4997",
-                            City = "Mullerside",
-                            Country = "Australia",
-                            DateOfBirth = new DateTime(1983, 4, 7, 5, 12, 29, 994, DateTimeKind.Unspecified).AddTicks(3046),
-                            FirstName = "Giovanny",
-                            JobTitle = "Internal Branding Facilitator",
-                            LastName = "Rohan",
-                            PostCode = "62090",
-                            StreetName = "Wyman Grove"
+                            BuildingNumber = "906",
+                            City = "Port Alveraberg",
+                            Country = "Central African Republic",
+                            DateOfBirth = new DateTime(1963, 11, 7, 4, 15, 30, 60, DateTimeKind.Unspecified).AddTicks(6098),
+                            FirstName = "Melyssa",
+                            JobTitle = "Investor Directives Producer",
+                            LastName = "Morissette",
+                            PostCode = "52126",
+                            StreetName = "Fernando Walk"
                         },
                         new
                         {
                             EmployeeId = 4L,
-                            BuildingNumber = "3828",
-                            City = "Denesikfort",
-                            Country = "Malaysia",
-                            DateOfBirth = new DateTime(1974, 5, 9, 21, 39, 31, 657, DateTimeKind.Unspecified).AddTicks(6612),
-                            FirstName = "Rhett",
-                            JobTitle = "International Marketing Executive",
-                            LastName = "Satterfield",
-                            PostCode = "88095-8131",
-                            StreetName = "Samanta Lodge"
+                            BuildingNumber = "378",
+                            City = "Reannamouth",
+                            Country = "Kiribati",
+                            DateOfBirth = new DateTime(1958, 3, 18, 18, 2, 40, 489, DateTimeKind.Unspecified).AddTicks(2824),
+                            FirstName = "Cortney",
+                            JobTitle = "Investor Mobility Architect",
+                            LastName = "Swift",
+                            PostCode = "98879-6380",
+                            StreetName = "Sipes Hollow"
                         },
                         new
                         {
                             EmployeeId = 5L,
-                            BuildingNumber = "0766",
-                            City = "North D'angelo",
-                            Country = "Syrian Arab Republic",
-                            DateOfBirth = new DateTime(1964, 7, 11, 16, 31, 45, 663, DateTimeKind.Unspecified).AddTicks(4658),
-                            FirstName = "Gregoria",
-                            JobTitle = "Dynamic Markets Officer",
-                            LastName = "Bednar",
-                            PostCode = "64278",
-                            StreetName = "Frederick Lane"
+                            BuildingNumber = "1455",
+                            City = "North Lethamouth",
+                            Country = "Saint Vincent and the Grenadines",
+                            DateOfBirth = new DateTime(1981, 9, 7, 20, 21, 4, 908, DateTimeKind.Unspecified).AddTicks(2138),
+                            FirstName = "Filiberto",
+                            JobTitle = "Direct Brand Coordinator",
+                            LastName = "Dietrich",
+                            PostCode = "51978-5382",
+                            StreetName = "Santos Plains"
                         },
                         new
                         {
                             EmployeeId = 6L,
-                            BuildingNumber = "560",
-                            City = "West Jaclynville",
-                            Country = "Italy",
-                            DateOfBirth = new DateTime(1984, 6, 11, 4, 10, 21, 341, DateTimeKind.Unspecified).AddTicks(5438),
-                            FirstName = "Lonnie",
-                            JobTitle = "Direct Branding Consultant",
-                            LastName = "Gutkowski",
-                            PostCode = "25850",
-                            StreetName = "Quigley Falls"
+                            BuildingNumber = "3531",
+                            City = "Port Moises",
+                            Country = "Bolivia",
+                            DateOfBirth = new DateTime(1968, 10, 19, 20, 29, 36, 283, DateTimeKind.Unspecified).AddTicks(5533),
+                            FirstName = "Bella",
+                            JobTitle = "Human Factors Specialist",
+                            LastName = "Prohaska",
+                            PostCode = "37006",
+                            StreetName = "Marvin Meadows"
                         },
                         new
                         {
                             EmployeeId = 7L,
-                            BuildingNumber = "69276",
-                            City = "South Tobin",
-                            Country = "Zimbabwe",
-                            DateOfBirth = new DateTime(1998, 11, 4, 7, 32, 44, 691, DateTimeKind.Unspecified).AddTicks(8574),
-                            FirstName = "Melissa",
-                            JobTitle = "Dynamic Factors Representative",
-                            LastName = "Hyatt",
-                            PostCode = "70838",
-                            StreetName = "Tracey Spurs"
+                            BuildingNumber = "08334",
+                            City = "Port Robertamouth",
+                            Country = "Turkey",
+                            DateOfBirth = new DateTime(1959, 7, 30, 16, 0, 30, 396, DateTimeKind.Unspecified).AddTicks(5896),
+                            FirstName = "Taurean",
+                            JobTitle = "District Solutions Planner",
+                            LastName = "Farrell",
+                            PostCode = "12655",
+                            StreetName = "Wilbert Drive"
                         },
                         new
                         {
                             EmployeeId = 8L,
-                            BuildingNumber = "27569",
-                            City = "Enolafurt",
-                            Country = "Taiwan",
-                            DateOfBirth = new DateTime(1973, 5, 24, 21, 2, 46, 269, DateTimeKind.Unspecified).AddTicks(4614),
-                            FirstName = "Van",
-                            JobTitle = "Investor Quality Officer",
-                            LastName = "Abernathy",
-                            PostCode = "97975-4970",
-                            StreetName = "Clinton Ridge"
+                            BuildingNumber = "2270",
+                            City = "Lake Tamiamouth",
+                            Country = "Iran",
+                            DateOfBirth = new DateTime(1956, 9, 13, 12, 22, 34, 773, DateTimeKind.Unspecified).AddTicks(4811),
+                            FirstName = "Chance",
+                            JobTitle = "Senior Identity Liaison",
+                            LastName = "Kuhn",
+                            PostCode = "18218",
+                            StreetName = "Cassin Groves"
                         },
                         new
                         {
                             EmployeeId = 9L,
-                            BuildingNumber = "17975",
-                            City = "Morarport",
-                            Country = "Chile",
-                            DateOfBirth = new DateTime(1959, 1, 4, 19, 16, 58, 744, DateTimeKind.Unspecified).AddTicks(1210),
-                            FirstName = "Rosalyn",
-                            JobTitle = "District Mobility Strategist",
-                            LastName = "Quitzon",
-                            PostCode = "15813",
-                            StreetName = "Evans Keys"
+                            BuildingNumber = "3370",
+                            City = "Arelyburgh",
+                            Country = "Guam",
+                            DateOfBirth = new DateTime(1950, 1, 20, 13, 56, 1, 718, DateTimeKind.Unspecified).AddTicks(3680),
+                            FirstName = "Laron",
+                            JobTitle = "National Response Developer",
+                            LastName = "Rodriguez",
+                            PostCode = "18741",
+                            StreetName = "Marcus Summit"
                         },
                         new
                         {
                             EmployeeId = 10L,
-                            BuildingNumber = "53184",
-                            City = "Andersonview",
-                            Country = "Libyan Arab Jamahiriya",
-                            DateOfBirth = new DateTime(1974, 5, 23, 18, 48, 21, 52, DateTimeKind.Unspecified).AddTicks(9341),
-                            FirstName = "Cedrick",
-                            JobTitle = "Global Data Executive",
-                            LastName = "Wiegand",
-                            PostCode = "82822-1156",
-                            StreetName = "Jeromy Bridge"
+                            BuildingNumber = "187",
+                            City = "Port Myrl",
+                            Country = "Germany",
+                            DateOfBirth = new DateTime(1986, 12, 24, 20, 5, 45, 882, DateTimeKind.Unspecified).AddTicks(7012),
+                            FirstName = "Mattie",
+                            JobTitle = "Principal Optimization Orchestrator",
+                            LastName = "Price",
+                            PostCode = "47628-5171",
+                            StreetName = "Osvaldo Fields"
                         },
                         new
                         {
                             EmployeeId = 11L,
-                            BuildingNumber = "0974",
-                            City = "South Kaylin",
-                            Country = "Saint Martin",
-                            DateOfBirth = new DateTime(1962, 10, 11, 18, 11, 6, 790, DateTimeKind.Unspecified).AddTicks(4592),
-                            FirstName = "Margaretta",
-                            JobTitle = "Future Factors Director",
-                            LastName = "Osinski",
-                            PostCode = "56108",
-                            StreetName = "Wehner Corner"
+                            BuildingNumber = "242",
+                            City = "Corwinburgh",
+                            Country = "Norfolk Island",
+                            DateOfBirth = new DateTime(1952, 9, 15, 22, 34, 53, 887, DateTimeKind.Unspecified).AddTicks(6009),
+                            FirstName = "Shanon",
+                            JobTitle = "Global Integration Engineer",
+                            LastName = "Abbott",
+                            PostCode = "96944",
+                            StreetName = "Pagac Parkways"
                         },
                         new
                         {
                             EmployeeId = 12L,
-                            BuildingNumber = "47083",
-                            City = "Elinortown",
-                            Country = "Turks and Caicos Islands",
-                            DateOfBirth = new DateTime(1978, 6, 30, 17, 13, 27, 161, DateTimeKind.Unspecified).AddTicks(4659),
-                            FirstName = "Leonel",
-                            JobTitle = "Lead Interactions Developer",
-                            LastName = "Kassulke",
-                            PostCode = "56854",
-                            StreetName = "Schamberger Keys"
+                            BuildingNumber = "37947",
+                            City = "Mooreberg",
+                            Country = "Malawi",
+                            DateOfBirth = new DateTime(1978, 10, 4, 20, 8, 37, 978, DateTimeKind.Unspecified).AddTicks(8106),
+                            FirstName = "Morton",
+                            JobTitle = "Corporate Marketing Specialist",
+                            LastName = "Dickens",
+                            PostCode = "74494",
+                            StreetName = "Dibbert Trail"
                         });
                 });
 
@@ -347,73 +347,153 @@ namespace DiplomaProject.Migrations
                     b.HasData(
                         new
                         {
-                            EmployeeId = 9L,
-                            ProjectId = 16L
-                        },
-                        new
-                        {
-                            EmployeeId = 9L,
-                            ProjectId = 10L
-                        },
-                        new
-                        {
-                            EmployeeId = 6L,
-                            ProjectId = 1L
-                        },
-                        new
-                        {
-                            EmployeeId = 4L,
-                            ProjectId = 14L
-                        },
-                        new
-                        {
-                            EmployeeId = 12L,
-                            ProjectId = 8L
-                        },
-                        new
-                        {
-                            EmployeeId = 6L,
-                            ProjectId = 15L
-                        },
-                        new
-                        {
-                            EmployeeId = 2L,
+                            EmployeeId = 10L,
                             ProjectId = 7L
                         },
                         new
                         {
-                            EmployeeId = 11L,
-                            ProjectId = 5L
+                            EmployeeId = 1L,
+                            ProjectId = 13L
+                        },
+                        new
+                        {
+                            EmployeeId = 2L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            EmployeeId = 3L,
+                            ProjectId = 9L
                         },
                         new
                         {
                             EmployeeId = 10L,
+                            ProjectId = 9L
+                        },
+                        new
+                        {
+                            EmployeeId = 1L,
                             ProjectId = 17L
                         },
                         new
                         {
-                            EmployeeId = 7L,
+                            EmployeeId = 4L,
+                            ProjectId = 18L
+                        },
+                        new
+                        {
+                            EmployeeId = 11L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            EmployeeId = 12L,
+                            ProjectId = 3L
+                        },
+                        new
+                        {
+                            EmployeeId = 5L,
+                            ProjectId = 11L
+                        },
+                        new
+                        {
+                            EmployeeId = 2L,
                             ProjectId = 4L
                         },
                         new
                         {
                             EmployeeId = 3L,
-                            ProjectId = 5L
-                        },
-                        new
-                        {
-                            EmployeeId = 9L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            EmployeeId = 1L,
-                            ProjectId = 11L
+                            ProjectId = 1L
                         },
                         new
                         {
                             EmployeeId = 10L,
+                            ProjectId = 10L
+                        },
+                        new
+                        {
+                            EmployeeId = 6L,
                             ProjectId = 19L
+                        },
+                        new
+                        {
+                            EmployeeId = 5L,
+                            ProjectId = 5L
+                        },
+                        new
+                        {
+                            EmployeeId = 5L,
+                            ProjectId = 13L
+                        },
+                        new
+                        {
+                            EmployeeId = 6L,
+                            ProjectId = 2L
+                        },
+                        new
+                        {
+                            EmployeeId = 11L,
+                            ProjectId = 17L
+                        },
+                        new
+                        {
+                            EmployeeId = 2L,
+                            ProjectId = 6L
+                        },
+                        new
+                        {
+                            EmployeeId = 9L,
+                            ProjectId = 8L
+                        },
+                        new
+                        {
+                            EmployeeId = 4L,
+                            ProjectId = 15L
+                        },
+                        new
+                        {
+                            EmployeeId = 10L,
+                            ProjectId = 6L
+                        },
+                        new
+                        {
+                            EmployeeId = 1L,
+                            ProjectId = 15L
+                        },
+                        new
+                        {
+                            EmployeeId = 8L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            EmployeeId = 2L,
+                            ProjectId = 7L
+                        },
+                        new
+                        {
+                            EmployeeId = 11L,
+                            ProjectId = 15L
+                        },
+                        new
+                        {
+                            EmployeeId = 9L,
+                            ProjectId = 3L
+                        },
+                        new
+                        {
+                            EmployeeId = 5L,
+                            ProjectId = 12L
+                        },
+                        new
+                        {
+                            EmployeeId = 2L,
+                            ProjectId = 1L
+                        },
+                        new
+                        {
+                            EmployeeId = 10L,
+                            ProjectId = 13L
                         },
                         new
                         {
@@ -422,28 +502,13 @@ namespace DiplomaProject.Migrations
                         },
                         new
                         {
-                            EmployeeId = 8L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            EmployeeId = 6L,
-                            ProjectId = 14L
-                        },
-                        new
-                        {
-                            EmployeeId = 12L,
+                            EmployeeId = 1L,
                             ProjectId = 10L
                         },
                         new
                         {
-                            EmployeeId = 4L,
-                            ProjectId = 7L
-                        },
-                        new
-                        {
-                            EmployeeId = 10L,
-                            ProjectId = 12L
+                            EmployeeId = 5L,
+                            ProjectId = 4L
                         },
                         new
                         {
@@ -453,7 +518,12 @@ namespace DiplomaProject.Migrations
                         new
                         {
                             EmployeeId = 9L,
-                            ProjectId = 18L
+                            ProjectId = 14L
+                        },
+                        new
+                        {
+                            EmployeeId = 6L,
+                            ProjectId = 1L
                         },
                         new
                         {
@@ -462,138 +532,68 @@ namespace DiplomaProject.Migrations
                         },
                         new
                         {
+                            EmployeeId = 5L,
+                            ProjectId = 19L
+                        },
+                        new
+                        {
+                            EmployeeId = 12L,
+                            ProjectId = 2L
+                        },
+                        new
+                        {
+                            EmployeeId = 10L,
+                            ProjectId = 14L
+                        },
+                        new
+                        {
+                            EmployeeId = 10L,
+                            ProjectId = 1L
+                        },
+                        new
+                        {
+                            EmployeeId = 12L,
+                            ProjectId = 7L
+                        },
+                        new
+                        {
                             EmployeeId = 9L,
-                            ProjectId = 5L
+                            ProjectId = 7L
                         },
                         new
                         {
-                            EmployeeId = 8L,
-                            ProjectId = 14L
-                        },
-                        new
-                        {
-                            EmployeeId = 5L,
-                            ProjectId = 19L
-                        },
-                        new
-                        {
-                            EmployeeId = 8L,
-                            ProjectId = 20L
-                        },
-                        new
-                        {
-                            EmployeeId = 4L,
-                            ProjectId = 11L
+                            EmployeeId = 9L,
+                            ProjectId = 2L
                         },
                         new
                         {
                             EmployeeId = 1L,
-                            ProjectId = 3L
+                            ProjectId = 2L
                         },
                         new
                         {
-                            EmployeeId = 6L,
-                            ProjectId = 19L
+                            EmployeeId = 8L,
+                            ProjectId = 4L
                         },
                         new
                         {
-                            EmployeeId = 4L,
-                            ProjectId = 8L
-                        },
-                        new
-                        {
-                            EmployeeId = 7L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            EmployeeId = 10L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            EmployeeId = 4L,
-                            ProjectId = 10L
-                        },
-                        new
-                        {
-                            EmployeeId = 5L,
-                            ProjectId = 8L
-                        },
-                        new
-                        {
-                            EmployeeId = 11L,
-                            ProjectId = 10L
-                        },
-                        new
-                        {
-                            EmployeeId = 1L,
-                            ProjectId = 20L
-                        },
-                        new
-                        {
-                            EmployeeId = 2L,
-                            ProjectId = 5L
-                        },
-                        new
-                        {
-                            EmployeeId = 7L,
-                            ProjectId = 17L
-                        },
-                        new
-                        {
-                            EmployeeId = 5L,
-                            ProjectId = 14L
-                        },
-                        new
-                        {
-                            EmployeeId = 10L,
-                            ProjectId = 11L
-                        },
-                        new
-                        {
-                            EmployeeId = 4L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            EmployeeId = 2L,
-                            ProjectId = 14L
-                        },
-                        new
-                        {
-                            EmployeeId = 6L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            EmployeeId = 6L,
-                            ProjectId = 5L
-                        },
-                        new
-                        {
-                            EmployeeId = 11L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            EmployeeId = 4L,
+                            EmployeeId = 3L,
                             ProjectId = 13L
                         },
                         new
                         {
-                            EmployeeId = 6L,
-                            ProjectId = 6L
-                        },
-                        new
-                        {
-                            EmployeeId = 1L,
-                            ProjectId = 6L
-                        },
-                        new
-                        {
-                            EmployeeId = 10L,
+                            EmployeeId = 8L,
                             ProjectId = 5L
+                        },
+                        new
+                        {
+                            EmployeeId = 4L,
+                            ProjectId = 14L
+                        },
+                        new
+                        {
+                            EmployeeId = 12L,
+                            ProjectId = 20L
                         });
                 });
 
@@ -617,6 +617,9 @@ namespace DiplomaProject.Migrations
                         .HasColumnType("timestamp without time zone");
 
                     b.Property<bool>("IsInvoicePaid")
+                        .HasColumnType("boolean");
+
+                    b.Property<bool>("IsInvoicePeriodClosed")
                         .HasColumnType("boolean");
 
                     b.Property<int>("Month")
@@ -664,142 +667,142 @@ namespace DiplomaProject.Migrations
                         new
                         {
                             ProjectId = 1L,
-                            ClientId = 2L,
-                            PricePerHour = 642.51m,
-                            ProjectName = "Optional logistical adapter"
+                            ClientId = 3L,
+                            PricePerHour = 878.72m,
+                            ProjectName = "Decentralized multimedia archive"
                         },
                         new
                         {
                             ProjectId = 2L,
-                            ClientId = 6L,
-                            PricePerHour = 581.23m,
-                            ProjectName = "Expanded upward-trending concept"
+                            ClientId = 5L,
+                            PricePerHour = 825.80m,
+                            ProjectName = "Fully-configurable multimedia circuit"
                         },
                         new
                         {
                             ProjectId = 3L,
-                            ClientId = 5L,
-                            PricePerHour = 634.49m,
-                            ProjectName = "Future-proofed content-based adapter"
+                            ClientId = 7L,
+                            PricePerHour = 547.90m,
+                            ProjectName = "Future-proofed didactic capability"
                         },
                         new
                         {
                             ProjectId = 4L,
-                            ClientId = 5L,
-                            PricePerHour = 606.61m,
-                            ProjectName = "Profound systemic attitude"
+                            ClientId = 6L,
+                            PricePerHour = 758.47m,
+                            ProjectName = "Cross-platform didactic solution"
                         },
                         new
                         {
                             ProjectId = 5L,
-                            ClientId = 3L,
-                            PricePerHour = 829.83m,
-                            ProjectName = "Extended demand-driven database"
+                            ClientId = 2L,
+                            PricePerHour = 642.35m,
+                            ProjectName = "Ameliorated explicit portal"
                         },
                         new
                         {
                             ProjectId = 6L,
-                            ClientId = 8L,
-                            PricePerHour = 555.39m,
-                            ProjectName = "Balanced 24 hour forecast"
+                            ClientId = 1L,
+                            PricePerHour = 636.92m,
+                            ProjectName = "Focused exuding solution"
                         },
                         new
                         {
                             ProjectId = 7L,
                             ClientId = 8L,
-                            PricePerHour = 523.98m,
-                            ProjectName = "Cross-group foreground frame"
+                            PricePerHour = 652.94m,
+                            ProjectName = "Optional asymmetric info-mediaries"
                         },
                         new
                         {
                             ProjectId = 8L,
-                            ClientId = 2L,
-                            PricePerHour = 838.03m,
-                            ProjectName = "Inverse dedicated knowledge user"
+                            ClientId = 1L,
+                            PricePerHour = 981.74m,
+                            ProjectName = "Monitored object-oriented complexity"
                         },
                         new
                         {
                             ProjectId = 9L,
-                            ClientId = 4L,
-                            PricePerHour = 831.07m,
-                            ProjectName = "Reverse-engineered systemic help-desk"
+                            ClientId = 6L,
+                            PricePerHour = 825.25m,
+                            ProjectName = "Polarised regional moratorium"
                         },
                         new
                         {
                             ProjectId = 10L,
-                            ClientId = 7L,
-                            PricePerHour = 785.84m,
-                            ProjectName = "Polarised real-time website"
+                            ClientId = 4L,
+                            PricePerHour = 990.44m,
+                            ProjectName = "Optional clear-thinking conglomeration"
                         },
                         new
                         {
                             ProjectId = 11L,
-                            ClientId = 7L,
-                            PricePerHour = 852.60m,
-                            ProjectName = "Future-proofed reciprocal orchestration"
+                            ClientId = 6L,
+                            PricePerHour = 937.96m,
+                            ProjectName = "Synergized 6th generation synergy"
                         },
                         new
                         {
                             ProjectId = 12L,
-                            ClientId = 2L,
-                            PricePerHour = 500.75m,
-                            ProjectName = "Focused eco-centric frame"
+                            ClientId = 8L,
+                            PricePerHour = 774.36m,
+                            ProjectName = "Seamless transitional protocol"
                         },
                         new
                         {
                             ProjectId = 13L,
-                            ClientId = 5L,
-                            PricePerHour = 598.77m,
-                            ProjectName = "Exclusive local archive"
+                            ClientId = 1L,
+                            PricePerHour = 796.08m,
+                            ProjectName = "User-centric responsive support"
                         },
                         new
                         {
                             ProjectId = 14L,
-                            ClientId = 1L,
-                            PricePerHour = 639.88m,
-                            ProjectName = "User-centric system-worthy utilisation"
+                            ClientId = 4L,
+                            PricePerHour = 581.63m,
+                            ProjectName = "Expanded responsive software"
                         },
                         new
                         {
                             ProjectId = 15L,
-                            ClientId = 6L,
-                            PricePerHour = 516.77m,
-                            ProjectName = "Intuitive dynamic hierarchy"
+                            ClientId = 1L,
+                            PricePerHour = 732.62m,
+                            ProjectName = "Integrated asymmetric success"
                         },
                         new
                         {
                             ProjectId = 16L,
                             ClientId = 6L,
-                            PricePerHour = 600.18m,
-                            ProjectName = "Integrated solution-oriented matrices"
+                            PricePerHour = 778.92m,
+                            ProjectName = "Enterprise-wide neutral artificial intelligence"
                         },
                         new
                         {
                             ProjectId = 17L,
-                            ClientId = 5L,
-                            PricePerHour = 630.63m,
-                            ProjectName = "Face to face 3rd generation productivity"
+                            ClientId = 2L,
+                            PricePerHour = 888.02m,
+                            ProjectName = "Customer-focused clear-thinking strategy"
                         },
                         new
                         {
                             ProjectId = 18L,
-                            ClientId = 6L,
-                            PricePerHour = 636.05m,
-                            ProjectName = "Future-proofed neutral monitoring"
+                            ClientId = 2L,
+                            PricePerHour = 830.38m,
+                            ProjectName = "Networked clear-thinking matrix"
                         },
                         new
                         {
                             ProjectId = 19L,
-                            ClientId = 8L,
-                            PricePerHour = 755.63m,
-                            ProjectName = "Cloned tertiary knowledge user"
+                            ClientId = 1L,
+                            PricePerHour = 982.95m,
+                            ProjectName = "Optimized uniform moderator"
                         },
                         new
                         {
                             ProjectId = 20L,
-                            ClientId = 5L,
-                            PricePerHour = 574.25m,
-                            ProjectName = "Digitized reciprocal customer loyalty"
+                            ClientId = 4L,
+                            PricePerHour = 823.45m,
+                            ProjectName = "Sharable system-worthy approach"
                         });
                 });
 
@@ -842,3602 +845,3602 @@ namespace DiplomaProject.Migrations
                         new
                         {
                             TimeEntryId = 1L,
-                            AmountOfHours = 57m,
-                            Comment = "Sint libero qui ipsa doloribus ut maxime omnis ipsum quisquam.",
-                            Date = new DateTime(2020, 10, 19, 6, 20, 57, 42, DateTimeKind.Unspecified).AddTicks(4782),
-                            EmployeeId = 2L,
-                            ProjectId = 4L
+                            AmountOfHours = 2m,
+                            Comment = "Compatible national secured line",
+                            Date = new DateTime(2020, 3, 1, 7, 31, 41, 38, DateTimeKind.Unspecified).AddTicks(6519),
+                            EmployeeId = 9L,
+                            ProjectId = 9L
                         },
                         new
                         {
                             TimeEntryId = 2L,
-                            AmountOfHours = 4m,
-                            Comment = "Aut vel illo ut ut eligendi natus voluptatem tempore ut.",
-                            Date = new DateTime(2020, 4, 2, 13, 8, 48, 254, DateTimeKind.Unspecified).AddTicks(2345),
-                            EmployeeId = 10L,
-                            ProjectId = 5L
+                            AmountOfHours = 2m,
+                            Comment = "Monitored impactful alliance",
+                            Date = new DateTime(2020, 1, 27, 6, 43, 1, 661, DateTimeKind.Unspecified).AddTicks(2043),
+                            EmployeeId = 6L,
+                            ProjectId = 14L
                         },
                         new
                         {
                             TimeEntryId = 3L,
-                            AmountOfHours = 2m,
-                            Comment = "Officia excepturi quisquam veritatis laborum quia voluptas magnam facilis vel.",
-                            Date = new DateTime(2020, 9, 2, 2, 4, 40, 921, DateTimeKind.Unspecified).AddTicks(6877),
-                            EmployeeId = 6L,
-                            ProjectId = 4L
-                        },
-                        new
-                        {
-                            TimeEntryId = 4L,
-                            AmountOfHours = 8m,
-                            Comment = "Nihil animi cupiditate ullam ipsa beatae aliquid ut sed at.",
-                            Date = new DateTime(2020, 6, 19, 13, 21, 0, 475, DateTimeKind.Unspecified).AddTicks(9723),
-                            EmployeeId = 4L,
-                            ProjectId = 3L
-                        },
-                        new
-                        {
-                            TimeEntryId = 5L,
-                            AmountOfHours = 46m,
-                            Comment = "Repellat veniam ad possimus animi cumque ipsum expedita repellat doloremque.",
-                            Date = new DateTime(2020, 5, 20, 13, 13, 24, 240, DateTimeKind.Unspecified).AddTicks(3860),
-                            EmployeeId = 7L,
-                            ProjectId = 1L
-                        },
-                        new
-                        {
-                            TimeEntryId = 6L,
-                            AmountOfHours = 44m,
-                            Comment = "Dolorem cum sed illum tempora quam ducimus quasi perferendis totam.",
-                            Date = new DateTime(2020, 4, 20, 14, 12, 18, 796, DateTimeKind.Unspecified).AddTicks(2311),
-                            EmployeeId = 3L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            TimeEntryId = 7L,
-                            AmountOfHours = 19m,
-                            Comment = "Nemo accusamus repellendus molestias dolorem asperiores aliquam commodi aut cum.",
-                            Date = new DateTime(2020, 9, 11, 3, 20, 26, 784, DateTimeKind.Unspecified).AddTicks(3392),
-                            EmployeeId = 7L,
+                            AmountOfHours = 5m,
+                            Comment = "Decentralized full-range toolset",
+                            Date = new DateTime(2020, 5, 13, 7, 58, 18, 690, DateTimeKind.Unspecified).AddTicks(4978),
+                            EmployeeId = 2L,
                             ProjectId = 16L
                         },
                         new
                         {
+                            TimeEntryId = 4L,
+                            AmountOfHours = 6m,
+                            Comment = "Future-proofed next generation encryption",
+                            Date = new DateTime(2020, 3, 17, 20, 6, 3, 709, DateTimeKind.Unspecified).AddTicks(1586),
+                            EmployeeId = 12L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            TimeEntryId = 5L,
+                            AmountOfHours = 1m,
+                            Comment = "Fully-configurable discrete framework",
+                            Date = new DateTime(2020, 5, 16, 22, 15, 44, 779, DateTimeKind.Unspecified).AddTicks(5302),
+                            EmployeeId = 10L,
+                            ProjectId = 4L
+                        },
+                        new
+                        {
+                            TimeEntryId = 6L,
+                            AmountOfHours = 8m,
+                            Comment = "Stand-alone context-sensitive frame",
+                            Date = new DateTime(2020, 6, 23, 10, 39, 24, 739, DateTimeKind.Unspecified).AddTicks(7429),
+                            EmployeeId = 8L,
+                            ProjectId = 11L
+                        },
+                        new
+                        {
+                            TimeEntryId = 7L,
+                            AmountOfHours = 6m,
+                            Comment = "Configurable encompassing architecture",
+                            Date = new DateTime(2020, 12, 15, 5, 51, 56, 131, DateTimeKind.Unspecified).AddTicks(1397),
+                            EmployeeId = 1L,
+                            ProjectId = 14L
+                        },
+                        new
+                        {
                             TimeEntryId = 8L,
-                            AmountOfHours = 2m,
-                            Comment = "Id quos possimus repellat omnis et aut cupiditate ipsam praesentium.",
-                            Date = new DateTime(2020, 12, 21, 18, 22, 14, 827, DateTimeKind.Unspecified).AddTicks(1901),
-                            EmployeeId = 11L,
+                            AmountOfHours = 1m,
+                            Comment = "Synergistic neutral service-desk",
+                            Date = new DateTime(2020, 1, 13, 15, 29, 22, 553, DateTimeKind.Unspecified).AddTicks(9339),
+                            EmployeeId = 3L,
                             ProjectId = 20L
                         },
                         new
                         {
                             TimeEntryId = 9L,
-                            AmountOfHours = 56m,
-                            Comment = "Enim consequatur similique aut consequatur pariatur ut consequuntur dolore aperiam.",
-                            Date = new DateTime(2020, 4, 28, 17, 49, 59, 707, DateTimeKind.Unspecified).AddTicks(8524),
-                            EmployeeId = 3L,
-                            ProjectId = 7L
+                            AmountOfHours = 6m,
+                            Comment = "Virtual incremental portal",
+                            Date = new DateTime(2020, 6, 21, 22, 40, 56, 745, DateTimeKind.Unspecified).AddTicks(7013),
+                            EmployeeId = 9L,
+                            ProjectId = 14L
                         },
                         new
                         {
                             TimeEntryId = 10L,
-                            AmountOfHours = 49m,
-                            Comment = "In eos voluptatem laudantium qui in laudantium occaecati impedit adipisci.",
-                            Date = new DateTime(2020, 6, 21, 5, 11, 23, 844, DateTimeKind.Unspecified).AddTicks(4320),
-                            EmployeeId = 10L,
-                            ProjectId = 2L
+                            AmountOfHours = 2m,
+                            Comment = "Down-sized national neural-net",
+                            Date = new DateTime(2020, 2, 25, 23, 29, 4, 213, DateTimeKind.Unspecified).AddTicks(7665),
+                            EmployeeId = 7L,
+                            ProjectId = 18L
                         },
                         new
                         {
                             TimeEntryId = 11L,
-                            AmountOfHours = 47m,
-                            Comment = "Omnis quia harum et tempore voluptas explicabo exercitationem odit perspiciatis.",
-                            Date = new DateTime(2020, 3, 21, 19, 17, 16, 77, DateTimeKind.Unspecified).AddTicks(7225),
-                            EmployeeId = 10L,
-                            ProjectId = 3L
+                            AmountOfHours = 3m,
+                            Comment = "Diverse mission-critical implementation",
+                            Date = new DateTime(2020, 8, 24, 19, 37, 52, 688, DateTimeKind.Unspecified).AddTicks(5976),
+                            EmployeeId = 3L,
+                            ProjectId = 6L
                         },
                         new
                         {
                             TimeEntryId = 12L,
-                            AmountOfHours = 29m,
-                            Comment = "Dolore quisquam omnis rem neque exercitationem hic blanditiis adipisci velit.",
-                            Date = new DateTime(2020, 9, 12, 22, 34, 27, 783, DateTimeKind.Unspecified).AddTicks(553),
-                            EmployeeId = 7L,
-                            ProjectId = 19L
+                            AmountOfHours = 2m,
+                            Comment = "Horizontal context-sensitive standardization",
+                            Date = new DateTime(2020, 12, 27, 12, 1, 40, 441, DateTimeKind.Unspecified).AddTicks(7606),
+                            EmployeeId = 1L,
+                            ProjectId = 7L
                         },
                         new
                         {
                             TimeEntryId = 13L,
-                            AmountOfHours = 45m,
-                            Comment = "Aspernatur autem adipisci rerum et error in et in ex.",
-                            Date = new DateTime(2020, 6, 18, 11, 42, 1, 990, DateTimeKind.Unspecified).AddTicks(1356),
-                            EmployeeId = 8L,
-                            ProjectId = 3L
+                            AmountOfHours = 4m,
+                            Comment = "Persistent intangible internet solution",
+                            Date = new DateTime(2020, 1, 1, 6, 53, 46, 149, DateTimeKind.Unspecified).AddTicks(1995),
+                            EmployeeId = 3L,
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 14L,
-                            AmountOfHours = 17m,
-                            Comment = "Facere porro nihil sit nihil doloribus ad doloribus esse nisi.",
-                            Date = new DateTime(2020, 9, 18, 6, 17, 18, 341, DateTimeKind.Unspecified).AddTicks(6326),
+                            AmountOfHours = 7m,
+                            Comment = "Reactive mission-critical utilisation",
+                            Date = new DateTime(2020, 3, 22, 19, 35, 1, 692, DateTimeKind.Unspecified).AddTicks(3011),
                             EmployeeId = 11L,
-                            ProjectId = 19L
+                            ProjectId = 16L
                         },
                         new
                         {
                             TimeEntryId = 15L,
-                            AmountOfHours = 6m,
-                            Comment = "Magni modi ex placeat et nisi velit minus aliquid vel.",
-                            Date = new DateTime(2020, 10, 31, 23, 14, 50, 798, DateTimeKind.Unspecified).AddTicks(6807),
-                            EmployeeId = 6L,
-                            ProjectId = 3L
+                            AmountOfHours = 8m,
+                            Comment = "Programmable foreground intranet",
+                            Date = new DateTime(2020, 8, 14, 14, 59, 37, 915, DateTimeKind.Unspecified).AddTicks(7756),
+                            EmployeeId = 10L,
+                            ProjectId = 8L
                         },
                         new
                         {
                             TimeEntryId = 16L,
-                            AmountOfHours = 19m,
-                            Comment = "Voluptatem nihil quo sit qui tempore cumque voluptatum nihil dolor.",
-                            Date = new DateTime(2020, 11, 26, 20, 49, 26, 433, DateTimeKind.Unspecified).AddTicks(4855),
-                            EmployeeId = 3L,
+                            AmountOfHours = 6m,
+                            Comment = "Cloned executive workforce",
+                            Date = new DateTime(2020, 10, 6, 3, 25, 15, 451, DateTimeKind.Unspecified).AddTicks(4117),
+                            EmployeeId = 9L,
                             ProjectId = 10L
                         },
                         new
                         {
                             TimeEntryId = 17L,
-                            AmountOfHours = 6m,
-                            Comment = "Sapiente pariatur ipsa nihil id voluptatum autem dolor repellat rerum.",
-                            Date = new DateTime(2020, 6, 22, 3, 39, 45, 561, DateTimeKind.Unspecified).AddTicks(9209),
-                            EmployeeId = 4L,
-                            ProjectId = 8L
-                        },
-                        new
-                        {
-                            TimeEntryId = 18L,
-                            AmountOfHours = 1m,
-                            Comment = "Consequatur saepe quo sunt dicta tenetur tempore doloribus quas rerum.",
-                            Date = new DateTime(2020, 1, 31, 10, 12, 16, 989, DateTimeKind.Unspecified).AddTicks(9310),
+                            AmountOfHours = 5m,
+                            Comment = "Focused tangible methodology",
+                            Date = new DateTime(2020, 7, 5, 11, 58, 2, 204, DateTimeKind.Unspecified).AddTicks(2398),
                             EmployeeId = 5L,
                             ProjectId = 4L
                         },
                         new
                         {
-                            TimeEntryId = 19L,
-                            AmountOfHours = 39m,
-                            Comment = "Occaecati dolor non reprehenderit officiis sunt est et assumenda temporibus.",
-                            Date = new DateTime(2020, 5, 26, 12, 35, 44, 969, DateTimeKind.Unspecified).AddTicks(7184),
-                            EmployeeId = 5L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            TimeEntryId = 20L,
-                            AmountOfHours = 8m,
-                            Comment = "Nihil tenetur id eius officia soluta aut consequatur laboriosam est.",
-                            Date = new DateTime(2020, 7, 13, 18, 4, 45, 907, DateTimeKind.Unspecified).AddTicks(1901),
-                            EmployeeId = 5L,
-                            ProjectId = 11L
-                        },
-                        new
-                        {
-                            TimeEntryId = 21L,
-                            AmountOfHours = 59m,
-                            Comment = "Nisi nesciunt consequatur in architecto qui distinctio qui ex necessitatibus.",
-                            Date = new DateTime(2020, 6, 9, 10, 41, 51, 333, DateTimeKind.Unspecified).AddTicks(7979),
-                            EmployeeId = 6L,
-                            ProjectId = 20L
-                        },
-                        new
-                        {
-                            TimeEntryId = 22L,
-                            AmountOfHours = 52m,
-                            Comment = "Consequuntur ab quia distinctio nihil non error omnis ratione sed.",
-                            Date = new DateTime(2020, 4, 1, 21, 40, 1, 20, DateTimeKind.Unspecified).AddTicks(2860),
-                            EmployeeId = 7L,
-                            ProjectId = 15L
-                        },
-                        new
-                        {
-                            TimeEntryId = 23L,
-                            AmountOfHours = 43m,
-                            Comment = "Quo aut consequatur ex et et sequi est quam qui.",
-                            Date = new DateTime(2020, 7, 18, 2, 2, 24, 541, DateTimeKind.Unspecified).AddTicks(5784),
-                            EmployeeId = 5L,
-                            ProjectId = 8L
-                        },
-                        new
-                        {
-                            TimeEntryId = 24L,
-                            AmountOfHours = 36m,
-                            Comment = "Mollitia pariatur est mollitia molestiae et nobis quis rem quisquam.",
-                            Date = new DateTime(2020, 6, 25, 20, 9, 58, 748, DateTimeKind.Unspecified).AddTicks(8012),
-                            EmployeeId = 2L,
-                            ProjectId = 19L
-                        },
-                        new
-                        {
-                            TimeEntryId = 25L,
-                            AmountOfHours = 48m,
-                            Comment = "Aut dolore consequatur ex animi hic maiores voluptatum aut qui.",
-                            Date = new DateTime(2020, 5, 29, 15, 32, 33, 401, DateTimeKind.Unspecified).AddTicks(3800),
-                            EmployeeId = 5L,
-                            ProjectId = 10L
-                        },
-                        new
-                        {
-                            TimeEntryId = 26L,
-                            AmountOfHours = 31m,
-                            Comment = "Et ex enim doloremque quae sapiente tenetur ullam qui reiciendis.",
-                            Date = new DateTime(2020, 9, 18, 18, 38, 0, 109, DateTimeKind.Unspecified).AddTicks(9330),
-                            EmployeeId = 4L,
-                            ProjectId = 7L
-                        },
-                        new
-                        {
-                            TimeEntryId = 27L,
-                            AmountOfHours = 33m,
-                            Comment = "Voluptate quis aliquam maxime reprehenderit commodi animi quia vel repellat.",
-                            Date = new DateTime(2020, 1, 8, 20, 30, 17, 45, DateTimeKind.Unspecified).AddTicks(6738),
-                            EmployeeId = 10L,
-                            ProjectId = 11L
-                        },
-                        new
-                        {
-                            TimeEntryId = 28L,
-                            AmountOfHours = 7m,
-                            Comment = "Delectus qui magnam reiciendis non ipsum expedita sed velit et.",
-                            Date = new DateTime(2020, 8, 15, 10, 10, 42, 68, DateTimeKind.Unspecified).AddTicks(5387),
+                            TimeEntryId = 18L,
+                            AmountOfHours = 5m,
+                            Comment = "Customizable bi-directional firmware",
+                            Date = new DateTime(2020, 9, 8, 3, 4, 20, 470, DateTimeKind.Unspecified).AddTicks(4893),
                             EmployeeId = 11L,
                             ProjectId = 9L
                         },
                         new
                         {
-                            TimeEntryId = 29L,
-                            AmountOfHours = 43m,
-                            Comment = "Pariatur doloremque veritatis ullam non iusto quasi mollitia rerum animi.",
-                            Date = new DateTime(2020, 11, 3, 20, 5, 45, 809, DateTimeKind.Unspecified).AddTicks(5574),
-                            EmployeeId = 1L,
+                            TimeEntryId = 19L,
+                            AmountOfHours = 4m,
+                            Comment = "Vision-oriented human-resource framework",
+                            Date = new DateTime(2020, 6, 27, 4, 49, 59, 115, DateTimeKind.Unspecified).AddTicks(5318),
+                            EmployeeId = 6L,
                             ProjectId = 8L
                         },
                         new
                         {
-                            TimeEntryId = 30L,
-                            AmountOfHours = 27m,
-                            Comment = "Ut ipsam labore sint laboriosam fugiat sit vel est ipsam.",
-                            Date = new DateTime(2020, 12, 2, 1, 17, 26, 226, DateTimeKind.Unspecified).AddTicks(5409),
-                            EmployeeId = 10L,
-                            ProjectId = 17L
+                            TimeEntryId = 20L,
+                            AmountOfHours = 6m,
+                            Comment = "Sharable eco-centric customer loyalty",
+                            Date = new DateTime(2020, 5, 10, 5, 9, 34, 687, DateTimeKind.Unspecified).AddTicks(3495),
+                            EmployeeId = 12L,
+                            ProjectId = 5L
                         },
                         new
                         {
-                            TimeEntryId = 31L,
-                            AmountOfHours = 17m,
-                            Comment = "Officiis consectetur rerum rerum cupiditate rerum quia repellendus recusandae quos.",
-                            Date = new DateTime(2020, 11, 23, 8, 40, 46, 438, DateTimeKind.Unspecified).AddTicks(8203),
+                            TimeEntryId = 21L,
+                            AmountOfHours = 5m,
+                            Comment = "De-engineered interactive installation",
+                            Date = new DateTime(2020, 10, 12, 11, 0, 18, 841, DateTimeKind.Unspecified).AddTicks(2493),
+                            EmployeeId = 7L,
+                            ProjectId = 15L
+                        },
+                        new
+                        {
+                            TimeEntryId = 22L,
+                            AmountOfHours = 4m,
+                            Comment = "Re-engineered executive infrastructure",
+                            Date = new DateTime(2020, 3, 27, 0, 30, 11, 190, DateTimeKind.Unspecified).AddTicks(9815),
                             EmployeeId = 8L,
-                            ProjectId = 4L
+                            ProjectId = 19L
                         },
                         new
                         {
-                            TimeEntryId = 32L,
-                            AmountOfHours = 22m,
-                            Comment = "Optio et sint quia aliquam sed in aspernatur dolorem nisi.",
-                            Date = new DateTime(2020, 1, 20, 14, 42, 41, 814, DateTimeKind.Unspecified).AddTicks(2255),
-                            EmployeeId = 2L,
-                            ProjectId = 1L
-                        },
-                        new
-                        {
-                            TimeEntryId = 33L,
-                            AmountOfHours = 2m,
-                            Comment = "Corporis placeat cupiditate vitae perspiciatis dolor quisquam optio quo fugit.",
-                            Date = new DateTime(2020, 5, 19, 12, 20, 53, 329, DateTimeKind.Unspecified).AddTicks(9757),
-                            EmployeeId = 10L,
-                            ProjectId = 1L
-                        },
-                        new
-                        {
-                            TimeEntryId = 34L,
-                            AmountOfHours = 46m,
-                            Comment = "Eum placeat sint sequi omnis a fugit quasi qui mollitia.",
-                            Date = new DateTime(2020, 2, 19, 1, 12, 8, 865, DateTimeKind.Unspecified).AddTicks(5987),
-                            EmployeeId = 8L,
-                            ProjectId = 14L
-                        },
-                        new
-                        {
-                            TimeEntryId = 35L,
-                            AmountOfHours = 47m,
-                            Comment = "Commodi perspiciatis quo sint molestias quis deleniti sit ut occaecati.",
-                            Date = new DateTime(2020, 9, 18, 15, 56, 24, 363, DateTimeKind.Unspecified).AddTicks(6050),
-                            EmployeeId = 8L,
+                            TimeEntryId = 23L,
+                            AmountOfHours = 5m,
+                            Comment = "Expanded context-sensitive system engine",
+                            Date = new DateTime(2020, 4, 6, 17, 40, 58, 501, DateTimeKind.Unspecified).AddTicks(8961),
+                            EmployeeId = 12L,
                             ProjectId = 6L
                         },
                         new
                         {
+                            TimeEntryId = 24L,
+                            AmountOfHours = 1m,
+                            Comment = "Synergized modular core",
+                            Date = new DateTime(2020, 3, 3, 19, 33, 8, 580, DateTimeKind.Unspecified).AddTicks(7440),
+                            EmployeeId = 2L,
+                            ProjectId = 4L
+                        },
+                        new
+                        {
+                            TimeEntryId = 25L,
+                            AmountOfHours = 4m,
+                            Comment = "Organic executive groupware",
+                            Date = new DateTime(2020, 12, 3, 20, 43, 38, 327, DateTimeKind.Unspecified).AddTicks(2262),
+                            EmployeeId = 11L,
+                            ProjectId = 19L
+                        },
+                        new
+                        {
+                            TimeEntryId = 26L,
+                            AmountOfHours = 8m,
+                            Comment = "Persistent secondary framework",
+                            Date = new DateTime(2020, 2, 9, 18, 58, 1, 635, DateTimeKind.Unspecified).AddTicks(9048),
+                            EmployeeId = 9L,
+                            ProjectId = 6L
+                        },
+                        new
+                        {
+                            TimeEntryId = 27L,
+                            AmountOfHours = 3m,
+                            Comment = "Customer-focused system-worthy protocol",
+                            Date = new DateTime(2020, 2, 3, 10, 45, 29, 480, DateTimeKind.Unspecified).AddTicks(7138),
+                            EmployeeId = 6L,
+                            ProjectId = 2L
+                        },
+                        new
+                        {
+                            TimeEntryId = 28L,
+                            AmountOfHours = 5m,
+                            Comment = "Compatible eco-centric website",
+                            Date = new DateTime(2020, 2, 29, 11, 44, 59, 644, DateTimeKind.Unspecified).AddTicks(8148),
+                            EmployeeId = 12L,
+                            ProjectId = 13L
+                        },
+                        new
+                        {
+                            TimeEntryId = 29L,
+                            AmountOfHours = 3m,
+                            Comment = "Triple-buffered demand-driven Graphic Interface",
+                            Date = new DateTime(2020, 6, 6, 14, 15, 27, 519, DateTimeKind.Unspecified).AddTicks(861),
+                            EmployeeId = 7L,
+                            ProjectId = 7L
+                        },
+                        new
+                        {
+                            TimeEntryId = 30L,
+                            AmountOfHours = 2m,
+                            Comment = "Vision-oriented asymmetric policy",
+                            Date = new DateTime(2020, 12, 7, 5, 19, 5, 440, DateTimeKind.Unspecified).AddTicks(1582),
+                            EmployeeId = 1L,
+                            ProjectId = 4L
+                        },
+                        new
+                        {
+                            TimeEntryId = 31L,
+                            AmountOfHours = 6m,
+                            Comment = "Intuitive leading edge database",
+                            Date = new DateTime(2020, 7, 23, 13, 25, 55, 407, DateTimeKind.Unspecified).AddTicks(9072),
+                            EmployeeId = 1L,
+                            ProjectId = 2L
+                        },
+                        new
+                        {
+                            TimeEntryId = 32L,
+                            AmountOfHours = 6m,
+                            Comment = "Reverse-engineered global open architecture",
+                            Date = new DateTime(2020, 10, 27, 8, 29, 51, 396, DateTimeKind.Unspecified).AddTicks(2253),
+                            EmployeeId = 1L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            TimeEntryId = 33L,
+                            AmountOfHours = 4m,
+                            Comment = "Automated global throughput",
+                            Date = new DateTime(2020, 12, 6, 22, 22, 31, 628, DateTimeKind.Unspecified).AddTicks(177),
+                            EmployeeId = 4L,
+                            ProjectId = 14L
+                        },
+                        new
+                        {
+                            TimeEntryId = 34L,
+                            AmountOfHours = 6m,
+                            Comment = "Optional well-modulated capability",
+                            Date = new DateTime(2020, 9, 5, 0, 48, 31, 804, DateTimeKind.Unspecified).AddTicks(426),
+                            EmployeeId = 12L,
+                            ProjectId = 4L
+                        },
+                        new
+                        {
+                            TimeEntryId = 35L,
+                            AmountOfHours = 2m,
+                            Comment = "Secured analyzing groupware",
+                            Date = new DateTime(2020, 2, 4, 20, 33, 45, 976, DateTimeKind.Unspecified).AddTicks(3854),
+                            EmployeeId = 12L,
+                            ProjectId = 13L
+                        },
+                        new
+                        {
                             TimeEntryId = 36L,
-                            AmountOfHours = 0m,
-                            Comment = "Itaque et ut tempora et qui porro beatae nihil tenetur.",
-                            Date = new DateTime(2020, 8, 26, 12, 10, 2, 880, DateTimeKind.Unspecified).AddTicks(1139),
-                            EmployeeId = 3L,
-                            ProjectId = 9L
+                            AmountOfHours = 6m,
+                            Comment = "Right-sized object-oriented task-force",
+                            Date = new DateTime(2020, 11, 18, 5, 38, 53, 543, DateTimeKind.Unspecified).AddTicks(6320),
+                            EmployeeId = 7L,
+                            ProjectId = 13L
                         },
                         new
                         {
                             TimeEntryId = 37L,
-                            AmountOfHours = 14m,
-                            Comment = "Aliquid non corrupti pariatur et rerum sit ipsum minima enim.",
-                            Date = new DateTime(2020, 12, 4, 13, 18, 45, 765, DateTimeKind.Unspecified).AddTicks(6991),
+                            AmountOfHours = 2m,
+                            Comment = "Streamlined non-volatile initiative",
+                            Date = new DateTime(2020, 7, 24, 5, 36, 6, 607, DateTimeKind.Unspecified).AddTicks(8244),
                             EmployeeId = 7L,
-                            ProjectId = 17L
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 38L,
-                            AmountOfHours = 12m,
-                            Comment = "Omnis in excepturi quas enim aut magni deserunt dolore consequatur.",
-                            Date = new DateTime(2020, 4, 10, 18, 51, 27, 767, DateTimeKind.Unspecified).AddTicks(2303),
-                            EmployeeId = 8L,
+                            AmountOfHours = 8m,
+                            Comment = "Profound regional parallelism",
+                            Date = new DateTime(2020, 9, 16, 20, 37, 51, 324, DateTimeKind.Unspecified).AddTicks(1998),
+                            EmployeeId = 6L,
                             ProjectId = 18L
                         },
                         new
                         {
                             TimeEntryId = 39L,
-                            AmountOfHours = 17m,
-                            Comment = "Sed rerum quis dicta commodi dolore fugiat ipsa aperiam autem.",
-                            Date = new DateTime(2020, 1, 22, 18, 31, 7, 707, DateTimeKind.Unspecified).AddTicks(3014),
-                            EmployeeId = 3L,
+                            AmountOfHours = 7m,
+                            Comment = "Persistent background architecture",
+                            Date = new DateTime(2020, 12, 25, 0, 57, 34, 766, DateTimeKind.Unspecified).AddTicks(6178),
+                            EmployeeId = 12L,
                             ProjectId = 15L
                         },
                         new
                         {
                             TimeEntryId = 40L,
-                            AmountOfHours = 46m,
-                            Comment = "Cupiditate aperiam nihil eius unde occaecati ullam accusantium odio est.",
-                            Date = new DateTime(2020, 9, 4, 7, 33, 47, 553, DateTimeKind.Unspecified).AddTicks(2745),
+                            AmountOfHours = 8m,
+                            Comment = "Grass-roots didactic benchmark",
+                            Date = new DateTime(2020, 8, 7, 7, 46, 39, 116, DateTimeKind.Unspecified).AddTicks(180),
                             EmployeeId = 2L,
-                            ProjectId = 17L
+                            ProjectId = 2L
                         },
                         new
                         {
                             TimeEntryId = 41L,
-                            AmountOfHours = 46m,
-                            Comment = "Soluta sed tempora quia rerum ipsa ab reprehenderit accusantium iusto.",
-                            Date = new DateTime(2020, 2, 7, 15, 8, 21, 708, DateTimeKind.Unspecified).AddTicks(3079),
-                            EmployeeId = 6L,
-                            ProjectId = 1L
+                            AmountOfHours = 3m,
+                            Comment = "Reactive 24 hour product",
+                            Date = new DateTime(2020, 10, 8, 8, 13, 44, 348, DateTimeKind.Unspecified).AddTicks(1),
+                            EmployeeId = 1L,
+                            ProjectId = 3L
                         },
                         new
                         {
                             TimeEntryId = 42L,
-                            AmountOfHours = 45m,
-                            Comment = "Commodi quisquam exercitationem est iusto commodi et numquam distinctio ea.",
-                            Date = new DateTime(2020, 5, 14, 9, 24, 21, 984, DateTimeKind.Unspecified).AddTicks(4013),
-                            EmployeeId = 5L,
-                            ProjectId = 11L
+                            AmountOfHours = 6m,
+                            Comment = "Exclusive multimedia function",
+                            Date = new DateTime(2020, 7, 17, 7, 3, 19, 929, DateTimeKind.Unspecified).AddTicks(3505),
+                            EmployeeId = 2L,
+                            ProjectId = 8L
                         },
                         new
                         {
                             TimeEntryId = 43L,
-                            AmountOfHours = 5m,
-                            Comment = "Dignissimos error aut omnis qui quasi ea repudiandae error aperiam.",
-                            Date = new DateTime(2020, 12, 28, 23, 14, 2, 639, DateTimeKind.Unspecified).AddTicks(5776),
-                            EmployeeId = 10L,
-                            ProjectId = 13L
+                            AmountOfHours = 2m,
+                            Comment = "Face to face national hub",
+                            Date = new DateTime(2020, 3, 8, 19, 57, 33, 23, DateTimeKind.Unspecified).AddTicks(2138),
+                            EmployeeId = 9L,
+                            ProjectId = 18L
                         },
                         new
                         {
                             TimeEntryId = 44L,
-                            AmountOfHours = 8m,
-                            Comment = "Aut enim minus occaecati voluptatem natus distinctio quisquam molestiae quas.",
-                            Date = new DateTime(2020, 9, 21, 2, 16, 54, 806, DateTimeKind.Unspecified).AddTicks(9450),
-                            EmployeeId = 5L,
-                            ProjectId = 15L
+                            AmountOfHours = 2m,
+                            Comment = "Polarised systematic methodology",
+                            Date = new DateTime(2020, 11, 6, 1, 15, 7, 76, DateTimeKind.Unspecified).AddTicks(7021),
+                            EmployeeId = 11L,
+                            ProjectId = 20L
                         },
                         new
                         {
                             TimeEntryId = 45L,
-                            AmountOfHours = 28m,
-                            Comment = "Praesentium dolorem eum ut illo a rerum praesentium praesentium recusandae.",
-                            Date = new DateTime(2020, 9, 10, 17, 7, 0, 878, DateTimeKind.Unspecified).AddTicks(650),
-                            EmployeeId = 11L,
-                            ProjectId = 6L
+                            AmountOfHours = 4m,
+                            Comment = "Mandatory explicit Graphic Interface",
+                            Date = new DateTime(2020, 3, 12, 14, 8, 13, 895, DateTimeKind.Unspecified).AddTicks(8494),
+                            EmployeeId = 12L,
+                            ProjectId = 19L
                         },
                         new
                         {
                             TimeEntryId = 46L,
-                            AmountOfHours = 27m,
-                            Comment = "Sequi voluptatem temporibus aut rerum recusandae sed reprehenderit libero dolorem.",
-                            Date = new DateTime(2020, 5, 18, 8, 24, 22, 209, DateTimeKind.Unspecified).AddTicks(8795),
-                            EmployeeId = 5L,
+                            AmountOfHours = 8m,
+                            Comment = "Seamless web-enabled groupware",
+                            Date = new DateTime(2020, 9, 5, 20, 47, 41, 708, DateTimeKind.Unspecified).AddTicks(4449),
+                            EmployeeId = 10L,
                             ProjectId = 9L
                         },
                         new
                         {
                             TimeEntryId = 47L,
-                            AmountOfHours = 44m,
-                            Comment = "Dolores rem dolor ea vel saepe qui quod sed totam.",
-                            Date = new DateTime(2020, 6, 7, 18, 14, 6, 745, DateTimeKind.Unspecified).AddTicks(1863),
-                            EmployeeId = 7L,
-                            ProjectId = 16L
-                        },
-                        new
-                        {
-                            TimeEntryId = 48L,
-                            AmountOfHours = 33m,
-                            Comment = "Consequatur et quidem vero sit non error neque quo similique.",
-                            Date = new DateTime(2020, 3, 8, 19, 28, 0, 329, DateTimeKind.Unspecified).AddTicks(664),
-                            EmployeeId = 2L,
-                            ProjectId = 16L
-                        },
-                        new
-                        {
-                            TimeEntryId = 49L,
-                            AmountOfHours = 4m,
-                            Comment = "Sequi alias a fuga cupiditate modi quia maiores facere deleniti.",
-                            Date = new DateTime(2020, 4, 6, 15, 43, 41, 678, DateTimeKind.Unspecified).AddTicks(6648),
-                            EmployeeId = 11L,
-                            ProjectId = 10L
-                        },
-                        new
-                        {
-                            TimeEntryId = 50L,
-                            AmountOfHours = 25m,
-                            Comment = "Inventore quia tempora debitis placeat et culpa accusamus consectetur non.",
-                            Date = new DateTime(2021, 1, 1, 7, 55, 5, 166, DateTimeKind.Unspecified).AddTicks(9850),
-                            EmployeeId = 3L,
-                            ProjectId = 5L
-                        },
-                        new
-                        {
-                            TimeEntryId = 51L,
-                            AmountOfHours = 59m,
-                            Comment = "Possimus laborum corporis fuga harum eum officia sed excepturi tenetur.",
-                            Date = new DateTime(2020, 2, 28, 23, 48, 35, 695, DateTimeKind.Unspecified).AddTicks(813),
-                            EmployeeId = 3L,
-                            ProjectId = 20L
-                        },
-                        new
-                        {
-                            TimeEntryId = 52L,
-                            AmountOfHours = 50m,
-                            Comment = "Ab sequi rerum cumque non voluptatem aut reprehenderit nisi eius.",
-                            Date = new DateTime(2020, 3, 23, 6, 22, 29, 601, DateTimeKind.Unspecified).AddTicks(7831),
-                            EmployeeId = 1L,
-                            ProjectId = 13L
-                        },
-                        new
-                        {
-                            TimeEntryId = 53L,
-                            AmountOfHours = 17m,
-                            Comment = "Vel molestiae vel ullam veritatis aliquid incidunt qui quia quis.",
-                            Date = new DateTime(2020, 6, 28, 0, 58, 44, 492, DateTimeKind.Unspecified).AddTicks(8943),
-                            EmployeeId = 11L,
-                            ProjectId = 13L
-                        },
-                        new
-                        {
-                            TimeEntryId = 54L,
-                            AmountOfHours = 52m,
-                            Comment = "Consequatur enim rerum temporibus et possimus illum aperiam qui perspiciatis.",
-                            Date = new DateTime(2020, 10, 30, 14, 48, 37, 834, DateTimeKind.Unspecified).AddTicks(9058),
-                            EmployeeId = 1L,
-                            ProjectId = 1L
-                        },
-                        new
-                        {
-                            TimeEntryId = 55L,
-                            AmountOfHours = 22m,
-                            Comment = "Ut vitae dolorum voluptatem eveniet corporis iure vitae sunt itaque.",
-                            Date = new DateTime(2020, 11, 15, 2, 25, 53, 685, DateTimeKind.Unspecified).AddTicks(7363),
-                            EmployeeId = 11L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 56L,
-                            AmountOfHours = 55m,
-                            Comment = "Reiciendis expedita pariatur mollitia quia et culpa quasi culpa numquam.",
-                            Date = new DateTime(2020, 8, 5, 17, 36, 53, 296, DateTimeKind.Unspecified).AddTicks(7082),
-                            EmployeeId = 3L,
-                            ProjectId = 15L
-                        },
-                        new
-                        {
-                            TimeEntryId = 57L,
-                            AmountOfHours = 47m,
-                            Comment = "Voluptas quo quis ab atque eos officiis explicabo libero eum.",
-                            Date = new DateTime(2020, 6, 20, 7, 2, 41, 186, DateTimeKind.Unspecified).AddTicks(4908),
-                            EmployeeId = 9L,
-                            ProjectId = 11L
-                        },
-                        new
-                        {
-                            TimeEntryId = 58L,
-                            AmountOfHours = 44m,
-                            Comment = "Optio cumque necessitatibus iste neque repudiandae inventore non eligendi esse.",
-                            Date = new DateTime(2020, 6, 21, 13, 2, 32, 67, DateTimeKind.Unspecified).AddTicks(2987),
-                            EmployeeId = 9L,
-                            ProjectId = 13L
-                        },
-                        new
-                        {
-                            TimeEntryId = 59L,
-                            AmountOfHours = 11m,
-                            Comment = "Quas ea voluptas dolorem fugiat laborum labore id est pariatur.",
-                            Date = new DateTime(2020, 10, 15, 4, 41, 22, 709, DateTimeKind.Unspecified).AddTicks(3605),
+                            AmountOfHours = 3m,
+                            Comment = "Multi-lateral next generation pricing structure",
+                            Date = new DateTime(2020, 2, 20, 14, 1, 40, 344, DateTimeKind.Unspecified).AddTicks(3327),
                             EmployeeId = 5L,
-                            ProjectId = 15L
-                        },
-                        new
-                        {
-                            TimeEntryId = 60L,
-                            AmountOfHours = 54m,
-                            Comment = "Doloribus sit aut quibusdam est at autem aut voluptas dolorum.",
-                            Date = new DateTime(2020, 1, 12, 12, 54, 8, 188, DateTimeKind.Unspecified).AddTicks(4383),
-                            EmployeeId = 7L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            TimeEntryId = 61L,
-                            AmountOfHours = 55m,
-                            Comment = "Ratione officiis commodi vero beatae cum officia voluptatem maiores unde.",
-                            Date = new DateTime(2020, 9, 20, 19, 19, 51, 5, DateTimeKind.Unspecified).AddTicks(9508),
-                            EmployeeId = 9L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 62L,
-                            AmountOfHours = 58m,
-                            Comment = "Ab eaque dolorem iusto aut ipsum earum tempore provident saepe.",
-                            Date = new DateTime(2020, 6, 28, 0, 23, 55, 815, DateTimeKind.Unspecified).AddTicks(7492),
-                            EmployeeId = 11L,
-                            ProjectId = 19L
-                        },
-                        new
-                        {
-                            TimeEntryId = 63L,
-                            AmountOfHours = 37m,
-                            Comment = "Beatae modi animi veniam saepe voluptas officia omnis corrupti provident.",
-                            Date = new DateTime(2020, 10, 28, 7, 2, 54, 397, DateTimeKind.Unspecified).AddTicks(6443),
-                            EmployeeId = 8L,
-                            ProjectId = 8L
-                        },
-                        new
-                        {
-                            TimeEntryId = 64L,
-                            AmountOfHours = 44m,
-                            Comment = "Aperiam suscipit odit sint consequatur esse eum nostrum blanditiis magni.",
-                            Date = new DateTime(2020, 4, 18, 19, 56, 9, 697, DateTimeKind.Unspecified).AddTicks(6147),
-                            EmployeeId = 9L,
-                            ProjectId = 11L
-                        },
-                        new
-                        {
-                            TimeEntryId = 65L,
-                            AmountOfHours = 28m,
-                            Comment = "Nisi rem consequatur ratione vero delectus amet voluptas rerum velit.",
-                            Date = new DateTime(2020, 12, 23, 10, 43, 9, 51, DateTimeKind.Unspecified).AddTicks(3406),
-                            EmployeeId = 12L,
-                            ProjectId = 4L
-                        },
-                        new
-                        {
-                            TimeEntryId = 66L,
-                            AmountOfHours = 16m,
-                            Comment = "Unde harum dolor non officiis numquam rerum adipisci repellendus recusandae.",
-                            Date = new DateTime(2020, 5, 16, 12, 41, 6, 545, DateTimeKind.Unspecified).AddTicks(7655),
-                            EmployeeId = 7L,
                             ProjectId = 9L
                         },
                         new
                         {
-                            TimeEntryId = 67L,
-                            AmountOfHours = 47m,
-                            Comment = "Assumenda rem laborum ut aliquid fugit et sit non molestias.",
-                            Date = new DateTime(2020, 10, 17, 18, 14, 6, 768, DateTimeKind.Unspecified).AddTicks(3606),
+                            TimeEntryId = 48L,
+                            AmountOfHours = 1m,
+                            Comment = "Persistent multi-tasking hardware",
+                            Date = new DateTime(2020, 10, 24, 7, 37, 9, 369, DateTimeKind.Unspecified).AddTicks(6814),
+                            EmployeeId = 2L,
+                            ProjectId = 19L
+                        },
+                        new
+                        {
+                            TimeEntryId = 49L,
+                            AmountOfHours = 1m,
+                            Comment = "Decentralized clear-thinking circuit",
+                            Date = new DateTime(2020, 2, 8, 15, 57, 5, 834, DateTimeKind.Unspecified).AddTicks(4724),
+                            EmployeeId = 2L,
+                            ProjectId = 7L
+                        },
+                        new
+                        {
+                            TimeEntryId = 50L,
+                            AmountOfHours = 7m,
+                            Comment = "Extended zero defect concept",
+                            Date = new DateTime(2020, 3, 24, 0, 35, 23, 929, DateTimeKind.Unspecified).AddTicks(560),
                             EmployeeId = 6L,
+                            ProjectId = 11L
+                        },
+                        new
+                        {
+                            TimeEntryId = 51L,
+                            AmountOfHours = 5m,
+                            Comment = "Re-contextualized 6th generation time-frame",
+                            Date = new DateTime(2020, 3, 14, 4, 43, 18, 589, DateTimeKind.Unspecified).AddTicks(3195),
+                            EmployeeId = 6L,
+                            ProjectId = 15L
+                        },
+                        new
+                        {
+                            TimeEntryId = 52L,
+                            AmountOfHours = 2m,
+                            Comment = "Decentralized static knowledge user",
+                            Date = new DateTime(2020, 10, 31, 19, 24, 23, 825, DateTimeKind.Unspecified).AddTicks(6741),
+                            EmployeeId = 7L,
+                            ProjectId = 8L
+                        },
+                        new
+                        {
+                            TimeEntryId = 53L,
+                            AmountOfHours = 7m,
+                            Comment = "Reactive zero administration projection",
+                            Date = new DateTime(2020, 6, 3, 16, 51, 29, 20, DateTimeKind.Unspecified).AddTicks(9183),
+                            EmployeeId = 1L,
+                            ProjectId = 12L
+                        },
+                        new
+                        {
+                            TimeEntryId = 54L,
+                            AmountOfHours = 6m,
+                            Comment = "Seamless contextually-based methodology",
+                            Date = new DateTime(2020, 11, 9, 2, 11, 4, 481, DateTimeKind.Unspecified).AddTicks(1443),
+                            EmployeeId = 2L,
+                            ProjectId = 19L
+                        },
+                        new
+                        {
+                            TimeEntryId = 55L,
+                            AmountOfHours = 2m,
+                            Comment = "Re-contextualized intermediate success",
+                            Date = new DateTime(2020, 7, 12, 3, 14, 29, 853, DateTimeKind.Unspecified).AddTicks(7866),
+                            EmployeeId = 11L,
+                            ProjectId = 13L
+                        },
+                        new
+                        {
+                            TimeEntryId = 56L,
+                            AmountOfHours = 7m,
+                            Comment = "Polarised holistic open architecture",
+                            Date = new DateTime(2020, 7, 25, 18, 53, 39, 706, DateTimeKind.Unspecified).AddTicks(7279),
+                            EmployeeId = 3L,
+                            ProjectId = 6L
+                        },
+                        new
+                        {
+                            TimeEntryId = 57L,
+                            AmountOfHours = 8m,
+                            Comment = "Fully-configurable modular methodology",
+                            Date = new DateTime(2020, 12, 14, 13, 37, 14, 987, DateTimeKind.Unspecified).AddTicks(2430),
+                            EmployeeId = 12L,
+                            ProjectId = 17L
+                        },
+                        new
+                        {
+                            TimeEntryId = 58L,
+                            AmountOfHours = 5m,
+                            Comment = "Adaptive fresh-thinking hardware",
+                            Date = new DateTime(2020, 12, 23, 2, 28, 42, 190, DateTimeKind.Unspecified).AddTicks(2740),
+                            EmployeeId = 12L,
+                            ProjectId = 7L
+                        },
+                        new
+                        {
+                            TimeEntryId = 59L,
+                            AmountOfHours = 8m,
+                            Comment = "Stand-alone even-keeled framework",
+                            Date = new DateTime(2020, 11, 14, 15, 53, 3, 441, DateTimeKind.Unspecified).AddTicks(1783),
+                            EmployeeId = 10L,
+                            ProjectId = 7L
+                        },
+                        new
+                        {
+                            TimeEntryId = 60L,
+                            AmountOfHours = 4m,
+                            Comment = "Front-line multi-state model",
+                            Date = new DateTime(2020, 12, 15, 7, 58, 30, 723, DateTimeKind.Unspecified).AddTicks(4239),
+                            EmployeeId = 10L,
+                            ProjectId = 18L
+                        },
+                        new
+                        {
+                            TimeEntryId = 61L,
+                            AmountOfHours = 1m,
+                            Comment = "Networked background projection",
+                            Date = new DateTime(2020, 12, 22, 14, 12, 41, 130, DateTimeKind.Unspecified).AddTicks(468),
+                            EmployeeId = 4L,
+                            ProjectId = 19L
+                        },
+                        new
+                        {
+                            TimeEntryId = 62L,
+                            AmountOfHours = 4m,
+                            Comment = "Persistent 24 hour benchmark",
+                            Date = new DateTime(2020, 8, 20, 14, 29, 37, 647, DateTimeKind.Unspecified).AddTicks(3259),
+                            EmployeeId = 2L,
+                            ProjectId = 12L
+                        },
+                        new
+                        {
+                            TimeEntryId = 63L,
+                            AmountOfHours = 6m,
+                            Comment = "Customer-focused high-level utilisation",
+                            Date = new DateTime(2020, 8, 17, 14, 14, 1, 573, DateTimeKind.Unspecified).AddTicks(3442),
+                            EmployeeId = 4L,
+                            ProjectId = 14L
+                        },
+                        new
+                        {
+                            TimeEntryId = 64L,
+                            AmountOfHours = 7m,
+                            Comment = "Cross-platform eco-centric Graphical User Interface",
+                            Date = new DateTime(2020, 12, 7, 22, 23, 53, 590, DateTimeKind.Unspecified).AddTicks(4780),
+                            EmployeeId = 12L,
+                            ProjectId = 20L
+                        },
+                        new
+                        {
+                            TimeEntryId = 65L,
+                            AmountOfHours = 1m,
+                            Comment = "Versatile well-modulated collaboration",
+                            Date = new DateTime(2020, 7, 29, 9, 2, 45, 523, DateTimeKind.Unspecified).AddTicks(8005),
+                            EmployeeId = 12L,
+                            ProjectId = 1L
+                        },
+                        new
+                        {
+                            TimeEntryId = 66L,
+                            AmountOfHours = 5m,
+                            Comment = "Front-line mobile model",
+                            Date = new DateTime(2020, 6, 23, 1, 10, 7, 524, DateTimeKind.Unspecified).AddTicks(319),
+                            EmployeeId = 6L,
+                            ProjectId = 5L
+                        },
+                        new
+                        {
+                            TimeEntryId = 67L,
+                            AmountOfHours = 2m,
+                            Comment = "Future-proofed contextually-based open architecture",
+                            Date = new DateTime(2020, 6, 19, 11, 40, 13, 152, DateTimeKind.Unspecified).AddTicks(214),
+                            EmployeeId = 10L,
                             ProjectId = 7L
                         },
                         new
                         {
                             TimeEntryId = 68L,
-                            AmountOfHours = 16m,
-                            Comment = "Reprehenderit optio tenetur sed ipsa iste quod qui aliquid qui.",
-                            Date = new DateTime(2020, 7, 16, 14, 48, 32, 967, DateTimeKind.Unspecified).AddTicks(8229),
-                            EmployeeId = 9L,
-                            ProjectId = 16L
+                            AmountOfHours = 2m,
+                            Comment = "Distributed multi-tasking instruction set",
+                            Date = new DateTime(2020, 9, 18, 14, 45, 32, 694, DateTimeKind.Unspecified).AddTicks(2483),
+                            EmployeeId = 2L,
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 69L,
-                            AmountOfHours = 9m,
-                            Comment = "Nobis architecto culpa qui quia in repellat voluptatum et et.",
-                            Date = new DateTime(2020, 11, 2, 3, 3, 33, 333, DateTimeKind.Unspecified).AddTicks(7102),
-                            EmployeeId = 10L,
-                            ProjectId = 6L
+                            AmountOfHours = 3m,
+                            Comment = "Seamless exuding flexibility",
+                            Date = new DateTime(2020, 4, 20, 20, 37, 20, 283, DateTimeKind.Unspecified).AddTicks(6519),
+                            EmployeeId = 11L,
+                            ProjectId = 2L
                         },
                         new
                         {
                             TimeEntryId = 70L,
-                            AmountOfHours = 32m,
-                            Comment = "Odit ad doloremque perspiciatis cum quis aut sunt reiciendis commodi.",
-                            Date = new DateTime(2020, 11, 5, 8, 32, 44, 482, DateTimeKind.Unspecified).AddTicks(3918),
-                            EmployeeId = 5L,
-                            ProjectId = 5L
+                            AmountOfHours = 6m,
+                            Comment = "Automated value-added capacity",
+                            Date = new DateTime(2020, 6, 18, 4, 5, 55, 396, DateTimeKind.Unspecified).AddTicks(6978),
+                            EmployeeId = 7L,
+                            ProjectId = 4L
                         },
                         new
                         {
                             TimeEntryId = 71L,
-                            AmountOfHours = 57m,
-                            Comment = "Sed totam tempore deserunt minima veniam suscipit blanditiis molestiae quae.",
-                            Date = new DateTime(2020, 1, 17, 20, 47, 47, 309, DateTimeKind.Unspecified).AddTicks(5009),
-                            EmployeeId = 2L,
-                            ProjectId = 3L
+                            AmountOfHours = 7m,
+                            Comment = "Switchable empowering secured line",
+                            Date = new DateTime(2020, 3, 15, 7, 55, 55, 223, DateTimeKind.Unspecified).AddTicks(3218),
+                            EmployeeId = 6L,
+                            ProjectId = 10L
                         },
                         new
                         {
                             TimeEntryId = 72L,
-                            AmountOfHours = 55m,
-                            Comment = "Eveniet laboriosam qui repellendus quo quia quo beatae aut magni.",
-                            Date = new DateTime(2020, 4, 8, 15, 39, 4, 659, DateTimeKind.Unspecified).AddTicks(6483),
-                            EmployeeId = 1L,
-                            ProjectId = 10L
+                            AmountOfHours = 7m,
+                            Comment = "Cloned object-oriented conglomeration",
+                            Date = new DateTime(2020, 7, 26, 7, 13, 5, 33, DateTimeKind.Unspecified).AddTicks(7209),
+                            EmployeeId = 9L,
+                            ProjectId = 18L
                         },
                         new
                         {
                             TimeEntryId = 73L,
-                            AmountOfHours = 36m,
-                            Comment = "Explicabo eius dicta itaque ex ab ex sit rerum eius.",
-                            Date = new DateTime(2020, 5, 5, 23, 45, 13, 815, DateTimeKind.Unspecified).AddTicks(9912),
+                            AmountOfHours = 7m,
+                            Comment = "Focused national productivity",
+                            Date = new DateTime(2020, 11, 6, 2, 55, 43, 208, DateTimeKind.Unspecified).AddTicks(3581),
                             EmployeeId = 12L,
-                            ProjectId = 12L
+                            ProjectId = 4L
                         },
                         new
                         {
                             TimeEntryId = 74L,
-                            AmountOfHours = 39m,
-                            Comment = "Ut maiores reprehenderit ut aut necessitatibus adipisci rerum ut in.",
-                            Date = new DateTime(2020, 3, 13, 19, 52, 44, 143, DateTimeKind.Unspecified).AddTicks(9518),
-                            EmployeeId = 7L,
-                            ProjectId = 17L
-                        },
-                        new
-                        {
-                            TimeEntryId = 75L,
-                            AmountOfHours = 2m,
-                            Comment = "Ex perspiciatis molestias qui itaque quod ea impedit sapiente numquam.",
-                            Date = new DateTime(2020, 3, 27, 10, 7, 3, 53, DateTimeKind.Unspecified).AddTicks(700),
-                            EmployeeId = 10L,
-                            ProjectId = 5L
-                        },
-                        new
-                        {
-                            TimeEntryId = 76L,
-                            AmountOfHours = 34m,
-                            Comment = "Reprehenderit quia consequatur voluptatem aut inventore qui consequuntur id perspiciatis.",
-                            Date = new DateTime(2020, 7, 24, 7, 16, 7, 435, DateTimeKind.Unspecified).AddTicks(249),
-                            EmployeeId = 5L,
-                            ProjectId = 10L
-                        },
-                        new
-                        {
-                            TimeEntryId = 77L,
-                            AmountOfHours = 27m,
-                            Comment = "Magnam molestias esse sint vel enim aut ea impedit sequi.",
-                            Date = new DateTime(2020, 5, 25, 11, 17, 50, 356, DateTimeKind.Unspecified).AddTicks(8097),
-                            EmployeeId = 8L,
-                            ProjectId = 10L
-                        },
-                        new
-                        {
-                            TimeEntryId = 78L,
-                            AmountOfHours = 38m,
-                            Comment = "Accusantium dolor possimus rerum sit harum dolore autem assumenda quis.",
-                            Date = new DateTime(2020, 4, 17, 14, 24, 27, 775, DateTimeKind.Unspecified).AddTicks(4599),
-                            EmployeeId = 10L,
-                            ProjectId = 4L
-                        },
-                        new
-                        {
-                            TimeEntryId = 79L,
-                            AmountOfHours = 14m,
-                            Comment = "Aut delectus praesentium corrupti ut et praesentium qui et ut.",
-                            Date = new DateTime(2020, 4, 24, 8, 44, 16, 505, DateTimeKind.Unspecified).AddTicks(9570),
-                            EmployeeId = 5L,
-                            ProjectId = 5L
-                        },
-                        new
-                        {
-                            TimeEntryId = 80L,
-                            AmountOfHours = 60m,
-                            Comment = "Totam et provident omnis voluptas explicabo aut natus temporibus rem.",
-                            Date = new DateTime(2020, 8, 4, 9, 21, 17, 836, DateTimeKind.Unspecified).AddTicks(136),
-                            EmployeeId = 2L,
-                            ProjectId = 16L
-                        },
-                        new
-                        {
-                            TimeEntryId = 81L,
-                            AmountOfHours = 27m,
-                            Comment = "Quod ipsa est quidem alias maxime mollitia quod eligendi dolores.",
-                            Date = new DateTime(2020, 3, 16, 18, 3, 59, 741, DateTimeKind.Unspecified).AddTicks(2365),
-                            EmployeeId = 2L,
-                            ProjectId = 8L
-                        },
-                        new
-                        {
-                            TimeEntryId = 82L,
-                            AmountOfHours = 34m,
-                            Comment = "Autem corrupti atque dicta ipsa aliquam quia fugit voluptas ad.",
-                            Date = new DateTime(2020, 3, 6, 22, 49, 48, 312, DateTimeKind.Unspecified).AddTicks(6031),
-                            EmployeeId = 5L,
-                            ProjectId = 5L
-                        },
-                        new
-                        {
-                            TimeEntryId = 83L,
-                            AmountOfHours = 14m,
-                            Comment = "Quia doloribus consequatur culpa cumque repellat quo omnis culpa voluptas.",
-                            Date = new DateTime(2020, 2, 16, 21, 26, 56, 504, DateTimeKind.Unspecified).AddTicks(7260),
-                            EmployeeId = 3L,
-                            ProjectId = 17L
-                        },
-                        new
-                        {
-                            TimeEntryId = 84L,
-                            AmountOfHours = 44m,
-                            Comment = "A in dignissimos vel repudiandae non sit ullam doloribus eaque.",
-                            Date = new DateTime(2020, 5, 24, 15, 59, 23, 591, DateTimeKind.Unspecified).AddTicks(6009),
-                            EmployeeId = 9L,
-                            ProjectId = 20L
-                        },
-                        new
-                        {
-                            TimeEntryId = 85L,
-                            AmountOfHours = 38m,
-                            Comment = "Sed velit tempora dolor et aliquid error nihil assumenda non.",
-                            Date = new DateTime(2020, 2, 19, 15, 1, 50, 141, DateTimeKind.Unspecified).AddTicks(1699),
-                            EmployeeId = 9L,
-                            ProjectId = 4L
-                        },
-                        new
-                        {
-                            TimeEntryId = 86L,
-                            AmountOfHours = 37m,
-                            Comment = "Voluptates porro quo adipisci eos mollitia sequi odio fugiat doloremque.",
-                            Date = new DateTime(2020, 11, 11, 22, 35, 5, 158, DateTimeKind.Unspecified).AddTicks(5114),
-                            EmployeeId = 4L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            TimeEntryId = 87L,
-                            AmountOfHours = 53m,
-                            Comment = "Repellat voluptas vero placeat et dicta iste dolorem sed laudantium.",
-                            Date = new DateTime(2020, 1, 22, 23, 30, 56, 707, DateTimeKind.Unspecified).AddTicks(9461),
+                            AmountOfHours = 5m,
+                            Comment = "Enterprise-wide dynamic internet solution",
+                            Date = new DateTime(2020, 2, 20, 5, 54, 36, 612, DateTimeKind.Unspecified).AddTicks(5063),
                             EmployeeId = 3L,
                             ProjectId = 1L
                         },
                         new
                         {
-                            TimeEntryId = 88L,
-                            AmountOfHours = 15m,
-                            Comment = "Harum repudiandae eligendi minus libero similique iure enim velit non.",
-                            Date = new DateTime(2020, 2, 28, 13, 30, 7, 139, DateTimeKind.Unspecified).AddTicks(1108),
-                            EmployeeId = 2L,
+                            TimeEntryId = 75L,
+                            AmountOfHours = 3m,
+                            Comment = "Focused intangible complexity",
+                            Date = new DateTime(2020, 8, 6, 22, 27, 24, 645, DateTimeKind.Unspecified).AddTicks(2577),
+                            EmployeeId = 3L,
                             ProjectId = 11L
                         },
                         new
                         {
-                            TimeEntryId = 89L,
-                            AmountOfHours = 46m,
-                            Comment = "In adipisci voluptatum sit nostrum est nihil odio tempore itaque.",
-                            Date = new DateTime(2020, 6, 21, 9, 20, 1, 254, DateTimeKind.Unspecified).AddTicks(914),
-                            EmployeeId = 4L,
-                            ProjectId = 16L
+                            TimeEntryId = 76L,
+                            AmountOfHours = 3m,
+                            Comment = "Fundamental needs-based orchestration",
+                            Date = new DateTime(2020, 5, 3, 2, 6, 53, 466, DateTimeKind.Unspecified).AddTicks(8147),
+                            EmployeeId = 7L,
+                            ProjectId = 15L
                         },
                         new
                         {
-                            TimeEntryId = 90L,
-                            AmountOfHours = 45m,
-                            Comment = "Sit autem ut qui odio ut consequatur et laboriosam sunt.",
-                            Date = new DateTime(2020, 1, 22, 13, 11, 27, 908, DateTimeKind.Unspecified).AddTicks(4883),
-                            EmployeeId = 12L,
-                            ProjectId = 10L
-                        },
-                        new
-                        {
-                            TimeEntryId = 91L,
-                            AmountOfHours = 44m,
-                            Comment = "Magni sit distinctio voluptas et quibusdam deserunt laboriosam maiores non.",
-                            Date = new DateTime(2020, 6, 28, 11, 0, 35, 694, DateTimeKind.Unspecified).AddTicks(3062),
-                            EmployeeId = 9L,
-                            ProjectId = 10L
-                        },
-                        new
-                        {
-                            TimeEntryId = 92L,
-                            AmountOfHours = 11m,
-                            Comment = "Labore possimus esse saepe molestias facilis sunt qui iste enim.",
-                            Date = new DateTime(2020, 7, 20, 9, 20, 5, 15, DateTimeKind.Unspecified).AddTicks(44),
-                            EmployeeId = 2L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            TimeEntryId = 93L,
-                            AmountOfHours = 39m,
-                            Comment = "Vero et sunt et velit reiciendis nemo nisi ad doloribus.",
-                            Date = new DateTime(2020, 12, 15, 16, 4, 3, 868, DateTimeKind.Unspecified).AddTicks(5359),
-                            EmployeeId = 2L,
-                            ProjectId = 6L
-                        },
-                        new
-                        {
-                            TimeEntryId = 94L,
-                            AmountOfHours = 51m,
-                            Comment = "Reprehenderit omnis quasi delectus aliquid laborum nobis culpa sequi aperiam.",
-                            Date = new DateTime(2020, 2, 25, 20, 56, 27, 676, DateTimeKind.Unspecified).AddTicks(1817),
-                            EmployeeId = 12L,
-                            ProjectId = 17L
-                        },
-                        new
-                        {
-                            TimeEntryId = 95L,
-                            AmountOfHours = 18m,
-                            Comment = "Est reprehenderit tempora ab nulla recusandae atque beatae sed hic.",
-                            Date = new DateTime(2020, 8, 21, 18, 49, 2, 230, DateTimeKind.Unspecified).AddTicks(3411),
-                            EmployeeId = 4L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            TimeEntryId = 96L,
-                            AmountOfHours = 54m,
-                            Comment = "Deleniti molestiae id dolore quos magnam et quibusdam velit magni.",
-                            Date = new DateTime(2020, 11, 22, 0, 35, 4, 878, DateTimeKind.Unspecified).AddTicks(5056),
+                            TimeEntryId = 77L,
+                            AmountOfHours = 6m,
+                            Comment = "Profound attitude-oriented core",
+                            Date = new DateTime(2020, 8, 6, 9, 11, 31, 330, DateTimeKind.Unspecified).AddTicks(8462),
                             EmployeeId = 3L,
-                            ProjectId = 7L
+                            ProjectId = 13L
                         },
                         new
                         {
-                            TimeEntryId = 97L,
-                            AmountOfHours = 16m,
-                            Comment = "Placeat illo illum ex laboriosam asperiores sunt rerum omnis aut.",
-                            Date = new DateTime(2020, 12, 22, 22, 51, 52, 579, DateTimeKind.Unspecified).AddTicks(6418),
+                            TimeEntryId = 78L,
+                            AmountOfHours = 6m,
+                            Comment = "Extended exuding matrices",
+                            Date = new DateTime(2020, 11, 9, 13, 42, 20, 808, DateTimeKind.Unspecified).AddTicks(748),
+                            EmployeeId = 12L,
+                            ProjectId = 2L
+                        },
+                        new
+                        {
+                            TimeEntryId = 79L,
+                            AmountOfHours = 5m,
+                            Comment = "Ameliorated directional emulation",
+                            Date = new DateTime(2020, 4, 26, 13, 34, 19, 16, DateTimeKind.Unspecified).AddTicks(1998),
                             EmployeeId = 6L,
-                            ProjectId = 5L
+                            ProjectId = 20L
                         },
                         new
                         {
-                            TimeEntryId = 98L,
-                            AmountOfHours = 19m,
-                            Comment = "Rerum quia optio dolor est repellendus aut qui ullam minus.",
-                            Date = new DateTime(2020, 5, 10, 13, 33, 34, 289, DateTimeKind.Unspecified).AddTicks(7476),
+                            TimeEntryId = 80L,
+                            AmountOfHours = 7m,
+                            Comment = "Diverse 3rd generation initiative",
+                            Date = new DateTime(2020, 6, 23, 7, 53, 50, 529, DateTimeKind.Unspecified).AddTicks(6106),
                             EmployeeId = 5L,
-                            ProjectId = 8L
+                            ProjectId = 11L
                         },
                         new
                         {
-                            TimeEntryId = 99L,
-                            AmountOfHours = 59m,
-                            Comment = "Consectetur aspernatur fugiat quas sapiente quia voluptas et magni repudiandae.",
-                            Date = new DateTime(2020, 11, 19, 6, 44, 25, 242, DateTimeKind.Unspecified).AddTicks(1230),
-                            EmployeeId = 3L,
-                            ProjectId = 18L
+                            TimeEntryId = 81L,
+                            AmountOfHours = 8m,
+                            Comment = "Visionary asymmetric functionalities",
+                            Date = new DateTime(2020, 6, 4, 17, 55, 33, 381, DateTimeKind.Unspecified).AddTicks(1181),
+                            EmployeeId = 6L,
+                            ProjectId = 11L
                         },
                         new
                         {
-                            TimeEntryId = 100L,
-                            AmountOfHours = 36m,
-                            Comment = "Nam fuga eum ad eveniet sed nesciunt architecto iusto et.",
-                            Date = new DateTime(2020, 4, 29, 1, 50, 22, 643, DateTimeKind.Unspecified).AddTicks(3010),
-                            EmployeeId = 8L,
-                            ProjectId = 4L
+                            TimeEntryId = 82L,
+                            AmountOfHours = 5m,
+                            Comment = "Diverse disintermediate utilisation",
+                            Date = new DateTime(2020, 10, 24, 6, 29, 27, 777, DateTimeKind.Unspecified).AddTicks(3868),
+                            EmployeeId = 5L,
+                            ProjectId = 15L
                         },
                         new
                         {
-                            TimeEntryId = 101L,
+                            TimeEntryId = 83L,
                             AmountOfHours = 1m,
-                            Comment = "Possimus vitae consequatur tenetur fugit mollitia eligendi nam ad repudiandae.",
-                            Date = new DateTime(2020, 3, 5, 1, 57, 42, 101, DateTimeKind.Unspecified).AddTicks(262),
-                            EmployeeId = 4L,
+                            Comment = "Decentralized mission-critical complexity",
+                            Date = new DateTime(2020, 7, 23, 9, 19, 50, 98, DateTimeKind.Unspecified).AddTicks(2879),
+                            EmployeeId = 6L,
+                            ProjectId = 1L
+                        },
+                        new
+                        {
+                            TimeEntryId = 84L,
+                            AmountOfHours = 3m,
+                            Comment = "Intuitive fresh-thinking array",
+                            Date = new DateTime(2020, 9, 28, 23, 50, 18, 953, DateTimeKind.Unspecified).AddTicks(1413),
+                            EmployeeId = 10L,
                             ProjectId = 3L
                         },
                         new
                         {
-                            TimeEntryId = 102L,
-                            AmountOfHours = 35m,
-                            Comment = "Asperiores dolor unde fugiat laudantium quas veritatis tempore et architecto.",
-                            Date = new DateTime(2020, 12, 26, 16, 29, 43, 711, DateTimeKind.Unspecified).AddTicks(7233),
+                            TimeEntryId = 85L,
+                            AmountOfHours = 4m,
+                            Comment = "Cloned optimal solution",
+                            Date = new DateTime(2020, 11, 30, 4, 23, 24, 341, DateTimeKind.Unspecified).AddTicks(5620),
+                            EmployeeId = 2L,
+                            ProjectId = 9L
+                        },
+                        new
+                        {
+                            TimeEntryId = 86L,
+                            AmountOfHours = 3m,
+                            Comment = "Focused cohesive intranet",
+                            Date = new DateTime(2020, 10, 16, 15, 19, 39, 434, DateTimeKind.Unspecified).AddTicks(629),
+                            EmployeeId = 7L,
+                            ProjectId = 11L
+                        },
+                        new
+                        {
+                            TimeEntryId = 87L,
+                            AmountOfHours = 7m,
+                            Comment = "Virtual dynamic approach",
+                            Date = new DateTime(2020, 1, 11, 10, 17, 54, 125, DateTimeKind.Unspecified).AddTicks(7810),
+                            EmployeeId = 3L,
+                            ProjectId = 19L
+                        },
+                        new
+                        {
+                            TimeEntryId = 88L,
+                            AmountOfHours = 1m,
+                            Comment = "Inverse disintermediate support",
+                            Date = new DateTime(2020, 10, 11, 1, 42, 44, 629, DateTimeKind.Unspecified).AddTicks(8124),
                             EmployeeId = 6L,
+                            ProjectId = 14L
+                        },
+                        new
+                        {
+                            TimeEntryId = 89L,
+                            AmountOfHours = 5m,
+                            Comment = "Programmable directional moratorium",
+                            Date = new DateTime(2020, 8, 26, 23, 47, 45, 370, DateTimeKind.Unspecified).AddTicks(7516),
+                            EmployeeId = 6L,
+                            ProjectId = 18L
+                        },
+                        new
+                        {
+                            TimeEntryId = 90L,
+                            AmountOfHours = 1m,
+                            Comment = "Organic bandwidth-monitored emulation",
+                            Date = new DateTime(2020, 2, 17, 6, 50, 3, 311, DateTimeKind.Unspecified).AddTicks(5829),
+                            EmployeeId = 4L,
                             ProjectId = 16L
                         },
                         new
                         {
-                            TimeEntryId = 103L,
+                            TimeEntryId = 91L,
                             AmountOfHours = 7m,
-                            Comment = "Distinctio in saepe omnis aperiam nemo nemo quae voluptates ad.",
-                            Date = new DateTime(2020, 10, 26, 11, 30, 43, 168, DateTimeKind.Unspecified).AddTicks(9932),
+                            Comment = "Intuitive multimedia synergy",
+                            Date = new DateTime(2020, 9, 27, 13, 28, 56, 282, DateTimeKind.Unspecified).AddTicks(8466),
+                            EmployeeId = 7L,
+                            ProjectId = 15L
+                        },
+                        new
+                        {
+                            TimeEntryId = 92L,
+                            AmountOfHours = 4m,
+                            Comment = "Configurable 4th generation intranet",
+                            Date = new DateTime(2020, 6, 25, 5, 27, 37, 141, DateTimeKind.Unspecified).AddTicks(2253),
+                            EmployeeId = 3L,
+                            ProjectId = 3L
+                        },
+                        new
+                        {
+                            TimeEntryId = 93L,
+                            AmountOfHours = 6m,
+                            Comment = "Mandatory value-added methodology",
+                            Date = new DateTime(2020, 5, 27, 1, 21, 0, 30, DateTimeKind.Unspecified).AddTicks(8933),
+                            EmployeeId = 9L,
+                            ProjectId = 3L
+                        },
+                        new
+                        {
+                            TimeEntryId = 94L,
+                            AmountOfHours = 6m,
+                            Comment = "Up-sized system-worthy artificial intelligence",
+                            Date = new DateTime(2020, 9, 13, 20, 32, 9, 844, DateTimeKind.Unspecified).AddTicks(5793),
+                            EmployeeId = 8L,
+                            ProjectId = 18L
+                        },
+                        new
+                        {
+                            TimeEntryId = 95L,
+                            AmountOfHours = 4m,
+                            Comment = "Digitized responsive synergy",
+                            Date = new DateTime(2020, 9, 19, 0, 44, 40, 795, DateTimeKind.Unspecified).AddTicks(2774),
+                            EmployeeId = 2L,
+                            ProjectId = 1L
+                        },
+                        new
+                        {
+                            TimeEntryId = 96L,
+                            AmountOfHours = 1m,
+                            Comment = "Profit-focused zero defect website",
+                            Date = new DateTime(2020, 3, 12, 11, 20, 52, 856, DateTimeKind.Unspecified).AddTicks(8860),
+                            EmployeeId = 12L,
+                            ProjectId = 4L
+                        },
+                        new
+                        {
+                            TimeEntryId = 97L,
+                            AmountOfHours = 5m,
+                            Comment = "Ergonomic bandwidth-monitored conglomeration",
+                            Date = new DateTime(2020, 2, 27, 22, 51, 4, 394, DateTimeKind.Unspecified).AddTicks(1055),
                             EmployeeId = 10L,
                             ProjectId = 15L
                         },
                         new
                         {
-                            TimeEntryId = 104L,
-                            AmountOfHours = 0m,
-                            Comment = "Aliquid repudiandae voluptatem placeat dolores culpa vitae expedita aut dolor.",
-                            Date = new DateTime(2020, 11, 27, 13, 44, 8, 959, DateTimeKind.Unspecified).AddTicks(5703),
-                            EmployeeId = 9L,
-                            ProjectId = 14L
-                        },
-                        new
-                        {
-                            TimeEntryId = 105L,
-                            AmountOfHours = 5m,
-                            Comment = "Dolor recusandae laudantium aliquid dolor in consequatur officiis voluptatem voluptatum.",
-                            Date = new DateTime(2020, 12, 18, 3, 50, 11, 885, DateTimeKind.Unspecified).AddTicks(3395),
-                            EmployeeId = 2L,
-                            ProjectId = 14L
-                        },
-                        new
-                        {
-                            TimeEntryId = 106L,
-                            AmountOfHours = 57m,
-                            Comment = "Accusamus enim illo id animi veritatis quia doloribus ab quod.",
-                            Date = new DateTime(2020, 4, 8, 2, 56, 20, 103, DateTimeKind.Unspecified).AddTicks(8329),
+                            TimeEntryId = 98L,
+                            AmountOfHours = 2m,
+                            Comment = "Devolved multi-tasking knowledge base",
+                            Date = new DateTime(2020, 6, 9, 4, 38, 22, 896, DateTimeKind.Unspecified).AddTicks(529),
                             EmployeeId = 8L,
-                            ProjectId = 5L
-                        },
-                        new
-                        {
-                            TimeEntryId = 107L,
-                            AmountOfHours = 0m,
-                            Comment = "Sint aut illo commodi ut tempora et aut vel molestiae.",
-                            Date = new DateTime(2020, 1, 13, 23, 16, 51, 508, DateTimeKind.Unspecified).AddTicks(2252),
-                            EmployeeId = 12L,
-                            ProjectId = 7L
-                        },
-                        new
-                        {
-                            TimeEntryId = 108L,
-                            AmountOfHours = 28m,
-                            Comment = "Saepe perspiciatis harum praesentium ipsam magni repellendus est est maiores.",
-                            Date = new DateTime(2020, 12, 31, 15, 12, 28, 766, DateTimeKind.Unspecified).AddTicks(8754),
-                            EmployeeId = 1L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 109L,
-                            AmountOfHours = 11m,
-                            Comment = "Aut quisquam est unde ut repellat ea voluptates nihil placeat.",
-                            Date = new DateTime(2020, 10, 6, 1, 1, 21, 363, DateTimeKind.Unspecified).AddTicks(6588),
-                            EmployeeId = 4L,
                             ProjectId = 1L
                         },
                         new
                         {
-                            TimeEntryId = 110L,
-                            AmountOfHours = 54m,
-                            Comment = "Praesentium et temporibus ad et nulla explicabo molestias odit dolorem.",
-                            Date = new DateTime(2020, 1, 31, 12, 58, 53, 230, DateTimeKind.Unspecified).AddTicks(1834),
+                            TimeEntryId = 99L,
+                            AmountOfHours = 4m,
+                            Comment = "Robust secondary superstructure",
+                            Date = new DateTime(2020, 3, 24, 9, 33, 26, 922, DateTimeKind.Unspecified).AddTicks(6246),
+                            EmployeeId = 10L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            TimeEntryId = 100L,
+                            AmountOfHours = 8m,
+                            Comment = "Enterprise-wide modular analyzer",
+                            Date = new DateTime(2020, 1, 5, 7, 13, 4, 694, DateTimeKind.Unspecified).AddTicks(7165),
+                            EmployeeId = 2L,
+                            ProjectId = 5L
+                        },
+                        new
+                        {
+                            TimeEntryId = 101L,
+                            AmountOfHours = 7m,
+                            Comment = "Versatile modular product",
+                            Date = new DateTime(2020, 9, 3, 16, 38, 11, 233, DateTimeKind.Unspecified).AddTicks(6941),
                             EmployeeId = 12L,
+                            ProjectId = 11L
+                        },
+                        new
+                        {
+                            TimeEntryId = 102L,
+                            AmountOfHours = 6m,
+                            Comment = "Reverse-engineered tangible software",
+                            Date = new DateTime(2020, 1, 25, 2, 45, 28, 364, DateTimeKind.Unspecified).AddTicks(4991),
+                            EmployeeId = 3L,
+                            ProjectId = 6L
+                        },
+                        new
+                        {
+                            TimeEntryId = 103L,
+                            AmountOfHours = 1m,
+                            Comment = "Cross-platform even-keeled interface",
+                            Date = new DateTime(2020, 4, 13, 15, 29, 43, 459, DateTimeKind.Unspecified).AddTicks(1514),
+                            EmployeeId = 12L,
+                            ProjectId = 20L
+                        },
+                        new
+                        {
+                            TimeEntryId = 104L,
+                            AmountOfHours = 8m,
+                            Comment = "De-engineered asymmetric capacity",
+                            Date = new DateTime(2020, 7, 9, 14, 4, 0, 143, DateTimeKind.Unspecified).AddTicks(7354),
+                            EmployeeId = 5L,
+                            ProjectId = 3L
+                        },
+                        new
+                        {
+                            TimeEntryId = 105L,
+                            AmountOfHours = 1m,
+                            Comment = "Networked clear-thinking monitoring",
+                            Date = new DateTime(2020, 8, 26, 16, 6, 49, 475, DateTimeKind.Unspecified).AddTicks(6844),
+                            EmployeeId = 7L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            TimeEntryId = 106L,
+                            AmountOfHours = 2m,
+                            Comment = "Assimilated regional monitoring",
+                            Date = new DateTime(2020, 5, 6, 7, 6, 40, 647, DateTimeKind.Unspecified).AddTicks(7952),
+                            EmployeeId = 6L,
+                            ProjectId = 4L
+                        },
+                        new
+                        {
+                            TimeEntryId = 107L,
+                            AmountOfHours = 1m,
+                            Comment = "Upgradable 6th generation model",
+                            Date = new DateTime(2020, 10, 23, 19, 59, 5, 336, DateTimeKind.Unspecified).AddTicks(908),
+                            EmployeeId = 6L,
+                            ProjectId = 15L
+                        },
+                        new
+                        {
+                            TimeEntryId = 108L,
+                            AmountOfHours = 1m,
+                            Comment = "Extended intangible artificial intelligence",
+                            Date = new DateTime(2020, 11, 27, 7, 10, 2, 386, DateTimeKind.Unspecified).AddTicks(7131),
+                            EmployeeId = 3L,
+                            ProjectId = 4L
+                        },
+                        new
+                        {
+                            TimeEntryId = 109L,
+                            AmountOfHours = 7m,
+                            Comment = "Optional mobile knowledge base",
+                            Date = new DateTime(2020, 11, 30, 4, 2, 37, 670, DateTimeKind.Unspecified).AddTicks(5121),
+                            EmployeeId = 5L,
+                            ProjectId = 9L
+                        },
+                        new
+                        {
+                            TimeEntryId = 110L,
+                            AmountOfHours = 3m,
+                            Comment = "Realigned client-server moderator",
+                            Date = new DateTime(2020, 9, 2, 9, 10, 8, 567, DateTimeKind.Unspecified).AddTicks(9074),
+                            EmployeeId = 7L,
                             ProjectId = 19L
                         },
                         new
                         {
                             TimeEntryId = 111L,
-                            AmountOfHours = 55m,
-                            Comment = "Eum et exercitationem ducimus laudantium cum explicabo sunt nihil in.",
-                            Date = new DateTime(2020, 3, 21, 15, 34, 32, 462, DateTimeKind.Unspecified).AddTicks(7741),
+                            AmountOfHours = 1m,
+                            Comment = "Optional systematic installation",
+                            Date = new DateTime(2020, 10, 17, 13, 38, 22, 444, DateTimeKind.Unspecified).AddTicks(9339),
                             EmployeeId = 10L,
-                            ProjectId = 20L
+                            ProjectId = 15L
                         },
                         new
                         {
                             TimeEntryId = 112L,
-                            AmountOfHours = 60m,
-                            Comment = "Sed rerum magni enim ab necessitatibus voluptatem aspernatur adipisci autem.",
-                            Date = new DateTime(2020, 2, 13, 0, 20, 24, 443, DateTimeKind.Unspecified).AddTicks(71),
-                            EmployeeId = 10L,
-                            ProjectId = 19L
+                            AmountOfHours = 2m,
+                            Comment = "Ameliorated incremental synergy",
+                            Date = new DateTime(2020, 11, 10, 17, 29, 25, 550, DateTimeKind.Unspecified).AddTicks(7962),
+                            EmployeeId = 6L,
+                            ProjectId = 15L
                         },
                         new
                         {
                             TimeEntryId = 113L,
-                            AmountOfHours = 22m,
-                            Comment = "Et iste fuga quidem dolor qui cupiditate ea qui debitis.",
-                            Date = new DateTime(2020, 2, 3, 19, 57, 4, 329, DateTimeKind.Unspecified).AddTicks(1027),
-                            EmployeeId = 7L,
+                            AmountOfHours = 2m,
+                            Comment = "Proactive leading edge emulation",
+                            Date = new DateTime(2020, 11, 25, 0, 5, 6, 119, DateTimeKind.Unspecified).AddTicks(6433),
+                            EmployeeId = 8L,
                             ProjectId = 9L
                         },
                         new
                         {
                             TimeEntryId = 114L,
-                            AmountOfHours = 22m,
-                            Comment = "Molestiae reprehenderit atque quasi qui fugit iure modi eaque est.",
-                            Date = new DateTime(2020, 10, 21, 3, 51, 5, 566, DateTimeKind.Unspecified).AddTicks(7623),
-                            EmployeeId = 11L,
-                            ProjectId = 7L
+                            AmountOfHours = 4m,
+                            Comment = "Devolved attitude-oriented artificial intelligence",
+                            Date = new DateTime(2020, 6, 4, 13, 46, 44, 350, DateTimeKind.Unspecified).AddTicks(9625),
+                            EmployeeId = 9L,
+                            ProjectId = 3L
                         },
                         new
                         {
                             TimeEntryId = 115L,
-                            AmountOfHours = 17m,
-                            Comment = "Accusamus quas et omnis qui porro voluptatum ratione est voluptatem.",
-                            Date = new DateTime(2020, 10, 4, 19, 26, 40, 984, DateTimeKind.Unspecified).AddTicks(9383),
-                            EmployeeId = 3L,
-                            ProjectId = 14L
+                            AmountOfHours = 2m,
+                            Comment = "Synergized zero tolerance utilisation",
+                            Date = new DateTime(2020, 10, 5, 6, 9, 18, 692, DateTimeKind.Unspecified).AddTicks(916),
+                            EmployeeId = 10L,
+                            ProjectId = 3L
                         },
                         new
                         {
                             TimeEntryId = 116L,
-                            AmountOfHours = 46m,
-                            Comment = "Et magnam optio facilis dicta omnis quia aut nemo omnis.",
-                            Date = new DateTime(2020, 6, 17, 5, 14, 26, 129, DateTimeKind.Unspecified).AddTicks(9451),
-                            EmployeeId = 3L,
-                            ProjectId = 20L
-                        },
-                        new
-                        {
-                            TimeEntryId = 117L,
-                            AmountOfHours = 23m,
-                            Comment = "Sint reiciendis repellendus qui eligendi labore corrupti hic voluptatem voluptatem.",
-                            Date = new DateTime(2020, 12, 28, 19, 1, 54, 156, DateTimeKind.Unspecified).AddTicks(2289),
-                            EmployeeId = 10L,
+                            AmountOfHours = 6m,
+                            Comment = "Progressive methodical hardware",
+                            Date = new DateTime(2020, 1, 7, 9, 38, 58, 130, DateTimeKind.Unspecified).AddTicks(1624),
+                            EmployeeId = 6L,
                             ProjectId = 2L
                         },
                         new
                         {
+                            TimeEntryId = 117L,
+                            AmountOfHours = 5m,
+                            Comment = "Configurable multimedia utilisation",
+                            Date = new DateTime(2020, 7, 26, 19, 15, 59, 842, DateTimeKind.Unspecified).AddTicks(6099),
+                            EmployeeId = 9L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
                             TimeEntryId = 118L,
-                            AmountOfHours = 47m,
-                            Comment = "Dolorum suscipit at veritatis et fuga autem repellendus hic non.",
-                            Date = new DateTime(2020, 11, 24, 23, 24, 32, 961, DateTimeKind.Unspecified).AddTicks(9687),
-                            EmployeeId = 3L,
-                            ProjectId = 20L
+                            AmountOfHours = 1m,
+                            Comment = "Polarised executive superstructure",
+                            Date = new DateTime(2020, 1, 17, 18, 17, 59, 10, DateTimeKind.Unspecified).AddTicks(7140),
+                            EmployeeId = 7L,
+                            ProjectId = 8L
                         },
                         new
                         {
                             TimeEntryId = 119L,
                             AmountOfHours = 4m,
-                            Comment = "Adipisci at quis id qui vitae et autem consequatur voluptas.",
-                            Date = new DateTime(2020, 2, 10, 2, 5, 31, 289, DateTimeKind.Unspecified).AddTicks(9520),
-                            EmployeeId = 12L,
-                            ProjectId = 5L
+                            Comment = "Reverse-engineered foreground application",
+                            Date = new DateTime(2020, 8, 12, 18, 19, 54, 662, DateTimeKind.Unspecified).AddTicks(9131),
+                            EmployeeId = 7L,
+                            ProjectId = 2L
                         },
                         new
                         {
                             TimeEntryId = 120L,
-                            AmountOfHours = 29m,
-                            Comment = "Doloribus tempore dolorem consequatur aut in sit aut voluptates sed.",
-                            Date = new DateTime(2020, 4, 10, 20, 32, 39, 646, DateTimeKind.Unspecified).AddTicks(3086),
-                            EmployeeId = 4L,
-                            ProjectId = 8L
+                            AmountOfHours = 2m,
+                            Comment = "Open-source user-facing migration",
+                            Date = new DateTime(2020, 1, 2, 23, 18, 41, 627, DateTimeKind.Unspecified).AddTicks(8452),
+                            EmployeeId = 8L,
+                            ProjectId = 18L
                         },
                         new
                         {
                             TimeEntryId = 121L,
-                            AmountOfHours = 44m,
-                            Comment = "Accusantium sunt quia porro magni nihil possimus voluptate et numquam.",
-                            Date = new DateTime(2020, 8, 8, 8, 38, 52, 544, DateTimeKind.Unspecified).AddTicks(45),
+                            AmountOfHours = 8m,
+                            Comment = "Versatile static challenge",
+                            Date = new DateTime(2020, 6, 30, 10, 13, 54, 487, DateTimeKind.Unspecified).AddTicks(9337),
                             EmployeeId = 5L,
-                            ProjectId = 17L
+                            ProjectId = 18L
                         },
                         new
                         {
                             TimeEntryId = 122L,
-                            AmountOfHours = 50m,
-                            Comment = "Delectus dicta sunt iusto ut enim quibusdam ad iure ut.",
-                            Date = new DateTime(2020, 2, 23, 20, 27, 17, 383, DateTimeKind.Unspecified).AddTicks(7233),
-                            EmployeeId = 2L,
+                            AmountOfHours = 1m,
+                            Comment = "Multi-channelled bandwidth-monitored architecture",
+                            Date = new DateTime(2020, 12, 15, 2, 11, 9, 415, DateTimeKind.Unspecified).AddTicks(1349),
+                            EmployeeId = 5L,
                             ProjectId = 15L
                         },
                         new
                         {
                             TimeEntryId = 123L,
-                            AmountOfHours = 13m,
-                            Comment = "Rerum magnam minima commodi deleniti eveniet voluptas autem natus aliquam.",
-                            Date = new DateTime(2020, 11, 20, 10, 46, 44, 401, DateTimeKind.Unspecified).AddTicks(2489),
-                            EmployeeId = 2L,
-                            ProjectId = 18L
+                            AmountOfHours = 3m,
+                            Comment = "Pre-emptive analyzing emulation",
+                            Date = new DateTime(2020, 2, 23, 21, 35, 25, 554, DateTimeKind.Unspecified).AddTicks(271),
+                            EmployeeId = 9L,
+                            ProjectId = 9L
                         },
                         new
                         {
                             TimeEntryId = 124L,
-                            AmountOfHours = 35m,
-                            Comment = "Voluptatem est et quasi magnam ex consequatur dolorem accusantium necessitatibus.",
-                            Date = new DateTime(2020, 9, 22, 11, 2, 30, 809, DateTimeKind.Unspecified).AddTicks(6344),
-                            EmployeeId = 1L,
-                            ProjectId = 6L
+                            AmountOfHours = 8m,
+                            Comment = "Distributed explicit strategy",
+                            Date = new DateTime(2020, 5, 1, 10, 2, 20, 207, DateTimeKind.Unspecified).AddTicks(4505),
+                            EmployeeId = 12L,
+                            ProjectId = 12L
                         },
                         new
                         {
                             TimeEntryId = 125L,
-                            AmountOfHours = 45m,
-                            Comment = "Amet ut dolorum quam sed sed praesentium ea recusandae maiores.",
-                            Date = new DateTime(2020, 12, 9, 15, 23, 48, 525, DateTimeKind.Unspecified).AddTicks(1280),
-                            EmployeeId = 4L,
-                            ProjectId = 5L
+                            AmountOfHours = 5m,
+                            Comment = "Reactive even-keeled algorithm",
+                            Date = new DateTime(2020, 5, 19, 22, 29, 27, 335, DateTimeKind.Unspecified).AddTicks(8817),
+                            EmployeeId = 11L,
+                            ProjectId = 12L
                         },
                         new
                         {
                             TimeEntryId = 126L,
-                            AmountOfHours = 10m,
-                            Comment = "Non quo ut dolores officia non aliquam omnis qui accusantium.",
-                            Date = new DateTime(2020, 1, 24, 6, 49, 38, 710, DateTimeKind.Unspecified).AddTicks(6301),
-                            EmployeeId = 6L,
-                            ProjectId = 11L
+                            AmountOfHours = 6m,
+                            Comment = "Open-architected optimal attitude",
+                            Date = new DateTime(2020, 2, 11, 0, 59, 14, 125, DateTimeKind.Unspecified).AddTicks(9663),
+                            EmployeeId = 7L,
+                            ProjectId = 14L
                         },
                         new
                         {
                             TimeEntryId = 127L,
-                            AmountOfHours = 7m,
-                            Comment = "Modi reprehenderit aliquid consectetur sapiente perferendis est officia quidem nam.",
-                            Date = new DateTime(2020, 3, 18, 20, 24, 35, 569, DateTimeKind.Unspecified).AddTicks(4731),
-                            EmployeeId = 4L,
-                            ProjectId = 4L
+                            AmountOfHours = 3m,
+                            Comment = "Face to face zero defect concept",
+                            Date = new DateTime(2020, 4, 28, 7, 0, 31, 16, DateTimeKind.Unspecified).AddTicks(844),
+                            EmployeeId = 5L,
+                            ProjectId = 18L
                         },
                         new
                         {
                             TimeEntryId = 128L,
-                            AmountOfHours = 37m,
-                            Comment = "Cum nam id alias nostrum quo ullam consectetur ut occaecati.",
-                            Date = new DateTime(2020, 2, 14, 22, 35, 7, 586, DateTimeKind.Unspecified).AddTicks(1788),
-                            EmployeeId = 9L,
-                            ProjectId = 15L
+                            AmountOfHours = 8m,
+                            Comment = "Synergistic encompassing success",
+                            Date = new DateTime(2020, 11, 23, 21, 28, 54, 936, DateTimeKind.Unspecified).AddTicks(2704),
+                            EmployeeId = 6L,
+                            ProjectId = 4L
                         },
                         new
                         {
                             TimeEntryId = 129L,
-                            AmountOfHours = 24m,
-                            Comment = "Iure deserunt delectus consequatur voluptas nisi dolor perspiciatis quidem eos.",
-                            Date = new DateTime(2020, 7, 1, 0, 59, 57, 829, DateTimeKind.Unspecified).AddTicks(9336),
+                            AmountOfHours = 7m,
+                            Comment = "Multi-layered discrete hardware",
+                            Date = new DateTime(2020, 1, 18, 23, 4, 11, 578, DateTimeKind.Unspecified).AddTicks(478),
                             EmployeeId = 4L,
-                            ProjectId = 1L
+                            ProjectId = 12L
                         },
                         new
                         {
                             TimeEntryId = 130L,
-                            AmountOfHours = 57m,
-                            Comment = "Sed nobis sit ea sunt quidem aut sint nostrum qui.",
-                            Date = new DateTime(2020, 7, 25, 19, 51, 3, 50, DateTimeKind.Unspecified).AddTicks(2333),
-                            EmployeeId = 3L,
-                            ProjectId = 8L
+                            AmountOfHours = 6m,
+                            Comment = "Right-sized 5th generation info-mediaries",
+                            Date = new DateTime(2020, 6, 27, 19, 38, 8, 850, DateTimeKind.Unspecified).AddTicks(7308),
+                            EmployeeId = 2L,
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 131L,
                             AmountOfHours = 1m,
-                            Comment = "Pariatur eum quos ut sint velit sed ipsa cumque nemo.",
-                            Date = new DateTime(2020, 10, 28, 20, 23, 38, 313, DateTimeKind.Unspecified).AddTicks(547),
-                            EmployeeId = 11L,
-                            ProjectId = 16L
+                            Comment = "Future-proofed clear-thinking core",
+                            Date = new DateTime(2020, 8, 9, 3, 28, 36, 345, DateTimeKind.Unspecified).AddTicks(4740),
+                            EmployeeId = 9L,
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 132L,
                             AmountOfHours = 8m,
-                            Comment = "Accusantium mollitia porro labore enim ea doloribus vero laboriosam ullam.",
-                            Date = new DateTime(2020, 6, 10, 0, 41, 5, 970, DateTimeKind.Unspecified).AddTicks(8541),
-                            EmployeeId = 8L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 133L,
-                            AmountOfHours = 28m,
-                            Comment = "Corporis excepturi voluptas hic occaecati ratione eligendi consequatur est ab.",
-                            Date = new DateTime(2020, 4, 22, 7, 13, 43, 387, DateTimeKind.Unspecified).AddTicks(3652),
-                            EmployeeId = 7L,
-                            ProjectId = 8L
-                        },
-                        new
-                        {
-                            TimeEntryId = 134L,
-                            AmountOfHours = 9m,
-                            Comment = "Voluptatibus officiis ut nemo velit ut necessitatibus eligendi id alias.",
-                            Date = new DateTime(2020, 9, 27, 20, 45, 37, 681, DateTimeKind.Unspecified).AddTicks(5980),
-                            EmployeeId = 2L,
+                            Comment = "Integrated multi-tasking knowledge base",
+                            Date = new DateTime(2020, 8, 12, 20, 9, 0, 176, DateTimeKind.Unspecified).AddTicks(8799),
+                            EmployeeId = 9L,
                             ProjectId = 10L
                         },
                         new
                         {
+                            TimeEntryId = 133L,
+                            AmountOfHours = 7m,
+                            Comment = "Advanced bi-directional Graphical User Interface",
+                            Date = new DateTime(2020, 9, 7, 21, 7, 9, 86, DateTimeKind.Unspecified).AddTicks(1007),
+                            EmployeeId = 5L,
+                            ProjectId = 2L
+                        },
+                        new
+                        {
+                            TimeEntryId = 134L,
+                            AmountOfHours = 1m,
+                            Comment = "Mandatory neutral conglomeration",
+                            Date = new DateTime(2020, 11, 18, 1, 45, 22, 931, DateTimeKind.Unspecified).AddTicks(3478),
+                            EmployeeId = 2L,
+                            ProjectId = 17L
+                        },
+                        new
+                        {
                             TimeEntryId = 135L,
-                            AmountOfHours = 60m,
-                            Comment = "Quos consectetur animi distinctio saepe minus id consectetur ut repudiandae.",
-                            Date = new DateTime(2020, 1, 16, 17, 41, 55, 960, DateTimeKind.Unspecified).AddTicks(6068),
-                            EmployeeId = 4L,
+                            AmountOfHours = 5m,
+                            Comment = "Upgradable object-oriented contingency",
+                            Date = new DateTime(2020, 7, 22, 6, 55, 12, 261, DateTimeKind.Unspecified).AddTicks(3457),
+                            EmployeeId = 10L,
                             ProjectId = 6L
                         },
                         new
                         {
                             TimeEntryId = 136L,
-                            AmountOfHours = 13m,
-                            Comment = "Hic nam impedit voluptates dolorum eum officiis totam possimus voluptas.",
-                            Date = new DateTime(2020, 6, 9, 12, 26, 46, 305, DateTimeKind.Unspecified).AddTicks(7318),
-                            EmployeeId = 8L,
-                            ProjectId = 7L
+                            AmountOfHours = 5m,
+                            Comment = "Devolved multi-state parallelism",
+                            Date = new DateTime(2020, 10, 14, 13, 12, 32, 625, DateTimeKind.Unspecified).AddTicks(6589),
+                            EmployeeId = 2L,
+                            ProjectId = 9L
                         },
                         new
                         {
                             TimeEntryId = 137L,
-                            AmountOfHours = 37m,
-                            Comment = "Est voluptas nulla illo aut cumque ipsam blanditiis qui officiis.",
-                            Date = new DateTime(2020, 7, 30, 13, 51, 59, 766, DateTimeKind.Unspecified).AddTicks(5924),
-                            EmployeeId = 6L,
-                            ProjectId = 1L
+                            AmountOfHours = 1m,
+                            Comment = "Pre-emptive systematic matrices",
+                            Date = new DateTime(2020, 11, 14, 5, 45, 26, 400, DateTimeKind.Unspecified).AddTicks(8052),
+                            EmployeeId = 1L,
+                            ProjectId = 17L
                         },
                         new
                         {
                             TimeEntryId = 138L,
-                            AmountOfHours = 48m,
-                            Comment = "Sit et quae et sed tempore maxime architecto nostrum adipisci.",
-                            Date = new DateTime(2020, 6, 4, 20, 7, 34, 292, DateTimeKind.Unspecified).AddTicks(2924),
-                            EmployeeId = 11L,
-                            ProjectId = 5L
-                        },
-                        new
-                        {
-                            TimeEntryId = 139L,
-                            AmountOfHours = 1m,
-                            Comment = "Iusto enim repellat natus sequi consequuntur esse omnis et quia.",
-                            Date = new DateTime(2020, 2, 13, 5, 38, 13, 426, DateTimeKind.Unspecified).AddTicks(2877),
-                            EmployeeId = 3L,
+                            AmountOfHours = 7m,
+                            Comment = "Triple-buffered 6th generation product",
+                            Date = new DateTime(2020, 11, 30, 1, 39, 32, 412, DateTimeKind.Unspecified).AddTicks(4683),
+                            EmployeeId = 12L,
                             ProjectId = 15L
                         },
                         new
                         {
+                            TimeEntryId = 139L,
+                            AmountOfHours = 8m,
+                            Comment = "Multi-lateral 24/7 moderator",
+                            Date = new DateTime(2020, 1, 29, 7, 41, 2, 226, DateTimeKind.Unspecified).AddTicks(3545),
+                            EmployeeId = 3L,
+                            ProjectId = 2L
+                        },
+                        new
+                        {
                             TimeEntryId = 140L,
-                            AmountOfHours = 30m,
-                            Comment = "Numquam quo odio et ea vitae dolores consequuntur veniam facere.",
-                            Date = new DateTime(2020, 11, 27, 3, 30, 5, 120, DateTimeKind.Unspecified).AddTicks(5709),
-                            EmployeeId = 10L,
+                            AmountOfHours = 4m,
+                            Comment = "User-centric encompassing structure",
+                            Date = new DateTime(2020, 5, 23, 18, 20, 28, 83, DateTimeKind.Unspecified).AddTicks(2911),
+                            EmployeeId = 3L,
                             ProjectId = 19L
                         },
                         new
                         {
                             TimeEntryId = 141L,
-                            AmountOfHours = 42m,
-                            Comment = "Voluptatum est non necessitatibus qui nostrum voluptatem dolor officiis voluptates.",
-                            Date = new DateTime(2020, 11, 13, 8, 46, 1, 267, DateTimeKind.Unspecified).AddTicks(62),
-                            EmployeeId = 11L,
-                            ProjectId = 6L
+                            AmountOfHours = 7m,
+                            Comment = "Multi-layered needs-based core",
+                            Date = new DateTime(2020, 4, 24, 20, 51, 55, 94, DateTimeKind.Unspecified).AddTicks(1558),
+                            EmployeeId = 8L,
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 142L,
-                            AmountOfHours = 33m,
-                            Comment = "Error voluptas quisquam quibusdam assumenda magnam vero blanditiis possimus tempora.",
-                            Date = new DateTime(2020, 5, 18, 23, 35, 8, 516, DateTimeKind.Unspecified).AddTicks(1962),
-                            EmployeeId = 10L,
-                            ProjectId = 1L
+                            AmountOfHours = 7m,
+                            Comment = "Streamlined mobile ability",
+                            Date = new DateTime(2020, 12, 13, 23, 51, 12, 182, DateTimeKind.Unspecified).AddTicks(9069),
+                            EmployeeId = 1L,
+                            ProjectId = 13L
                         },
                         new
                         {
                             TimeEntryId = 143L,
-                            AmountOfHours = 18m,
-                            Comment = "Doloribus et possimus magnam voluptatem quo ullam quam asperiores ullam.",
-                            Date = new DateTime(2020, 11, 22, 7, 11, 47, 818, DateTimeKind.Unspecified).AddTicks(6499),
-                            EmployeeId = 2L,
-                            ProjectId = 13L
-                        },
-                        new
-                        {
-                            TimeEntryId = 144L,
-                            AmountOfHours = 2m,
-                            Comment = "Sapiente non assumenda odit nihil culpa error dignissimos aperiam alias.",
-                            Date = new DateTime(2020, 6, 22, 13, 6, 0, 865, DateTimeKind.Unspecified).AddTicks(9249),
-                            EmployeeId = 2L,
-                            ProjectId = 13L
-                        },
-                        new
-                        {
-                            TimeEntryId = 145L,
                             AmountOfHours = 1m,
-                            Comment = "Necessitatibus maiores beatae unde ea quo amet harum voluptatem mollitia.",
-                            Date = new DateTime(2020, 11, 5, 7, 46, 20, 878, DateTimeKind.Unspecified).AddTicks(9011),
-                            EmployeeId = 1L,
-                            ProjectId = 14L
-                        },
-                        new
-                        {
-                            TimeEntryId = 146L,
-                            AmountOfHours = 8m,
-                            Comment = "Nulla quam facilis nesciunt dolor dolorem dolores incidunt praesentium nihil.",
-                            Date = new DateTime(2020, 4, 3, 17, 18, 42, 812, DateTimeKind.Unspecified).AddTicks(7814),
-                            EmployeeId = 4L,
-                            ProjectId = 7L
-                        },
-                        new
-                        {
-                            TimeEntryId = 147L,
-                            AmountOfHours = 33m,
-                            Comment = "Non possimus sed est accusamus veniam provident aut eius id.",
-                            Date = new DateTime(2020, 9, 29, 21, 33, 23, 837, DateTimeKind.Unspecified).AddTicks(47),
-                            EmployeeId = 3L,
-                            ProjectId = 16L
-                        },
-                        new
-                        {
-                            TimeEntryId = 148L,
-                            AmountOfHours = 20m,
-                            Comment = "Autem ipsum quasi eaque quia nihil mollitia laborum ex aut.",
-                            Date = new DateTime(2020, 11, 6, 22, 45, 8, 71, DateTimeKind.Unspecified).AddTicks(7170),
-                            EmployeeId = 10L,
-                            ProjectId = 1L
-                        },
-                        new
-                        {
-                            TimeEntryId = 149L,
-                            AmountOfHours = 40m,
-                            Comment = "Cupiditate autem numquam explicabo ut quidem quam qui deleniti iure.",
-                            Date = new DateTime(2020, 7, 10, 16, 45, 17, 166, DateTimeKind.Unspecified).AddTicks(1658),
-                            EmployeeId = 10L,
-                            ProjectId = 20L
-                        },
-                        new
-                        {
-                            TimeEntryId = 150L,
-                            AmountOfHours = 50m,
-                            Comment = "Sed eaque tenetur sit reiciendis dolorem vero nostrum quidem exercitationem.",
-                            Date = new DateTime(2020, 8, 12, 9, 30, 45, 783, DateTimeKind.Unspecified).AddTicks(9693),
-                            EmployeeId = 12L,
-                            ProjectId = 7L
-                        },
-                        new
-                        {
-                            TimeEntryId = 151L,
-                            AmountOfHours = 36m,
-                            Comment = "In qui illum pariatur omnis officiis corrupti nulla reprehenderit aut.",
-                            Date = new DateTime(2020, 12, 15, 12, 2, 25, 180, DateTimeKind.Unspecified).AddTicks(6449),
-                            EmployeeId = 10L,
-                            ProjectId = 5L
-                        },
-                        new
-                        {
-                            TimeEntryId = 152L,
-                            AmountOfHours = 59m,
-                            Comment = "Est soluta labore aliquid consequatur omnis velit voluptatem voluptatem vel.",
-                            Date = new DateTime(2020, 11, 29, 12, 31, 12, 607, DateTimeKind.Unspecified).AddTicks(4861),
-                            EmployeeId = 1L,
-                            ProjectId = 8L
-                        },
-                        new
-                        {
-                            TimeEntryId = 153L,
-                            AmountOfHours = 14m,
-                            Comment = "Id sint odit est nobis dolorem repellat laboriosam sunt rerum.",
-                            Date = new DateTime(2020, 10, 20, 11, 37, 2, 340, DateTimeKind.Unspecified).AddTicks(8253),
-                            EmployeeId = 3L,
+                            Comment = "Progressive heuristic solution",
+                            Date = new DateTime(2020, 10, 6, 15, 45, 42, 129, DateTimeKind.Unspecified).AddTicks(3091),
+                            EmployeeId = 7L,
                             ProjectId = 15L
                         },
                         new
                         {
-                            TimeEntryId = 154L,
-                            AmountOfHours = 21m,
-                            Comment = "Est voluptas tempora assumenda quaerat debitis animi tenetur inventore quidem.",
-                            Date = new DateTime(2020, 5, 7, 13, 3, 30, 473, DateTimeKind.Unspecified).AddTicks(2986),
+                            TimeEntryId = 144L,
+                            AmountOfHours = 6m,
+                            Comment = "Profit-focused analyzing website",
+                            Date = new DateTime(2020, 8, 15, 16, 25, 19, 666, DateTimeKind.Unspecified).AddTicks(7261),
+                            EmployeeId = 5L,
+                            ProjectId = 10L
+                        },
+                        new
+                        {
+                            TimeEntryId = 145L,
+                            AmountOfHours = 6m,
+                            Comment = "Open-architected non-volatile success",
+                            Date = new DateTime(2020, 8, 19, 7, 50, 58, 828, DateTimeKind.Unspecified).AddTicks(2285),
+                            EmployeeId = 11L,
+                            ProjectId = 12L
+                        },
+                        new
+                        {
+                            TimeEntryId = 146L,
+                            AmountOfHours = 4m,
+                            Comment = "Horizontal interactive focus group",
+                            Date = new DateTime(2020, 12, 2, 20, 47, 40, 941, DateTimeKind.Unspecified).AddTicks(3198),
+                            EmployeeId = 9L,
+                            ProjectId = 3L
+                        },
+                        new
+                        {
+                            TimeEntryId = 147L,
+                            AmountOfHours = 6m,
+                            Comment = "Intuitive motivating budgetary management",
+                            Date = new DateTime(2020, 2, 5, 12, 9, 26, 40, DateTimeKind.Unspecified).AddTicks(6436),
+                            EmployeeId = 5L,
+                            ProjectId = 13L
+                        },
+                        new
+                        {
+                            TimeEntryId = 148L,
+                            AmountOfHours = 3m,
+                            Comment = "Team-oriented 3rd generation migration",
+                            Date = new DateTime(2020, 6, 7, 17, 15, 36, 941, DateTimeKind.Unspecified).AddTicks(8925),
+                            EmployeeId = 3L,
+                            ProjectId = 14L
+                        },
+                        new
+                        {
+                            TimeEntryId = 149L,
+                            AmountOfHours = 7m,
+                            Comment = "Polarised dedicated customer loyalty",
+                            Date = new DateTime(2020, 2, 15, 14, 4, 8, 360, DateTimeKind.Unspecified).AddTicks(1463),
                             EmployeeId = 7L,
+                            ProjectId = 7L
+                        },
+                        new
+                        {
+                            TimeEntryId = 150L,
+                            AmountOfHours = 3m,
+                            Comment = "Triple-buffered bandwidth-monitored benchmark",
+                            Date = new DateTime(2020, 2, 15, 11, 9, 42, 944, DateTimeKind.Unspecified).AddTicks(2047),
+                            EmployeeId = 1L,
+                            ProjectId = 17L
+                        },
+                        new
+                        {
+                            TimeEntryId = 151L,
+                            AmountOfHours = 3m,
+                            Comment = "Universal impactful solution",
+                            Date = new DateTime(2020, 8, 5, 7, 59, 31, 209, DateTimeKind.Unspecified).AddTicks(5171),
+                            EmployeeId = 7L,
+                            ProjectId = 11L
+                        },
+                        new
+                        {
+                            TimeEntryId = 152L,
+                            AmountOfHours = 2m,
+                            Comment = "Mandatory stable toolset",
+                            Date = new DateTime(2020, 1, 31, 15, 51, 15, 235, DateTimeKind.Unspecified).AddTicks(5692),
+                            EmployeeId = 11L,
                             ProjectId = 4L
+                        },
+                        new
+                        {
+                            TimeEntryId = 153L,
+                            AmountOfHours = 6m,
+                            Comment = "Public-key dedicated orchestration",
+                            Date = new DateTime(2020, 5, 31, 20, 27, 44, 127, DateTimeKind.Unspecified).AddTicks(9355),
+                            EmployeeId = 11L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            TimeEntryId = 154L,
+                            AmountOfHours = 7m,
+                            Comment = "Face to face asynchronous circuit",
+                            Date = new DateTime(2020, 8, 6, 17, 21, 55, 298, DateTimeKind.Unspecified).AddTicks(4404),
+                            EmployeeId = 10L,
+                            ProjectId = 20L
                         },
                         new
                         {
                             TimeEntryId = 155L,
                             AmountOfHours = 4m,
-                            Comment = "Quia alias consequatur ea architecto aliquam odit voluptatum alias ratione.",
-                            Date = new DateTime(2020, 3, 9, 12, 25, 1, 415, DateTimeKind.Unspecified).AddTicks(1722),
-                            EmployeeId = 7L,
-                            ProjectId = 2L
+                            Comment = "Open-architected 24/7 framework",
+                            Date = new DateTime(2020, 4, 24, 3, 19, 35, 947, DateTimeKind.Unspecified).AddTicks(4393),
+                            EmployeeId = 10L,
+                            ProjectId = 17L
                         },
                         new
                         {
                             TimeEntryId = 156L,
-                            AmountOfHours = 21m,
-                            Comment = "Aut exercitationem eos architecto esse ab libero dolor officia enim.",
-                            Date = new DateTime(2020, 12, 26, 20, 51, 10, 923, DateTimeKind.Unspecified).AddTicks(8864),
-                            EmployeeId = 2L,
-                            ProjectId = 19L
+                            AmountOfHours = 8m,
+                            Comment = "Open-source reciprocal middleware",
+                            Date = new DateTime(2020, 12, 20, 15, 24, 29, 88, DateTimeKind.Unspecified).AddTicks(542),
+                            EmployeeId = 3L,
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 157L,
-                            AmountOfHours = 47m,
-                            Comment = "Eos rem dolores dolores quidem repudiandae numquam similique dolores consequatur.",
-                            Date = new DateTime(2020, 8, 20, 15, 52, 44, 567, DateTimeKind.Unspecified).AddTicks(7743),
-                            EmployeeId = 8L,
-                            ProjectId = 2L
+                            AmountOfHours = 2m,
+                            Comment = "Inverse directional open architecture",
+                            Date = new DateTime(2020, 8, 6, 22, 20, 48, 12, DateTimeKind.Unspecified).AddTicks(7679),
+                            EmployeeId = 2L,
+                            ProjectId = 15L
                         },
                         new
                         {
                             TimeEntryId = 158L,
-                            AmountOfHours = 10m,
-                            Comment = "Voluptas beatae dolore quia saepe dolore nulla omnis dolores iusto.",
-                            Date = new DateTime(2020, 4, 1, 23, 37, 51, 198, DateTimeKind.Unspecified).AddTicks(9188),
-                            EmployeeId = 10L,
-                            ProjectId = 3L
+                            AmountOfHours = 2m,
+                            Comment = "Synergized full-range budgetary management",
+                            Date = new DateTime(2020, 9, 9, 3, 11, 31, 933, DateTimeKind.Unspecified).AddTicks(7699),
+                            EmployeeId = 1L,
+                            ProjectId = 20L
                         },
                         new
                         {
                             TimeEntryId = 159L,
-                            AmountOfHours = 57m,
-                            Comment = "Velit sed corporis sequi dolorum quia laborum provident aut accusantium.",
-                            Date = new DateTime(2020, 5, 30, 19, 59, 55, 576, DateTimeKind.Unspecified).AddTicks(4540),
-                            EmployeeId = 6L,
-                            ProjectId = 2L
+                            AmountOfHours = 5m,
+                            Comment = "Intuitive multi-tasking process improvement",
+                            Date = new DateTime(2020, 7, 20, 9, 19, 13, 734, DateTimeKind.Unspecified).AddTicks(2123),
+                            EmployeeId = 7L,
+                            ProjectId = 16L
                         },
                         new
                         {
                             TimeEntryId = 160L,
-                            AmountOfHours = 32m,
-                            Comment = "Nesciunt voluptas velit voluptatem et dolores laboriosam molestias accusantium molestiae.",
-                            Date = new DateTime(2020, 2, 20, 2, 12, 30, 487, DateTimeKind.Unspecified).AddTicks(3164),
-                            EmployeeId = 1L,
-                            ProjectId = 8L
+                            AmountOfHours = 8m,
+                            Comment = "Stand-alone maximized application",
+                            Date = new DateTime(2020, 9, 29, 9, 2, 36, 887, DateTimeKind.Unspecified).AddTicks(4362),
+                            EmployeeId = 5L,
+                            ProjectId = 9L
                         },
                         new
                         {
                             TimeEntryId = 161L,
-                            AmountOfHours = 6m,
-                            Comment = "Aut optio quisquam quas quas enim nesciunt animi quas molestias.",
-                            Date = new DateTime(2020, 12, 10, 5, 55, 20, 876, DateTimeKind.Unspecified).AddTicks(2372),
-                            EmployeeId = 6L,
-                            ProjectId = 19L
+                            AmountOfHours = 2m,
+                            Comment = "Multi-layered asynchronous policy",
+                            Date = new DateTime(2020, 8, 27, 19, 33, 30, 862, DateTimeKind.Unspecified).AddTicks(1761),
+                            EmployeeId = 10L,
+                            ProjectId = 20L
                         },
                         new
                         {
                             TimeEntryId = 162L,
-                            AmountOfHours = 18m,
-                            Comment = "Quasi eius est dolorem aut corporis id dolorem accusantium blanditiis.",
-                            Date = new DateTime(2020, 7, 24, 1, 50, 29, 881, DateTimeKind.Unspecified).AddTicks(4432),
-                            EmployeeId = 5L,
-                            ProjectId = 19L
-                        },
-                        new
-                        {
-                            TimeEntryId = 163L,
-                            AmountOfHours = 55m,
-                            Comment = "Molestias vel consequuntur incidunt iure sint iste enim nemo earum.",
-                            Date = new DateTime(2020, 8, 10, 20, 19, 22, 119, DateTimeKind.Unspecified).AddTicks(3928),
-                            EmployeeId = 7L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 164L,
-                            AmountOfHours = 34m,
-                            Comment = "Dolorem ut nulla officiis itaque doloremque odio consequatur velit sed.",
-                            Date = new DateTime(2020, 5, 20, 20, 41, 42, 425, DateTimeKind.Unspecified).AddTicks(9437),
+                            AmountOfHours = 8m,
+                            Comment = "Sharable human-resource open architecture",
+                            Date = new DateTime(2020, 7, 31, 15, 31, 11, 216, DateTimeKind.Unspecified).AddTicks(5914),
                             EmployeeId = 4L,
                             ProjectId = 13L
                         },
                         new
                         {
+                            TimeEntryId = 163L,
+                            AmountOfHours = 6m,
+                            Comment = "Persistent context-sensitive policy",
+                            Date = new DateTime(2020, 4, 13, 17, 3, 49, 794, DateTimeKind.Unspecified).AddTicks(7723),
+                            EmployeeId = 11L,
+                            ProjectId = 9L
+                        },
+                        new
+                        {
+                            TimeEntryId = 164L,
+                            AmountOfHours = 1m,
+                            Comment = "Configurable static middleware",
+                            Date = new DateTime(2020, 5, 10, 3, 5, 56, 956, DateTimeKind.Unspecified).AddTicks(9506),
+                            EmployeeId = 4L,
+                            ProjectId = 18L
+                        },
+                        new
+                        {
                             TimeEntryId = 165L,
-                            AmountOfHours = 49m,
-                            Comment = "Tempore ut ipsum officia nam magnam sunt consequuntur eum et.",
-                            Date = new DateTime(2020, 6, 30, 18, 34, 43, 540, DateTimeKind.Unspecified).AddTicks(7718),
-                            EmployeeId = 7L,
+                            AmountOfHours = 5m,
+                            Comment = "Quality-focused modular process improvement",
+                            Date = new DateTime(2020, 4, 5, 16, 41, 36, 946, DateTimeKind.Unspecified).AddTicks(4791),
+                            EmployeeId = 4L,
                             ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 166L,
-                            AmountOfHours = 46m,
-                            Comment = "Repudiandae dolor quaerat dolore et ipsa nisi consequuntur est praesentium.",
-                            Date = new DateTime(2020, 10, 3, 12, 2, 11, 651, DateTimeKind.Unspecified).AddTicks(9716),
+                            AmountOfHours = 4m,
+                            Comment = "Function-based fresh-thinking encoding",
+                            Date = new DateTime(2020, 1, 18, 22, 9, 10, 323, DateTimeKind.Unspecified).AddTicks(5324),
                             EmployeeId = 12L,
-                            ProjectId = 12L
+                            ProjectId = 20L
                         },
                         new
                         {
                             TimeEntryId = 167L,
-                            AmountOfHours = 42m,
-                            Comment = "Dolor molestiae tenetur facere voluptatem placeat rerum eaque est aut.",
-                            Date = new DateTime(2020, 6, 20, 2, 34, 8, 977, DateTimeKind.Unspecified).AddTicks(1961),
-                            EmployeeId = 3L,
-                            ProjectId = 3L
-                        },
-                        new
-                        {
-                            TimeEntryId = 168L,
-                            AmountOfHours = 42m,
-                            Comment = "Sint id suscipit eveniet ad soluta saepe esse earum doloremque.",
-                            Date = new DateTime(2020, 6, 21, 19, 55, 29, 534, DateTimeKind.Unspecified).AddTicks(4448),
-                            EmployeeId = 9L,
+                            AmountOfHours = 5m,
+                            Comment = "Digitized analyzing emulation",
+                            Date = new DateTime(2020, 9, 30, 9, 5, 55, 645, DateTimeKind.Unspecified).AddTicks(4811),
+                            EmployeeId = 2L,
                             ProjectId = 10L
                         },
                         new
                         {
+                            TimeEntryId = 168L,
+                            AmountOfHours = 2m,
+                            Comment = "Horizontal eco-centric instruction set",
+                            Date = new DateTime(2020, 4, 7, 23, 38, 32, 181, DateTimeKind.Unspecified).AddTicks(1146),
+                            EmployeeId = 1L,
+                            ProjectId = 6L
+                        },
+                        new
+                        {
                             TimeEntryId = 169L,
-                            AmountOfHours = 33m,
-                            Comment = "Expedita impedit et dicta repellendus iure rerum praesentium quis repellendus.",
-                            Date = new DateTime(2020, 6, 19, 8, 32, 18, 731, DateTimeKind.Unspecified).AddTicks(126),
-                            EmployeeId = 1L,
-                            ProjectId = 1L
-                        },
-                        new
-                        {
-                            TimeEntryId = 170L,
-                            AmountOfHours = 53m,
-                            Comment = "Aut quis quae temporibus sunt facilis est alias quia beatae.",
-                            Date = new DateTime(2020, 2, 13, 7, 13, 5, 298, DateTimeKind.Unspecified).AddTicks(8975),
-                            EmployeeId = 4L,
-                            ProjectId = 16L
-                        },
-                        new
-                        {
-                            TimeEntryId = 171L,
-                            AmountOfHours = 46m,
-                            Comment = "Voluptatibus et eaque similique veniam explicabo vel veritatis ea fugit.",
-                            Date = new DateTime(2020, 10, 22, 13, 39, 2, 867, DateTimeKind.Unspecified).AddTicks(2051),
-                            EmployeeId = 5L,
-                            ProjectId = 2L
-                        },
-                        new
-                        {
-                            TimeEntryId = 172L,
                             AmountOfHours = 3m,
-                            Comment = "Voluptatem omnis officiis enim natus voluptatem voluptate expedita maiores molestiae.",
-                            Date = new DateTime(2020, 10, 2, 13, 5, 56, 922, DateTimeKind.Unspecified).AddTicks(6350),
-                            EmployeeId = 11L,
-                            ProjectId = 17L
-                        },
-                        new
-                        {
-                            TimeEntryId = 173L,
-                            AmountOfHours = 39m,
-                            Comment = "Officia sed dolor repellat qui amet voluptatum commodi maxime blanditiis.",
-                            Date = new DateTime(2020, 12, 9, 23, 33, 14, 803, DateTimeKind.Unspecified).AddTicks(6768),
-                            EmployeeId = 9L,
-                            ProjectId = 1L
-                        },
-                        new
-                        {
-                            TimeEntryId = 174L,
-                            AmountOfHours = 57m,
-                            Comment = "Molestiae non dignissimos corrupti saepe omnis nobis sunt quia aperiam.",
-                            Date = new DateTime(2020, 6, 29, 13, 34, 1, 340, DateTimeKind.Unspecified).AddTicks(9788),
-                            EmployeeId = 3L,
-                            ProjectId = 16L
-                        },
-                        new
-                        {
-                            TimeEntryId = 175L,
-                            AmountOfHours = 20m,
-                            Comment = "Itaque fugit est laudantium nesciunt est voluptatum qui sit ut.",
-                            Date = new DateTime(2020, 5, 9, 6, 8, 45, 613, DateTimeKind.Unspecified).AddTicks(8964),
-                            EmployeeId = 6L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            TimeEntryId = 176L,
-                            AmountOfHours = 58m,
-                            Comment = "Aut esse unde ut provident laudantium qui inventore atque reprehenderit.",
-                            Date = new DateTime(2020, 7, 31, 18, 28, 33, 893, DateTimeKind.Unspecified).AddTicks(884),
-                            EmployeeId = 12L,
-                            ProjectId = 8L
-                        },
-                        new
-                        {
-                            TimeEntryId = 177L,
-                            AmountOfHours = 1m,
-                            Comment = "Sit placeat omnis et fugiat ratione molestiae harum assumenda quaerat.",
-                            Date = new DateTime(2020, 12, 22, 3, 55, 9, 362, DateTimeKind.Unspecified).AddTicks(4225),
-                            EmployeeId = 11L,
-                            ProjectId = 16L
-                        },
-                        new
-                        {
-                            TimeEntryId = 178L,
-                            AmountOfHours = 6m,
-                            Comment = "Animi aspernatur doloribus sit aut qui voluptas temporibus corrupti nobis.",
-                            Date = new DateTime(2020, 6, 21, 4, 15, 37, 687, DateTimeKind.Unspecified).AddTicks(8467),
-                            EmployeeId = 4L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 179L,
-                            AmountOfHours = 53m,
-                            Comment = "Harum exercitationem ut est possimus blanditiis quos culpa sunt cumque.",
-                            Date = new DateTime(2020, 8, 8, 8, 36, 53, 385, DateTimeKind.Unspecified).AddTicks(9302),
-                            EmployeeId = 9L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            TimeEntryId = 180L,
-                            AmountOfHours = 10m,
-                            Comment = "Est quis tempore voluptas asperiores fuga blanditiis eum in mollitia.",
-                            Date = new DateTime(2020, 7, 12, 16, 4, 6, 280, DateTimeKind.Unspecified).AddTicks(1502),
-                            EmployeeId = 5L,
-                            ProjectId = 5L
-                        },
-                        new
-                        {
-                            TimeEntryId = 181L,
-                            AmountOfHours = 33m,
-                            Comment = "Voluptatem sunt unde rerum unde unde alias rem quisquam explicabo.",
-                            Date = new DateTime(2020, 4, 2, 3, 4, 31, 124, DateTimeKind.Unspecified).AddTicks(7868),
-                            EmployeeId = 1L,
-                            ProjectId = 1L
-                        },
-                        new
-                        {
-                            TimeEntryId = 182L,
-                            AmountOfHours = 1m,
-                            Comment = "Non nostrum animi ut sed mollitia eos velit perferendis corrupti.",
-                            Date = new DateTime(2020, 8, 12, 20, 55, 48, 424, DateTimeKind.Unspecified).AddTicks(913),
-                            EmployeeId = 11L,
-                            ProjectId = 20L
-                        },
-                        new
-                        {
-                            TimeEntryId = 183L,
-                            AmountOfHours = 15m,
-                            Comment = "Eveniet rerum ea sint quia hic voluptatem deleniti sequi repellendus.",
-                            Date = new DateTime(2020, 6, 3, 19, 47, 6, 49, DateTimeKind.Unspecified).AddTicks(8289),
-                            EmployeeId = 11L,
-                            ProjectId = 20L
-                        },
-                        new
-                        {
-                            TimeEntryId = 184L,
-                            AmountOfHours = 10m,
-                            Comment = "Similique in facere voluptatibus aut odio vero aut asperiores officiis.",
-                            Date = new DateTime(2020, 3, 3, 16, 51, 0, 246, DateTimeKind.Unspecified).AddTicks(8237),
-                            EmployeeId = 1L,
-                            ProjectId = 14L
-                        },
-                        new
-                        {
-                            TimeEntryId = 185L,
-                            AmountOfHours = 4m,
-                            Comment = "Architecto inventore illo sunt consequuntur facere sunt est id dolores.",
-                            Date = new DateTime(2020, 5, 27, 21, 46, 15, 217, DateTimeKind.Unspecified).AddTicks(6128),
-                            EmployeeId = 10L,
-                            ProjectId = 14L
-                        },
-                        new
-                        {
-                            TimeEntryId = 186L,
-                            AmountOfHours = 2m,
-                            Comment = "Eos illum expedita modi nihil a et iusto id voluptates.",
-                            Date = new DateTime(2020, 9, 13, 4, 41, 10, 535, DateTimeKind.Unspecified).AddTicks(5782),
-                            EmployeeId = 12L,
-                            ProjectId = 20L
-                        },
-                        new
-                        {
-                            TimeEntryId = 187L,
-                            AmountOfHours = 47m,
-                            Comment = "Hic corrupti voluptatum omnis unde magnam ea explicabo qui enim.",
-                            Date = new DateTime(2020, 5, 22, 7, 28, 28, 193, DateTimeKind.Unspecified).AddTicks(3490),
-                            EmployeeId = 11L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            TimeEntryId = 188L,
-                            AmountOfHours = 48m,
-                            Comment = "Voluptas quaerat dolor ut quod vel aut dolor numquam illum.",
-                            Date = new DateTime(2020, 8, 10, 8, 0, 17, 803, DateTimeKind.Unspecified).AddTicks(7927),
-                            EmployeeId = 3L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            TimeEntryId = 189L,
-                            AmountOfHours = 38m,
-                            Comment = "Quia ratione id ratione consequatur temporibus dolorem dolore sit aliquam.",
-                            Date = new DateTime(2020, 6, 10, 2, 44, 12, 132, DateTimeKind.Unspecified).AddTicks(4844),
-                            EmployeeId = 2L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            TimeEntryId = 190L,
-                            AmountOfHours = 2m,
-                            Comment = "Dicta nisi consequatur consequatur aliquid fugiat mollitia voluptatum qui et.",
-                            Date = new DateTime(2020, 8, 22, 21, 45, 15, 980, DateTimeKind.Unspecified).AddTicks(343),
-                            EmployeeId = 3L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            TimeEntryId = 191L,
-                            AmountOfHours = 46m,
-                            Comment = "Enim distinctio voluptatem aut vel voluptas assumenda culpa impedit impedit.",
-                            Date = new DateTime(2020, 10, 24, 23, 57, 2, 775, DateTimeKind.Unspecified).AddTicks(6544),
-                            EmployeeId = 1L,
-                            ProjectId = 17L
-                        },
-                        new
-                        {
-                            TimeEntryId = 192L,
-                            AmountOfHours = 36m,
-                            Comment = "Labore et incidunt ullam quia non sunt accusamus ducimus modi.",
-                            Date = new DateTime(2020, 12, 21, 8, 41, 8, 155, DateTimeKind.Unspecified).AddTicks(8218),
-                            EmployeeId = 2L,
-                            ProjectId = 13L
-                        },
-                        new
-                        {
-                            TimeEntryId = 193L,
-                            AmountOfHours = 51m,
-                            Comment = "Esse maiores et autem reiciendis inventore reiciendis ex itaque perferendis.",
-                            Date = new DateTime(2020, 1, 16, 22, 52, 17, 340, DateTimeKind.Unspecified).AddTicks(6823),
-                            EmployeeId = 8L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 194L,
-                            AmountOfHours = 30m,
-                            Comment = "Quidem expedita a sed et alias labore consequatur eum earum.",
-                            Date = new DateTime(2020, 4, 10, 3, 24, 3, 397, DateTimeKind.Unspecified).AddTicks(6081),
-                            EmployeeId = 5L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 195L,
-                            AmountOfHours = 24m,
-                            Comment = "Numquam explicabo aut quia est molestiae neque quisquam aut quaerat.",
-                            Date = new DateTime(2020, 9, 5, 12, 3, 59, 724, DateTimeKind.Unspecified).AddTicks(2480),
-                            EmployeeId = 11L,
-                            ProjectId = 19L
-                        },
-                        new
-                        {
-                            TimeEntryId = 196L,
-                            AmountOfHours = 53m,
-                            Comment = "Maiores eius nam ullam expedita qui incidunt temporibus ut iste.",
-                            Date = new DateTime(2020, 8, 14, 0, 35, 4, 301, DateTimeKind.Unspecified).AddTicks(2003),
-                            EmployeeId = 9L,
-                            ProjectId = 1L
-                        },
-                        new
-                        {
-                            TimeEntryId = 197L,
-                            AmountOfHours = 37m,
-                            Comment = "Animi delectus reprehenderit explicabo vel sunt qui voluptas alias nihil.",
-                            Date = new DateTime(2020, 8, 11, 6, 44, 12, 689, DateTimeKind.Unspecified).AddTicks(9481),
+                            Comment = "Ergonomic background infrastructure",
+                            Date = new DateTime(2020, 1, 20, 17, 0, 25, 493, DateTimeKind.Unspecified).AddTicks(1243),
                             EmployeeId = 2L,
                             ProjectId = 7L
                         },
                         new
                         {
-                            TimeEntryId = 198L,
-                            AmountOfHours = 55m,
-                            Comment = "At cumque optio tenetur iure ex qui dolorem ad aut.",
-                            Date = new DateTime(2020, 5, 6, 16, 4, 10, 389, DateTimeKind.Unspecified).AddTicks(3213),
-                            EmployeeId = 3L,
-                            ProjectId = 2L
+                            TimeEntryId = 170L,
+                            AmountOfHours = 1m,
+                            Comment = "Synergistic upward-trending ability",
+                            Date = new DateTime(2020, 4, 16, 21, 8, 13, 277, DateTimeKind.Unspecified).AddTicks(5852),
+                            EmployeeId = 8L,
+                            ProjectId = 5L
                         },
                         new
                         {
-                            TimeEntryId = 199L,
-                            AmountOfHours = 25m,
-                            Comment = "Eum blanditiis laudantium soluta ipsam omnis sed quo accusamus maxime.",
-                            Date = new DateTime(2020, 3, 3, 20, 47, 35, 576, DateTimeKind.Unspecified).AddTicks(2714),
-                            EmployeeId = 7L,
-                            ProjectId = 1L
+                            TimeEntryId = 171L,
+                            AmountOfHours = 3m,
+                            Comment = "Stand-alone grid-enabled solution",
+                            Date = new DateTime(2020, 4, 2, 17, 26, 30, 84, DateTimeKind.Unspecified).AddTicks(8800),
+                            EmployeeId = 6L,
+                            ProjectId = 13L
                         },
                         new
                         {
-                            TimeEntryId = 200L,
+                            TimeEntryId = 172L,
                             AmountOfHours = 8m,
-                            Comment = "Eius labore voluptatem nemo labore ipsam itaque similique eos temporibus.",
-                            Date = new DateTime(2020, 9, 27, 17, 11, 19, 417, DateTimeKind.Unspecified).AddTicks(9623),
+                            Comment = "Robust empowering attitude",
+                            Date = new DateTime(2020, 7, 7, 10, 0, 25, 607, DateTimeKind.Unspecified).AddTicks(5893),
+                            EmployeeId = 5L,
+                            ProjectId = 20L
+                        },
+                        new
+                        {
+                            TimeEntryId = 173L,
+                            AmountOfHours = 3m,
+                            Comment = "Front-line dedicated core",
+                            Date = new DateTime(2020, 5, 11, 0, 43, 21, 509, DateTimeKind.Unspecified).AddTicks(4069),
+                            EmployeeId = 9L,
+                            ProjectId = 20L
+                        },
+                        new
+                        {
+                            TimeEntryId = 174L,
+                            AmountOfHours = 1m,
+                            Comment = "Face to face secondary solution",
+                            Date = new DateTime(2020, 1, 11, 22, 14, 7, 296, DateTimeKind.Unspecified).AddTicks(6552),
                             EmployeeId = 8L,
-                            ProjectId = 6L
+                            ProjectId = 10L
                         },
                         new
                         {
-                            TimeEntryId = 201L,
-                            AmountOfHours = 26m,
-                            Comment = "Eligendi nostrum accusamus quis ea quisquam aut perspiciatis sapiente totam.",
-                            Date = new DateTime(2020, 10, 16, 2, 13, 14, 962, DateTimeKind.Unspecified).AddTicks(8748),
-                            EmployeeId = 1L,
-                            ProjectId = 16L
-                        },
-                        new
-                        {
-                            TimeEntryId = 202L,
-                            AmountOfHours = 0m,
-                            Comment = "Eum hic nihil nisi et cum rerum aperiam hic sint.",
-                            Date = new DateTime(2020, 10, 20, 16, 10, 27, 321, DateTimeKind.Unspecified).AddTicks(6563),
-                            EmployeeId = 11L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 203L,
-                            AmountOfHours = 15m,
-                            Comment = "Mollitia tempore doloremque veritatis voluptas soluta ratione in debitis et.",
-                            Date = new DateTime(2020, 6, 27, 3, 9, 51, 407, DateTimeKind.Unspecified).AddTicks(5800),
-                            EmployeeId = 8L,
+                            TimeEntryId = 175L,
+                            AmountOfHours = 3m,
+                            Comment = "Customizable discrete knowledge base",
+                            Date = new DateTime(2020, 6, 25, 20, 8, 34, 658, DateTimeKind.Unspecified).AddTicks(9334),
+                            EmployeeId = 3L,
                             ProjectId = 1L
                         },
                         new
                         {
-                            TimeEntryId = 204L,
-                            AmountOfHours = 41m,
-                            Comment = "Minima soluta ad ducimus excepturi et id voluptates commodi nemo.",
-                            Date = new DateTime(2020, 2, 18, 20, 40, 30, 816, DateTimeKind.Unspecified).AddTicks(9577),
-                            EmployeeId = 8L,
-                            ProjectId = 3L
+                            TimeEntryId = 176L,
+                            AmountOfHours = 5m,
+                            Comment = "Team-oriented multi-tasking leverage",
+                            Date = new DateTime(2020, 12, 17, 11, 36, 10, 874, DateTimeKind.Unspecified).AddTicks(2366),
+                            EmployeeId = 9L,
+                            ProjectId = 11L
                         },
                         new
                         {
-                            TimeEntryId = 205L,
-                            AmountOfHours = 40m,
-                            Comment = "Laboriosam tenetur et perspiciatis ut placeat hic quis odio ut.",
-                            Date = new DateTime(2020, 6, 28, 22, 10, 17, 155, DateTimeKind.Unspecified).AddTicks(3969),
-                            EmployeeId = 1L,
-                            ProjectId = 3L
+                            TimeEntryId = 177L,
+                            AmountOfHours = 4m,
+                            Comment = "Seamless executive pricing structure",
+                            Date = new DateTime(2020, 6, 10, 11, 22, 42, 268, DateTimeKind.Unspecified).AddTicks(408),
+                            EmployeeId = 4L,
+                            ProjectId = 19L
                         },
                         new
                         {
-                            TimeEntryId = 206L,
-                            AmountOfHours = 15m,
-                            Comment = "Architecto sit nihil id perspiciatis ad facere enim rerum voluptate.",
-                            Date = new DateTime(2020, 11, 14, 21, 47, 26, 247, DateTimeKind.Unspecified).AddTicks(1612),
-                            EmployeeId = 5L,
-                            ProjectId = 12L
+                            TimeEntryId = 178L,
+                            AmountOfHours = 5m,
+                            Comment = "Progressive real-time solution",
+                            Date = new DateTime(2020, 10, 17, 10, 53, 38, 98, DateTimeKind.Unspecified).AddTicks(999),
+                            EmployeeId = 3L,
+                            ProjectId = 5L
                         },
                         new
                         {
-                            TimeEntryId = 207L,
-                            AmountOfHours = 41m,
-                            Comment = "Nemo quisquam molestiae expedita consectetur quos labore et consequatur explicabo.",
-                            Date = new DateTime(2020, 7, 12, 3, 54, 56, 780, DateTimeKind.Unspecified).AddTicks(3946),
-                            EmployeeId = 10L,
+                            TimeEntryId = 179L,
+                            AmountOfHours = 5m,
+                            Comment = "Pre-emptive zero tolerance project",
+                            Date = new DateTime(2020, 3, 10, 22, 14, 12, 543, DateTimeKind.Unspecified).AddTicks(4181),
+                            EmployeeId = 2L,
+                            ProjectId = 1L
+                        },
+                        new
+                        {
+                            TimeEntryId = 180L,
+                            AmountOfHours = 6m,
+                            Comment = "Automated leading edge challenge",
+                            Date = new DateTime(2020, 8, 10, 5, 32, 11, 682, DateTimeKind.Unspecified).AddTicks(6854),
+                            EmployeeId = 12L,
                             ProjectId = 8L
                         },
                         new
                         {
-                            TimeEntryId = 208L,
-                            AmountOfHours = 60m,
-                            Comment = "Et nemo quam qui ab atque quo sit id doloremque.",
-                            Date = new DateTime(2020, 9, 22, 13, 53, 33, 80, DateTimeKind.Unspecified).AddTicks(9927),
+                            TimeEntryId = 181L,
+                            AmountOfHours = 4m,
+                            Comment = "Persevering multimedia alliance",
+                            Date = new DateTime(2020, 10, 13, 7, 8, 16, 732, DateTimeKind.Unspecified).AddTicks(5688),
+                            EmployeeId = 6L,
+                            ProjectId = 12L
+                        },
+                        new
+                        {
+                            TimeEntryId = 182L,
+                            AmountOfHours = 5m,
+                            Comment = "Monitored attitude-oriented firmware",
+                            Date = new DateTime(2020, 8, 12, 16, 26, 54, 908, DateTimeKind.Unspecified).AddTicks(925),
                             EmployeeId = 7L,
-                            ProjectId = 5L
+                            ProjectId = 14L
+                        },
+                        new
+                        {
+                            TimeEntryId = 183L,
+                            AmountOfHours = 4m,
+                            Comment = "Open-source neutral website",
+                            Date = new DateTime(2020, 10, 7, 10, 57, 34, 476, DateTimeKind.Unspecified).AddTicks(8621),
+                            EmployeeId = 10L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            TimeEntryId = 184L,
+                            AmountOfHours = 3m,
+                            Comment = "Progressive regional internet solution",
+                            Date = new DateTime(2020, 1, 5, 20, 38, 8, 26, DateTimeKind.Unspecified).AddTicks(2617),
+                            EmployeeId = 7L,
+                            ProjectId = 17L
+                        },
+                        new
+                        {
+                            TimeEntryId = 185L,
+                            AmountOfHours = 6m,
+                            Comment = "Self-enabling logistical focus group",
+                            Date = new DateTime(2020, 11, 4, 15, 6, 30, 857, DateTimeKind.Unspecified).AddTicks(1288),
+                            EmployeeId = 7L,
+                            ProjectId = 1L
+                        },
+                        new
+                        {
+                            TimeEntryId = 186L,
+                            AmountOfHours = 1m,
+                            Comment = "Cross-group scalable productivity",
+                            Date = new DateTime(2020, 2, 21, 3, 44, 45, 371, DateTimeKind.Unspecified).AddTicks(3188),
+                            EmployeeId = 8L,
+                            ProjectId = 12L
+                        },
+                        new
+                        {
+                            TimeEntryId = 187L,
+                            AmountOfHours = 2m,
+                            Comment = "Total holistic model",
+                            Date = new DateTime(2020, 1, 12, 13, 24, 24, 677, DateTimeKind.Unspecified).AddTicks(2386),
+                            EmployeeId = 5L,
+                            ProjectId = 17L
+                        },
+                        new
+                        {
+                            TimeEntryId = 188L,
+                            AmountOfHours = 5m,
+                            Comment = "Synchronised client-server collaboration",
+                            Date = new DateTime(2020, 2, 28, 22, 0, 7, 434, DateTimeKind.Unspecified).AddTicks(6241),
+                            EmployeeId = 8L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            TimeEntryId = 189L,
+                            AmountOfHours = 8m,
+                            Comment = "Synergistic impactful throughput",
+                            Date = new DateTime(2020, 2, 26, 22, 58, 41, 433, DateTimeKind.Unspecified).AddTicks(6706),
+                            EmployeeId = 10L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            TimeEntryId = 190L,
+                            AmountOfHours = 6m,
+                            Comment = "Open-source zero defect website",
+                            Date = new DateTime(2020, 10, 4, 9, 38, 3, 417, DateTimeKind.Unspecified).AddTicks(6449),
+                            EmployeeId = 9L,
+                            ProjectId = 13L
+                        },
+                        new
+                        {
+                            TimeEntryId = 191L,
+                            AmountOfHours = 4m,
+                            Comment = "Total cohesive capacity",
+                            Date = new DateTime(2020, 5, 16, 1, 5, 30, 536, DateTimeKind.Unspecified).AddTicks(9202),
+                            EmployeeId = 3L,
+                            ProjectId = 20L
+                        },
+                        new
+                        {
+                            TimeEntryId = 192L,
+                            AmountOfHours = 7m,
+                            Comment = "Fully-configurable tertiary challenge",
+                            Date = new DateTime(2020, 1, 31, 20, 7, 13, 943, DateTimeKind.Unspecified).AddTicks(5393),
+                            EmployeeId = 12L,
+                            ProjectId = 14L
+                        },
+                        new
+                        {
+                            TimeEntryId = 193L,
+                            AmountOfHours = 8m,
+                            Comment = "Integrated bottom-line superstructure",
+                            Date = new DateTime(2020, 3, 23, 2, 27, 34, 574, DateTimeKind.Unspecified).AddTicks(7888),
+                            EmployeeId = 3L,
+                            ProjectId = 20L
+                        },
+                        new
+                        {
+                            TimeEntryId = 194L,
+                            AmountOfHours = 2m,
+                            Comment = "Focused stable structure",
+                            Date = new DateTime(2020, 3, 8, 15, 52, 29, 640, DateTimeKind.Unspecified).AddTicks(3558),
+                            EmployeeId = 10L,
+                            ProjectId = 6L
+                        },
+                        new
+                        {
+                            TimeEntryId = 195L,
+                            AmountOfHours = 3m,
+                            Comment = "Networked multimedia monitoring",
+                            Date = new DateTime(2020, 7, 15, 4, 6, 31, 363, DateTimeKind.Unspecified).AddTicks(6321),
+                            EmployeeId = 3L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            TimeEntryId = 196L,
+                            AmountOfHours = 8m,
+                            Comment = "Virtual 3rd generation hierarchy",
+                            Date = new DateTime(2020, 2, 12, 20, 52, 39, 784, DateTimeKind.Unspecified).AddTicks(9212),
+                            EmployeeId = 10L,
+                            ProjectId = 2L
+                        },
+                        new
+                        {
+                            TimeEntryId = 197L,
+                            AmountOfHours = 5m,
+                            Comment = "Polarised reciprocal process improvement",
+                            Date = new DateTime(2020, 2, 19, 20, 23, 59, 426, DateTimeKind.Unspecified).AddTicks(5189),
+                            EmployeeId = 2L,
+                            ProjectId = 11L
+                        },
+                        new
+                        {
+                            TimeEntryId = 198L,
+                            AmountOfHours = 1m,
+                            Comment = "Stand-alone asymmetric help-desk",
+                            Date = new DateTime(2020, 9, 13, 9, 57, 24, 487, DateTimeKind.Unspecified).AddTicks(7106),
+                            EmployeeId = 8L,
+                            ProjectId = 4L
+                        },
+                        new
+                        {
+                            TimeEntryId = 199L,
+                            AmountOfHours = 5m,
+                            Comment = "Horizontal directional function",
+                            Date = new DateTime(2020, 2, 27, 5, 2, 25, 965, DateTimeKind.Unspecified).AddTicks(8767),
+                            EmployeeId = 9L,
+                            ProjectId = 11L
+                        },
+                        new
+                        {
+                            TimeEntryId = 200L,
+                            AmountOfHours = 7m,
+                            Comment = "Ergonomic impactful product",
+                            Date = new DateTime(2020, 5, 27, 16, 35, 4, 240, DateTimeKind.Unspecified).AddTicks(191),
+                            EmployeeId = 11L,
+                            ProjectId = 3L
+                        },
+                        new
+                        {
+                            TimeEntryId = 201L,
+                            AmountOfHours = 4m,
+                            Comment = "Cross-platform high-level hub",
+                            Date = new DateTime(2020, 12, 24, 20, 24, 36, 836, DateTimeKind.Unspecified).AddTicks(2939),
+                            EmployeeId = 11L,
+                            ProjectId = 1L
+                        },
+                        new
+                        {
+                            TimeEntryId = 202L,
+                            AmountOfHours = 6m,
+                            Comment = "Balanced background paradigm",
+                            Date = new DateTime(2020, 9, 11, 13, 57, 45, 629, DateTimeKind.Unspecified).AddTicks(2106),
+                            EmployeeId = 9L,
+                            ProjectId = 17L
+                        },
+                        new
+                        {
+                            TimeEntryId = 203L,
+                            AmountOfHours = 6m,
+                            Comment = "Organized context-sensitive local area network",
+                            Date = new DateTime(2020, 4, 3, 0, 6, 11, 437, DateTimeKind.Unspecified).AddTicks(2935),
+                            EmployeeId = 8L,
+                            ProjectId = 20L
+                        },
+                        new
+                        {
+                            TimeEntryId = 204L,
+                            AmountOfHours = 5m,
+                            Comment = "Reduced actuating architecture",
+                            Date = new DateTime(2020, 5, 16, 19, 14, 39, 246, DateTimeKind.Unspecified).AddTicks(4266),
+                            EmployeeId = 7L,
+                            ProjectId = 15L
+                        },
+                        new
+                        {
+                            TimeEntryId = 205L,
+                            AmountOfHours = 3m,
+                            Comment = "Extended zero defect complexity",
+                            Date = new DateTime(2020, 9, 26, 13, 57, 36, 87, DateTimeKind.Unspecified).AddTicks(9226),
+                            EmployeeId = 6L,
+                            ProjectId = 15L
+                        },
+                        new
+                        {
+                            TimeEntryId = 206L,
+                            AmountOfHours = 6m,
+                            Comment = "Pre-emptive zero administration parallelism",
+                            Date = new DateTime(2020, 9, 13, 16, 15, 20, 195, DateTimeKind.Unspecified).AddTicks(4250),
+                            EmployeeId = 2L,
+                            ProjectId = 10L
+                        },
+                        new
+                        {
+                            TimeEntryId = 207L,
+                            AmountOfHours = 3m,
+                            Comment = "De-engineered multi-tasking toolset",
+                            Date = new DateTime(2020, 11, 30, 15, 41, 10, 408, DateTimeKind.Unspecified).AddTicks(3527),
+                            EmployeeId = 9L,
+                            ProjectId = 3L
+                        },
+                        new
+                        {
+                            TimeEntryId = 208L,
+                            AmountOfHours = 6m,
+                            Comment = "Extended cohesive emulation",
+                            Date = new DateTime(2020, 2, 25, 16, 47, 16, 970, DateTimeKind.Unspecified).AddTicks(1831),
+                            EmployeeId = 2L,
+                            ProjectId = 13L
                         },
                         new
                         {
                             TimeEntryId = 209L,
                             AmountOfHours = 4m,
-                            Comment = "Enim voluptatem velit tempore modi voluptatem voluptatibus quisquam ut quis.",
-                            Date = new DateTime(2020, 11, 27, 3, 9, 43, 801, DateTimeKind.Unspecified).AddTicks(9886),
-                            EmployeeId = 12L,
-                            ProjectId = 8L
+                            Comment = "Integrated exuding functionalities",
+                            Date = new DateTime(2020, 10, 23, 17, 43, 41, 590, DateTimeKind.Unspecified).AddTicks(4101),
+                            EmployeeId = 4L,
+                            ProjectId = 20L
                         },
                         new
                         {
                             TimeEntryId = 210L,
-                            AmountOfHours = 9m,
-                            Comment = "Autem laborum dolorem nesciunt unde voluptas accusantium suscipit doloribus hic.",
-                            Date = new DateTime(2020, 1, 5, 13, 14, 26, 340, DateTimeKind.Unspecified).AddTicks(5923),
-                            EmployeeId = 7L,
-                            ProjectId = 1L
+                            AmountOfHours = 7m,
+                            Comment = "Cross-platform incremental firmware",
+                            Date = new DateTime(2020, 4, 24, 7, 16, 35, 477, DateTimeKind.Unspecified).AddTicks(6409),
+                            EmployeeId = 2L,
+                            ProjectId = 12L
                         },
                         new
                         {
                             TimeEntryId = 211L,
-                            AmountOfHours = 7m,
-                            Comment = "Fugit in sunt aut officia quia est repellendus saepe odit.",
-                            Date = new DateTime(2020, 11, 8, 5, 9, 36, 305, DateTimeKind.Unspecified).AddTicks(9285),
-                            EmployeeId = 2L,
+                            AmountOfHours = 8m,
+                            Comment = "Exclusive static implementation",
+                            Date = new DateTime(2020, 12, 23, 9, 16, 38, 735, DateTimeKind.Unspecified).AddTicks(2944),
+                            EmployeeId = 6L,
                             ProjectId = 10L
                         },
                         new
                         {
                             TimeEntryId = 212L,
-                            AmountOfHours = 31m,
-                            Comment = "Voluptas quae laudantium tempore rem nobis aut asperiores quia ea.",
-                            Date = new DateTime(2020, 1, 4, 22, 20, 30, 899, DateTimeKind.Unspecified).AddTicks(3222),
-                            EmployeeId = 9L,
-                            ProjectId = 3L
+                            AmountOfHours = 5m,
+                            Comment = "Integrated background protocol",
+                            Date = new DateTime(2020, 4, 22, 9, 14, 13, 181, DateTimeKind.Unspecified).AddTicks(7084),
+                            EmployeeId = 8L,
+                            ProjectId = 12L
                         },
                         new
                         {
                             TimeEntryId = 213L,
-                            AmountOfHours = 59m,
-                            Comment = "Aperiam magnam nesciunt dolor velit at id qui veniam tenetur.",
-                            Date = new DateTime(2020, 1, 15, 16, 20, 30, 37, DateTimeKind.Unspecified).AddTicks(7598),
-                            EmployeeId = 10L,
-                            ProjectId = 17L
+                            AmountOfHours = 8m,
+                            Comment = "Seamless uniform emulation",
+                            Date = new DateTime(2020, 9, 12, 12, 30, 40, 996, DateTimeKind.Unspecified).AddTicks(8347),
+                            EmployeeId = 2L,
+                            ProjectId = 18L
                         },
                         new
                         {
                             TimeEntryId = 214L,
-                            AmountOfHours = 35m,
-                            Comment = "Porro porro repellat sunt facere quas similique earum atque voluptas.",
-                            Date = new DateTime(2020, 7, 17, 23, 11, 26, 877, DateTimeKind.Unspecified).AddTicks(750),
+                            AmountOfHours = 2m,
+                            Comment = "Persistent empowering secured line",
+                            Date = new DateTime(2020, 4, 26, 1, 23, 48, 689, DateTimeKind.Unspecified).AddTicks(7653),
                             EmployeeId = 7L,
-                            ProjectId = 4L
+                            ProjectId = 13L
                         },
                         new
                         {
                             TimeEntryId = 215L,
-                            AmountOfHours = 7m,
-                            Comment = "Consectetur nobis nemo ducimus dolores harum facere facilis rerum voluptatibus.",
-                            Date = new DateTime(2020, 4, 27, 16, 46, 41, 888, DateTimeKind.Unspecified).AddTicks(6996),
-                            EmployeeId = 1L,
+                            AmountOfHours = 1m,
+                            Comment = "Customizable multimedia matrix",
+                            Date = new DateTime(2020, 7, 9, 19, 55, 31, 241, DateTimeKind.Unspecified).AddTicks(137),
+                            EmployeeId = 8L,
                             ProjectId = 4L
                         },
                         new
                         {
                             TimeEntryId = 216L,
-                            AmountOfHours = 38m,
-                            Comment = "Voluptas excepturi aut harum qui numquam ad corrupti voluptate in.",
-                            Date = new DateTime(2020, 12, 3, 14, 26, 29, 234, DateTimeKind.Unspecified).AddTicks(3868),
-                            EmployeeId = 5L,
+                            AmountOfHours = 1m,
+                            Comment = "Grass-roots secondary moderator",
+                            Date = new DateTime(2020, 9, 23, 17, 58, 53, 369, DateTimeKind.Unspecified).AddTicks(2509),
+                            EmployeeId = 2L,
                             ProjectId = 11L
                         },
                         new
                         {
                             TimeEntryId = 217L,
-                            AmountOfHours = 5m,
-                            Comment = "Voluptas voluptatem est dolore provident deleniti tenetur animi est nisi.",
-                            Date = new DateTime(2020, 5, 30, 6, 58, 4, 696, DateTimeKind.Unspecified).AddTicks(3388),
-                            EmployeeId = 9L,
-                            ProjectId = 19L
+                            AmountOfHours = 1m,
+                            Comment = "Expanded logistical parallelism",
+                            Date = new DateTime(2020, 10, 18, 15, 46, 50, 479, DateTimeKind.Unspecified).AddTicks(8537),
+                            EmployeeId = 5L,
+                            ProjectId = 13L
                         },
                         new
                         {
                             TimeEntryId = 218L,
-                            AmountOfHours = 4m,
-                            Comment = "Assumenda sit ipsa mollitia qui rerum dolor aut a earum.",
-                            Date = new DateTime(2020, 11, 3, 13, 36, 3, 126, DateTimeKind.Unspecified).AddTicks(7999),
-                            EmployeeId = 1L,
-                            ProjectId = 3L
+                            AmountOfHours = 3m,
+                            Comment = "Phased 4th generation workforce",
+                            Date = new DateTime(2020, 10, 17, 14, 27, 18, 724, DateTimeKind.Unspecified).AddTicks(3215),
+                            EmployeeId = 8L,
+                            ProjectId = 14L
                         },
                         new
                         {
                             TimeEntryId = 219L,
-                            AmountOfHours = 42m,
-                            Comment = "Minima qui et mollitia modi distinctio debitis et autem et.",
-                            Date = new DateTime(2020, 11, 6, 21, 36, 28, 938, DateTimeKind.Unspecified).AddTicks(326),
-                            EmployeeId = 8L,
-                            ProjectId = 9L
+                            AmountOfHours = 6m,
+                            Comment = "Open-architected motivating workforce",
+                            Date = new DateTime(2020, 9, 22, 13, 9, 24, 124, DateTimeKind.Unspecified).AddTicks(6495),
+                            EmployeeId = 11L,
+                            ProjectId = 16L
                         },
                         new
                         {
                             TimeEntryId = 220L,
-                            AmountOfHours = 9m,
-                            Comment = "Eos ut molestiae incidunt vel sed quisquam iure sed temporibus.",
-                            Date = new DateTime(2020, 9, 3, 9, 1, 23, 459, DateTimeKind.Unspecified).AddTicks(1078),
-                            EmployeeId = 12L,
-                            ProjectId = 10L
+                            AmountOfHours = 2m,
+                            Comment = "Multi-layered composite website",
+                            Date = new DateTime(2020, 7, 20, 10, 10, 58, 89, DateTimeKind.Unspecified).AddTicks(9767),
+                            EmployeeId = 5L,
+                            ProjectId = 20L
                         },
                         new
                         {
                             TimeEntryId = 221L,
-                            AmountOfHours = 48m,
-                            Comment = "Commodi nam eius molestiae harum magnam quia sint minima aut.",
-                            Date = new DateTime(2020, 11, 30, 2, 49, 24, 945, DateTimeKind.Unspecified).AddTicks(7547),
-                            EmployeeId = 9L,
-                            ProjectId = 4L
-                        },
-                        new
-                        {
-                            TimeEntryId = 222L,
-                            AmountOfHours = 8m,
-                            Comment = "Facilis labore ut qui ad sit fugit esse sit autem.",
-                            Date = new DateTime(2020, 3, 11, 19, 1, 24, 449, DateTimeKind.Unspecified).AddTicks(72),
-                            EmployeeId = 9L,
-                            ProjectId = 13L
-                        },
-                        new
-                        {
-                            TimeEntryId = 223L,
-                            AmountOfHours = 54m,
-                            Comment = "Adipisci ad facilis possimus facere sunt ut impedit qui velit.",
-                            Date = new DateTime(2020, 12, 25, 23, 4, 15, 785, DateTimeKind.Unspecified).AddTicks(8705),
-                            EmployeeId = 10L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            TimeEntryId = 224L,
-                            AmountOfHours = 57m,
-                            Comment = "Voluptatem illum perspiciatis sed aut in maxime exercitationem qui aut.",
-                            Date = new DateTime(2020, 11, 4, 8, 31, 23, 922, DateTimeKind.Unspecified).AddTicks(6597),
-                            EmployeeId = 3L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 225L,
-                            AmountOfHours = 57m,
-                            Comment = "Est nihil cumque doloribus enim et est alias laudantium non.",
-                            Date = new DateTime(2020, 9, 5, 13, 58, 44, 772, DateTimeKind.Unspecified).AddTicks(2815),
-                            EmployeeId = 6L,
-                            ProjectId = 3L
-                        },
-                        new
-                        {
-                            TimeEntryId = 226L,
-                            AmountOfHours = 56m,
-                            Comment = "Expedita est suscipit at quia dolorem sequi velit magnam cupiditate.",
-                            Date = new DateTime(2020, 11, 18, 3, 27, 17, 187, DateTimeKind.Unspecified).AddTicks(5851),
-                            EmployeeId = 8L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            TimeEntryId = 227L,
-                            AmountOfHours = 54m,
-                            Comment = "Blanditiis voluptas similique vero velit voluptatem veritatis nesciunt dolores illum.",
-                            Date = new DateTime(2020, 2, 23, 20, 48, 26, 675, DateTimeKind.Unspecified).AddTicks(6120),
-                            EmployeeId = 2L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            TimeEntryId = 228L,
-                            AmountOfHours = 15m,
-                            Comment = "Ex laborum omnis voluptates optio consequatur rerum quae totam suscipit.",
-                            Date = new DateTime(2020, 3, 22, 8, 27, 53, 187, DateTimeKind.Unspecified).AddTicks(6530),
-                            EmployeeId = 9L,
+                            AmountOfHours = 4m,
+                            Comment = "Compatible modular utilisation",
+                            Date = new DateTime(2020, 12, 21, 10, 40, 50, 124, DateTimeKind.Unspecified).AddTicks(5141),
+                            EmployeeId = 5L,
                             ProjectId = 11L
                         },
                         new
                         {
-                            TimeEntryId = 229L,
-                            AmountOfHours = 27m,
-                            Comment = "Ipsum dolor ex et quis dolorem unde fuga commodi similique.",
-                            Date = new DateTime(2020, 10, 17, 7, 14, 8, 783, DateTimeKind.Unspecified).AddTicks(1639),
-                            EmployeeId = 9L,
-                            ProjectId = 12L
+                            TimeEntryId = 222L,
+                            AmountOfHours = 3m,
+                            Comment = "Reverse-engineered asynchronous benchmark",
+                            Date = new DateTime(2020, 3, 22, 10, 50, 8, 316, DateTimeKind.Unspecified).AddTicks(6185),
+                            EmployeeId = 12L,
+                            ProjectId = 15L
                         },
                         new
                         {
-                            TimeEntryId = 230L,
-                            AmountOfHours = 30m,
-                            Comment = "Minima occaecati nihil assumenda rerum saepe nulla rerum placeat est.",
-                            Date = new DateTime(2020, 11, 15, 15, 5, 2, 605, DateTimeKind.Unspecified).AddTicks(3041),
-                            EmployeeId = 9L,
-                            ProjectId = 7L
-                        },
-                        new
-                        {
-                            TimeEntryId = 231L,
-                            AmountOfHours = 24m,
-                            Comment = "Quis incidunt qui ut non et maiores ipsam praesentium veniam.",
-                            Date = new DateTime(2020, 4, 4, 20, 1, 5, 970, DateTimeKind.Unspecified).AddTicks(1579),
-                            EmployeeId = 2L,
-                            ProjectId = 8L
-                        },
-                        new
-                        {
-                            TimeEntryId = 232L,
-                            AmountOfHours = 44m,
-                            Comment = "Magnam quia numquam qui itaque qui assumenda hic harum hic.",
-                            Date = new DateTime(2020, 9, 18, 18, 21, 9, 599, DateTimeKind.Unspecified).AddTicks(2599),
+                            TimeEntryId = 223L,
+                            AmountOfHours = 5m,
+                            Comment = "Phased methodical system engine",
+                            Date = new DateTime(2020, 9, 10, 9, 7, 16, 480, DateTimeKind.Unspecified).AddTicks(7297),
                             EmployeeId = 7L,
-                            ProjectId = 18L
+                            ProjectId = 1L
                         },
                         new
                         {
-                            TimeEntryId = 233L,
-                            AmountOfHours = 32m,
-                            Comment = "Et harum neque hic error eos magnam dolores molestiae temporibus.",
-                            Date = new DateTime(2020, 8, 8, 10, 28, 49, 87, DateTimeKind.Unspecified).AddTicks(7488),
-                            EmployeeId = 1L,
-                            ProjectId = 6L
-                        },
-                        new
-                        {
-                            TimeEntryId = 234L,
-                            AmountOfHours = 58m,
-                            Comment = "Inventore nihil est unde dolor fugit iure ut molestias error.",
-                            Date = new DateTime(2020, 7, 6, 12, 17, 43, 285, DateTimeKind.Unspecified).AddTicks(5025),
-                            EmployeeId = 5L,
-                            ProjectId = 3L
-                        },
-                        new
-                        {
-                            TimeEntryId = 235L,
-                            AmountOfHours = 25m,
-                            Comment = "Animi adipisci laboriosam harum perferendis qui rerum eum quia quia.",
-                            Date = new DateTime(2020, 8, 23, 4, 58, 7, 789, DateTimeKind.Unspecified).AddTicks(834),
-                            EmployeeId = 10L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            TimeEntryId = 236L,
+                            TimeEntryId = 224L,
                             AmountOfHours = 7m,
-                            Comment = "Dolor molestiae fugit nobis harum aut saepe quia ullam perferendis.",
-                            Date = new DateTime(2020, 6, 24, 19, 14, 43, 335, DateTimeKind.Unspecified).AddTicks(2799),
+                            Comment = "Devolved multimedia emulation",
+                            Date = new DateTime(2020, 5, 15, 9, 22, 7, 55, DateTimeKind.Unspecified).AddTicks(5415),
                             EmployeeId = 9L,
-                            ProjectId = 10L
+                            ProjectId = 5L
                         },
                         new
                         {
-                            TimeEntryId = 237L,
-                            AmountOfHours = 54m,
-                            Comment = "Consequuntur mollitia omnis qui dolores fugiat provident ut ducimus qui.",
-                            Date = new DateTime(2020, 2, 22, 22, 46, 41, 735, DateTimeKind.Unspecified).AddTicks(3812),
-                            EmployeeId = 3L,
-                            ProjectId = 2L
-                        },
-                        new
-                        {
-                            TimeEntryId = 238L,
-                            AmountOfHours = 14m,
-                            Comment = "Corporis voluptatum porro id quidem enim possimus beatae qui quo.",
-                            Date = new DateTime(2020, 1, 29, 12, 2, 41, 708, DateTimeKind.Unspecified).AddTicks(6985),
-                            EmployeeId = 6L,
+                            TimeEntryId = 225L,
+                            AmountOfHours = 7m,
+                            Comment = "Implemented optimal utilisation",
+                            Date = new DateTime(2020, 10, 4, 12, 47, 47, 340, DateTimeKind.Unspecified).AddTicks(512),
+                            EmployeeId = 8L,
                             ProjectId = 17L
                         },
                         new
                         {
-                            TimeEntryId = 239L,
-                            AmountOfHours = 23m,
-                            Comment = "Saepe quia repudiandae non nemo asperiores cumque cupiditate dolorum vel.",
-                            Date = new DateTime(2020, 7, 12, 14, 26, 57, 855, DateTimeKind.Unspecified).AddTicks(6357),
-                            EmployeeId = 1L,
-                            ProjectId = 13L
+                            TimeEntryId = 226L,
+                            AmountOfHours = 5m,
+                            Comment = "Intuitive 3rd generation definition",
+                            Date = new DateTime(2020, 11, 30, 16, 36, 27, 727, DateTimeKind.Unspecified).AddTicks(7980),
+                            EmployeeId = 2L,
+                            ProjectId = 11L
                         },
                         new
                         {
-                            TimeEntryId = 240L,
-                            AmountOfHours = 33m,
-                            Comment = "Reiciendis porro dignissimos sunt qui distinctio et dolorem exercitationem fugit.",
-                            Date = new DateTime(2020, 8, 1, 19, 18, 38, 63, DateTimeKind.Unspecified).AddTicks(3571),
-                            EmployeeId = 11L,
+                            TimeEntryId = 227L,
+                            AmountOfHours = 7m,
+                            Comment = "Optional systemic structure",
+                            Date = new DateTime(2020, 4, 29, 17, 37, 49, 461, DateTimeKind.Unspecified).AddTicks(1189),
+                            EmployeeId = 1L,
                             ProjectId = 18L
                         },
                         new
                         {
-                            TimeEntryId = 241L,
+                            TimeEntryId = 228L,
+                            AmountOfHours = 7m,
+                            Comment = "Phased 6th generation structure",
+                            Date = new DateTime(2020, 9, 13, 13, 17, 55, 8, DateTimeKind.Unspecified).AddTicks(7827),
+                            EmployeeId = 12L,
+                            ProjectId = 12L
+                        },
+                        new
+                        {
+                            TimeEntryId = 229L,
+                            AmountOfHours = 8m,
+                            Comment = "Visionary needs-based moratorium",
+                            Date = new DateTime(2020, 8, 5, 12, 34, 14, 196, DateTimeKind.Unspecified).AddTicks(8050),
+                            EmployeeId = 4L,
+                            ProjectId = 10L
+                        },
+                        new
+                        {
+                            TimeEntryId = 230L,
+                            AmountOfHours = 4m,
+                            Comment = "Grass-roots bottom-line focus group",
+                            Date = new DateTime(2020, 7, 16, 18, 47, 52, 608, DateTimeKind.Unspecified).AddTicks(4294),
+                            EmployeeId = 11L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            TimeEntryId = 231L,
                             AmountOfHours = 2m,
-                            Comment = "Ratione quo delectus distinctio nemo qui nisi consequuntur atque quo.",
-                            Date = new DateTime(2020, 2, 18, 15, 36, 33, 991, DateTimeKind.Unspecified).AddTicks(1433),
-                            EmployeeId = 9L,
+                            Comment = "Organized multi-state function",
+                            Date = new DateTime(2020, 1, 14, 6, 26, 3, 133, DateTimeKind.Unspecified).AddTicks(2341),
+                            EmployeeId = 7L,
+                            ProjectId = 1L
+                        },
+                        new
+                        {
+                            TimeEntryId = 232L,
+                            AmountOfHours = 6m,
+                            Comment = "Seamless fresh-thinking monitoring",
+                            Date = new DateTime(2020, 1, 30, 16, 10, 28, 929, DateTimeKind.Unspecified).AddTicks(506),
+                            EmployeeId = 5L,
                             ProjectId = 2L
                         },
                         new
                         {
-                            TimeEntryId = 242L,
-                            AmountOfHours = 47m,
-                            Comment = "At laboriosam non doloribus est numquam aspernatur minus enim voluptates.",
-                            Date = new DateTime(2020, 7, 13, 6, 45, 37, 20, DateTimeKind.Unspecified).AddTicks(3698),
-                            EmployeeId = 2L,
-                            ProjectId = 18L
+                            TimeEntryId = 233L,
+                            AmountOfHours = 7m,
+                            Comment = "Public-key asymmetric neural-net",
+                            Date = new DateTime(2020, 12, 5, 15, 41, 11, 893, DateTimeKind.Unspecified).AddTicks(8405),
+                            EmployeeId = 3L,
+                            ProjectId = 7L
                         },
                         new
                         {
-                            TimeEntryId = 243L,
+                            TimeEntryId = 234L,
                             AmountOfHours = 4m,
-                            Comment = "Accusantium et soluta iusto eos expedita vel repellendus velit esse.",
-                            Date = new DateTime(2020, 6, 27, 23, 26, 20, 305, DateTimeKind.Unspecified).AddTicks(4219),
+                            Comment = "Fundamental methodical standardization",
+                            Date = new DateTime(2020, 8, 7, 5, 21, 34, 64, DateTimeKind.Unspecified).AddTicks(9808),
+                            EmployeeId = 1L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            TimeEntryId = 235L,
+                            AmountOfHours = 2m,
+                            Comment = "Realigned interactive capability",
+                            Date = new DateTime(2020, 5, 19, 14, 28, 16, 929, DateTimeKind.Unspecified).AddTicks(1557),
+                            EmployeeId = 1L,
+                            ProjectId = 14L
+                        },
+                        new
+                        {
+                            TimeEntryId = 236L,
+                            AmountOfHours = 1m,
+                            Comment = "Intuitive hybrid implementation",
+                            Date = new DateTime(2020, 9, 2, 4, 0, 29, 919, DateTimeKind.Unspecified).AddTicks(3643),
+                            EmployeeId = 7L,
+                            ProjectId = 11L
+                        },
+                        new
+                        {
+                            TimeEntryId = 237L,
+                            AmountOfHours = 2m,
+                            Comment = "Extended 24/7 success",
+                            Date = new DateTime(2020, 4, 15, 1, 43, 53, 941, DateTimeKind.Unspecified).AddTicks(4864),
                             EmployeeId = 5L,
+                            ProjectId = 13L
+                        },
+                        new
+                        {
+                            TimeEntryId = 238L,
+                            AmountOfHours = 6m,
+                            Comment = "Business-focused multi-state neural-net",
+                            Date = new DateTime(2020, 8, 13, 13, 24, 1, 53, DateTimeKind.Unspecified).AddTicks(6693),
+                            EmployeeId = 6L,
                             ProjectId = 9L
                         },
                         new
                         {
-                            TimeEntryId = 244L,
-                            AmountOfHours = 52m,
-                            Comment = "Ut minus dolorem facilis magni consequuntur aut a qui eos.",
-                            Date = new DateTime(2020, 3, 15, 14, 57, 45, 210, DateTimeKind.Unspecified).AddTicks(4122),
+                            TimeEntryId = 239L,
+                            AmountOfHours = 2m,
+                            Comment = "Balanced incremental implementation",
+                            Date = new DateTime(2020, 10, 10, 7, 40, 7, 443, DateTimeKind.Unspecified).AddTicks(9118),
+                            EmployeeId = 4L,
+                            ProjectId = 15L
+                        },
+                        new
+                        {
+                            TimeEntryId = 240L,
+                            AmountOfHours = 1m,
+                            Comment = "Synergized hybrid encryption",
+                            Date = new DateTime(2020, 6, 5, 14, 35, 13, 431, DateTimeKind.Unspecified).AddTicks(207),
+                            EmployeeId = 5L,
+                            ProjectId = 6L
+                        },
+                        new
+                        {
+                            TimeEntryId = 241L,
+                            AmountOfHours = 3m,
+                            Comment = "Persevering composite moratorium",
+                            Date = new DateTime(2020, 9, 23, 16, 31, 18, 247, DateTimeKind.Unspecified).AddTicks(1591),
+                            EmployeeId = 10L,
+                            ProjectId = 7L
+                        },
+                        new
+                        {
+                            TimeEntryId = 242L,
+                            AmountOfHours = 1m,
+                            Comment = "Persevering zero administration migration",
+                            Date = new DateTime(2020, 3, 24, 23, 2, 0, 589, DateTimeKind.Unspecified).AddTicks(5810),
                             EmployeeId = 3L,
-                            ProjectId = 19L
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            TimeEntryId = 243L,
+                            AmountOfHours = 6m,
+                            Comment = "Synergized holistic middleware",
+                            Date = new DateTime(2020, 7, 14, 20, 5, 24, 190, DateTimeKind.Unspecified).AddTicks(5639),
+                            EmployeeId = 3L,
+                            ProjectId = 18L
+                        },
+                        new
+                        {
+                            TimeEntryId = 244L,
+                            AmountOfHours = 3m,
+                            Comment = "Virtual zero tolerance encryption",
+                            Date = new DateTime(2020, 10, 22, 8, 41, 7, 871, DateTimeKind.Unspecified).AddTicks(4540),
+                            EmployeeId = 10L,
+                            ProjectId = 18L
                         },
                         new
                         {
                             TimeEntryId = 245L,
-                            AmountOfHours = 25m,
-                            Comment = "Error inventore iste odio et ad aspernatur soluta aperiam enim.",
-                            Date = new DateTime(2020, 12, 13, 4, 32, 47, 632, DateTimeKind.Unspecified).AddTicks(5323),
-                            EmployeeId = 3L,
+                            AmountOfHours = 4m,
+                            Comment = "Object-based logistical access",
+                            Date = new DateTime(2020, 2, 17, 6, 12, 7, 303, DateTimeKind.Unspecified).AddTicks(7702),
+                            EmployeeId = 5L,
                             ProjectId = 18L
                         },
                         new
                         {
                             TimeEntryId = 246L,
                             AmountOfHours = 4m,
-                            Comment = "Molestiae fugit est magnam aut dolore et ut dicta laudantium.",
-                            Date = new DateTime(2020, 5, 27, 4, 4, 56, 758, DateTimeKind.Unspecified).AddTicks(7942),
-                            EmployeeId = 9L,
-                            ProjectId = 8L
+                            Comment = "Monitored 24/7 moderator",
+                            Date = new DateTime(2020, 5, 20, 19, 0, 36, 763, DateTimeKind.Unspecified).AddTicks(1665),
+                            EmployeeId = 2L,
+                            ProjectId = 11L
                         },
                         new
                         {
                             TimeEntryId = 247L,
                             AmountOfHours = 4m,
-                            Comment = "Numquam illum aliquam earum impedit delectus eius ex eos ut.",
-                            Date = new DateTime(2020, 2, 4, 9, 27, 15, 699, DateTimeKind.Unspecified).AddTicks(7738),
-                            EmployeeId = 10L,
-                            ProjectId = 19L
+                            Comment = "Optional stable architecture",
+                            Date = new DateTime(2020, 3, 4, 12, 39, 21, 765, DateTimeKind.Unspecified).AddTicks(9274),
+                            EmployeeId = 12L,
+                            ProjectId = 18L
                         },
                         new
                         {
                             TimeEntryId = 248L,
-                            AmountOfHours = 33m,
-                            Comment = "Cumque excepturi quam quaerat est et aperiam rem non recusandae.",
-                            Date = new DateTime(2020, 10, 4, 18, 6, 8, 910, DateTimeKind.Unspecified).AddTicks(9241),
-                            EmployeeId = 11L,
-                            ProjectId = 14L
+                            AmountOfHours = 8m,
+                            Comment = "Assimilated needs-based challenge",
+                            Date = new DateTime(2020, 6, 4, 9, 4, 13, 502, DateTimeKind.Unspecified).AddTicks(1204),
+                            EmployeeId = 5L,
+                            ProjectId = 19L
                         },
                         new
                         {
                             TimeEntryId = 249L,
-                            AmountOfHours = 1m,
-                            Comment = "Ut sunt nihil nostrum sit accusantium laudantium numquam inventore veniam.",
-                            Date = new DateTime(2020, 11, 30, 16, 54, 4, 70, DateTimeKind.Unspecified).AddTicks(7714),
-                            EmployeeId = 2L,
-                            ProjectId = 9L
+                            AmountOfHours = 5m,
+                            Comment = "Down-sized executive workforce",
+                            Date = new DateTime(2020, 12, 10, 3, 7, 36, 862, DateTimeKind.Unspecified).AddTicks(615),
+                            EmployeeId = 6L,
+                            ProjectId = 3L
                         },
                         new
                         {
                             TimeEntryId = 250L,
-                            AmountOfHours = 34m,
-                            Comment = "Aliquam placeat laudantium vitae corrupti rerum quo in quae deleniti.",
-                            Date = new DateTime(2020, 11, 6, 23, 11, 48, 8, DateTimeKind.Unspecified).AddTicks(8051),
-                            EmployeeId = 8L,
-                            ProjectId = 4L
+                            AmountOfHours = 1m,
+                            Comment = "Integrated mission-critical secured line",
+                            Date = new DateTime(2020, 8, 27, 11, 17, 12, 757, DateTimeKind.Unspecified).AddTicks(3757),
+                            EmployeeId = 11L,
+                            ProjectId = 3L
                         },
                         new
                         {
                             TimeEntryId = 251L,
-                            AmountOfHours = 45m,
-                            Comment = "Est quia doloremque aut illo adipisci eum assumenda velit dolores.",
-                            Date = new DateTime(2020, 1, 14, 2, 20, 0, 171, DateTimeKind.Unspecified).AddTicks(3390),
-                            EmployeeId = 9L,
-                            ProjectId = 15L
+                            AmountOfHours = 4m,
+                            Comment = "Multi-channelled well-modulated artificial intelligence",
+                            Date = new DateTime(2020, 3, 1, 8, 57, 44, 23, DateTimeKind.Unspecified).AddTicks(6453),
+                            EmployeeId = 5L,
+                            ProjectId = 13L
                         },
                         new
                         {
                             TimeEntryId = 252L,
-                            AmountOfHours = 29m,
-                            Comment = "Blanditiis eos explicabo nostrum inventore laudantium numquam laudantium totam dolorem.",
-                            Date = new DateTime(2020, 2, 1, 23, 54, 57, 755, DateTimeKind.Unspecified).AddTicks(9342),
-                            EmployeeId = 3L,
-                            ProjectId = 20L
+                            AmountOfHours = 4m,
+                            Comment = "De-engineered context-sensitive structure",
+                            Date = new DateTime(2020, 11, 18, 9, 3, 41, 900, DateTimeKind.Unspecified).AddTicks(9238),
+                            EmployeeId = 12L,
+                            ProjectId = 15L
                         },
                         new
                         {
                             TimeEntryId = 253L,
-                            AmountOfHours = 24m,
-                            Comment = "Quae tempora et asperiores asperiores porro id minus magnam sequi.",
-                            Date = new DateTime(2020, 3, 9, 15, 31, 48, 136, DateTimeKind.Unspecified).AddTicks(854),
+                            AmountOfHours = 4m,
+                            Comment = "Total static workforce",
+                            Date = new DateTime(2020, 5, 30, 18, 50, 56, 760, DateTimeKind.Unspecified).AddTicks(2772),
+                            EmployeeId = 12L,
+                            ProjectId = 9L
+                        },
+                        new
+                        {
+                            TimeEntryId = 254L,
+                            AmountOfHours = 2m,
+                            Comment = "Profit-focused multi-state neural-net",
+                            Date = new DateTime(2020, 11, 15, 8, 32, 18, 970, DateTimeKind.Unspecified).AddTicks(6010),
+                            EmployeeId = 6L,
+                            ProjectId = 11L
+                        },
+                        new
+                        {
+                            TimeEntryId = 255L,
+                            AmountOfHours = 2m,
+                            Comment = "Enhanced demand-driven analyzer",
+                            Date = new DateTime(2020, 5, 22, 20, 6, 38, 862, DateTimeKind.Unspecified).AddTicks(7801),
+                            EmployeeId = 9L,
+                            ProjectId = 6L
+                        },
+                        new
+                        {
+                            TimeEntryId = 256L,
+                            AmountOfHours = 5m,
+                            Comment = "Realigned analyzing ability",
+                            Date = new DateTime(2020, 7, 26, 5, 58, 53, 660, DateTimeKind.Unspecified).AddTicks(1566),
+                            EmployeeId = 4L,
+                            ProjectId = 2L
+                        },
+                        new
+                        {
+                            TimeEntryId = 257L,
+                            AmountOfHours = 1m,
+                            Comment = "Customizable bandwidth-monitored infrastructure",
+                            Date = new DateTime(2020, 3, 9, 11, 44, 7, 866, DateTimeKind.Unspecified).AddTicks(2583),
+                            EmployeeId = 5L,
+                            ProjectId = 5L
+                        },
+                        new
+                        {
+                            TimeEntryId = 258L,
+                            AmountOfHours = 4m,
+                            Comment = "Right-sized solution-oriented support",
+                            Date = new DateTime(2020, 8, 8, 10, 32, 6, 148, DateTimeKind.Unspecified).AddTicks(9210),
+                            EmployeeId = 9L,
+                            ProjectId = 6L
+                        },
+                        new
+                        {
+                            TimeEntryId = 259L,
+                            AmountOfHours = 7m,
+                            Comment = "Fully-configurable full-range support",
+                            Date = new DateTime(2020, 3, 15, 16, 27, 48, 711, DateTimeKind.Unspecified).AddTicks(6228),
+                            EmployeeId = 2L,
+                            ProjectId = 10L
+                        },
+                        new
+                        {
+                            TimeEntryId = 260L,
+                            AmountOfHours = 8m,
+                            Comment = "User-friendly secondary contingency",
+                            Date = new DateTime(2020, 4, 6, 20, 6, 21, 138, DateTimeKind.Unspecified).AddTicks(7161),
+                            EmployeeId = 6L,
+                            ProjectId = 17L
+                        },
+                        new
+                        {
+                            TimeEntryId = 261L,
+                            AmountOfHours = 2m,
+                            Comment = "Robust zero defect neural-net",
+                            Date = new DateTime(2020, 11, 27, 6, 20, 15, 107, DateTimeKind.Unspecified).AddTicks(790),
                             EmployeeId = 5L,
                             ProjectId = 14L
                         },
                         new
                         {
-                            TimeEntryId = 254L,
-                            AmountOfHours = 29m,
-                            Comment = "Unde ut suscipit omnis eos aliquid quia et eum ut.",
-                            Date = new DateTime(2020, 3, 8, 10, 31, 58, 457, DateTimeKind.Unspecified).AddTicks(3916),
-                            EmployeeId = 2L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            TimeEntryId = 255L,
-                            AmountOfHours = 8m,
-                            Comment = "Vero quia et sunt consequatur doloribus est aut voluptas facere.",
-                            Date = new DateTime(2020, 7, 13, 13, 12, 10, 969, DateTimeKind.Unspecified).AddTicks(7313),
-                            EmployeeId = 9L,
-                            ProjectId = 8L
-                        },
-                        new
-                        {
-                            TimeEntryId = 256L,
-                            AmountOfHours = 43m,
-                            Comment = "Rerum itaque voluptates ea veniam minus repudiandae et quos ducimus.",
-                            Date = new DateTime(2020, 11, 19, 15, 13, 16, 818, DateTimeKind.Unspecified).AddTicks(7170),
-                            EmployeeId = 2L,
-                            ProjectId = 17L
-                        },
-                        new
-                        {
-                            TimeEntryId = 257L,
-                            AmountOfHours = 8m,
-                            Comment = "Voluptas corporis et quam amet praesentium debitis quae ex nostrum.",
-                            Date = new DateTime(2020, 4, 11, 5, 18, 59, 149, DateTimeKind.Unspecified).AddTicks(5064),
-                            EmployeeId = 8L,
-                            ProjectId = 4L
-                        },
-                        new
-                        {
-                            TimeEntryId = 258L,
-                            AmountOfHours = 35m,
-                            Comment = "Magni qui voluptatem quos rem in sit ducimus odio est.",
-                            Date = new DateTime(2020, 10, 5, 10, 4, 17, 809, DateTimeKind.Unspecified).AddTicks(1462),
+                            TimeEntryId = 262L,
+                            AmountOfHours = 5m,
+                            Comment = "Operative coherent analyzer",
+                            Date = new DateTime(2020, 3, 4, 3, 21, 1, 159, DateTimeKind.Unspecified).AddTicks(9323),
                             EmployeeId = 4L,
                             ProjectId = 16L
                         },
                         new
                         {
-                            TimeEntryId = 259L,
-                            AmountOfHours = 21m,
-                            Comment = "Quo aliquid maiores ipsum quo officia dolores sed necessitatibus ipsam.",
-                            Date = new DateTime(2020, 3, 26, 11, 55, 52, 385, DateTimeKind.Unspecified).AddTicks(1490),
-                            EmployeeId = 3L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            TimeEntryId = 260L,
-                            AmountOfHours = 51m,
-                            Comment = "Qui et possimus dicta aut suscipit consequatur et molestiae laborum.",
-                            Date = new DateTime(2020, 11, 5, 1, 30, 25, 613, DateTimeKind.Unspecified).AddTicks(8648),
-                            EmployeeId = 5L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 261L,
-                            AmountOfHours = 24m,
-                            Comment = "Eos eos magni reprehenderit tempora occaecati sit consequatur corporis voluptatum.",
-                            Date = new DateTime(2020, 2, 13, 10, 57, 22, 69, DateTimeKind.Unspecified).AddTicks(7679),
-                            EmployeeId = 6L,
-                            ProjectId = 4L
-                        },
-                        new
-                        {
-                            TimeEntryId = 262L,
-                            AmountOfHours = 36m,
-                            Comment = "Optio impedit enim quae natus dolor eos qui delectus sed.",
-                            Date = new DateTime(2020, 6, 11, 13, 12, 52, 896, DateTimeKind.Unspecified).AddTicks(9632),
-                            EmployeeId = 10L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
                             TimeEntryId = 263L,
-                            AmountOfHours = 49m,
-                            Comment = "Et autem consequatur quo totam quod tempore placeat sit temporibus.",
-                            Date = new DateTime(2020, 12, 28, 21, 55, 45, 5, DateTimeKind.Unspecified).AddTicks(9930),
-                            EmployeeId = 3L,
-                            ProjectId = 7L
+                            AmountOfHours = 4m,
+                            Comment = "Monitored bifurcated alliance",
+                            Date = new DateTime(2020, 8, 31, 9, 23, 28, 464, DateTimeKind.Unspecified).AddTicks(9571),
+                            EmployeeId = 12L,
+                            ProjectId = 8L
                         },
                         new
                         {
                             TimeEntryId = 264L,
-                            AmountOfHours = 35m,
-                            Comment = "Ipsam veniam id et saepe omnis quia porro ullam ipsam.",
-                            Date = new DateTime(2020, 7, 7, 0, 51, 39, 42, DateTimeKind.Unspecified).AddTicks(2949),
-                            EmployeeId = 4L,
+                            AmountOfHours = 4m,
+                            Comment = "Profound asynchronous circuit",
+                            Date = new DateTime(2020, 10, 8, 3, 15, 49, 839, DateTimeKind.Unspecified).AddTicks(5125),
+                            EmployeeId = 7L,
                             ProjectId = 19L
                         },
                         new
                         {
                             TimeEntryId = 265L,
                             AmountOfHours = 2m,
-                            Comment = "Ipsum non similique sit provident occaecati vitae non nam facilis.",
-                            Date = new DateTime(2020, 7, 14, 10, 39, 39, 215, DateTimeKind.Unspecified).AddTicks(214),
-                            EmployeeId = 9L,
-                            ProjectId = 15L
+                            Comment = "Focused demand-driven throughput",
+                            Date = new DateTime(2020, 2, 14, 10, 0, 3, 760, DateTimeKind.Unspecified).AddTicks(1519),
+                            EmployeeId = 5L,
+                            ProjectId = 14L
                         },
                         new
                         {
                             TimeEntryId = 266L,
-                            AmountOfHours = 57m,
-                            Comment = "Cupiditate cupiditate pariatur ut nam veniam molestias nobis animi voluptatem.",
-                            Date = new DateTime(2020, 12, 3, 4, 14, 2, 892, DateTimeKind.Unspecified).AddTicks(3842),
-                            EmployeeId = 1L,
-                            ProjectId = 5L
+                            AmountOfHours = 8m,
+                            Comment = "Streamlined contextually-based firmware",
+                            Date = new DateTime(2020, 4, 27, 16, 47, 49, 825, DateTimeKind.Unspecified).AddTicks(441),
+                            EmployeeId = 8L,
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 267L,
-                            AmountOfHours = 12m,
-                            Comment = "Architecto quos occaecati non quia harum in aliquam modi et.",
-                            Date = new DateTime(2020, 8, 8, 18, 46, 0, 481, DateTimeKind.Unspecified).AddTicks(4576),
-                            EmployeeId = 10L,
-                            ProjectId = 20L
+                            AmountOfHours = 7m,
+                            Comment = "Enhanced systematic service-desk",
+                            Date = new DateTime(2020, 4, 21, 17, 3, 37, 972, DateTimeKind.Unspecified).AddTicks(9897),
+                            EmployeeId = 9L,
+                            ProjectId = 13L
                         },
                         new
                         {
                             TimeEntryId = 268L,
-                            AmountOfHours = 23m,
-                            Comment = "Et a aspernatur consectetur vero quaerat adipisci omnis laudantium beatae.",
-                            Date = new DateTime(2020, 7, 1, 20, 39, 58, 811, DateTimeKind.Unspecified).AddTicks(2975),
-                            EmployeeId = 4L,
-                            ProjectId = 6L
+                            AmountOfHours = 5m,
+                            Comment = "Progressive client-server infrastructure",
+                            Date = new DateTime(2020, 6, 24, 15, 58, 12, 533, DateTimeKind.Unspecified).AddTicks(847),
+                            EmployeeId = 6L,
+                            ProjectId = 3L
                         },
                         new
                         {
                             TimeEntryId = 269L,
-                            AmountOfHours = 29m,
-                            Comment = "Voluptas unde voluptas voluptatem sint debitis vero quia consequuntur quia.",
-                            Date = new DateTime(2020, 7, 13, 21, 17, 6, 787, DateTimeKind.Unspecified).AddTicks(5060),
-                            EmployeeId = 6L,
-                            ProjectId = 6L
+                            AmountOfHours = 1m,
+                            Comment = "Team-oriented hybrid protocol",
+                            Date = new DateTime(2020, 10, 10, 9, 33, 56, 308, DateTimeKind.Unspecified).AddTicks(9871),
+                            EmployeeId = 10L,
+                            ProjectId = 2L
                         },
                         new
                         {
                             TimeEntryId = 270L,
-                            AmountOfHours = 16m,
-                            Comment = "Ullam maiores ducimus tempore repellendus consequuntur et facilis et vel.",
-                            Date = new DateTime(2020, 5, 15, 23, 33, 41, 210, DateTimeKind.Unspecified).AddTicks(9365),
-                            EmployeeId = 5L,
+                            AmountOfHours = 2m,
+                            Comment = "Up-sized attitude-oriented structure",
+                            Date = new DateTime(2020, 4, 25, 23, 14, 5, 541, DateTimeKind.Unspecified).AddTicks(2718),
+                            EmployeeId = 2L,
                             ProjectId = 7L
                         },
                         new
                         {
                             TimeEntryId = 271L,
-                            AmountOfHours = 17m,
-                            Comment = "Accusantium odio magnam a aut sunt molestiae tempore ut rem.",
-                            Date = new DateTime(2020, 1, 4, 14, 41, 15, 793, DateTimeKind.Unspecified).AddTicks(9719),
-                            EmployeeId = 1L,
-                            ProjectId = 13L
+                            AmountOfHours = 5m,
+                            Comment = "Triple-buffered non-volatile forecast",
+                            Date = new DateTime(2020, 6, 16, 23, 40, 26, 266, DateTimeKind.Unspecified).AddTicks(7561),
+                            EmployeeId = 4L,
+                            ProjectId = 10L
                         },
                         new
                         {
                             TimeEntryId = 272L,
-                            AmountOfHours = 27m,
-                            Comment = "Fugiat et eligendi sunt necessitatibus molestiae voluptatum deleniti harum id.",
-                            Date = new DateTime(2020, 7, 11, 14, 51, 1, 795, DateTimeKind.Unspecified).AddTicks(7424),
-                            EmployeeId = 6L,
-                            ProjectId = 9L
+                            AmountOfHours = 4m,
+                            Comment = "Enterprise-wide even-keeled strategy",
+                            Date = new DateTime(2020, 8, 18, 6, 58, 46, 300, DateTimeKind.Unspecified).AddTicks(9412),
+                            EmployeeId = 4L,
+                            ProjectId = 13L
                         },
                         new
                         {
                             TimeEntryId = 273L,
-                            AmountOfHours = 41m,
-                            Comment = "Fuga sint delectus in et error ratione nobis molestiae ut.",
-                            Date = new DateTime(2020, 6, 4, 1, 51, 27, 303, DateTimeKind.Unspecified).AddTicks(9843),
-                            EmployeeId = 3L,
-                            ProjectId = 6L
+                            AmountOfHours = 5m,
+                            Comment = "Centralized holistic support",
+                            Date = new DateTime(2020, 9, 3, 12, 15, 58, 395, DateTimeKind.Unspecified).AddTicks(9487),
+                            EmployeeId = 7L,
+                            ProjectId = 11L
                         },
                         new
                         {
                             TimeEntryId = 274L,
-                            AmountOfHours = 38m,
-                            Comment = "Dignissimos aut animi neque animi dolorum consequatur repellat sed dolor.",
-                            Date = new DateTime(2020, 5, 5, 6, 31, 40, 233, DateTimeKind.Unspecified).AddTicks(1962),
-                            EmployeeId = 6L,
-                            ProjectId = 2L
+                            AmountOfHours = 8m,
+                            Comment = "Re-engineered hybrid solution",
+                            Date = new DateTime(2020, 11, 19, 18, 45, 53, 199, DateTimeKind.Unspecified).AddTicks(9843),
+                            EmployeeId = 12L,
+                            ProjectId = 20L
                         },
                         new
                         {
                             TimeEntryId = 275L,
-                            AmountOfHours = 33m,
-                            Comment = "Aut est corrupti optio nam et quae accusantium molestias dolores.",
-                            Date = new DateTime(2020, 10, 26, 20, 7, 0, 606, DateTimeKind.Unspecified).AddTicks(4561),
-                            EmployeeId = 10L,
-                            ProjectId = 20L
+                            AmountOfHours = 3m,
+                            Comment = "Right-sized value-added methodology",
+                            Date = new DateTime(2020, 7, 17, 2, 37, 14, 253, DateTimeKind.Unspecified).AddTicks(4795),
+                            EmployeeId = 4L,
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 276L,
-                            AmountOfHours = 9m,
-                            Comment = "Repellat voluptatem iure est qui pariatur eaque distinctio alias corporis.",
-                            Date = new DateTime(2020, 4, 18, 18, 12, 9, 683, DateTimeKind.Unspecified).AddTicks(974),
-                            EmployeeId = 10L,
-                            ProjectId = 17L
+                            AmountOfHours = 7m,
+                            Comment = "Multi-lateral bandwidth-monitored capacity",
+                            Date = new DateTime(2020, 12, 1, 8, 54, 57, 619, DateTimeKind.Unspecified).AddTicks(7601),
+                            EmployeeId = 9L,
+                            ProjectId = 3L
                         },
                         new
                         {
                             TimeEntryId = 277L,
-                            AmountOfHours = 38m,
-                            Comment = "Qui sit consequuntur dolor maxime animi debitis minima ab atque.",
-                            Date = new DateTime(2020, 11, 17, 1, 44, 33, 792, DateTimeKind.Unspecified).AddTicks(7287),
-                            EmployeeId = 8L,
-                            ProjectId = 2L
+                            AmountOfHours = 6m,
+                            Comment = "Customizable value-added help-desk",
+                            Date = new DateTime(2020, 9, 10, 16, 34, 11, 787, DateTimeKind.Unspecified).AddTicks(1956),
+                            EmployeeId = 5L,
+                            ProjectId = 13L
                         },
                         new
                         {
                             TimeEntryId = 278L,
-                            AmountOfHours = 25m,
-                            Comment = "Totam odit voluptate rerum voluptas distinctio alias ut qui nulla.",
-                            Date = new DateTime(2020, 8, 1, 3, 48, 24, 820, DateTimeKind.Unspecified).AddTicks(179),
-                            EmployeeId = 6L,
-                            ProjectId = 20L
+                            AmountOfHours = 7m,
+                            Comment = "Proactive zero administration internet solution",
+                            Date = new DateTime(2020, 8, 12, 18, 47, 38, 254, DateTimeKind.Unspecified).AddTicks(3331),
+                            EmployeeId = 10L,
+                            ProjectId = 12L
                         },
                         new
                         {
                             TimeEntryId = 279L,
-                            AmountOfHours = 9m,
-                            Comment = "Facilis amet eveniet et consequatur quam et quia quis ut.",
-                            Date = new DateTime(2020, 7, 5, 23, 17, 49, 924, DateTimeKind.Unspecified).AddTicks(4845),
-                            EmployeeId = 3L,
-                            ProjectId = 14L
+                            AmountOfHours = 2m,
+                            Comment = "Enhanced hybrid forecast",
+                            Date = new DateTime(2020, 8, 27, 9, 57, 36, 999, DateTimeKind.Unspecified).AddTicks(2098),
+                            EmployeeId = 6L,
+                            ProjectId = 2L
                         },
                         new
                         {
                             TimeEntryId = 280L,
-                            AmountOfHours = 43m,
-                            Comment = "Aspernatur ut asperiores atque ut et consectetur eveniet eveniet neque.",
-                            Date = new DateTime(2020, 4, 9, 13, 42, 44, 963, DateTimeKind.Unspecified).AddTicks(2043),
-                            EmployeeId = 6L,
-                            ProjectId = 5L
+                            AmountOfHours = 4m,
+                            Comment = "Integrated demand-driven application",
+                            Date = new DateTime(2020, 2, 16, 7, 8, 34, 273, DateTimeKind.Unspecified).AddTicks(5318),
+                            EmployeeId = 8L,
+                            ProjectId = 16L
                         },
                         new
                         {
                             TimeEntryId = 281L,
-                            AmountOfHours = 25m,
-                            Comment = "Temporibus veniam veniam omnis sunt qui harum et officia placeat.",
-                            Date = new DateTime(2020, 8, 18, 9, 37, 26, 204, DateTimeKind.Unspecified).AddTicks(2076),
-                            EmployeeId = 9L,
+                            AmountOfHours = 5m,
+                            Comment = "Fundamental radical success",
+                            Date = new DateTime(2020, 11, 11, 3, 58, 50, 362, DateTimeKind.Unspecified).AddTicks(1091),
+                            EmployeeId = 5L,
                             ProjectId = 4L
                         },
                         new
                         {
                             TimeEntryId = 282L,
-                            AmountOfHours = 8m,
-                            Comment = "Minus iusto nihil harum reprehenderit minima accusamus quos pariatur perferendis.",
-                            Date = new DateTime(2020, 10, 16, 14, 34, 52, 57, DateTimeKind.Unspecified).AddTicks(7309),
-                            EmployeeId = 9L,
-                            ProjectId = 18L
+                            AmountOfHours = 5m,
+                            Comment = "Optional fresh-thinking local area network",
+                            Date = new DateTime(2020, 4, 20, 14, 13, 9, 574, DateTimeKind.Unspecified).AddTicks(9941),
+                            EmployeeId = 5L,
+                            ProjectId = 19L
                         },
                         new
                         {
                             TimeEntryId = 283L,
-                            AmountOfHours = 45m,
-                            Comment = "Quis minus reprehenderit sequi temporibus sed sed sunt est iusto.",
-                            Date = new DateTime(2020, 12, 16, 23, 12, 21, 598, DateTimeKind.Unspecified).AddTicks(818),
-                            EmployeeId = 8L,
-                            ProjectId = 11L
+                            AmountOfHours = 2m,
+                            Comment = "Virtual asymmetric implementation",
+                            Date = new DateTime(2020, 6, 12, 22, 48, 3, 52, DateTimeKind.Unspecified).AddTicks(7032),
+                            EmployeeId = 6L,
+                            ProjectId = 6L
                         },
                         new
                         {
                             TimeEntryId = 284L,
-                            AmountOfHours = 14m,
-                            Comment = "Ipsam dolore facere odit eum ab neque praesentium id nulla.",
-                            Date = new DateTime(2020, 2, 1, 7, 1, 12, 564, DateTimeKind.Unspecified).AddTicks(5213),
-                            EmployeeId = 10L,
-                            ProjectId = 7L
-                        },
-                        new
-                        {
-                            TimeEntryId = 285L,
-                            AmountOfHours = 18m,
-                            Comment = "Et enim vitae velit est necessitatibus in at ex in.",
-                            Date = new DateTime(2020, 7, 23, 12, 30, 20, 886, DateTimeKind.Unspecified).AddTicks(5837),
-                            EmployeeId = 5L,
+                            AmountOfHours = 2m,
+                            Comment = "Pre-emptive scalable complexity",
+                            Date = new DateTime(2020, 8, 6, 15, 24, 23, 281, DateTimeKind.Unspecified).AddTicks(4472),
+                            EmployeeId = 1L,
                             ProjectId = 12L
                         },
                         new
                         {
+                            TimeEntryId = 285L,
+                            AmountOfHours = 7m,
+                            Comment = "Public-key explicit productivity",
+                            Date = new DateTime(2020, 3, 3, 23, 13, 14, 868, DateTimeKind.Unspecified).AddTicks(6438),
+                            EmployeeId = 11L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
                             TimeEntryId = 286L,
-                            AmountOfHours = 39m,
-                            Comment = "Placeat doloribus accusantium pariatur adipisci quidem quia id quaerat deserunt.",
-                            Date = new DateTime(2020, 8, 10, 12, 54, 12, 622, DateTimeKind.Unspecified).AddTicks(9345),
-                            EmployeeId = 1L,
-                            ProjectId = 19L
-                        },
-                        new
-                        {
-                            TimeEntryId = 287L,
-                            AmountOfHours = 50m,
-                            Comment = "Repellat unde sit dignissimos est labore expedita esse ex ea.",
-                            Date = new DateTime(2020, 8, 1, 1, 12, 17, 282, DateTimeKind.Unspecified).AddTicks(5717),
-                            EmployeeId = 10L,
-                            ProjectId = 4L
-                        },
-                        new
-                        {
-                            TimeEntryId = 288L,
-                            AmountOfHours = 27m,
-                            Comment = "Necessitatibus dolor id et dignissimos occaecati quo placeat illum aut.",
-                            Date = new DateTime(2020, 8, 28, 10, 44, 20, 475, DateTimeKind.Unspecified).AddTicks(9784),
-                            EmployeeId = 2L,
-                            ProjectId = 19L
-                        },
-                        new
-                        {
-                            TimeEntryId = 289L,
-                            AmountOfHours = 50m,
-                            Comment = "Perferendis corrupti dolores et nemo facere vero consequatur dolore molestiae.",
-                            Date = new DateTime(2020, 2, 14, 13, 5, 52, 954, DateTimeKind.Unspecified).AddTicks(4409),
-                            EmployeeId = 12L,
+                            AmountOfHours = 3m,
+                            Comment = "Down-sized motivating functionalities",
+                            Date = new DateTime(2020, 3, 28, 3, 29, 58, 140, DateTimeKind.Unspecified).AddTicks(6047),
+                            EmployeeId = 5L,
                             ProjectId = 8L
                         },
                         new
                         {
-                            TimeEntryId = 290L,
-                            AmountOfHours = 20m,
-                            Comment = "Harum fuga vitae repellat voluptatibus porro porro vitae vero qui.",
-                            Date = new DateTime(2020, 12, 28, 7, 0, 2, 957, DateTimeKind.Unspecified).AddTicks(3752),
+                            TimeEntryId = 287L,
+                            AmountOfHours = 6m,
+                            Comment = "Compatible reciprocal benchmark",
+                            Date = new DateTime(2020, 8, 1, 4, 23, 44, 859, DateTimeKind.Unspecified).AddTicks(2138),
+                            EmployeeId = 2L,
+                            ProjectId = 14L
+                        },
+                        new
+                        {
+                            TimeEntryId = 288L,
+                            AmountOfHours = 4m,
+                            Comment = "Devolved methodical circuit",
+                            Date = new DateTime(2020, 5, 8, 23, 17, 19, 427, DateTimeKind.Unspecified).AddTicks(4461),
                             EmployeeId = 6L,
-                            ProjectId = 2L
+                            ProjectId = 6L
+                        },
+                        new
+                        {
+                            TimeEntryId = 289L,
+                            AmountOfHours = 6m,
+                            Comment = "User-centric needs-based forecast",
+                            Date = new DateTime(2020, 5, 16, 23, 25, 38, 907, DateTimeKind.Unspecified).AddTicks(4972),
+                            EmployeeId = 8L,
+                            ProjectId = 3L
+                        },
+                        new
+                        {
+                            TimeEntryId = 290L,
+                            AmountOfHours = 7m,
+                            Comment = "Assimilated regional hub",
+                            Date = new DateTime(2020, 11, 3, 7, 31, 54, 807, DateTimeKind.Unspecified).AddTicks(2756),
+                            EmployeeId = 3L,
+                            ProjectId = 5L
                         },
                         new
                         {
                             TimeEntryId = 291L,
-                            AmountOfHours = 15m,
-                            Comment = "Minus ex nostrum est sed fugiat ea et enim ut.",
-                            Date = new DateTime(2020, 2, 11, 8, 5, 57, 357, DateTimeKind.Unspecified).AddTicks(909),
+                            AmountOfHours = 7m,
+                            Comment = "Mandatory analyzing application",
+                            Date = new DateTime(2020, 10, 31, 10, 15, 7, 566, DateTimeKind.Unspecified).AddTicks(8373),
                             EmployeeId = 11L,
-                            ProjectId = 19L
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 292L,
-                            AmountOfHours = 4m,
-                            Comment = "Non consequatur corporis architecto provident eum sed adipisci saepe voluptatem.",
-                            Date = new DateTime(2020, 8, 8, 19, 23, 31, 476, DateTimeKind.Unspecified).AddTicks(4106),
-                            EmployeeId = 12L,
-                            ProjectId = 9L
+                            AmountOfHours = 5m,
+                            Comment = "Ameliorated analyzing superstructure",
+                            Date = new DateTime(2020, 7, 29, 17, 32, 37, 358, DateTimeKind.Unspecified).AddTicks(6475),
+                            EmployeeId = 11L,
+                            ProjectId = 17L
                         },
                         new
                         {
                             TimeEntryId = 293L,
-                            AmountOfHours = 56m,
-                            Comment = "Harum ipsam in dolore rerum est architecto necessitatibus quidem non.",
-                            Date = new DateTime(2020, 2, 10, 0, 0, 0, 854, DateTimeKind.Unspecified).AddTicks(288),
-                            EmployeeId = 4L,
-                            ProjectId = 4L
+                            AmountOfHours = 5m,
+                            Comment = "Robust mission-critical functionalities",
+                            Date = new DateTime(2020, 4, 30, 21, 47, 58, 268, DateTimeKind.Unspecified).AddTicks(4319),
+                            EmployeeId = 6L,
+                            ProjectId = 18L
                         },
                         new
                         {
                             TimeEntryId = 294L,
-                            AmountOfHours = 46m,
-                            Comment = "Ex dolor fugit beatae fugit quidem voluptatem quae sint reprehenderit.",
-                            Date = new DateTime(2020, 12, 6, 10, 4, 47, 622, DateTimeKind.Unspecified).AddTicks(3018),
-                            EmployeeId = 7L,
+                            AmountOfHours = 3m,
+                            Comment = "User-friendly 5th generation pricing structure",
+                            Date = new DateTime(2020, 8, 1, 23, 37, 20, 491, DateTimeKind.Unspecified).AddTicks(8635),
+                            EmployeeId = 3L,
                             ProjectId = 15L
                         },
                         new
                         {
                             TimeEntryId = 295L,
-                            AmountOfHours = 32m,
-                            Comment = "Laudantium qui repellendus quo est rem incidunt tenetur quas rerum.",
-                            Date = new DateTime(2020, 2, 18, 10, 43, 23, 232, DateTimeKind.Unspecified).AddTicks(4345),
-                            EmployeeId = 4L,
-                            ProjectId = 20L
+                            AmountOfHours = 1m,
+                            Comment = "Vision-oriented multi-tasking website",
+                            Date = new DateTime(2020, 10, 21, 5, 58, 4, 300, DateTimeKind.Unspecified).AddTicks(7381),
+                            EmployeeId = 6L,
+                            ProjectId = 11L
                         },
                         new
                         {
                             TimeEntryId = 296L,
-                            AmountOfHours = 2m,
-                            Comment = "Quia sunt dolorem vel blanditiis aliquid voluptas porro eaque et.",
-                            Date = new DateTime(2020, 1, 3, 0, 44, 17, 503, DateTimeKind.Unspecified).AddTicks(2694),
-                            EmployeeId = 4L,
-                            ProjectId = 10L
+                            AmountOfHours = 6m,
+                            Comment = "Open-source background leverage",
+                            Date = new DateTime(2020, 8, 31, 16, 27, 33, 291, DateTimeKind.Unspecified).AddTicks(1472),
+                            EmployeeId = 3L,
+                            ProjectId = 16L
                         },
                         new
                         {
                             TimeEntryId = 297L,
-                            AmountOfHours = 35m,
-                            Comment = "Quibusdam aut porro voluptates voluptatum sed molestiae quos molestiae sed.",
-                            Date = new DateTime(2020, 10, 12, 19, 50, 56, 224, DateTimeKind.Unspecified).AddTicks(9636),
-                            EmployeeId = 6L,
-                            ProjectId = 10L
+                            AmountOfHours = 8m,
+                            Comment = "Polarised heuristic policy",
+                            Date = new DateTime(2020, 3, 7, 16, 10, 30, 465, DateTimeKind.Unspecified).AddTicks(7954),
+                            EmployeeId = 4L,
+                            ProjectId = 11L
                         },
                         new
                         {
                             TimeEntryId = 298L,
-                            AmountOfHours = 24m,
-                            Comment = "Tempore rem vel quia et aut officiis nihil similique voluptatem.",
-                            Date = new DateTime(2020, 7, 14, 11, 56, 9, 975, DateTimeKind.Unspecified).AddTicks(4781),
+                            AmountOfHours = 3m,
+                            Comment = "Devolved actuating open architecture",
+                            Date = new DateTime(2020, 5, 10, 15, 16, 1, 399, DateTimeKind.Unspecified).AddTicks(3573),
+                            EmployeeId = 5L,
+                            ProjectId = 5L
+                        },
+                        new
+                        {
+                            TimeEntryId = 299L,
+                            AmountOfHours = 4m,
+                            Comment = "Assimilated disintermediate open architecture",
+                            Date = new DateTime(2020, 6, 28, 22, 28, 16, 325, DateTimeKind.Unspecified).AddTicks(9269),
                             EmployeeId = 4L,
                             ProjectId = 16L
                         },
                         new
                         {
-                            TimeEntryId = 299L,
-                            AmountOfHours = 45m,
-                            Comment = "Aut sint nihil magnam eligendi est nesciunt dolores et ex.",
-                            Date = new DateTime(2020, 9, 13, 12, 33, 17, 348, DateTimeKind.Unspecified).AddTicks(1895),
-                            EmployeeId = 7L,
-                            ProjectId = 10L
-                        },
-                        new
-                        {
                             TimeEntryId = 300L,
-                            AmountOfHours = 41m,
-                            Comment = "Nam quis rerum alias illum odio ipsa similique illo dolorem.",
-                            Date = new DateTime(2020, 8, 12, 10, 9, 26, 930, DateTimeKind.Unspecified).AddTicks(1010),
-                            EmployeeId = 11L,
+                            AmountOfHours = 1m,
+                            Comment = "Intuitive transitional Graphical User Interface",
+                            Date = new DateTime(2020, 6, 23, 13, 31, 34, 150, DateTimeKind.Unspecified).AddTicks(1054),
+                            EmployeeId = 4L,
                             ProjectId = 14L
                         },
                         new
                         {
                             TimeEntryId = 301L,
-                            AmountOfHours = 22m,
-                            Comment = "Odio error harum optio quo nobis reprehenderit excepturi aut dolor.",
-                            Date = new DateTime(2020, 9, 18, 5, 13, 38, 269, DateTimeKind.Unspecified).AddTicks(6132),
-                            EmployeeId = 10L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 302L,
-                            AmountOfHours = 10m,
-                            Comment = "Omnis blanditiis id neque et adipisci omnis minima quia ad.",
-                            Date = new DateTime(2020, 3, 28, 23, 26, 41, 703, DateTimeKind.Unspecified).AddTicks(5356),
-                            EmployeeId = 12L,
-                            ProjectId = 6L
-                        },
-                        new
-                        {
-                            TimeEntryId = 303L,
-                            AmountOfHours = 32m,
-                            Comment = "Et quaerat voluptate accusantium recusandae repellendus illo ex quisquam qui.",
-                            Date = new DateTime(2020, 9, 15, 4, 44, 37, 14, DateTimeKind.Unspecified).AddTicks(8446),
-                            EmployeeId = 8L,
-                            ProjectId = 19L
-                        },
-                        new
-                        {
-                            TimeEntryId = 304L,
-                            AmountOfHours = 9m,
-                            Comment = "Quia voluptas labore recusandae sed eos perferendis mollitia natus nobis.",
-                            Date = new DateTime(2020, 4, 15, 15, 12, 37, 486, DateTimeKind.Unspecified).AddTicks(6028),
-                            EmployeeId = 2L,
-                            ProjectId = 11L
-                        },
-                        new
-                        {
-                            TimeEntryId = 305L,
-                            AmountOfHours = 9m,
-                            Comment = "Ea ea minus culpa reiciendis vero facilis pariatur est minus.",
-                            Date = new DateTime(2020, 8, 12, 19, 35, 33, 360, DateTimeKind.Unspecified).AddTicks(30),
-                            EmployeeId = 12L,
-                            ProjectId = 10L
-                        },
-                        new
-                        {
-                            TimeEntryId = 306L,
-                            AmountOfHours = 11m,
-                            Comment = "Id repellendus provident sunt et est odit odio aperiam doloremque.",
-                            Date = new DateTime(2020, 2, 15, 23, 42, 39, 387, DateTimeKind.Unspecified).AddTicks(7400),
+                            AmountOfHours = 2m,
+                            Comment = "Networked scalable customer loyalty",
+                            Date = new DateTime(2020, 10, 9, 12, 57, 47, 318, DateTimeKind.Unspecified).AddTicks(82),
                             EmployeeId = 1L,
-                            ProjectId = 17L
-                        },
-                        new
-                        {
-                            TimeEntryId = 307L,
-                            AmountOfHours = 16m,
-                            Comment = "Cumque est eos quam ipsum saepe asperiores commodi dicta ab.",
-                            Date = new DateTime(2020, 7, 9, 19, 53, 1, 902, DateTimeKind.Unspecified).AddTicks(1335),
-                            EmployeeId = 12L,
                             ProjectId = 9L
                         },
                         new
                         {
-                            TimeEntryId = 308L,
-                            AmountOfHours = 19m,
-                            Comment = "Doloribus molestias voluptatibus placeat id qui eos est voluptatem mollitia.",
-                            Date = new DateTime(2020, 7, 5, 9, 40, 1, 338, DateTimeKind.Unspecified).AddTicks(2284),
-                            EmployeeId = 8L,
-                            ProjectId = 1L
+                            TimeEntryId = 302L,
+                            AmountOfHours = 3m,
+                            Comment = "Persistent 24/7 support",
+                            Date = new DateTime(2020, 5, 7, 8, 1, 40, 660, DateTimeKind.Unspecified).AddTicks(8367),
+                            EmployeeId = 3L,
+                            ProjectId = 9L
                         },
                         new
                         {
-                            TimeEntryId = 309L,
-                            AmountOfHours = 56m,
-                            Comment = "Quia nihil cupiditate eos suscipit quis voluptatem ab accusamus provident.",
-                            Date = new DateTime(2020, 1, 20, 13, 27, 24, 733, DateTimeKind.Unspecified).AddTicks(9164),
+                            TimeEntryId = 303L,
+                            AmountOfHours = 7m,
+                            Comment = "Phased disintermediate benchmark",
+                            Date = new DateTime(2020, 10, 18, 17, 24, 22, 957, DateTimeKind.Unspecified).AddTicks(4665),
                             EmployeeId = 4L,
-                            ProjectId = 5L
+                            ProjectId = 4L
                         },
                         new
                         {
-                            TimeEntryId = 310L,
-                            AmountOfHours = 22m,
-                            Comment = "Optio deleniti fuga voluptatum aut dolor ducimus cupiditate quae nemo.",
-                            Date = new DateTime(2020, 3, 14, 14, 50, 44, 555, DateTimeKind.Unspecified).AddTicks(5221),
-                            EmployeeId = 2L,
+                            TimeEntryId = 304L,
+                            AmountOfHours = 4m,
+                            Comment = "Sharable tertiary utilisation",
+                            Date = new DateTime(2020, 4, 5, 2, 45, 26, 849, DateTimeKind.Unspecified).AddTicks(3997),
+                            EmployeeId = 1L,
+                            ProjectId = 15L
+                        },
+                        new
+                        {
+                            TimeEntryId = 305L,
+                            AmountOfHours = 2m,
+                            Comment = "Optimized eco-centric access",
+                            Date = new DateTime(2020, 11, 21, 0, 5, 20, 491, DateTimeKind.Unspecified).AddTicks(2008),
+                            EmployeeId = 11L,
+                            ProjectId = 12L
+                        },
+                        new
+                        {
+                            TimeEntryId = 306L,
+                            AmountOfHours = 6m,
+                            Comment = "Expanded grid-enabled emulation",
+                            Date = new DateTime(2020, 1, 5, 7, 51, 54, 375, DateTimeKind.Unspecified).AddTicks(3422),
+                            EmployeeId = 11L,
+                            ProjectId = 3L
+                        },
+                        new
+                        {
+                            TimeEntryId = 307L,
+                            AmountOfHours = 4m,
+                            Comment = "Face to face reciprocal algorithm",
+                            Date = new DateTime(2020, 2, 19, 14, 2, 57, 584, DateTimeKind.Unspecified).AddTicks(1472),
+                            EmployeeId = 4L,
                             ProjectId = 14L
                         },
                         new
                         {
+                            TimeEntryId = 308L,
+                            AmountOfHours = 7m,
+                            Comment = "Phased discrete adapter",
+                            Date = new DateTime(2020, 3, 20, 7, 4, 2, 563, DateTimeKind.Unspecified).AddTicks(4786),
+                            EmployeeId = 6L,
+                            ProjectId = 11L
+                        },
+                        new
+                        {
+                            TimeEntryId = 309L,
+                            AmountOfHours = 6m,
+                            Comment = "Triple-buffered demand-driven alliance",
+                            Date = new DateTime(2020, 10, 3, 21, 10, 42, 787, DateTimeKind.Unspecified).AddTicks(2551),
+                            EmployeeId = 9L,
+                            ProjectId = 10L
+                        },
+                        new
+                        {
+                            TimeEntryId = 310L,
+                            AmountOfHours = 1m,
+                            Comment = "Quality-focused tertiary functionalities",
+                            Date = new DateTime(2020, 2, 19, 7, 21, 12, 525, DateTimeKind.Unspecified).AddTicks(8667),
+                            EmployeeId = 11L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
                             TimeEntryId = 311L,
-                            AmountOfHours = 56m,
-                            Comment = "Sunt ut consequatur dolorem voluptas quasi eaque eum cupiditate consequatur.",
-                            Date = new DateTime(2020, 5, 30, 15, 46, 13, 21, DateTimeKind.Unspecified).AddTicks(7185),
-                            EmployeeId = 2L,
+                            AmountOfHours = 3m,
+                            Comment = "Synergistic static hardware",
+                            Date = new DateTime(2020, 2, 22, 3, 38, 33, 100, DateTimeKind.Unspecified).AddTicks(8373),
+                            EmployeeId = 1L,
                             ProjectId = 3L
                         },
                         new
                         {
                             TimeEntryId = 312L,
-                            AmountOfHours = 57m,
-                            Comment = "Quidem ducimus laudantium molestias dolorum corrupti architecto tempore aut dolores.",
-                            Date = new DateTime(2020, 3, 4, 23, 47, 31, 16, DateTimeKind.Unspecified).AddTicks(920),
-                            EmployeeId = 11L,
-                            ProjectId = 6L
+                            AmountOfHours = 5m,
+                            Comment = "Cross-group value-added open system",
+                            Date = new DateTime(2020, 1, 22, 4, 5, 13, 797, DateTimeKind.Unspecified).AddTicks(6074),
+                            EmployeeId = 1L,
+                            ProjectId = 14L
                         },
                         new
                         {
                             TimeEntryId = 313L,
-                            AmountOfHours = 48m,
-                            Comment = "Expedita eius aperiam quidem sapiente modi deleniti id est fugit.",
-                            Date = new DateTime(2020, 6, 23, 11, 58, 13, 366, DateTimeKind.Unspecified).AddTicks(2392),
-                            EmployeeId = 5L,
-                            ProjectId = 3L
+                            AmountOfHours = 8m,
+                            Comment = "Assimilated zero defect forecast",
+                            Date = new DateTime(2020, 5, 31, 21, 40, 31, 943, DateTimeKind.Unspecified).AddTicks(1922),
+                            EmployeeId = 1L,
+                            ProjectId = 6L
                         },
                         new
                         {
                             TimeEntryId = 314L,
-                            AmountOfHours = 19m,
-                            Comment = "A vel vel delectus est molestias necessitatibus mollitia nulla mollitia.",
-                            Date = new DateTime(2020, 5, 2, 7, 6, 32, 457, DateTimeKind.Unspecified).AddTicks(5761),
-                            EmployeeId = 1L,
-                            ProjectId = 19L
+                            AmountOfHours = 3m,
+                            Comment = "Devolved content-based capability",
+                            Date = new DateTime(2020, 12, 30, 19, 27, 11, 270, DateTimeKind.Unspecified).AddTicks(9538),
+                            EmployeeId = 9L,
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 315L,
-                            AmountOfHours = 54m,
-                            Comment = "Exercitationem tempore ut sunt mollitia labore qui nemo omnis praesentium.",
-                            Date = new DateTime(2020, 11, 9, 3, 12, 50, 976, DateTimeKind.Unspecified).AddTicks(4713),
-                            EmployeeId = 3L,
-                            ProjectId = 20L
+                            AmountOfHours = 5m,
+                            Comment = "Synergized motivating implementation",
+                            Date = new DateTime(2020, 5, 21, 1, 8, 16, 23, DateTimeKind.Unspecified).AddTicks(4900),
+                            EmployeeId = 11L,
+                            ProjectId = 2L
                         },
                         new
                         {
                             TimeEntryId = 316L,
-                            AmountOfHours = 1m,
-                            Comment = "Est aliquid sed quos sequi omnis porro neque facere itaque.",
-                            Date = new DateTime(2020, 6, 17, 19, 29, 55, 190, DateTimeKind.Unspecified).AddTicks(6442),
-                            EmployeeId = 8L,
-                            ProjectId = 20L
+                            AmountOfHours = 6m,
+                            Comment = "Monitored maximized hub",
+                            Date = new DateTime(2020, 6, 16, 18, 7, 32, 981, DateTimeKind.Unspecified).AddTicks(4800),
+                            EmployeeId = 5L,
+                            ProjectId = 14L
                         },
                         new
                         {
                             TimeEntryId = 317L,
-                            AmountOfHours = 3m,
-                            Comment = "Quis iusto iste ipsa consequatur culpa enim illo pariatur illum.",
-                            Date = new DateTime(2020, 11, 30, 10, 13, 0, 429, DateTimeKind.Unspecified).AddTicks(8885),
-                            EmployeeId = 7L,
-                            ProjectId = 2L
+                            AmountOfHours = 7m,
+                            Comment = "Function-based encompassing moratorium",
+                            Date = new DateTime(2020, 2, 26, 16, 7, 30, 27, DateTimeKind.Unspecified).AddTicks(5465),
+                            EmployeeId = 10L,
+                            ProjectId = 15L
                         },
                         new
                         {
                             TimeEntryId = 318L,
-                            AmountOfHours = 39m,
-                            Comment = "Aperiam et autem et quae vero officiis dolores deleniti officia.",
-                            Date = new DateTime(2020, 8, 3, 6, 7, 32, 866, DateTimeKind.Unspecified).AddTicks(9967),
-                            EmployeeId = 10L,
-                            ProjectId = 2L
-                        },
-                        new
-                        {
-                            TimeEntryId = 319L,
-                            AmountOfHours = 8m,
-                            Comment = "Sint voluptas et et voluptas libero recusandae nisi ut magni.",
-                            Date = new DateTime(2020, 3, 8, 6, 48, 50, 257, DateTimeKind.Unspecified).AddTicks(7848),
-                            EmployeeId = 8L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 320L,
-                            AmountOfHours = 40m,
-                            Comment = "Et ullam a veritatis quia et consequuntur fugiat qui aut.",
-                            Date = new DateTime(2020, 9, 21, 13, 53, 20, 575, DateTimeKind.Unspecified).AddTicks(7296),
-                            EmployeeId = 12L,
-                            ProjectId = 2L
-                        },
-                        new
-                        {
-                            TimeEntryId = 321L,
-                            AmountOfHours = 53m,
-                            Comment = "Tenetur ut ad ad in dolor dolores occaecati voluptates et.",
-                            Date = new DateTime(2020, 3, 8, 6, 27, 55, 111, DateTimeKind.Unspecified).AddTicks(3031),
-                            EmployeeId = 10L,
-                            ProjectId = 19L
-                        },
-                        new
-                        {
-                            TimeEntryId = 322L,
-                            AmountOfHours = 42m,
-                            Comment = "Voluptatem nam quasi dolorem dolores sed asperiores dolor et nihil.",
-                            Date = new DateTime(2020, 9, 19, 16, 42, 28, 667, DateTimeKind.Unspecified).AddTicks(3412),
-                            EmployeeId = 12L,
+                            AmountOfHours = 6m,
+                            Comment = "Universal 5th generation productivity",
+                            Date = new DateTime(2020, 2, 13, 13, 54, 46, 429, DateTimeKind.Unspecified).AddTicks(5388),
+                            EmployeeId = 7L,
                             ProjectId = 3L
                         },
                         new
                         {
-                            TimeEntryId = 323L,
-                            AmountOfHours = 5m,
-                            Comment = "Amet eveniet nihil enim corrupti illo iure recusandae vero enim.",
-                            Date = new DateTime(2020, 1, 3, 4, 13, 0, 308, DateTimeKind.Unspecified).AddTicks(1330),
-                            EmployeeId = 6L,
-                            ProjectId = 11L
+                            TimeEntryId = 319L,
+                            AmountOfHours = 6m,
+                            Comment = "Phased directional forecast",
+                            Date = new DateTime(2020, 12, 27, 1, 39, 48, 401, DateTimeKind.Unspecified).AddTicks(5990),
+                            EmployeeId = 2L,
+                            ProjectId = 14L
                         },
                         new
                         {
-                            TimeEntryId = 324L,
-                            AmountOfHours = 59m,
-                            Comment = "Reprehenderit illo exercitationem quaerat aliquid iusto vel voluptatum itaque facere.",
-                            Date = new DateTime(2020, 7, 15, 1, 46, 12, 794, DateTimeKind.Unspecified).AddTicks(23),
-                            EmployeeId = 12L,
+                            TimeEntryId = 320L,
+                            AmountOfHours = 2m,
+                            Comment = "Focused contextually-based benchmark",
+                            Date = new DateTime(2020, 12, 10, 12, 39, 1, 666, DateTimeKind.Unspecified).AddTicks(9819),
+                            EmployeeId = 8L,
                             ProjectId = 20L
                         },
                         new
                         {
+                            TimeEntryId = 321L,
+                            AmountOfHours = 5m,
+                            Comment = "Integrated tangible open architecture",
+                            Date = new DateTime(2020, 3, 11, 10, 19, 48, 518, DateTimeKind.Unspecified).AddTicks(4014),
+                            EmployeeId = 7L,
+                            ProjectId = 17L
+                        },
+                        new
+                        {
+                            TimeEntryId = 322L,
+                            AmountOfHours = 7m,
+                            Comment = "Triple-buffered homogeneous success",
+                            Date = new DateTime(2020, 7, 27, 13, 12, 27, 357, DateTimeKind.Unspecified).AddTicks(9345),
+                            EmployeeId = 4L,
+                            ProjectId = 6L
+                        },
+                        new
+                        {
+                            TimeEntryId = 323L,
+                            AmountOfHours = 8m,
+                            Comment = "Phased national framework",
+                            Date = new DateTime(2020, 12, 7, 12, 36, 56, 857, DateTimeKind.Unspecified).AddTicks(1982),
+                            EmployeeId = 12L,
+                            ProjectId = 10L
+                        },
+                        new
+                        {
+                            TimeEntryId = 324L,
+                            AmountOfHours = 7m,
+                            Comment = "Fully-configurable background data-warehouse",
+                            Date = new DateTime(2020, 1, 20, 12, 58, 45, 594, DateTimeKind.Unspecified).AddTicks(4574),
+                            EmployeeId = 1L,
+                            ProjectId = 5L
+                        },
+                        new
+                        {
                             TimeEntryId = 325L,
-                            AmountOfHours = 47m,
-                            Comment = "Laboriosam similique ea veniam ipsum ab suscipit aut velit quos.",
-                            Date = new DateTime(2020, 11, 20, 17, 4, 9, 529, DateTimeKind.Unspecified).AddTicks(4872),
-                            EmployeeId = 6L,
-                            ProjectId = 14L
+                            AmountOfHours = 1m,
+                            Comment = "Configurable interactive complexity",
+                            Date = new DateTime(2020, 7, 19, 10, 48, 23, 120, DateTimeKind.Unspecified).AddTicks(8100),
+                            EmployeeId = 10L,
+                            ProjectId = 19L
                         },
                         new
                         {
                             TimeEntryId = 326L,
                             AmountOfHours = 5m,
-                            Comment = "Consequatur omnis est deserunt libero perferendis temporibus sunt velit distinctio.",
-                            Date = new DateTime(2020, 4, 21, 10, 9, 8, 339, DateTimeKind.Unspecified).AddTicks(2141),
-                            EmployeeId = 10L,
-                            ProjectId = 12L
+                            Comment = "Decentralized asynchronous toolset",
+                            Date = new DateTime(2020, 1, 26, 21, 16, 42, 710, DateTimeKind.Unspecified).AddTicks(1069),
+                            EmployeeId = 4L,
+                            ProjectId = 9L
                         },
                         new
                         {
                             TimeEntryId = 327L,
-                            AmountOfHours = 43m,
-                            Comment = "A hic aliquid molestias ipsum est mollitia quis tenetur velit.",
-                            Date = new DateTime(2020, 4, 9, 19, 49, 29, 458, DateTimeKind.Unspecified).AddTicks(634),
+                            AmountOfHours = 6m,
+                            Comment = "Self-enabling high-level software",
+                            Date = new DateTime(2020, 11, 4, 1, 49, 25, 383, DateTimeKind.Unspecified).AddTicks(4225),
                             EmployeeId = 5L,
-                            ProjectId = 10L
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 328L,
-                            AmountOfHours = 23m,
-                            Comment = "Vero et eum est dolores est libero dolor et voluptas.",
-                            Date = new DateTime(2020, 8, 24, 14, 52, 19, 529, DateTimeKind.Unspecified).AddTicks(3783),
-                            EmployeeId = 4L,
-                            ProjectId = 18L
+                            AmountOfHours = 6m,
+                            Comment = "Optional radical moratorium",
+                            Date = new DateTime(2020, 4, 11, 9, 9, 1, 818, DateTimeKind.Unspecified).AddTicks(4002),
+                            EmployeeId = 6L,
+                            ProjectId = 3L
                         },
                         new
                         {
                             TimeEntryId = 329L,
-                            AmountOfHours = 46m,
-                            Comment = "Nesciunt optio sint id dolor fuga illo dolore qui et.",
-                            Date = new DateTime(2020, 12, 29, 0, 43, 2, 634, DateTimeKind.Unspecified).AddTicks(1120),
-                            EmployeeId = 6L,
-                            ProjectId = 14L
+                            AmountOfHours = 1m,
+                            Comment = "Robust full-range internet solution",
+                            Date = new DateTime(2020, 10, 1, 10, 5, 18, 662, DateTimeKind.Unspecified).AddTicks(6887),
+                            EmployeeId = 8L,
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 330L,
-                            AmountOfHours = 31m,
-                            Comment = "Consequatur corrupti modi amet quis voluptate porro est fugiat beatae.",
-                            Date = new DateTime(2020, 6, 29, 16, 0, 12, 630, DateTimeKind.Unspecified).AddTicks(3211),
-                            EmployeeId = 6L,
-                            ProjectId = 11L
-                        },
-                        new
-                        {
-                            TimeEntryId = 331L,
-                            AmountOfHours = 47m,
-                            Comment = "Rerum accusantium velit ullam dolorum eum consequuntur aliquam nobis assumenda.",
-                            Date = new DateTime(2020, 1, 15, 8, 33, 19, 141, DateTimeKind.Unspecified).AddTicks(7492),
-                            EmployeeId = 9L,
-                            ProjectId = 1L
-                        },
-                        new
-                        {
-                            TimeEntryId = 332L,
-                            AmountOfHours = 37m,
-                            Comment = "Distinctio et velit odio ut ratione quis culpa odit quia.",
-                            Date = new DateTime(2020, 4, 29, 8, 9, 28, 428, DateTimeKind.Unspecified).AddTicks(3662),
-                            EmployeeId = 6L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            TimeEntryId = 333L,
-                            AmountOfHours = 33m,
-                            Comment = "Et odio dolorem ut officia ad commodi sed est consectetur.",
-                            Date = new DateTime(2020, 1, 19, 4, 0, 13, 823, DateTimeKind.Unspecified).AddTicks(9779),
-                            EmployeeId = 1L,
-                            ProjectId = 14L
-                        },
-                        new
-                        {
-                            TimeEntryId = 334L,
-                            AmountOfHours = 33m,
-                            Comment = "Aut qui atque aliquid vitae odit rerum molestiae aut repellat.",
-                            Date = new DateTime(2020, 5, 25, 10, 17, 47, 220, DateTimeKind.Unspecified).AddTicks(4071),
-                            EmployeeId = 4L,
+                            AmountOfHours = 7m,
+                            Comment = "Upgradable neutral instruction set",
+                            Date = new DateTime(2020, 10, 29, 3, 15, 2, 934, DateTimeKind.Unspecified).AddTicks(3555),
+                            EmployeeId = 5L,
                             ProjectId = 18L
                         },
                         new
                         {
-                            TimeEntryId = 335L,
-                            AmountOfHours = 18m,
-                            Comment = "Sint architecto et ipsa dolor in iure dolore animi totam.",
-                            Date = new DateTime(2020, 5, 28, 18, 35, 46, 657, DateTimeKind.Unspecified).AddTicks(7499),
-                            EmployeeId = 6L,
-                            ProjectId = 1L
-                        },
-                        new
-                        {
-                            TimeEntryId = 336L,
-                            AmountOfHours = 33m,
-                            Comment = "Sit consequatur consequatur similique placeat qui est et quidem ratione.",
-                            Date = new DateTime(2020, 3, 30, 23, 21, 41, 797, DateTimeKind.Unspecified).AddTicks(9000),
-                            EmployeeId = 6L,
-                            ProjectId = 19L
-                        },
-                        new
-                        {
-                            TimeEntryId = 337L,
-                            AmountOfHours = 57m,
-                            Comment = "Natus ipsum sint eligendi accusamus inventore velit est reprehenderit doloremque.",
-                            Date = new DateTime(2020, 8, 9, 16, 6, 52, 360, DateTimeKind.Unspecified).AddTicks(381),
-                            EmployeeId = 11L,
-                            ProjectId = 17L
-                        },
-                        new
-                        {
-                            TimeEntryId = 338L,
-                            AmountOfHours = 34m,
-                            Comment = "Pariatur sit sint aperiam eos ea maxime officiis et maxime.",
-                            Date = new DateTime(2020, 2, 29, 22, 57, 24, 442, DateTimeKind.Unspecified).AddTicks(5372),
-                            EmployeeId = 2L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            TimeEntryId = 339L,
-                            AmountOfHours = 16m,
-                            Comment = "Odio et perspiciatis quo ut qui est et unde id.",
-                            Date = new DateTime(2020, 7, 14, 0, 12, 32, 33, DateTimeKind.Unspecified).AddTicks(4992),
-                            EmployeeId = 3L,
-                            ProjectId = 4L
-                        },
-                        new
-                        {
-                            TimeEntryId = 340L,
-                            AmountOfHours = 32m,
-                            Comment = "Laborum suscipit nobis non expedita numquam et dolorum tempora laudantium.",
-                            Date = new DateTime(2020, 5, 6, 15, 2, 48, 35, DateTimeKind.Unspecified).AddTicks(6859),
+                            TimeEntryId = 331L,
+                            AmountOfHours = 4m,
+                            Comment = "Persevering fresh-thinking middleware",
+                            Date = new DateTime(2020, 6, 14, 6, 3, 53, 331, DateTimeKind.Unspecified).AddTicks(9170),
                             EmployeeId = 1L,
                             ProjectId = 5L
                         },
                         new
                         {
-                            TimeEntryId = 341L,
-                            AmountOfHours = 41m,
-                            Comment = "Ut quia omnis veniam non recusandae non id corrupti quae.",
-                            Date = new DateTime(2020, 3, 12, 6, 50, 1, 172, DateTimeKind.Unspecified).AddTicks(1055),
-                            EmployeeId = 11L,
-                            ProjectId = 15L
+                            TimeEntryId = 332L,
+                            AmountOfHours = 5m,
+                            Comment = "Profound full-range middleware",
+                            Date = new DateTime(2020, 2, 21, 8, 57, 26, 994, DateTimeKind.Unspecified).AddTicks(6892),
+                            EmployeeId = 3L,
+                            ProjectId = 6L
                         },
                         new
                         {
-                            TimeEntryId = 342L,
-                            AmountOfHours = 25m,
-                            Comment = "Totam sit at cum inventore numquam quaerat exercitationem inventore non.",
-                            Date = new DateTime(2020, 11, 15, 3, 5, 31, 694, DateTimeKind.Unspecified).AddTicks(419),
-                            EmployeeId = 12L,
+                            TimeEntryId = 333L,
+                            AmountOfHours = 5m,
+                            Comment = "Seamless intangible emulation",
+                            Date = new DateTime(2020, 4, 30, 11, 10, 55, 887, DateTimeKind.Unspecified).AddTicks(1606),
+                            EmployeeId = 10L,
                             ProjectId = 7L
                         },
                         new
                         {
-                            TimeEntryId = 343L,
-                            AmountOfHours = 49m,
-                            Comment = "Nihil vitae possimus assumenda aliquam alias saepe autem sit saepe.",
-                            Date = new DateTime(2020, 6, 18, 6, 44, 51, 453, DateTimeKind.Unspecified).AddTicks(4876),
-                            EmployeeId = 8L,
-                            ProjectId = 9L
+                            TimeEntryId = 334L,
+                            AmountOfHours = 4m,
+                            Comment = "Progressive global open architecture",
+                            Date = new DateTime(2020, 6, 7, 1, 24, 35, 875, DateTimeKind.Unspecified).AddTicks(7898),
+                            EmployeeId = 5L,
+                            ProjectId = 1L
                         },
                         new
                         {
-                            TimeEntryId = 344L,
-                            AmountOfHours = 53m,
-                            Comment = "Pariatur rerum beatae earum ut eum sequi quae est voluptate.",
-                            Date = new DateTime(2020, 4, 27, 4, 19, 18, 142, DateTimeKind.Unspecified).AddTicks(7766),
+                            TimeEntryId = 335L,
+                            AmountOfHours = 7m,
+                            Comment = "Right-sized eco-centric approach",
+                            Date = new DateTime(2020, 11, 27, 19, 40, 31, 809, DateTimeKind.Unspecified).AddTicks(5612),
                             EmployeeId = 2L,
-                            ProjectId = 20L
+                            ProjectId = 17L
                         },
                         new
                         {
-                            TimeEntryId = 345L,
-                            AmountOfHours = 14m,
-                            Comment = "Sed laboriosam ex non rem qui ipsam ea nostrum vitae.",
-                            Date = new DateTime(2020, 6, 5, 0, 30, 3, 150, DateTimeKind.Unspecified).AddTicks(6711),
-                            EmployeeId = 6L,
-                            ProjectId = 18L
-                        },
-                        new
-                        {
-                            TimeEntryId = 346L,
-                            AmountOfHours = 5m,
-                            Comment = "Repellat a perferendis est saepe eum ducimus quam dolores maiores.",
-                            Date = new DateTime(2020, 7, 11, 19, 54, 27, 525, DateTimeKind.Unspecified).AddTicks(2861),
+                            TimeEntryId = 336L,
+                            AmountOfHours = 8m,
+                            Comment = "Future-proofed 6th generation hardware",
+                            Date = new DateTime(2020, 4, 2, 3, 26, 25, 82, DateTimeKind.Unspecified).AddTicks(4965),
                             EmployeeId = 12L,
+                            ProjectId = 13L
+                        },
+                        new
+                        {
+                            TimeEntryId = 337L,
+                            AmountOfHours = 1m,
+                            Comment = "Adaptive upward-trending Graphical User Interface",
+                            Date = new DateTime(2020, 7, 29, 18, 17, 42, 158, DateTimeKind.Unspecified).AddTicks(3411),
+                            EmployeeId = 10L,
+                            ProjectId = 10L
+                        },
+                        new
+                        {
+                            TimeEntryId = 338L,
+                            AmountOfHours = 2m,
+                            Comment = "De-engineered contextually-based knowledge user",
+                            Date = new DateTime(2020, 3, 29, 20, 30, 11, 89, DateTimeKind.Unspecified).AddTicks(2386),
+                            EmployeeId = 7L,
+                            ProjectId = 1L
+                        },
+                        new
+                        {
+                            TimeEntryId = 339L,
+                            AmountOfHours = 8m,
+                            Comment = "Virtual user-facing moratorium",
+                            Date = new DateTime(2020, 1, 26, 20, 6, 27, 304, DateTimeKind.Unspecified).AddTicks(9671),
+                            EmployeeId = 3L,
+                            ProjectId = 5L
+                        },
+                        new
+                        {
+                            TimeEntryId = 340L,
+                            AmountOfHours = 8m,
+                            Comment = "Compatible intermediate application",
+                            Date = new DateTime(2020, 8, 25, 4, 46, 16, 42, DateTimeKind.Unspecified).AddTicks(4306),
+                            EmployeeId = 6L,
                             ProjectId = 2L
                         },
                         new
                         {
+                            TimeEntryId = 341L,
+                            AmountOfHours = 4m,
+                            Comment = "Multi-layered systematic standardization",
+                            Date = new DateTime(2020, 8, 5, 2, 25, 25, 454, DateTimeKind.Unspecified).AddTicks(8695),
+                            EmployeeId = 9L,
+                            ProjectId = 18L
+                        },
+                        new
+                        {
+                            TimeEntryId = 342L,
+                            AmountOfHours = 6m,
+                            Comment = "Object-based didactic model",
+                            Date = new DateTime(2020, 4, 3, 12, 50, 58, 59, DateTimeKind.Unspecified).AddTicks(9985),
+                            EmployeeId = 7L,
+                            ProjectId = 14L
+                        },
+                        new
+                        {
+                            TimeEntryId = 343L,
+                            AmountOfHours = 5m,
+                            Comment = "Cloned incremental methodology",
+                            Date = new DateTime(2020, 9, 18, 23, 13, 21, 472, DateTimeKind.Unspecified).AddTicks(9129),
+                            EmployeeId = 10L,
+                            ProjectId = 4L
+                        },
+                        new
+                        {
+                            TimeEntryId = 344L,
+                            AmountOfHours = 3m,
+                            Comment = "Cross-group radical parallelism",
+                            Date = new DateTime(2020, 1, 18, 2, 23, 41, 591, DateTimeKind.Unspecified).AddTicks(192),
+                            EmployeeId = 5L,
+                            ProjectId = 19L
+                        },
+                        new
+                        {
+                            TimeEntryId = 345L,
+                            AmountOfHours = 8m,
+                            Comment = "Implemented executive extranet",
+                            Date = new DateTime(2020, 3, 26, 3, 1, 32, 292, DateTimeKind.Unspecified).AddTicks(4838),
+                            EmployeeId = 6L,
+                            ProjectId = 14L
+                        },
+                        new
+                        {
+                            TimeEntryId = 346L,
+                            AmountOfHours = 6m,
+                            Comment = "Innovative needs-based secured line",
+                            Date = new DateTime(2020, 9, 18, 11, 22, 35, 994, DateTimeKind.Unspecified).AddTicks(1259),
+                            EmployeeId = 2L,
+                            ProjectId = 17L
+                        },
+                        new
+                        {
                             TimeEntryId = 347L,
-                            AmountOfHours = 23m,
-                            Comment = "Voluptatum aliquid et ad culpa est aliquam voluptas ut ducimus.",
-                            Date = new DateTime(2020, 8, 31, 3, 42, 19, 868, DateTimeKind.Unspecified).AddTicks(9496),
-                            EmployeeId = 12L,
+                            AmountOfHours = 4m,
+                            Comment = "Programmable 3rd generation neural-net",
+                            Date = new DateTime(2020, 4, 2, 9, 56, 26, 709, DateTimeKind.Unspecified).AddTicks(4683),
+                            EmployeeId = 7L,
                             ProjectId = 19L
                         },
                         new
                         {
                             TimeEntryId = 348L,
-                            AmountOfHours = 27m,
-                            Comment = "Ut repellat atque deleniti vero veritatis quae est reprehenderit quos.",
-                            Date = new DateTime(2020, 7, 24, 17, 25, 34, 286, DateTimeKind.Unspecified).AddTicks(8725),
-                            EmployeeId = 2L,
-                            ProjectId = 1L
+                            AmountOfHours = 1m,
+                            Comment = "Ameliorated heuristic model",
+                            Date = new DateTime(2020, 4, 17, 6, 14, 48, 739, DateTimeKind.Unspecified).AddTicks(4667),
+                            EmployeeId = 11L,
+                            ProjectId = 11L
                         },
                         new
                         {
                             TimeEntryId = 349L,
-                            AmountOfHours = 42m,
-                            Comment = "Quia quis et qui minus itaque non earum qui sit.",
-                            Date = new DateTime(2020, 10, 19, 4, 53, 33, 806, DateTimeKind.Unspecified).AddTicks(6627),
-                            EmployeeId = 4L,
-                            ProjectId = 18L
+                            AmountOfHours = 3m,
+                            Comment = "Compatible bi-directional focus group",
+                            Date = new DateTime(2020, 1, 25, 19, 13, 26, 36, DateTimeKind.Unspecified).AddTicks(5642),
+                            EmployeeId = 12L,
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 350L,
-                            AmountOfHours = 9m,
-                            Comment = "Quam similique quo ut qui alias quasi eos et corrupti.",
-                            Date = new DateTime(2020, 11, 2, 20, 22, 15, 14, DateTimeKind.Unspecified).AddTicks(6933),
-                            EmployeeId = 3L,
-                            ProjectId = 13L
+                            AmountOfHours = 2m,
+                            Comment = "Universal empowering artificial intelligence",
+                            Date = new DateTime(2020, 10, 3, 17, 43, 11, 477, DateTimeKind.Unspecified).AddTicks(2361),
+                            EmployeeId = 1L,
+                            ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 351L,
-                            AmountOfHours = 50m,
-                            Comment = "Sapiente dolores consectetur sed at iste quidem dolorem sed ut.",
-                            Date = new DateTime(2020, 5, 1, 2, 14, 25, 531, DateTimeKind.Unspecified).AddTicks(5526),
-                            EmployeeId = 3L,
-                            ProjectId = 13L
-                        },
-                        new
-                        {
-                            TimeEntryId = 352L,
-                            AmountOfHours = 24m,
-                            Comment = "Perspiciatis corporis adipisci voluptatibus tempora saepe incidunt qui dolor fugit.",
-                            Date = new DateTime(2020, 7, 8, 2, 2, 16, 328, DateTimeKind.Unspecified).AddTicks(8288),
-                            EmployeeId = 3L,
+                            AmountOfHours = 6m,
+                            Comment = "Streamlined regional model",
+                            Date = new DateTime(2020, 11, 28, 3, 32, 39, 168, DateTimeKind.Unspecified).AddTicks(4982),
+                            EmployeeId = 5L,
                             ProjectId = 16L
                         },
                         new
                         {
-                            TimeEntryId = 353L,
+                            TimeEntryId = 352L,
                             AmountOfHours = 4m,
-                            Comment = "Officiis possimus dolor magni est aut voluptatibus ipsam asperiores placeat.",
-                            Date = new DateTime(2020, 8, 19, 16, 2, 56, 822, DateTimeKind.Unspecified).AddTicks(9128),
-                            EmployeeId = 1L,
-                            ProjectId = 6L
+                            Comment = "Re-engineered 6th generation projection",
+                            Date = new DateTime(2020, 11, 25, 13, 13, 3, 923, DateTimeKind.Unspecified).AddTicks(9402),
+                            EmployeeId = 12L,
+                            ProjectId = 19L
                         },
                         new
                         {
-                            TimeEntryId = 354L,
-                            AmountOfHours = 15m,
-                            Comment = "Consequatur quia omnis velit corrupti distinctio mollitia adipisci exercitationem ut.",
-                            Date = new DateTime(2020, 7, 9, 22, 4, 34, 419, DateTimeKind.Unspecified).AddTicks(1346),
-                            EmployeeId = 5L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            TimeEntryId = 355L,
-                            AmountOfHours = 8m,
-                            Comment = "Ex architecto voluptatem veritatis molestiae similique exercitationem ducimus commodi inventore.",
-                            Date = new DateTime(2020, 8, 6, 21, 28, 23, 922, DateTimeKind.Unspecified).AddTicks(8799),
-                            EmployeeId = 1L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            TimeEntryId = 356L,
-                            AmountOfHours = 13m,
-                            Comment = "Enim dignissimos sapiente rerum quis reiciendis blanditiis est suscipit sit.",
-                            Date = new DateTime(2020, 6, 6, 7, 16, 24, 235, DateTimeKind.Unspecified).AddTicks(1752),
-                            EmployeeId = 4L,
-                            ProjectId = 20L
-                        },
-                        new
-                        {
-                            TimeEntryId = 357L,
-                            AmountOfHours = 41m,
-                            Comment = "Laudantium earum possimus ipsum molestias voluptas sapiente sint et sapiente.",
-                            Date = new DateTime(2020, 6, 22, 13, 11, 2, 629, DateTimeKind.Unspecified).AddTicks(6875),
-                            EmployeeId = 5L,
-                            ProjectId = 20L
-                        },
-                        new
-                        {
-                            TimeEntryId = 358L,
-                            AmountOfHours = 56m,
-                            Comment = "Consequatur quisquam sit architecto incidunt consequatur rerum pariatur ad molestiae.",
-                            Date = new DateTime(2020, 12, 17, 18, 10, 49, 133, DateTimeKind.Unspecified).AddTicks(9869),
-                            EmployeeId = 1L,
+                            TimeEntryId = 353L,
+                            AmountOfHours = 3m,
+                            Comment = "Triple-buffered multi-tasking interface",
+                            Date = new DateTime(2020, 11, 28, 18, 6, 28, 632, DateTimeKind.Unspecified).AddTicks(6035),
+                            EmployeeId = 2L,
                             ProjectId = 13L
                         },
                         new
                         {
+                            TimeEntryId = 354L,
+                            AmountOfHours = 3m,
+                            Comment = "Optional homogeneous core",
+                            Date = new DateTime(2020, 5, 3, 19, 59, 2, 658, DateTimeKind.Unspecified).AddTicks(6561),
+                            EmployeeId = 10L,
+                            ProjectId = 10L
+                        },
+                        new
+                        {
+                            TimeEntryId = 355L,
+                            AmountOfHours = 7m,
+                            Comment = "Public-key local knowledge base",
+                            Date = new DateTime(2020, 5, 5, 1, 49, 0, 687, DateTimeKind.Unspecified).AddTicks(4389),
+                            EmployeeId = 12L,
+                            ProjectId = 8L
+                        },
+                        new
+                        {
+                            TimeEntryId = 356L,
+                            AmountOfHours = 2m,
+                            Comment = "Profound zero tolerance internet solution",
+                            Date = new DateTime(2020, 4, 18, 23, 45, 47, 87, DateTimeKind.Unspecified).AddTicks(8687),
+                            EmployeeId = 10L,
+                            ProjectId = 4L
+                        },
+                        new
+                        {
+                            TimeEntryId = 357L,
+                            AmountOfHours = 3m,
+                            Comment = "Cloned intermediate task-force",
+                            Date = new DateTime(2020, 11, 26, 14, 30, 11, 242, DateTimeKind.Unspecified).AddTicks(7582),
+                            EmployeeId = 1L,
+                            ProjectId = 17L
+                        },
+                        new
+                        {
+                            TimeEntryId = 358L,
+                            AmountOfHours = 1m,
+                            Comment = "Programmable logistical support",
+                            Date = new DateTime(2020, 10, 14, 23, 1, 57, 782, DateTimeKind.Unspecified).AddTicks(3542),
+                            EmployeeId = 5L,
+                            ProjectId = 12L
+                        },
+                        new
+                        {
                             TimeEntryId = 359L,
-                            AmountOfHours = 45m,
-                            Comment = "Id corporis possimus tenetur explicabo et voluptatibus quam corporis nulla.",
-                            Date = new DateTime(2020, 9, 7, 21, 44, 31, 236, DateTimeKind.Unspecified).AddTicks(4830),
-                            EmployeeId = 11L,
+                            AmountOfHours = 3m,
+                            Comment = "Front-line fresh-thinking local area network",
+                            Date = new DateTime(2020, 6, 2, 5, 18, 35, 94, DateTimeKind.Unspecified).AddTicks(7988),
+                            EmployeeId = 4L,
                             ProjectId = 12L
                         },
                         new
                         {
                             TimeEntryId = 360L,
-                            AmountOfHours = 23m,
-                            Comment = "Perferendis repellat deserunt quam sit sed quibusdam et fugiat tempora.",
-                            Date = new DateTime(2020, 4, 7, 1, 56, 31, 512, DateTimeKind.Unspecified).AddTicks(6744),
-                            EmployeeId = 9L,
-                            ProjectId = 3L
+                            AmountOfHours = 1m,
+                            Comment = "Multi-layered contextually-based application",
+                            Date = new DateTime(2020, 9, 13, 23, 59, 54, 428, DateTimeKind.Unspecified).AddTicks(8373),
+                            EmployeeId = 7L,
+                            ProjectId = 13L
                         },
                         new
                         {
                             TimeEntryId = 361L,
-                            AmountOfHours = 37m,
-                            Comment = "Nam voluptas aut rerum nesciunt numquam sit magni quia in.",
-                            Date = new DateTime(2020, 10, 17, 0, 51, 56, 819, DateTimeKind.Unspecified).AddTicks(1447),
-                            EmployeeId = 11L,
-                            ProjectId = 7L
-                        },
-                        new
-                        {
-                            TimeEntryId = 362L,
-                            AmountOfHours = 23m,
-                            Comment = "Esse suscipit ipsum facilis aut dolores quo minima quo est.",
-                            Date = new DateTime(2020, 12, 9, 12, 33, 58, 250, DateTimeKind.Unspecified).AddTicks(6432),
-                            EmployeeId = 8L,
-                            ProjectId = 3L
-                        },
-                        new
-                        {
-                            TimeEntryId = 363L,
-                            AmountOfHours = 7m,
-                            Comment = "Totam non numquam doloribus eum quis possimus aut maxime sit.",
-                            Date = new DateTime(2020, 12, 14, 20, 48, 14, 533, DateTimeKind.Unspecified).AddTicks(7346),
-                            EmployeeId = 6L,
-                            ProjectId = 2L
-                        },
-                        new
-                        {
-                            TimeEntryId = 364L,
-                            AmountOfHours = 53m,
-                            Comment = "Autem consectetur natus cum animi voluptate sed dolores inventore aspernatur.",
-                            Date = new DateTime(2020, 3, 18, 7, 12, 55, 602, DateTimeKind.Unspecified).AddTicks(5510),
-                            EmployeeId = 12L,
-                            ProjectId = 6L
-                        },
-                        new
-                        {
-                            TimeEntryId = 365L,
-                            AmountOfHours = 23m,
-                            Comment = "Quos blanditiis veniam aut voluptatem veritatis distinctio cum amet et.",
-                            Date = new DateTime(2020, 10, 12, 4, 38, 43, 820, DateTimeKind.Unspecified).AddTicks(6628),
-                            EmployeeId = 7L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            TimeEntryId = 366L,
-                            AmountOfHours = 26m,
-                            Comment = "Deserunt voluptatem numquam illo veniam tenetur atque facilis dicta molestiae.",
-                            Date = new DateTime(2020, 8, 20, 16, 48, 2, 448, DateTimeKind.Unspecified).AddTicks(3110),
-                            EmployeeId = 7L,
-                            ProjectId = 11L
-                        },
-                        new
-                        {
-                            TimeEntryId = 367L,
-                            AmountOfHours = 59m,
-                            Comment = "Rem sed doloribus provident deserunt consequatur atque nostrum minus quam.",
-                            Date = new DateTime(2020, 12, 2, 22, 44, 28, 322, DateTimeKind.Unspecified).AddTicks(231),
-                            EmployeeId = 10L,
-                            ProjectId = 4L
-                        },
-                        new
-                        {
-                            TimeEntryId = 368L,
-                            AmountOfHours = 7m,
-                            Comment = "Consequatur optio dolorem aperiam est omnis et et aut rerum.",
-                            Date = new DateTime(2020, 3, 22, 9, 45, 53, 899, DateTimeKind.Unspecified).AddTicks(9051),
-                            EmployeeId = 1L,
-                            ProjectId = 17L
-                        },
-                        new
-                        {
-                            TimeEntryId = 369L,
-                            AmountOfHours = 51m,
-                            Comment = "Consequatur ea laudantium quisquam qui eligendi quia quasi officiis voluptatibus.",
-                            Date = new DateTime(2020, 11, 27, 8, 52, 39, 994, DateTimeKind.Unspecified).AddTicks(6365),
-                            EmployeeId = 12L,
-                            ProjectId = 6L
-                        },
-                        new
-                        {
-                            TimeEntryId = 370L,
-                            AmountOfHours = 18m,
-                            Comment = "Esse autem ut dolores qui consequatur rerum reprehenderit omnis excepturi.",
-                            Date = new DateTime(2020, 12, 16, 5, 2, 42, 131, DateTimeKind.Unspecified).AddTicks(9125),
-                            EmployeeId = 10L,
-                            ProjectId = 4L
-                        },
-                        new
-                        {
-                            TimeEntryId = 371L,
-                            AmountOfHours = 34m,
-                            Comment = "Ut quae occaecati assumenda laudantium rerum et autem a et.",
-                            Date = new DateTime(2020, 1, 25, 4, 58, 6, 248, DateTimeKind.Unspecified).AddTicks(6371),
-                            EmployeeId = 1L,
-                            ProjectId = 11L
-                        },
-                        new
-                        {
-                            TimeEntryId = 372L,
-                            AmountOfHours = 57m,
-                            Comment = "Qui sit veritatis molestias consequatur id quos sunt soluta debitis.",
-                            Date = new DateTime(2020, 11, 29, 9, 29, 22, 881, DateTimeKind.Unspecified).AddTicks(595),
-                            EmployeeId = 2L,
-                            ProjectId = 11L
-                        },
-                        new
-                        {
-                            TimeEntryId = 373L,
-                            AmountOfHours = 59m,
-                            Comment = "Animi hic hic maiores fuga facilis quo eum praesentium quia.",
-                            Date = new DateTime(2020, 3, 16, 9, 5, 32, 812, DateTimeKind.Unspecified).AddTicks(6941),
-                            EmployeeId = 10L,
-                            ProjectId = 7L
-                        },
-                        new
-                        {
-                            TimeEntryId = 374L,
                             AmountOfHours = 2m,
-                            Comment = "Quo velit consequuntur velit praesentium nihil sunt in qui voluptatem.",
-                            Date = new DateTime(2020, 5, 18, 18, 23, 24, 906, DateTimeKind.Unspecified).AddTicks(7135),
-                            EmployeeId = 5L,
-                            ProjectId = 10L
-                        },
-                        new
-                        {
-                            TimeEntryId = 375L,
-                            AmountOfHours = 8m,
-                            Comment = "Consequatur facilis tempore non iusto rerum est aut fugit voluptatem.",
-                            Date = new DateTime(2020, 1, 27, 7, 56, 27, 113, DateTimeKind.Unspecified).AddTicks(8751),
-                            EmployeeId = 11L,
-                            ProjectId = 6L
-                        },
-                        new
-                        {
-                            TimeEntryId = 376L,
-                            AmountOfHours = 60m,
-                            Comment = "Est at nihil quos tempora ducimus magnam deleniti facere saepe.",
-                            Date = new DateTime(2020, 2, 5, 20, 35, 12, 575, DateTimeKind.Unspecified).AddTicks(2317),
-                            EmployeeId = 1L,
-                            ProjectId = 10L
-                        },
-                        new
-                        {
-                            TimeEntryId = 377L,
-                            AmountOfHours = 1m,
-                            Comment = "Dolores est rerum neque sunt eligendi laudantium illum provident accusamus.",
-                            Date = new DateTime(2020, 5, 29, 8, 19, 59, 813, DateTimeKind.Unspecified).AddTicks(327),
-                            EmployeeId = 11L,
+                            Comment = "Progressive zero defect forecast",
+                            Date = new DateTime(2020, 2, 25, 0, 40, 23, 717, DateTimeKind.Unspecified).AddTicks(3718),
+                            EmployeeId = 6L,
                             ProjectId = 9L
                         },
                         new
                         {
-                            TimeEntryId = 378L,
-                            AmountOfHours = 50m,
-                            Comment = "Dicta odit exercitationem adipisci est culpa pariatur mollitia iste at.",
-                            Date = new DateTime(2020, 4, 9, 2, 0, 51, 576, DateTimeKind.Unspecified).AddTicks(1603),
+                            TimeEntryId = 362L,
+                            AmountOfHours = 4m,
+                            Comment = "Upgradable disintermediate orchestration",
+                            Date = new DateTime(2020, 12, 9, 14, 42, 45, 924, DateTimeKind.Unspecified).AddTicks(9254),
+                            EmployeeId = 8L,
+                            ProjectId = 12L
+                        },
+                        new
+                        {
+                            TimeEntryId = 363L,
+                            AmountOfHours = 1m,
+                            Comment = "Vision-oriented multi-state local area network",
+                            Date = new DateTime(2020, 10, 2, 22, 24, 21, 234, DateTimeKind.Unspecified).AddTicks(7859),
+                            EmployeeId = 10L,
+                            ProjectId = 18L
+                        },
+                        new
+                        {
+                            TimeEntryId = 364L,
+                            AmountOfHours = 3m,
+                            Comment = "Persevering web-enabled hub",
+                            Date = new DateTime(2020, 12, 2, 12, 0, 53, 73, DateTimeKind.Unspecified).AddTicks(4800),
+                            EmployeeId = 8L,
+                            ProjectId = 5L
+                        },
+                        new
+                        {
+                            TimeEntryId = 365L,
+                            AmountOfHours = 5m,
+                            Comment = "Front-line systemic internet solution",
+                            Date = new DateTime(2020, 4, 21, 15, 21, 58, 866, DateTimeKind.Unspecified).AddTicks(2176),
                             EmployeeId = 3L,
                             ProjectId = 13L
                         },
                         new
                         {
-                            TimeEntryId = 379L,
-                            AmountOfHours = 54m,
-                            Comment = "Saepe dolor vero recusandae ut maxime sint molestiae vel quod.",
-                            Date = new DateTime(2020, 11, 23, 13, 13, 36, 499, DateTimeKind.Unspecified).AddTicks(1004),
-                            EmployeeId = 9L,
-                            ProjectId = 9L
-                        },
-                        new
-                        {
-                            TimeEntryId = 380L,
-                            AmountOfHours = 55m,
-                            Comment = "Quia quo laborum autem dolor nihil qui facilis mollitia debitis.",
-                            Date = new DateTime(2020, 7, 11, 20, 28, 40, 41, DateTimeKind.Unspecified).AddTicks(5731),
-                            EmployeeId = 11L,
-                            ProjectId = 17L
-                        },
-                        new
-                        {
-                            TimeEntryId = 381L,
-                            AmountOfHours = 54m,
-                            Comment = "Magni repellendus molestiae hic et in molestiae placeat perferendis rerum.",
-                            Date = new DateTime(2020, 3, 5, 4, 3, 39, 971, DateTimeKind.Unspecified).AddTicks(3611),
-                            EmployeeId = 11L,
-                            ProjectId = 11L
-                        },
-                        new
-                        {
-                            TimeEntryId = 382L,
-                            AmountOfHours = 40m,
-                            Comment = "Est omnis quas sed illo rerum ad quisquam labore dignissimos.",
-                            Date = new DateTime(2020, 4, 24, 13, 50, 31, 773, DateTimeKind.Unspecified).AddTicks(6679),
-                            EmployeeId = 6L,
+                            TimeEntryId = 366L,
+                            AmountOfHours = 8m,
+                            Comment = "Persistent intermediate structure",
+                            Date = new DateTime(2020, 10, 3, 11, 41, 43, 172, DateTimeKind.Unspecified).AddTicks(924),
+                            EmployeeId = 2L,
                             ProjectId = 10L
                         },
                         new
                         {
-                            TimeEntryId = 383L,
-                            AmountOfHours = 15m,
-                            Comment = "Sit voluptatibus ipsa quo sunt et exercitationem mollitia illum quod.",
-                            Date = new DateTime(2020, 6, 30, 2, 42, 6, 144, DateTimeKind.Unspecified).AddTicks(1514),
-                            EmployeeId = 8L,
+                            TimeEntryId = 367L,
+                            AmountOfHours = 4m,
+                            Comment = "Configurable systemic moderator",
+                            Date = new DateTime(2020, 10, 25, 18, 17, 25, 916, DateTimeKind.Unspecified).AddTicks(9084),
+                            EmployeeId = 1L,
                             ProjectId = 19L
                         },
                         new
                         {
-                            TimeEntryId = 384L,
-                            AmountOfHours = 34m,
-                            Comment = "Dolorem libero eveniet expedita fugit id et ipsa quis est.",
-                            Date = new DateTime(2020, 12, 26, 4, 58, 34, 885, DateTimeKind.Unspecified).AddTicks(6977),
-                            EmployeeId = 10L,
+                            TimeEntryId = 368L,
+                            AmountOfHours = 4m,
+                            Comment = "Organized human-resource policy",
+                            Date = new DateTime(2020, 1, 9, 6, 34, 8, 468, DateTimeKind.Unspecified).AddTicks(2804),
+                            EmployeeId = 9L,
                             ProjectId = 5L
                         },
                         new
                         {
-                            TimeEntryId = 385L,
-                            AmountOfHours = 25m,
-                            Comment = "Unde deleniti quas sit vitae cum similique doloremque ut sit.",
-                            Date = new DateTime(2020, 8, 16, 10, 2, 46, 926, DateTimeKind.Unspecified).AddTicks(3963),
+                            TimeEntryId = 369L,
+                            AmountOfHours = 1m,
+                            Comment = "Assimilated transitional standardization",
+                            Date = new DateTime(2020, 11, 25, 18, 36, 6, 173, DateTimeKind.Unspecified).AddTicks(3552),
+                            EmployeeId = 3L,
+                            ProjectId = 13L
+                        },
+                        new
+                        {
+                            TimeEntryId = 370L,
+                            AmountOfHours = 5m,
+                            Comment = "Mandatory client-server groupware",
+                            Date = new DateTime(2020, 11, 11, 0, 48, 7, 23, DateTimeKind.Unspecified).AddTicks(867),
                             EmployeeId = 12L,
-                            ProjectId = 14L
+                            ProjectId = 20L
+                        },
+                        new
+                        {
+                            TimeEntryId = 371L,
+                            AmountOfHours = 4m,
+                            Comment = "Configurable neutral open architecture",
+                            Date = new DateTime(2020, 1, 15, 18, 5, 52, 104, DateTimeKind.Unspecified).AddTicks(4975),
+                            EmployeeId = 5L,
+                            ProjectId = 3L
+                        },
+                        new
+                        {
+                            TimeEntryId = 372L,
+                            AmountOfHours = 4m,
+                            Comment = "Compatible scalable methodology",
+                            Date = new DateTime(2020, 12, 23, 17, 58, 15, 389, DateTimeKind.Unspecified).AddTicks(4127),
+                            EmployeeId = 4L,
+                            ProjectId = 6L
+                        },
+                        new
+                        {
+                            TimeEntryId = 373L,
+                            AmountOfHours = 6m,
+                            Comment = "Implemented responsive installation",
+                            Date = new DateTime(2020, 2, 14, 9, 15, 53, 209, DateTimeKind.Unspecified).AddTicks(1281),
+                            EmployeeId = 5L,
+                            ProjectId = 18L
+                        },
+                        new
+                        {
+                            TimeEntryId = 374L,
+                            AmountOfHours = 5m,
+                            Comment = "Profit-focused 24/7 superstructure",
+                            Date = new DateTime(2020, 11, 25, 1, 49, 51, 80, DateTimeKind.Unspecified).AddTicks(5271),
+                            EmployeeId = 11L,
+                            ProjectId = 20L
+                        },
+                        new
+                        {
+                            TimeEntryId = 375L,
+                            AmountOfHours = 6m,
+                            Comment = "Public-key contextually-based architecture",
+                            Date = new DateTime(2020, 10, 2, 11, 30, 56, 367, DateTimeKind.Unspecified).AddTicks(8756),
+                            EmployeeId = 12L,
+                            ProjectId = 20L
+                        },
+                        new
+                        {
+                            TimeEntryId = 376L,
+                            AmountOfHours = 4m,
+                            Comment = "Secured 5th generation flexibility",
+                            Date = new DateTime(2020, 2, 2, 3, 1, 42, 99, DateTimeKind.Unspecified).AddTicks(5921),
+                            EmployeeId = 2L,
+                            ProjectId = 19L
+                        },
+                        new
+                        {
+                            TimeEntryId = 377L,
+                            AmountOfHours = 8m,
+                            Comment = "Compatible dedicated website",
+                            Date = new DateTime(2020, 8, 12, 0, 46, 58, 233, DateTimeKind.Unspecified).AddTicks(1560),
+                            EmployeeId = 5L,
+                            ProjectId = 15L
+                        },
+                        new
+                        {
+                            TimeEntryId = 378L,
+                            AmountOfHours = 1m,
+                            Comment = "Innovative transitional interface",
+                            Date = new DateTime(2020, 11, 24, 10, 39, 42, 42, DateTimeKind.Unspecified).AddTicks(4855),
+                            EmployeeId = 2L,
+                            ProjectId = 3L
+                        },
+                        new
+                        {
+                            TimeEntryId = 379L,
+                            AmountOfHours = 4m,
+                            Comment = "Progressive responsive knowledge user",
+                            Date = new DateTime(2020, 11, 3, 14, 10, 32, 91, DateTimeKind.Unspecified).AddTicks(9215),
+                            EmployeeId = 2L,
+                            ProjectId = 5L
+                        },
+                        new
+                        {
+                            TimeEntryId = 380L,
+                            AmountOfHours = 4m,
+                            Comment = "Organized intangible encryption",
+                            Date = new DateTime(2020, 10, 22, 20, 4, 47, 676, DateTimeKind.Unspecified).AddTicks(7808),
+                            EmployeeId = 4L,
+                            ProjectId = 1L
+                        },
+                        new
+                        {
+                            TimeEntryId = 381L,
+                            AmountOfHours = 5m,
+                            Comment = "Reverse-engineered client-driven definition",
+                            Date = new DateTime(2020, 4, 4, 3, 39, 23, 623, DateTimeKind.Unspecified).AddTicks(8785),
+                            EmployeeId = 12L,
+                            ProjectId = 6L
+                        },
+                        new
+                        {
+                            TimeEntryId = 382L,
+                            AmountOfHours = 5m,
+                            Comment = "Right-sized uniform initiative",
+                            Date = new DateTime(2020, 8, 17, 14, 20, 34, 307, DateTimeKind.Unspecified).AddTicks(7259),
+                            EmployeeId = 3L,
+                            ProjectId = 18L
+                        },
+                        new
+                        {
+                            TimeEntryId = 383L,
+                            AmountOfHours = 3m,
+                            Comment = "Function-based leading edge projection",
+                            Date = new DateTime(2020, 8, 15, 7, 42, 22, 820, DateTimeKind.Unspecified).AddTicks(8480),
+                            EmployeeId = 11L,
+                            ProjectId = 5L
+                        },
+                        new
+                        {
+                            TimeEntryId = 384L,
+                            AmountOfHours = 1m,
+                            Comment = "Exclusive regional website",
+                            Date = new DateTime(2020, 1, 6, 17, 22, 2, 575, DateTimeKind.Unspecified).AddTicks(3673),
+                            EmployeeId = 9L,
+                            ProjectId = 17L
+                        },
+                        new
+                        {
+                            TimeEntryId = 385L,
+                            AmountOfHours = 5m,
+                            Comment = "Realigned national analyzer",
+                            Date = new DateTime(2020, 7, 11, 7, 49, 58, 748, DateTimeKind.Unspecified).AddTicks(3692),
+                            EmployeeId = 9L,
+                            ProjectId = 13L
                         },
                         new
                         {
                             TimeEntryId = 386L,
-                            AmountOfHours = 7m,
-                            Comment = "Id voluptas mollitia odit sapiente cumque saepe sunt perspiciatis temporibus.",
-                            Date = new DateTime(2020, 5, 12, 7, 42, 48, 712, DateTimeKind.Unspecified).AddTicks(3592),
-                            EmployeeId = 5L,
-                            ProjectId = 16L
+                            AmountOfHours = 6m,
+                            Comment = "Re-contextualized dedicated conglomeration",
+                            Date = new DateTime(2020, 6, 21, 20, 38, 0, 48, DateTimeKind.Unspecified).AddTicks(7954),
+                            EmployeeId = 11L,
+                            ProjectId = 5L
                         },
                         new
                         {
                             TimeEntryId = 387L,
                             AmountOfHours = 8m,
-                            Comment = "Est aliquid earum laboriosam asperiores aut ab suscipit ut ad.",
-                            Date = new DateTime(2020, 4, 29, 14, 27, 58, 687, DateTimeKind.Unspecified).AddTicks(4924),
-                            EmployeeId = 11L,
-                            ProjectId = 7L
+                            Comment = "Team-oriented 6th generation system engine",
+                            Date = new DateTime(2020, 11, 28, 5, 57, 32, 776, DateTimeKind.Unspecified).AddTicks(2260),
+                            EmployeeId = 5L,
+                            ProjectId = 4L
                         },
                         new
                         {
                             TimeEntryId = 388L,
-                            AmountOfHours = 48m,
-                            Comment = "Voluptas porro nihil quam autem autem nemo id explicabo nam.",
-                            Date = new DateTime(2020, 1, 2, 20, 38, 39, 952, DateTimeKind.Unspecified).AddTicks(9040),
-                            EmployeeId = 4L,
-                            ProjectId = 19L
+                            AmountOfHours = 2m,
+                            Comment = "Virtual hybrid hub",
+                            Date = new DateTime(2020, 2, 9, 11, 9, 59, 843, DateTimeKind.Unspecified).AddTicks(67),
+                            EmployeeId = 10L,
+                            ProjectId = 5L
                         },
                         new
                         {
                             TimeEntryId = 389L,
-                            AmountOfHours = 59m,
-                            Comment = "Itaque quo reiciendis voluptas aliquid molestiae nihil unde labore laborum.",
-                            Date = new DateTime(2020, 7, 9, 0, 58, 12, 10, DateTimeKind.Unspecified).AddTicks(5921),
-                            EmployeeId = 9L,
-                            ProjectId = 10L
+                            AmountOfHours = 5m,
+                            Comment = "Integrated discrete core",
+                            Date = new DateTime(2020, 6, 18, 13, 56, 5, 913, DateTimeKind.Unspecified).AddTicks(1954),
+                            EmployeeId = 6L,
+                            ProjectId = 3L
                         },
                         new
                         {
                             TimeEntryId = 390L,
-                            AmountOfHours = 24m,
-                            Comment = "Non quia et distinctio optio aut aut dolorem dicta recusandae.",
-                            Date = new DateTime(2020, 1, 30, 14, 8, 42, 663, DateTimeKind.Unspecified).AddTicks(8688),
-                            EmployeeId = 5L,
-                            ProjectId = 11L
+                            AmountOfHours = 1m,
+                            Comment = "Enhanced heuristic instruction set",
+                            Date = new DateTime(2020, 1, 11, 18, 2, 0, 201, DateTimeKind.Unspecified).AddTicks(2692),
+                            EmployeeId = 3L,
+                            ProjectId = 3L
                         },
                         new
                         {
                             TimeEntryId = 391L,
-                            AmountOfHours = 0m,
-                            Comment = "Quaerat ad architecto architecto consequatur architecto in cupiditate exercitationem sed.",
-                            Date = new DateTime(2020, 11, 1, 19, 28, 56, 308, DateTimeKind.Unspecified).AddTicks(1633),
-                            EmployeeId = 12L,
-                            ProjectId = 12L
+                            AmountOfHours = 5m,
+                            Comment = "Fully-configurable maximized website",
+                            Date = new DateTime(2020, 9, 5, 8, 13, 33, 681, DateTimeKind.Unspecified).AddTicks(4717),
+                            EmployeeId = 1L,
+                            ProjectId = 3L
                         },
                         new
                         {
                             TimeEntryId = 392L,
-                            AmountOfHours = 13m,
-                            Comment = "Deleniti sunt quisquam ut impedit ut beatae est nihil est.",
-                            Date = new DateTime(2020, 5, 16, 1, 12, 2, 769, DateTimeKind.Unspecified).AddTicks(2729),
-                            EmployeeId = 3L,
+                            AmountOfHours = 3m,
+                            Comment = "Re-engineered 6th generation flexibility",
+                            Date = new DateTime(2020, 3, 19, 3, 20, 16, 904, DateTimeKind.Unspecified).AddTicks(8112),
+                            EmployeeId = 8L,
                             ProjectId = 9L
                         },
                         new
                         {
                             TimeEntryId = 393L,
                             AmountOfHours = 6m,
-                            Comment = "Et ipsa hic illum mollitia quam nostrum delectus sed fuga.",
-                            Date = new DateTime(2020, 3, 3, 14, 43, 3, 439, DateTimeKind.Unspecified).AddTicks(8978),
-                            EmployeeId = 2L,
+                            Comment = "Digitized maximized synergy",
+                            Date = new DateTime(2020, 4, 12, 10, 51, 46, 424, DateTimeKind.Unspecified).AddTicks(325),
+                            EmployeeId = 5L,
                             ProjectId = 1L
                         },
                         new
                         {
                             TimeEntryId = 394L,
-                            AmountOfHours = 0m,
-                            Comment = "Accusantium nihil impedit sed minus officia ut asperiores numquam deleniti.",
-                            Date = new DateTime(2020, 1, 2, 18, 46, 16, 285, DateTimeKind.Unspecified).AddTicks(1136),
-                            EmployeeId = 10L,
-                            ProjectId = 19L
-                        },
-                        new
-                        {
-                            TimeEntryId = 395L,
-                            AmountOfHours = 29m,
-                            Comment = "At totam pariatur hic ut quis saepe magnam officia magni.",
-                            Date = new DateTime(2020, 12, 5, 11, 17, 55, 372, DateTimeKind.Unspecified).AddTicks(2321),
-                            EmployeeId = 12L,
-                            ProjectId = 20L
-                        },
-                        new
-                        {
-                            TimeEntryId = 396L,
-                            AmountOfHours = 31m,
-                            Comment = "Iste aspernatur temporibus nihil eveniet architecto maxime quisquam eveniet odit.",
-                            Date = new DateTime(2020, 12, 5, 19, 49, 18, 281, DateTimeKind.Unspecified).AddTicks(570),
-                            EmployeeId = 9L,
-                            ProjectId = 12L
-                        },
-                        new
-                        {
-                            TimeEntryId = 397L,
-                            AmountOfHours = 38m,
-                            Comment = "Eum totam asperiores nam quos aut aut quasi omnis neque.",
-                            Date = new DateTime(2020, 10, 6, 11, 53, 8, 379, DateTimeKind.Unspecified).AddTicks(1989),
+                            AmountOfHours = 3m,
+                            Comment = "Versatile zero defect function",
+                            Date = new DateTime(2020, 2, 15, 12, 57, 52, 481, DateTimeKind.Unspecified).AddTicks(9311),
                             EmployeeId = 2L,
-                            ProjectId = 15L
-                        },
-                        new
-                        {
-                            TimeEntryId = 398L,
-                            AmountOfHours = 47m,
-                            Comment = "Fugit culpa qui dolor distinctio fugiat odio fugit eligendi quia.",
-                            Date = new DateTime(2020, 2, 10, 14, 0, 0, 378, DateTimeKind.Unspecified).AddTicks(3893),
-                            EmployeeId = 1L,
                             ProjectId = 18L
                         },
                         new
                         {
+                            TimeEntryId = 395L,
+                            AmountOfHours = 6m,
+                            Comment = "Phased fresh-thinking capability",
+                            Date = new DateTime(2020, 11, 11, 17, 18, 33, 989, DateTimeKind.Unspecified).AddTicks(7354),
+                            EmployeeId = 1L,
+                            ProjectId = 9L
+                        },
+                        new
+                        {
+                            TimeEntryId = 396L,
+                            AmountOfHours = 6m,
+                            Comment = "Triple-buffered homogeneous portal",
+                            Date = new DateTime(2020, 8, 24, 19, 25, 46, 547, DateTimeKind.Unspecified).AddTicks(8567),
+                            EmployeeId = 2L,
+                            ProjectId = 5L
+                        },
+                        new
+                        {
+                            TimeEntryId = 397L,
+                            AmountOfHours = 6m,
+                            Comment = "Enterprise-wide tertiary standardization",
+                            Date = new DateTime(2020, 2, 19, 11, 16, 1, 366, DateTimeKind.Unspecified).AddTicks(912),
+                            EmployeeId = 9L,
+                            ProjectId = 16L
+                        },
+                        new
+                        {
+                            TimeEntryId = 398L,
+                            AmountOfHours = 1m,
+                            Comment = "Synchronised methodical secured line",
+                            Date = new DateTime(2020, 4, 20, 9, 16, 2, 523, DateTimeKind.Unspecified).AddTicks(185),
+                            EmployeeId = 2L,
+                            ProjectId = 12L
+                        },
+                        new
+                        {
                             TimeEntryId = 399L,
-                            AmountOfHours = 8m,
-                            Comment = "Similique quod ut voluptatem non voluptatem quam quia eos ipsam.",
-                            Date = new DateTime(2020, 9, 28, 22, 10, 25, 612, DateTimeKind.Unspecified).AddTicks(800),
-                            EmployeeId = 6L,
-                            ProjectId = 3L
+                            AmountOfHours = 3m,
+                            Comment = "Polarised mission-critical system engine",
+                            Date = new DateTime(2020, 4, 5, 22, 58, 27, 198, DateTimeKind.Unspecified).AddTicks(4632),
+                            EmployeeId = 3L,
+                            ProjectId = 8L
                         },
                         new
                         {
                             TimeEntryId = 400L,
-                            AmountOfHours = 29m,
-                            Comment = "Quia fuga animi sit sapiente ut id voluptatem delectus et.",
-                            Date = new DateTime(2020, 5, 27, 12, 7, 14, 555, DateTimeKind.Unspecified).AddTicks(5389),
+                            AmountOfHours = 2m,
+                            Comment = "Proactive client-server leverage",
+                            Date = new DateTime(2020, 9, 19, 11, 4, 16, 564, DateTimeKind.Unspecified).AddTicks(799),
                             EmployeeId = 12L,
-                            ProjectId = 19L
+                            ProjectId = 13L
                         });
                 });
 

@@ -10,6 +10,7 @@ namespace DiplomaProject.DataTransferObjects
     {
         public long InvoiceId { get; set; }
         public decimal AmountOfHours { get; set; }
+        public bool IsInvoicePeriodClosed { get; set; }
     }
     public class InvoiceCreateDto : InvoiceUpdateDto
     {
@@ -42,7 +43,6 @@ namespace DiplomaProject.DataTransferObjects
         public decimal Tax { get; set; }
         public decimal TotalToPay { get; set; }
         public bool IsInvoicePaid { get; set; }
-
     }
 
     public class InvoiceForTimeEntryDto : InvoiceForProjectDto
@@ -53,5 +53,10 @@ namespace DiplomaProject.DataTransferObjects
         //public decimal AmountOfHours { get; set; } // tego nie musi być, bo to jest w TimeEntry z kolekcji, podobnie Comment
         //public string Comment { get; set; }
         public List<TimeEntryDto> TimeEntries { get; set; } // pobiera liste Time Entries dla danej invoice, //bez tego wyswietla sie w Swagger UI
+    }
+    public class InvoicePeriodClosureDto
+    {
+        public long InvoiceId { get; set; }
+        public bool IsInvoicePeriodClosed { get; set; }
     }
 }
