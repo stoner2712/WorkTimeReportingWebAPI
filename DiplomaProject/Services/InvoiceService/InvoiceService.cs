@@ -271,17 +271,15 @@ namespace DiplomaProject.Services.InvoiceServiceNS
             return this.mapper.Map<InvoicePeriodClosureDto>(invoice);
         }
 
-        public bool CheckIfInvoicePeriodIsOpen(TimeEntry timeEntry)
+        //public bool CheckIfInvoicePeriodIsClosed(TimeEntry timeEntry) //... before
+        public bool CheckIfInvoicePeriodIsClosed(int month, long projectId)
         {
-            var invoices = this.diplomaProjectDbContext.Invoices.Include(i => i.TimeEntries).Where(i => i.ProjectId == timeEntry.ProjectId
-                            && i.Month == timeEntry.Date.Month || i.InvoiceId == timeEntry.InvoiceId).ToList();
+            var invoice = this.diplomaProjectDbContext.Invoices.Include(i => i.TimeEntries).Where(i => i.ProjectId == projectId
+                            && i.Month == month).FirstOrDefault();
 
-            foreach (var invoice in invoices)
+            if (invoice != null)
             {
-                if (invoice.IsInvoicePeriodClosed == true)
-                {
-                    return true;
-                }
+                return invoice.IsInvoicePeriodClosed;
             }
             return false;
         }
