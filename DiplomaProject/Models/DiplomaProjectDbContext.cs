@@ -36,6 +36,8 @@ namespace DiplomaProject.Models
                 var employee = new Employee()
                 {
                     EmployeeId = (i + 1),
+                    UserName = faker.Internet.UserName(),
+                    Password = "zero123",
                     FirstName = faker.Name.FirstName(),
                     LastName = faker.Name.LastName(),
                     DateOfBirth = faker.Date.Between(new DateTime(1950, 01, 01), new DateTime(1999, 12, 31)),
