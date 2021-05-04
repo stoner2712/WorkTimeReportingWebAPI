@@ -85,5 +85,19 @@ namespace DiplomaProject.Services.EmployeeServiceNS
             var allEmployeesWorkingOnProject = await this.diplomaProjectDbContext.Employees.Where(e => e.EmployeeProjects.Any(ep => ep.ProjectId == projectId)).ToListAsync();
             return this.mapper.Map<List<Employee>, List<EmployeeDto>>(allEmployeesWorkingOnProject).OrderBy(e => e.EmployeeId);
         }
+
+        public Task<Employee> GetEmployeeByUserName(string userName)
+        {
+            return this.diplomaProjectDbContext.Employees.FirstOrDefaultAsync(e => e.UserName == userName);
+
+            //opcja 2
+            //var employee = this.diplomaProjectDbContext.Employees.FirstOrDefaultAsync(e => e.UserName == userName);
+            //if (employee == null) // ten wyjątek nie musi być ponieważ my chcemy, żeby null przeszedł i bedzie złapany przez Controller
+            //{
+            //    throw new ArgumentException("User name not existing");
+            //}
+            //return employee;
+        }
+
     }
 }

@@ -8,47 +8,20 @@
             <summary>
             Property Declaration
             </summary>
-            <param name="data"></param>
             <returns></returns>
         </member>
-        <member name="M:DiplomaProject.Controllers.AuthenticateController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+        <member name="M:DiplomaProject.Controllers.AuthenticateController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,DiplomaProject.Services.AuthenticateServiceNS.IAuthenticateService)">
             <summary>
             Constructor Injection to access all methods or simply DI(Dependency Injection)
             Property and Constructor to invoke the appsettings.json Secret JWT Key and its Issuer
             </summary>
-            
         </member>
-        <member name="M:DiplomaProject.Controllers.AuthenticateController.GenerateJSONWebToken(DiplomaProject.Controllers.LoginModel)">
-            <summary>  
-            Generate Json Web Token Method  
-            </summary>  
-            <param name="userInfo"></param>  
-            <returns></returns>  
-        </member>
-        <member name="M:DiplomaProject.Controllers.AuthenticateController.AuthenticateUser(DiplomaProject.Controllers.LoginModel)">
-            <summary>  
-            Hardcoded the User authentication  
-            </summary>  
-            <param name="login"></param>  
-            <returns></returns>  
-        </member>
-        <member name="M:DiplomaProject.Controllers.AuthenticateController.Login(DiplomaProject.Controllers.LoginModel)">
-            <summary>  
-            Login Authenticaton using JWT Token Authentication  
-            </summary>  
-            <param name="data"></param>  
-            <returns></returns>  
-        </member>
-        <member name="M:DiplomaProject.Controllers.AuthenticateController.Get">
-            <summary>  
-            Authorize the Method  
-            </summary>  
-            <returns></returns>  
-        </member>
-        <member name="T:DiplomaProject.Controllers.LoginModel">
-            <summary>  
-            Json Properties  
-            </summary>  
+        <member name="M:DiplomaProject.Controllers.AuthenticateController.Login(DiplomaProject.Services.AuthenticateServiceNS.LoginModel)">
+            <summary>
+            Login Authenticaton using JWT Token Authentication
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
         </member>
         <member name="M:DiplomaProject.Controllers.ClientController.Get">
             <summary>
@@ -311,6 +284,37 @@
             </summary>
             <param name="projectId"></param>
             <returns></returns>
+        </member>
+        <member name="F:DiplomaProject.Services.AuthenticateServiceNS.AuthenticateService._config">
+            <summary>
+            Property Declaration
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Services.AuthenticateServiceNS.AuthenticateService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,DiplomaProject.Services.EmployeeServiceNS.IEmployeeService)">
+            <summary>
+            Constructor Injection to access all methods or simply DI(Dependency Injection)
+            Property and Constructor to invoke the appsettings.json Secret JWT Key and its Issuer
+            </summary>
+        </member>
+        <member name="M:DiplomaProject.Services.AuthenticateServiceNS.AuthenticateService.GenerateJSONWebToken(DiplomaProject.Services.AuthenticateServiceNS.LoginModel)">
+            <summary>
+            Generate Json Web Token Method
+            </summary>
+            <param name="userInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Services.AuthenticateServiceNS.AuthenticateService.AuthenticateUser(DiplomaProject.Services.AuthenticateServiceNS.LoginModel)">
+            <summary>
+            User authentication
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DiplomaProject.Services.AuthenticateServiceNS.LoginModel">
+            <summary>
+            Json Properties
+            </summary>
         </member>
     </members>
 </doc>

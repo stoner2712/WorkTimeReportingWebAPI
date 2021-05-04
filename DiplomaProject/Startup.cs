@@ -26,6 +26,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
+using DiplomaProject.Services.AuthenticateServiceNS;
 
 namespace DiplomaProject
 {
@@ -64,8 +65,8 @@ namespace DiplomaProject
                 options.SwaggerDoc("v1",
                     new Microsoft.OpenApi.Models.OpenApiInfo
                     {
-                        Title = "Diploma Project Web API",
-                        Description = "Demo API for showing Swagger",
+                        Title = "Diploma Project - ASP.Net Core Web API",
+                        Description = "The application for reporting and working time accounting system",
                         Version = "v1"
                     });
 
@@ -87,15 +88,15 @@ namespace DiplomaProject
                 options.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
                     {
-                          new OpenApiSecurityScheme
-                            {
-                                Reference = new OpenApiReference
-                                {
-                                    Type = ReferenceType.SecurityScheme,
-                                    Id = "Bearer"
-                                }
-                            },
-                            new string[] {}
+                       new OpenApiSecurityScheme
+                       {
+                          Reference = new OpenApiReference
+                          {
+                             Type = ReferenceType.SecurityScheme,
+                             Id = "Bearer"
+                          }
+                       },
+                       new string[] {}
                     }
                 });
             });
@@ -121,7 +122,6 @@ namespace DiplomaProject
             
             // JWT Token Generation from Server Side.
             services.AddMvc();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -165,6 +165,7 @@ namespace DiplomaProject
             services.AddScoped<IProjectService, ProjectService>();
             services.AddScoped<IInvoiceService, InvoiceService>();
             services.AddScoped<IReportService, ReportService>();
+            services.AddScoped<IAuthenticateService, AuthenticateService>();
         }
     }
 }

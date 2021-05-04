@@ -10,7 +10,6 @@ namespace DiplomaProject.DataTransferObjects
     {
         public long EmployeeId { get; set; }
         public string UserName { get; set; }
-        public string Password { get; set; }
 
         [Required(ErrorMessage = "First name is required")]
         [StringLength(60, ErrorMessage = "First name can't be longer than 60 characters")]
