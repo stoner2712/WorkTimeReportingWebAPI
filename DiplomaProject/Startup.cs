@@ -27,6 +27,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.OpenApi.Models;
 using DiplomaProject.Services.AuthenticateServiceNS;
+using DiplomaProject.Services.SecurityServiceNS;
 
 namespace DiplomaProject
 {
@@ -166,6 +167,7 @@ namespace DiplomaProject
             services.AddScoped<IInvoiceService, InvoiceService>();
             services.AddScoped<IReportService, ReportService>();
             services.AddScoped<IAuthenticateService, AuthenticateService>();
+            services.AddScoped<ISecurityService, SecurityService>();
         }
     }
 }

@@ -59,19 +59,5 @@ namespace DiplomaProject.Controllers
             return response;
         }
         #endregion
-
-        //#region Get  
-        ///// <summary>
-        ///// Authorize the Method
-        ///// </summary>
-        ///// <returns></returns>
-        //[HttpGet(nameof(Get))]
-        //public async Task<IEnumerable<string>> Get()
-        //{
-        //    var accessToken = await HttpContext.GetTokenAsync("access_token");
-
-        //    return new string[] { accessToken };
-        //}
-        //#endregion
     }
 }

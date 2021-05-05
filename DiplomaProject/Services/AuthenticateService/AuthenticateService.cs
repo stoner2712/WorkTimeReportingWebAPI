@@ -8,7 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
-
+using DiplomaProject.Services.SecurityServiceNS;
+using System.Security.Cryptography;
 
 namespace DiplomaProject.Services.AuthenticateServiceNS
 {
@@ -21,6 +22,7 @@ namespace DiplomaProject.Services.AuthenticateServiceNS
         /// <returns></returns>
         private IConfiguration _config;
         private IEmployeeService employeeService;
+        private ISecurityService securityService;
         #endregion
 
         #region Constructor Injector  
@@ -28,10 +30,11 @@ namespace DiplomaProject.Services.AuthenticateServiceNS
         /// Constructor Injection to access all methods or simply DI(Dependency Injection)
         /// Property and Constructor to invoke the appsettings.json Secret JWT Key and its Issuer
         /// </summary>
-        public AuthenticateService(IConfiguration config, IEmployeeService employeeService)
+        public AuthenticateService(IConfiguration config, IEmployeeService employeeService, ISecurityService securityService)
         {
             _config = config;
             this.employeeService = employeeService;
+            this.securityService = securityService;
         }
         #endregion
 
@@ -66,9 +69,14 @@ namespace DiplomaProject.Services.AuthenticateServiceNS
         {
             LoginModel user = null;
 
-            var employee = await employeeService.GetEmployeeByUserName(login.UserName);
+            //var loginPassword = this.securityService.GetHash("zero123"); //hardcoded User Password
+            var loginPassword = this.securityService.GetHash(login.Password);
+           
+            var employee = await employeeService.GetEmployeeByUserName(login.UserName);  //przekazujemy do metody GetEmployeeByUserName 
+                                                                                         //jako parametr login.UserName i ta metoda wyszukuje w bazie danych takiego UserName, zgodnie z def metody -> w EmployeeService
+                                                                                         // i zwraca employee o takim UserName lub null, który wypłapany jest przez kontroler i zwróci 401 Unauthorised
 
-            if (employee != null && login.Password == employee.Password)
+            if (employee != null && loginPassword == employee.Password)
             {
                 user = new LoginModel { UserName = employee.UserName, Password = employee.Password };
             }

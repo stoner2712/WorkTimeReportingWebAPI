@@ -92,7 +92,7 @@ namespace DiplomaProject.Services.EmployeeServiceNS
 
             //opcja 2
             //var employee = this.diplomaProjectDbContext.Employees.FirstOrDefaultAsync(e => e.UserName == userName);
-            //if (employee == null) // ten wyjątek nie musi być ponieważ my chcemy, żeby null przeszedł i bedzie złapany przez Controller
+            //if (employee == null) // ten wyjątek nie musi być ponieważ chcemy, żeby null przeszedł i bedzie złapany przez Controller
             //{
             //    throw new ArgumentException("User name not existing");
             //}

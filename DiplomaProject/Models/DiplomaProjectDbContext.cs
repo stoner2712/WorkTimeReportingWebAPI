@@ -1,4 +1,5 @@
 ﻿using Bogus;
+using DiplomaProject.Services.SecurityServiceNS;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -9,14 +10,30 @@ namespace DiplomaProject.Models
 {
     public class DiplomaProjectDbContext : DbContext
     {
-        public DiplomaProjectDbContext(DbContextOptions options)    // konstruktor z 1 argumentem i dziedziczy ...
+        #region Property  
+        /// <summary>
+        /// Property Declaration
+        /// </summary>
+        /// <returns></returns>
+        //private IConfiguration _config;
+        private ISecurityService securityService;
+        #endregion
+
+        #region Constructor Injector  
+        /// <summary>
+        /// Constructor Injection to access all methods or simply DI(Dependency Injection)
+        /// Property and Constructor to invoke the appsettings.json Secret JWT Key and its Issuer
+        /// </summary>
+        public DiplomaProjectDbContext(DbContextOptions options, ISecurityService securityService)    // konstruktor z 1 argumentem i dziedziczy ...
         : base(options)
         {
+            this.securityService = securityService;
         }
 
         public DiplomaProjectDbContext() // czy to musi być? co to robi? - konstruktor bezargumentowy
         {
         }
+        #endregion
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<EmployeeProject>().HasKey(
@@ -37,7 +54,7 @@ namespace DiplomaProject.Models
                 {
                     EmployeeId = (i + 1),
                     UserName = faker.Internet.UserName(),
-                    Password = "zero123",
+                    Password = this.securityService.GetHash("zero123"),
                     FirstName = faker.Name.FirstName(),
                     LastName = faker.Name.LastName(),
                     DateOfBirth = faker.Date.Between(new DateTime(1950, 01, 01), new DateTime(1999, 12, 31)),

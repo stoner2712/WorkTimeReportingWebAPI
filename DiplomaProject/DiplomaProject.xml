@@ -285,13 +285,25 @@
             <param name="projectId"></param>
             <returns></returns>
         </member>
+        <member name="F:DiplomaProject.Models.DiplomaProjectDbContext.securityService">
+            <summary>
+            Property Declaration
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Models.DiplomaProjectDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions,DiplomaProject.Services.SecurityServiceNS.ISecurityService)">
+            <summary>
+            Constructor Injection to access all methods or simply DI(Dependency Injection)
+            Property and Constructor to invoke the appsettings.json Secret JWT Key and its Issuer
+            </summary>
+        </member>
         <member name="F:DiplomaProject.Services.AuthenticateServiceNS.AuthenticateService._config">
             <summary>
             Property Declaration
             </summary>
             <returns></returns>
         </member>
-        <member name="M:DiplomaProject.Services.AuthenticateServiceNS.AuthenticateService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,DiplomaProject.Services.EmployeeServiceNS.IEmployeeService)">
+        <member name="M:DiplomaProject.Services.AuthenticateServiceNS.AuthenticateService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,DiplomaProject.Services.EmployeeServiceNS.IEmployeeService,DiplomaProject.Services.SecurityServiceNS.ISecurityService)">
             <summary>
             Constructor Injection to access all methods or simply DI(Dependency Injection)
             Property and Constructor to invoke the appsettings.json Secret JWT Key and its Issuer
@@ -315,6 +327,19 @@
             <summary>
             Json Properties
             </summary>
+        </member>
+        <member name="M:DiplomaProject.Services.SecurityServiceNS.SecurityService.GetSalt">
+            <summary>
+            Password encryption
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Services.SecurityServiceNS.SecurityService.GetHash(System.String)">
+            <summary>
+            Password encryption
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
         </member>
     </members>
 </doc>
