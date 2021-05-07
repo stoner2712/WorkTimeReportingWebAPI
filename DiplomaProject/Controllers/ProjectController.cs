@@ -1,6 +1,7 @@
 ﻿using DiplomaProject.DataTransferObjects;
 using DiplomaProject.Models;
 using DiplomaProject.Services.ProjectServiceNS;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections;
@@ -13,6 +14,7 @@ using System.Threading.Tasks;
 namespace DiplomaProject.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class ProjectController : ControllerBase
     {

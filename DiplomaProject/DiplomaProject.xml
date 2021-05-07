@@ -4,6 +4,25 @@
         <name>DiplomaProject</name>
     </assembly>
     <members>
+        <member name="F:DiplomaProject.Controllers.AuthenticateController._config">
+            <summary>
+            Property Declaration
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Controllers.AuthenticateController.#ctor(Microsoft.Extensions.Configuration.IConfiguration,DiplomaProject.Services.AuthenticateServiceNS.IAuthenticateService)">
+            <summary>
+            Constructor Injection to access all methods or simply DI(Dependency Injection)
+            Property and Constructor to invoke the appsettings.json Secret JWT Key and its Issuer
+            </summary>
+        </member>
+        <member name="M:DiplomaProject.Controllers.AuthenticateController.Login(DiplomaProject.Services.AuthenticateServiceNS.LoginModel)">
+            <summary>
+            Login Authenticaton using JWT Token Authentication
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
         <member name="M:DiplomaProject.Controllers.ClientController.Get">
             <summary>
             Find all the clients
@@ -264,6 +283,62 @@
             Find all the time entries for a project from the begining - search by project {id} 
             </summary>
             <param name="projectId"></param>
+            <returns></returns>
+        </member>
+        <member name="F:DiplomaProject.Models.DiplomaProjectDbContext.securityService">
+            <summary>
+            Property Declaration
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Models.DiplomaProjectDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions,DiplomaProject.Services.SecurityServiceNS.ISecurityService)">
+            <summary>
+            Constructor Injection to access all methods or simply DI(Dependency Injection)
+            Property and Constructor to invoke the appsettings.json Secret JWT Key and its Issuer
+            </summary>
+        </member>
+        <member name="F:DiplomaProject.Services.AuthenticateServiceNS.AuthenticateService._config">
+            <summary>
+            Property Declaration
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Services.AuthenticateServiceNS.AuthenticateService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,DiplomaProject.Services.EmployeeServiceNS.IEmployeeService,DiplomaProject.Services.SecurityServiceNS.ISecurityService)">
+            <summary>
+            Constructor Injection to access all methods or simply DI(Dependency Injection)
+            Property and Constructor to invoke the appsettings.json Secret JWT Key and its Issuer
+            </summary>
+        </member>
+        <member name="M:DiplomaProject.Services.AuthenticateServiceNS.AuthenticateService.GenerateJSONWebToken(DiplomaProject.Services.AuthenticateServiceNS.LoginModel)">
+            <summary>
+            Generate Json Web Token Method
+            </summary>
+            <param name="userInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Services.AuthenticateServiceNS.AuthenticateService.AuthenticateUser(DiplomaProject.Services.AuthenticateServiceNS.LoginModel)">
+            <summary>
+            User authentication
+            </summary>
+            <param name="login"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DiplomaProject.Services.AuthenticateServiceNS.LoginModel">
+            <summary>
+            Json Properties
+            </summary>
+        </member>
+        <member name="M:DiplomaProject.Services.SecurityServiceNS.SecurityService.GetSalt">
+            <summary>
+            Password encryption
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DiplomaProject.Services.SecurityServiceNS.SecurityService.GetHash(System.String)">
+            <summary>
+            Password encryption
+            </summary>
+            <param name="data"></param>
             <returns></returns>
         </member>
     </members>

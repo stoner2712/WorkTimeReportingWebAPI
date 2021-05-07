@@ -46,8 +46,6 @@ namespace DiplomaProject
 
             //CreateMap<TimeEntry, InvoiceForTimeEntryDto>();
 
-
-
             //CreateMap<List<Invoice>, List<InvoiceForClientDto>>();   // tego nie musi tego być
 
             CreateMap<Invoice, InvoicePeriodClosureDto>();
