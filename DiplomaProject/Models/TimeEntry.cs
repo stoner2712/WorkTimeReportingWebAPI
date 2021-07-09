@@ -15,14 +15,13 @@ namespace DiplomaProject.Models
         public long TimeEntryId { get; set; }
         public DateTime Date { get; set; }
         public decimal AmountOfHours { get; set; }
-        public string Comment { get; set; } //czy mogę tak dodać '?' co ozn, że moze byc nullable
+        public string Comment { get; set; }
+        public long EmployeeId { get; set; }
+        public long ProjectId { get; set; }
+        public long? InvoiceId { get; set; }
 
-        public long EmployeeId { get; set; } //FK
-        public long ProjectId { get; set; } //FK
-        public long? InvoiceId { get; set; } //FK
-
-        public Employee Employee { get; set; } // Navigation Property to one Employee
-        public Project Project { get; set; } // Navigation Property to one Project
-        public Invoice Invoice { get; set; } //Navigation Property to one Invoice
+        public Employee Employee { get; set; }
+        public Project Project { get; set; }
+        public Invoice Invoice { get; set; }
     }
 }

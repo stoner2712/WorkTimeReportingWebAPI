@@ -38,10 +38,6 @@ namespace DiplomaProject.Services.SecurityServiceNS
         {
             var sha512 = SHA512.Create();
             byte[] hash = sha512.ComputeHash(Encoding.UTF8.GetBytes(data));
-            //for (int i = 0; i < 99; i++)      //hashuje 100 razy dla wzmocnienia 
-            //{
-            //    hash = sha512.ComputeHash(hash);
-            //}
             return Convert.ToBase64String(hash);
         }
         #endregion

@@ -21,7 +21,6 @@ namespace DiplomaProject.Models
         public string Country { get; set; }
         
         //Second part of expression define reverse navigation property
-        public List<Project> Projects { get; set; } // określa relację wiele Projectów do danego Clienta  
-
+        public List<Project> Projects { get; set; } 
     }
 }

@@ -42,7 +42,7 @@ namespace DiplomaProject.Services.ClientServiceNS
             var client = this.mapper.Map<Client>(clientDto);
             await this.diplomaProjectDbContext.AddAsync(client);
             await this.diplomaProjectDbContext.SaveChangesAsync();
-            return this.mapper.Map<ClientDto>(client); // nadaje numer Id nowemu klientowi
+            return this.mapper.Map<ClientDto>(client);
         }
 
         public async Task<ClientDto> Update(int id, ClientUpdateDto clientUpdateDto)

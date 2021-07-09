@@ -55,11 +55,10 @@ namespace DiplomaProject.Controllers
         {
             try
             {
-                var employee = await this.employeeService.Get(id); // jezeli tu nie podam id, to zwróci wszystkich employee
-                // 2 breakpointy na: linia wyżej oraz return
+                var employee = await this.employeeService.Get(id);
                 return Ok(employee);
             }
-            catch (ArgumentException e)  //wyjątki zaczynamy od bardziej szczegółowych do ogólnych, bo gdyby na odwrót, to ogólny złapałby all i szczegółowy nigdy by sie nie wywołał
+            catch (ArgumentException e)  
             {
                 return BadRequest(e.Message);
             }
@@ -76,16 +75,12 @@ namespace DiplomaProject.Controllers
         /// <returns></returns>
         // POST api/<EmployeeController>
         [HttpPost]
-        // metoda POST zwracająca typ EmployeeDto
         public async Task<ActionResult> Post([FromBody] EmployeeCreateDto employeeDto)
         {
             try
             {
                 var employee = await this.employeeService.Create(employeeDto);
-                // teraz zwracamy w przeglądarce stworzony obiekt employee:
-                // deklarujemy typ zwracany: EmployeeDto
-                // mapujemy employee na DataTransferObject, czyli -> EmployeeDto
-                return Ok(employee); //zwracamy nowego employee na EmployeeDto (to co widzi Klient)
+                return Ok(employee); 
             }
             catch (Exception e)
             {
@@ -106,9 +101,9 @@ namespace DiplomaProject.Controllers
             try
             {
                 var employee = await this.employeeService.Update(id, employeeUpdateDto);
-                return Ok(employee); //wyświetlamy tego pracownika po zmianach zmapowane na EmployeeDto
+                return Ok(employee); 
             }
-            catch (ArgumentException e)  //wyjątki zaczynamy od bardziej szczegółowych do ogólnych, bo gdyby na odwrót, to ogólny złapałby all i szczegółowy nigdy by sie nie wywołał
+            catch (ArgumentException e)
             {
                 return BadRequest(e.Message);
             }
@@ -129,24 +124,18 @@ namespace DiplomaProject.Controllers
         {
             try
             {
-                //await this.employeeService.Delete(id);
-                var employee = await this.employeeService.Delete(id);   //nie działa 
+                var employee = await this.employeeService.Delete(id); 
                 return Ok();
             }
-            catch (ArgumentException e)  //wyjątki zaczynamy od bardziej szczegółowych do ogólnych, bo gdyby na odwrót, to ogólny złapałby all i szczegółowy nigdy by sie nie wywołał
+            catch (ArgumentException e)  
             {
                 return BadRequest(e.Message);
             }
             catch (Exception e)
             {
-                return BadRequest(e); //tu pokaże się wszystko co jest w Exception
+                return BadRequest(e);
             }
         }
-
-        //var employee = diplomaProjectDbContext.Employees.FirstOrDefault(e => e.EmployeeId == id);
-        //diplomaProjectDbContext.Remove(employee);
-        //diplomaProjectDbContext.SaveChanges();
-        //return Ok();
 
         /// <summary>
         /// Find all the employees working on a given project - search by project {id}

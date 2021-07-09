@@ -28,10 +28,6 @@ namespace DiplomaProject.Models
         public string Country { get; set; }
         public string JobTitle { get; set; }
 
-        //public long ProjectId { get; set; } // FK nie może go tu być, bo jest określony w EployeeProject
-
-        //public List<Project> Projects { get; set; } // określa relację wiele Projects do danego Employee
         public List<EmployeeProject> EmployeeProjects { get; set; } 
-        public List<TimeEntry> TimeEntries { get; set; } // określa relację wiele TimeEntry do danego Employee
-    }
+        public List<TimeEntry> TimeEntries { get; set; }
 }

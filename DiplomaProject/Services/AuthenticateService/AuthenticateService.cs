@@ -69,12 +69,9 @@ namespace DiplomaProject.Services.AuthenticateServiceNS
         {
             LoginModel user = null;
 
-            //var loginPassword = this.securityService.GetHash("zero123"); //hardcoded User Password
             var loginPassword = this.securityService.GetHash(login.Password);
            
-            var employee = await employeeService.GetEmployeeByUserName(login.UserName);  //przekazujemy do metody GetEmployeeByUserName 
-                                                                                         //jako parametr login.UserName i ta metoda wyszukuje w bazie danych takiego UserName, zgodnie z def metody -> w EmployeeService
-                                                                                         // i zwraca employee o takim UserName lub null, który wypłapany jest przez kontroler i zwróci 401 Unauthorised
+            var employee = await employeeService.GetEmployeeByUserName(login.UserName);  
 
             if (employee != null && loginPassword == employee.Password)
             {

@@ -24,30 +24,28 @@ namespace DiplomaProject.Models
         /// Constructor Injection to access all methods or simply DI(Dependency Injection)
         /// Property and Constructor to invoke the appsettings.json Secret JWT Key and its Issuer
         /// </summary>
-        public DiplomaProjectDbContext(DbContextOptions options, ISecurityService securityService)    // konstruktor z 1 argumentem i dziedziczy ...
+        public DiplomaProjectDbContext(DbContextOptions options, ISecurityService securityService)
         : base(options)
         {
             this.securityService = securityService;
         }
 
-        public DiplomaProjectDbContext() // czy to musi być? co to robi? - konstruktor bezargumentowy
+        public DiplomaProjectDbContext()
         {
         }
         #endregion
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<EmployeeProject>().HasKey(
-              ep => new { ep.EmployeeId, ep.ProjectId });  //def kluczy obcych jako PK dla tabeli EmployeeProject
+              ep => new { ep.EmployeeId, ep.ProjectId });
 
             var faker = new Faker("en");
             const int totalEmployees = 12;
             const int totalClients = 8;
             const int totalProjects = 20;
             const int totalTimeEntries = 400;
-            //const int totalInvoices = 5;
 
             var employees = new List<Employee>();
-            //sprawdzenie jak działa Bogus Faker -> wstaw breakpoint przed "for" żeby nie leciało 1000 razy
             for (int i = 0; i < totalEmployees; i++)
             {
                 var employee = new Employee()
@@ -67,8 +65,7 @@ namespace DiplomaProject.Models
                 };
                 employees.Add(employee);
             }
-            modelBuilder.Entity<Employee>().HasData(employees);   // HasData sprawdza czy jakies dane sa w tabeli, 
-                                                                  // jezeli tak, to nic nie bedzie generowane, jezeli nie, to wygeneruje 
+            modelBuilder.Entity<Employee>().HasData(employees);
 
             var clients = new List<Client>();
             for (int i = 0; i < totalClients; i++)

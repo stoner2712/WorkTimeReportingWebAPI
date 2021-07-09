@@ -40,8 +40,6 @@ namespace DiplomaProject
 
         public IConfiguration Configuration { get; }
 
-
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers().AddJsonOptions(options =>
@@ -58,11 +56,8 @@ namespace DiplomaProject
 
             services.AddAutoMapper(typeof(Startup));
 
-           
-            // Enable Swagger 
             services.AddSwaggerGen(options =>
             {
-                //This is to generate the Default UI of Swagger Documentation 
                 options.SwaggerDoc("v1",
                     new Microsoft.OpenApi.Models.OpenApiInfo
                     {
@@ -75,7 +70,6 @@ namespace DiplomaProject
                 var filePath = Path.Combine(AppContext.BaseDirectory, fileName);
                 options.IncludeXmlComments(filePath);
 
-                // To Enable authorization using Swagger (JWT)  
                 options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
                 {
                     Name = "Authorization",
@@ -117,15 +111,13 @@ namespace DiplomaProject
                     ValidateIssuerSigningKey = true,
                     ValidIssuer = Configuration["Jwt:Issuer"],
                     ValidAudience = Configuration["Jwt:Issuer"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"])) //Configuration["JwtToken:SecretKey"]  
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
                 };
             });
-            
-            // JWT Token Generation from Server Side.
+
             services.AddMvc();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -146,25 +138,22 @@ namespace DiplomaProject
                 endpoints.MapControllers();
             });
             
-            // Swagger Configuration in API  
             app.UseSwagger();
 
             app.UseSwaggerUI(options =>
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "Diploma Project Web API");
-                // empty string -> we get swagger just by calling localhost, without any flash
                 options.RoutePrefix = "";
             });
         }
 
         public void ConfigureDiplomaServices(IServiceCollection services)
         {
-            // here are registered the services, so they can be INJECTED where needed
             services.AddScoped<ITimeEntryService, TimeEntryService>();
             services.AddScoped<IEmployeeService, EmployeeService>();
             services.AddScoped<IClientService, ClientService>();
             services.AddScoped<IProjectService, ProjectService>();
-            services.AddScoped<IInvoiceService, InvoiceService>();
+            services.AddScoped<IInvoiceService, InvoiceDtos>();
             services.AddScoped<IReportService, ReportService>();
             services.AddScoped<IAuthenticateService, AuthenticateService>();
             services.AddScoped<ISecurityService, SecurityService>();

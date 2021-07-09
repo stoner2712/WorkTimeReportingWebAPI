@@ -21,7 +21,6 @@ namespace DiplomaProject.Services.InvoiceServiceNS
         Task<IEnumerable<InvoiceForTimeEntryDto>> GetInvoiceWithTimeEntriesPerProject(int projectId);
         byte[] GenerateInvoicePdf(int invoiceId);
         Task<InvoicePeriodClosureDto> CloseInvoicePeriod(int invoiceId);
-        //bool CheckIfInvoicePeriodIsClosed(TimeEntry timeEntry);
         bool CheckIfInvoicePeriodIsClosed(int month, long projectId);
     }
 }

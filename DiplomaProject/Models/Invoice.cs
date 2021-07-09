@@ -23,9 +23,8 @@ namespace DiplomaProject.Models
         public bool IsInvoicePaid { get; set; }
         public bool IsInvoicePeriodClosed { get; set; }
 
-        public long ProjectId { get; set; } // FK
-        public Project Project{ get; set; } // Navigation Property to one Project
-
-        public List<TimeEntry> TimeEntries { get; set; } // określa relację wiele TimeEntry do danej Invoice
+        public long ProjectId { get; set; }
+        public Project Project{ get; set; }
+        public List<TimeEntry> TimeEntries { get; set; }
     }
 }

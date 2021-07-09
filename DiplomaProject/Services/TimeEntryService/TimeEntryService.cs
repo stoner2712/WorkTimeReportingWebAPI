@@ -52,9 +52,7 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
                 throw new ArgumentException("This action stopped due to invoice period already closed");
             }
 
-            // logic to prevent from setting(update) the date for a timeEntry which is not invoiced yet to the period which is already closed 
-            // pierwszy sposób
-            var invoicePeriodClosed = await this.diplomaProjectDbContext.Invoices.Where(i => i.IsInvoicePeriodClosed == true).ToListAsync(); // return List of invoices with closed periods
+            var invoicePeriodClosed = await this.diplomaProjectDbContext.Invoices.Where(i => i.IsInvoicePeriodClosed == true).ToListAsync();
 
             foreach (var invoice in invoicePeriodClosed)
             {
@@ -63,18 +61,6 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
                     throw new ArgumentException("This period for this project is closed. Please check the date.");
                 }
             }
-
-            //drugi sposób
-            //var invoicePeriodClosed = await this.diplomaProjectDbContext.Invoices.Where(i =>
-            //    i.IsInvoicePeriodClosed == true && i.Month == timeEntryUpdateDto.Date.Month).FirstOrDefaultAsync();
-
-            //// && i.ProjectId == timeEntry.ProjectId).FirstOrDefaultAsync(); // return List of invoices with closed periods
-            //// w TimeEntryUpdate nie ma opcji update projectId dlatego to nie musi być, bo i tak nie działa
-
-            //if (invoicePeriodClosed != null)
-            //{
-            //    throw new ArgumentException("This period for this project is closed. Please check the date.");
-            //}
 
             timeEntry.Date = timeEntryUpdateDto.Date;
             timeEntry.AmountOfHours = timeEntryUpdateDto.AmountOfHours;
@@ -119,10 +105,8 @@ namespace DiplomaProject.Services.TimeEntryServiceNS
             return this.mapper.Map<List<TimeEntry>, List<TimeEntryDto>>(allTimeEntries);
         }
 
-        public async Task<IEnumerable<TimeEntryDto>> GetTimeEntriesForEmployee(int employeeId, int monthNumber) // lub zamiast List można wpisać IEnumerable
+        public async Task<IEnumerable<TimeEntryDto>> GetTimeEntriesForEmployee(int employeeId, int monthNumber) 
         {
-            //var allTimeEntriesForEmployee = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.EmployeeId == employeeId).ToListAsync();
-            //var timeEntriesFillteredInMemory = allTimeEntriesForEmployee.Where(te => te.Date.Month == monthNumber); // filtrowanie w pamięci
             var allTimeEntriesForEmployeePerMonth = await this.diplomaProjectDbContext.TimeEntries.Where(te => te.EmployeeId == employeeId && te.Date.Month == monthNumber).ToListAsync();
             return this.mapper.Map<IEnumerable<TimeEntry>, List<TimeEntryDto>>(allTimeEntriesForEmployeePerMonth).OrderBy(te => te.TimeEntryId);
         }

@@ -27,12 +27,10 @@ namespace DiplomaProject
             CreateMap<Invoice, InvoiceDto>();
             CreateMap<InvoiceCreateDto, Invoice>();
 
-            // Mapper.CreateMap<Source, Dest>()
             CreateMap<Invoice, InvoiceForProjectDto>()
                 .Include<Invoice, InvoiceForClientDto>()
                 .ForMember(dest => dest.ProjectId, opt => opt.MapFrom(src => src.ProjectId))
                 .ForMember(dest => dest.ProjectName, opt => opt.MapFrom(src => src.Project.ProjectName))
-                //.ForMember(dest => dest.TimeEntryId, opt => opt.MapFrom(src => src.Project.T)) // moja nieudano próba 
                 ;
 
             CreateMap<Invoice, InvoiceForClientDto>()
@@ -40,13 +38,6 @@ namespace DiplomaProject
                 .ForMember(dest => dest.ClientName, opt => opt.MapFrom(src => src.Project.Client.ClientName));
 
             CreateMap<Invoice, InvoiceForTimeEntryDto>();
-            //.ForMember(dest => dest.TimeEntryId, opt => opt.MapFrom(src => src.TimeEntries.All<TimeEntryDto>));
-            //.ForMember(dest => dest.ProjectId, opt => opt.MapFrom(src => src.ProjectId))
-            //.ForMember(dest => dest.ProjectName, opt => opt.MapFrom(src => src.Project.ProjectName));
-
-            //CreateMap<TimeEntry, InvoiceForTimeEntryDto>();
-
-            //CreateMap<List<Invoice>, List<InvoiceForClientDto>>();   // tego nie musi tego być
 
             CreateMap<Invoice, InvoicePeriodClosureDto>();
         }

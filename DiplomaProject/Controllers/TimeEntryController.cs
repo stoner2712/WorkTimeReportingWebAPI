@@ -59,7 +59,7 @@ namespace DiplomaProject.Controllers
                 var timeentry = await this.timeEntryService.Get(id);
                 return Ok(timeentry);
             }
-            catch (ArgumentException e)  //wyjątki zaczynamy od bardziej szczegółowych do ogólnych, bo gdyby na odwrót, to ogólny złapałby all i szczegółowy nigdy by sie nie wywołał
+            catch (ArgumentException e)  
             {
                 return BadRequest(e.Message);
             }
@@ -81,7 +81,7 @@ namespace DiplomaProject.Controllers
             try
             {
                 var timeentry = await this.timeEntryService.Create(timeEntryDto);
-                return Ok(timeentry); //zwracamy nowe timeentry na TimeEntryDto (to co widzi Klient)   ????
+                return Ok(timeentry); 
             }
             catch (ArgumentException e)
             {
@@ -107,7 +107,7 @@ namespace DiplomaProject.Controllers
                 var timeentry = await this.timeEntryService.Update(id, timeEntryUpdateDto);
                 return Ok(timeentry);
             }
-            catch (ArgumentException e)  //wyjątki zaczynamy od bardziej szczegółowych do ogólnych, bo gdyby na odwrót, to ogólny złapałby all i szczegółowy nigdy by sie nie wywołał
+            catch (ArgumentException e)
             {
                 return BadRequest(e.Message);
             }

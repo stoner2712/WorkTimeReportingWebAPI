@@ -22,15 +22,9 @@ namespace DiplomaProject.Services.EmployeeServiceNS
 
         public async Task<EmployeeDto> Create(EmployeeCreateDto employeeDto)
         {
-            // mapujemy employeeDto na Employee, i z employeeDto tworzymy obiekt employee
-            var employee = this.mapper.Map<Employee>(employeeDto); // w IEmployeeService jest Create(EmployeeCreateDto employeeCreateDto) czy tu tez ma byc employeeCreateDto
-            //wołam teraz baza danych czyli diplomaProjectDbContext i chcemy do niej dodac (Add) nowego employee
-            // dodajemy parametr employee, który nazywa sie entity wg metody Add, która ma parametr (Employee entity)
+            var employee = this.mapper.Map<Employee>(employeeDto);
             await this.diplomaProjectDbContext.AddAsync(employee);
             await this.diplomaProjectDbContext.SaveChangesAsync();
-            // teraz zwracamy w przeglądarce stworzony obiekt employee:          ???
-            // deklarujemy typ zwracany: EmployeeDto                             ????
-            // mapujemy employee na DataTransferObject, czyli -> EmployeeDto      ???
             return this.mapper.Map<EmployeeDto>(employee);
         }
 
@@ -43,7 +37,6 @@ namespace DiplomaProject.Services.EmployeeServiceNS
             }
             this.diplomaProjectDbContext.Remove(employee);
             await this.diplomaProjectDbContext.SaveChangesAsync();
-            //return this.mapper.Map<EmployeeDto>(employee);          // to też działa, ale co lepsze. Po drugie gdy nie było id to wywala błąd...zamisat catch BadRequest
             return null;
         }
 
@@ -58,10 +51,9 @@ namespace DiplomaProject.Services.EmployeeServiceNS
             employee.LastName = employeeUpdateDto.LastName;
             employee.DateOfBirth = employeeUpdateDto.DateOfBirth;
             employee.JobTitle = employeeUpdateDto.JobTitle;
-            //employee.StreetName = "Mickiewicza";   // mozna na sztywno ustawić i będzie wpisywac się dla kazdego updatowanego
             this.diplomaProjectDbContext.Update(employee);
             await this.diplomaProjectDbContext.SaveChangesAsync();
-            return this.mapper.Map<EmployeeDto>(employee); //wyświetlamy tego pracownika po zmianach zmapowane na EmployeeDto
+            return this.mapper.Map<EmployeeDto>(employee);
         }
 
         public async Task<EmployeeDto> Get(int id)
@@ -89,15 +81,6 @@ namespace DiplomaProject.Services.EmployeeServiceNS
         public Task<Employee> GetEmployeeByUserName(string userName)
         {
             return this.diplomaProjectDbContext.Employees.FirstOrDefaultAsync(e => e.UserName == userName);
-
-            //opcja 2
-            //var employee = this.diplomaProjectDbContext.Employees.FirstOrDefaultAsync(e => e.UserName == userName);
-            //if (employee == null) // ten wyjątek nie musi być ponieważ chcemy, żeby null przeszedł i bedzie złapany przez Controller
-            //{
-            //    throw new ArgumentException("User name not existing");
-            //}
-            //return employee;
         }
-
     }
 }

@@ -90,7 +90,7 @@ namespace DiplomaProject.Services.PdfService
                                     
                                     <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
                                     <br /> <br />
-                        <span style = 'font-size:20px; color:blue ; text-align:left'><h3>Description:</h3></span>
+                            <span style = 'font-size:20px; color:blue ; text-align:left'><h3>Description:</h3></span>
                                    
                                     <table class='description'; align='left'>
                                     <tr>
@@ -135,14 +135,11 @@ namespace DiplomaProject.Services.PdfService
                                     <td>{2}</td>   
                                     </tr>", timeEntry.Date, timeEntry.AmountOfHours, timeEntry.Comment);
 	            } 
-            sb.Append(@"
+                sb.Append(@"
                                     </table>
-                                 
                                     ");
 
-            sb.Append(@"
-                                     <!-- zamiast <br /> użyłem margin-botton: 75px; -->
-                                      
+                sb.Append(@"
                              <span style = 'font-size:20px; color:blue ; text-align:left'><h3>Terms:</h3></span>
                              <p style = 'font-size:20px'> <strong>Due Upon Receipt </strong></p>
                              <br />  
@@ -151,12 +148,9 @@ namespace DiplomaProject.Services.PdfService
                              <span style = 'text-align:left ><i><h3>Thank you for your business!</h3></i></span>
                              </div>
                              <br />
-
-            <! -- komentarz -->
-                                   
-            </body>
-            </html>
-            ");
+               </body>
+               </html>
+               ");
             GlobalSettings globalSettings = new GlobalSettings();
             globalSettings.ColorMode = ColorMode.Color;
             globalSettings.Orientation = Orientation.Portrait;
@@ -164,7 +158,7 @@ namespace DiplomaProject.Services.PdfService
             globalSettings.Margins = new MarginSettings { Top = 25, Bottom = 25, Left = 25, Right = 25 };
             ObjectSettings objectSettings = new ObjectSettings();
             objectSettings.PagesCount = true;
-            objectSettings.HtmlContent = html.ToString();  //ToString dodałem ze wzgledu na StringBuilder and Append
+            objectSettings.HtmlContent = html.ToString();
             WebSettings webSettings = new WebSettings();
             webSettings.DefaultEncoding = "utf-8";
             webSettings.UserStyleSheet = Path.Combine(Directory.GetCurrentDirectory(), "assets", "styles.css");
