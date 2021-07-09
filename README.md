@@ -1,2 +1,2 @@
-# DiplomaProject
-under construction...
+# WorkTimeReportingWebAPI
+The purpose of this WebAPI was to create a web-based reporting and time recording system, which can be used in any company. The most important assumption during the service implementation was a fully responsive backend of the application allowing for easy and effective responses to the users’ instructions and requests as well as an efficient database. The service allows to manage events such as adding, editing and deleting working time (hours), employees, clients and projects or generating pdf invoices. The service was conceived and designed to make life easier for the employees who have to work in modern working conditions, such as remote works - aka “home office”.
